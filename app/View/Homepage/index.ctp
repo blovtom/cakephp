@@ -15,8 +15,8 @@ Click the link below to get started.
 <div class="actions">
 	 <h3><?php echo ('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Plugin Database'), array('controller'=> 'plugins', 'action' => 'index')); ?></li>
-
+	    <li><?php echo $this->Html->link(__('Plugin Tool'), array('controller' => 'plugintools', 'action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('View Plugin Repository'), array('controller'=> 'plugins', 'action' => 'index')); ?></li>
 	</ul>
 </div>
 

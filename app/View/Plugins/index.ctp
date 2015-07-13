@@ -13,7 +13,7 @@
 			<th><?php echo $this->Paginator->sort('requiresAtLeast'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<!--<th class="actions"><?php echo __('Functionality'); ?></th>-->
+
 	</tr>
 	</thead>
 	<tbody>
@@ -26,11 +26,7 @@
 		<td><?php echo h($plugin['Plugin']['requiresAtLeast']); ?>&nbsp;</td>
 		<td><?php echo h($plugin['Plugin']['created']); ?>&nbsp;</td>
 		<td><?php echo h($plugin['Plugin']['modified']); ?>&nbsp;</td>
-		<!--<td class="actions">
-			<?php echo $this->Html->link(__('View Functions'), array('controller'=> 'functionality', 'action' => 'index', $plugin['Plugin']['id'])); ?>
-			<?php //echo $this->Html->link(__('Edit'), array('action' => 'edit', $plugin['Plugin']['id'])); ?>
-			<?php //echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $plugin['Plugin']['id']), null, __('Are you sure you want to delete # %s?', $plugin['Plugin']['id'])); ?>
-		</td> -->
+
 	</tr>
 <?php endforeach; ?>
 </tbody>

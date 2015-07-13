@@ -16,7 +16,7 @@ class Plugin extends AppModel {
     public $hasMany = array(
         'Plugin' => array(
             'className' => 'Plugin',
-            'foreignKey' => 'plugin_id',
+            'foreignKey' => 'id',
             'dependent' => false,
             'conditions' => '',
             'fields' => '',

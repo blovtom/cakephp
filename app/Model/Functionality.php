@@ -13,7 +13,7 @@ class Functionality extends AppModel {
  *
  * @var mixed False or table name
  */
-	public $useTable = 'functionality';
+	public $useTable = 'functions';
 
 
     public function beforeFilter() {
@@ -36,34 +36,13 @@ class Functionality extends AppModel {
  *
  * @var array
  */
-	public $belongsTo = array(
-		'Plugin');
-/*			'className' => 'Plugin',
-			'foreignKey' => 'plugin_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-
-	);*/
+	public $belongsTo = 'Plugin';
 
 /**
  * hasMany associations
  *
  * @var array
  */
-	public $hasone = 'plugins';
-	    /*=> array(
-			'className' => 'Plugins',
-			'foreignKey' => 'plugin_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''*/
 
 
 
