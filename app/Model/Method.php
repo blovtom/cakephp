@@ -29,6 +29,11 @@ class Method extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
+            'Plugintool' => array(
+                'className'=> 'Plugintool',
+                'foreignKey'=>'id'
+               
+            )
 	);
 }

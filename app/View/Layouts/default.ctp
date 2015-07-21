@@ -3,7 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Plugin Checker
+		Plugin Tool
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -27,16 +27,15 @@
   
     <div class="container">
       <?php echo $this->Session->flash(); ?>
-
-	  <?php echo $this->fetch('content'); ?>
-      
+	  <?php echo $this->fetch('content'); ?>      
       <hr>
       <footer>
         <p>Developed by Bola Lewis</p>
-      </footer>
-      
+      </footer>      
     </div> <!-- /container -->
-    
+    <div class="container">
+     
+
 	
 	
 	<!-- Bootstrap core JavaScript

@@ -13,9 +13,15 @@ class Functionality extends AppModel {
  *
  * @var mixed False or table name
  */
-	public $useTable = 'functionality';
+	public $useTable = 'functions';
 
-
+public $validate = array(
+    'function_name' => array(
+        'notEmpty' => array(
+            'rule' => ('notEmpty')
+        ),
+    ),
+);
     public function beforeFilter() {
         $this->Auth->allow();
     }
@@ -26,7 +32,8 @@ class Functionality extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'function_name';
+	//public $displayField = 'function_name';
+        public $displayField = 'plugin_id';
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -37,33 +44,30 @@ class Functionality extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Plugin');
-/*			'className' => 'Plugin',
-			'foreignKey' => 'plugin_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-
-	);*/
+            'Plugin' => array(
+                'className' => 'Plugin',
+                'foreignKey' =>'id'
+                 ),
+            
+            'Plugintool' => array(
+                'className'=> 'Plugintool',
+                'foreignKey'=>'id'
+               
+            )
+            
+            
+            );
+                
+            
+            
+        
+        
 
 /**
  * hasMany associations
  *
  * @var array
  */
-	public $hasone = 'plugins';
-	    /*=> array(
-			'className' => 'Plugins',
-			'foreignKey' => 'plugin_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''*/
 
 
 
