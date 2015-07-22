@@ -8,7 +8,7 @@ class CartsController extends AppController {
 	public function add() {
 		$this->autoRender = false;
 		if ($this->request->is('post')) {
-			$this->Cart->addPlugin($this->request->data['Cart']['plugintool_id']);
+			$this->Cart->addPlugin($this->request->data['Cart']['plugintool']);
 		}
 		echo $this->Cart->getCount();
 	}
@@ -17,9 +17,9 @@ class CartsController extends AppController {
 		$carts = $this->Cart->readPlugin();
 		$plugintools = array();
 		if (null!=$carts) {
-			foreach ($carts as $pluginId => $count) {
-				$plugintool = $this->Plugintool->read(null,$pluginId);
-				$plugintool['Plugin']['count'] = $count;
+			foreach ($carts as $Id => $count) {
+				$plugintool = $this->Plugintool->read(null,$Id);
+				$plugintool['Plugintool']['name'] = $count;
 				$plugintools[]=$plugintool;
 			}
 		} 
@@ -32,8 +32,8 @@ class CartsController extends AppController {
 				$cart = array();
 				foreach ($this->request->data['Cart']['count'] as $index=>$count) {
 					if ($count>0) {
-						$pluginId = $this->request->data['Cart']['plugintool_id'][$index];
-						$cart[$pluginId] = $count;
+						$plugintoolId = $this->request->data['Cart']['plugintool_id'][$index];
+						$cart[$plugintoolId] = $count;
 					}
 				}
 				$this->Cart->savePlugin($cart);

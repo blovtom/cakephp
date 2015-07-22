@@ -6,16 +6,16 @@ class Cart extends AppModel {
 
 	public $useTable = false; 
         
-        public function addPlugin($pluginId) {
+        public function addPlugin($Id) {
 		$allPlugins = $this->readPlugin();
 		if (null!=$allPlugins) {
-			if (array_key_exists($pluginId, $allPlugins)) {
-				$allPlugins[$pluginId]++;
+			if (array_key_exists($Id, $allPlugins)) {
+				$allPlugins[$Id]++;
 			} else {
-				$allPlugins[$pluginId] = 1;
+				$allPlugins[$Id] = 1;
 			}
 		} else {
-			$allPlugins[$pluginId] = 1;
+			$allPlugins[$Id] = 1;
 		}
 		
 		$this->savePlugin($allPlugins);
@@ -51,6 +51,16 @@ class Cart extends AppModel {
 	 */
 	public function readPlugin() {
 		return CakeSession::read('cart');
+//              if (!$this->Plugintool->exists($id)) {
+//            throw new NotFoundException(__('Invalid Plugin'));
+//        }
+//
+//        $plugintool = $this->Plugintool->read(null,$id);
+//        $this->set(compact('plugintool'));
 	}
-
+public $belongsTo = array(
+            'Plugintool' => array(
+                'className' => 'Plugintool',
+                'foreignKey' =>'id'
+                 ));
 }

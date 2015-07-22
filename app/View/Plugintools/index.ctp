@@ -21,8 +21,8 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $plugintool['Plugintool']['id'])); ?>&nbsp
 			       
-                       <?php echo $this->Html->link(__('Add to cart'), array('controller'=>'carts','action' => 'add',$plugintool['Plugintool']['id'])) ;?>&nbsp
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $plugintool['Plugintool']['id']), array(), __('Are you sure you want to delete # %s?', $plugintool['Plugintool']['id'])); ?></td>
+                       <?php echo $this->Html->link(__('Add to Compare'), array('controller'=>'carts','action' =>'view', $plugintool['Plugintool']['id']));?>
+			</td>
 		
 	</tr>
 <?php endforeach; ?>
@@ -51,3 +51,14 @@
 		
 	</ul>
 </div>
+<script>
+$(document).ready(function(){
+	$('#add-form').submit(function(e){
+		e.preventDefault();
+		var tis = $(this);
+		$.post(tis.attr('action'),tis.serialize(),function(data){
+			$('#cart-counter').text(data);
+		});
+	});
+});
+</script>

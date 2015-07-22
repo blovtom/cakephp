@@ -121,7 +121,7 @@
 		<?php echo $this->Form->hidden('plugintool_id',array('value'=>$plugintool['Plugintool']['id']))?> 
 		<?php echo $this->Form->submit('Add to Compare',array('class'=>'btn-success btn btn-lg'));?> 
 		<?php echo $this->Form->end(); ?> 
-
+                
 	</ul>
 </div>
 <script>
