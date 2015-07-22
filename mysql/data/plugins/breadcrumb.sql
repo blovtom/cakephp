@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (628, "Breadcrumb", "4.1", "1.0", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10821, 628, "breadcrumb_share_plugin", "/includes/breadcrumb-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10822, 628, "breadcrumb_display", "/breadcrumb.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10823, 628, "breadcrumb_menu_settings", "/breadcrumb.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10824, 628, "breadcrumb_paratheme_menu_init", "/breadcrumb.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10825, 628, "breadcrumb_paratheme_init_scripts", "/breadcrumb.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10826, 628, "breadcrumb_paratheme_activation", "/breadcrumb.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55294, 628, "breadcrumb", "breadcrumb_html", "/includes/BreadcrumbClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55295, 628, "breadcrumb", "breadcrumb_get_option", "/includes/BreadcrumbClass.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6199, 628, "admin_menu", "'breadcrumb_paratheme_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6200, 628, "init", "'breadcrumb_paratheme_init_scripts'", 10, now(), now());

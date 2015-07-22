@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2271, "Instant Featured Image", "4.1", "1.0.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41540, 2271, "Instant_Featured_Image", "/instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330039, 2271, "Instant_Featured_Image", "install", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330040, 2271, "Instant_Featured_Image", "__wakeup", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330041, 2271, "Instant_Featured_Image", "admin_enqueue_scripts", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330042, 2271, "Instant_Featured_Image", "load_localisation", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330043, 2271, "Instant_Featured_Image", "__construct", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330044, 2271, "Instant_Featured_Image", "instance", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330045, 2271, "Instant_Featured_Image", "get_attachment_id", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330046, 2271, "Instant_Featured_Image", "load_plugin_textdomain", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330047, 2271, "Instant_Featured_Image", "__clone", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330048, 2271, "Instant_Featured_Image", "admin_enqueue_styles", "/includes/class-instant-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330049, 2271, "Instant_Featured_Image", "set_featured_image", "/includes/class-instant-featured-image.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23779, 2271, "wp_ajax_nopriv_instant_featured_image", "array($this,'set_featured_image')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23780, 2271, "init", "array($this,'load_localisation')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23781, 2271, "admin_enqueue_scripts", "array($this,'admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23782, 2271, "admin_enqueue_scripts", "array($this,'admin_enqueue_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23783, 2271, "wp_ajax_instant_featured_image", "array($this,'set_featured_image')", 10, now(), now());

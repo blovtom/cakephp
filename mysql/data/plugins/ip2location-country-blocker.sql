@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2293, "IP2Location Country Blocker", "4.1", "2.2.3", "2.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330817, 2293, "IP2LocationCountryBlocker", "set_defaults", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330818, 2293, "IP2LocationCountryBlocker", "is_in_array", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330819, 2293, "IP2LocationCountryBlocker", "redirect", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330820, 2293, "IP2LocationCountryBlocker", "get_location", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330821, 2293, "IP2LocationCountryBlocker", "uninstall", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330822, 2293, "IP2LocationCountryBlocker", "init", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330823, 2293, "IP2Location", "__construct", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330824, 2293, "IP2LocationCountryBlocker", "deny", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330825, 2293, "IP2LocationCountryBlocker", "download", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330826, 2293, "IP2LocationCountryBlocker", "check_block", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330827, 2293, "IP2LocationCountryBlocker", "admin_page", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330828, 2293, "IP2LocationCountryBlocker", "get_country_name", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330829, 2293, "IP2LocationCountryBlocker", "admin_options", "/ip2location-country-blocker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330830, 2293, "IP2Location", "lookup", "/ip2location.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23958, 2293, "init", "array($ip2location_country_blocker,'check_block')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23959, 2293, "admin_menu", "array(&$this,'admin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23960, 2293, "wp_enqueue_script", "'load_jquery'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23961, 2293, "wp_ajax_update_ip2location_country_blocker_database", "array($ip2location_country_blocker,'download')", 10, now(), now());

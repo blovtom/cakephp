@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4852, "WooCommerce Darwin Pricing Integration", "4.1", "1.2.0", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618613, 4852, "WC_Darwin_Pricing_Integration", "add_integration", "/woocommerce-darwin-pricing-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618614, 4852, "WC_Darwin_Pricing_Integration", "load_plugin_textdomain", "/woocommerce-darwin-pricing-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618615, 4852, "WC_Darwin_Pricing", "init_form_fields", "/includes/class-wc-darwin-pricing.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618616, 4852, "WC_Darwin_Pricing_Integration", "woocommerce_missing_notice", "/woocommerce-darwin-pricing-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618617, 4852, "WC_Darwin_Pricing_Integration", "get_instance", "/woocommerce-darwin-pricing-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618618, 4852, "WC_Darwin_Pricing", "__construct", "/includes/class-wc-darwin-pricing.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618619, 4852, "WC_Darwin_Pricing", "darwin_pricing_code_display", "/includes/class-wc-darwin-pricing.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52082, 4852, "wp_head", "array($this,'darwin_pricing_code_display')", 999999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52083, 4852, "admin_notices", "array($this,'woocommerce_missing_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52084, 4852, "woocommerce_update_options_integration_darwin_pricing", "array($this,'process_admin_options')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52085, 4852, "plugins_loaded", "array('WC_Darwin_Pricing_Integration','get_instance')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52086, 4852, "init", "array($this,'load_plugin_textdomain')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17560, 4852, "woocommerce_integrations", "array($this,'add_integration')", 10, now(), now());

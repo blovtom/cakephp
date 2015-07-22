@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3717, "SB TBFA", "4.1.1", "1.0.9", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66454, 3717, "sb_tbfa_style_and_script", "/inc/sb-plugin-hook.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66455, 3717, "sb_tbfa_activation", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66456, 3717, "sb_tbfa_font_awesome_callback", "/inc/sb-plugin-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66457, 3717, "sb_tbfa_setting_field", "/inc/sb-plugin-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66458, 3717, "sb_tbfa_get_plugin_sb_core_data", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66459, 3717, "sb_tbfa_get_plugin_data", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66460, 3717, "sb_tbfa_not_valid_core_message", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66461, 3717, "sb_tbfa_menu", "/inc/sb-plugin-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66462, 3717, "sb_tbfa_check_admin_notices", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66463, 3717, "sb_tbfa_is_core_valid", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66464, 3717, "sb_tbfa_tab", "/inc/sb-plugin-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66465, 3717, "sb_tbfa_textdomain", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66466, 3717, "sb_tbfa_bootstrap_callback", "/inc/sb-plugin-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66467, 3717, "sb_tbfa_settings_link", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66468, 3717, "sb_tbfa_check_core", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66469, 3717, "sb_tbfa_sanitize", "/inc/sb-plugin-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40439, 3717, "plugins_loaded", "'sb_tbfa_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40440, 3717, "admin_notices", "'sb_tbfa_check_admin_notices'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40441, 3717, "wp_enqueue_scripts", "'sb_tbfa_style_and_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40442, 3717, "sb_admin_init", "'sb_tbfa_setting_field'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40443, 3717, "sb_admin_menu", "'sb_tbfa_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13840, 3717, "sb_options_sanitize", "'sb_tbfa_sanitize'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13841, 3717, "sb_admin_tabs", "'sb_tbfa_tab'", 10, now(), now());

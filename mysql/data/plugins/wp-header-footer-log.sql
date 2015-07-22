@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5204, "Header Footer Login Log", "4.2", "trunk", "2.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90247, 5204, "wp_log_info_source_text_logtag", "/wp-header-footer-login-log.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90248, 5204, "wp_log_info_source_text_pubtag", "/wp-header-footer-login-log.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90249, 5204, "wp_log_info_source_text_1st", "/wp-header-footer-login-log.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90250, 5204, "wp_log_info_source_text_authag", "/wp-header-footer-login-log.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (675561, 5204, "Header_Footer_Login_Text", "__construct", "/wp-header-footer-login-log.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56352, 5204, "login_head", "'wp_log_info_source_text_logtag'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56353, 5204, "login_footer", "'wp_log_info_source_text_logtag'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56354, 5204, "wp_head", "'wp_log_info_source_text_pubtag'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56355, 5204, "admin_head", "'wp_log_info_source_text_authag'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56356, 5204, "activated_plugin", "'wp_log_info_source_text_1st'", 1000, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56357, 5204, "admin_footer", "'wp_log_info_source_text_authag'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56358, 5204, "wp_footer", "'wp_log_info_source_text_pubtag'", 10, now(), now());

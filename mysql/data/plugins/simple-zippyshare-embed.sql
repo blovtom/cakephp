@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3962, "Simple Zippyshare Embed", "4.1", "1.4.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69665, 3962, "zippy_translations_init", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69666, 3962, "zippy_settings_page", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69667, 3962, "zippy_register_settings", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69668, 3962, "zippy_replace_links_to_embed", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69669, 3962, "zippy_delete_options", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69670, 3962, "zippy_create_menu", "/zippy-embed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69671, 3962, "zippy_set_up_options", "/zippy-embed.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506399, 3962, "zippy_widget", "zippy_widget", "/zippy-embed.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506400, 3962, "zippy_widget", "update", "/zippy-embed.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506401, 3962, "zippy_widget", "form", "/zippy-embed.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506402, 3962, "zippy_widget", "widget", "/zippy-embed.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42765, 3962, "admin_menu", "'zippy_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42766, 3962, "init", "'zippy_translations_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42767, 3962, "the_content", "'zippy_replace_links_to_embed'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42768, 3962, "widgets_init", "create_function('','return register_widget( "zippy_widget" );')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42769, 3962, "admin_init", "'zippy_register_settings'", 10, now(), now());

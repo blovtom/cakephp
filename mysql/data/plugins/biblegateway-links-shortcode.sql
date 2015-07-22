@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (516, "Plugin Name", "4.2.0", "0.1.7", "3.2", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51053, 516, "DsgnWrks_Bible_Gateway_Shortcode", "add_buttons", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51054, 516, "DsgnWrks_Bible_Gateway_Shortcode", "settings", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51055, 516, "DsgnWrks_Bible_Gateway_Shortcode", "opts", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51056, 516, "DsgnWrks_Bible_Gateway_Shortcode", "bgsearch", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51057, 516, "DsgnWrks_Bible_Gateway_Shortcode", "service_link", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51058, 516, "DsgnWrks_Bible_Gateway_Shortcode", "register_buttons", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51059, 516, "DsgnWrks_Bible_Gateway_Shortcode", "bg_set_service", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51060, 516, "DsgnWrks_Bible_Gateway_Shortcode", "tinymce_button_script", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51061, 516, "DsgnWrks_Bible_Gateway_Shortcode", "settings_page", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51062, 516, "DsgnWrks_Bible_Gateway_Shortcode", "quicktag_button_script", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51063, 516, "DsgnWrks_Bible_Gateway_Shortcode", "version", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51064, 516, "DsgnWrks_Bible_Gateway_Shortcode", "init", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51065, 516, "DsgnWrks_Bible_Gateway_Shortcode", "bg_set_version", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51066, 516, "DsgnWrks_Bible_Gateway_Shortcode", "__construct", "/biblegateway-search-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51067, 516, "DsgnWrks_Bible_Gateway_Shortcode", "footer_js", "/biblegateway-search-shortcode.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5204, 516, "admin_init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5205, 516, "admin_footer", "array($this,'quicktag_button_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5206, 516, "admin_menu", "array($this,'settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5207, 516, "admin_enqueue_scripts", "array($this,'tinymce_button_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5208, 516, "wp_footer", "array(__CLASS__,'footer_js')", 55, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1776, 516, "mce_buttons", "array($this,'register_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1777, 516, "mce_external_plugins", "array($this,'add_buttons')", 10, now(), now());

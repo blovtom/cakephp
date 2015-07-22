@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (268, "Animated Featured Image", "4.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4376, 268, "add_styles", "/afi-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4377, 268, "register_afi_widget", "/afi-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (24382, 268, "AFI_Widget", "form", "/class.afi-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (24383, 268, "AFI_Widget", "__construct", "/class.afi-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (24384, 268, "AFI_Widget", "widget", "/class.afi-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (24385, 268, "AFI_Widget", "update", "/class.afi-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2349, 268, "wp_enqueue_scripts", "'add_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2350, 268, "widgets_init", "'register_afi_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2351, 268, "widgets_init", "create_function('','return register_widget("AFI_Widget");')", 10, now(), now());

@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1189, "deal or announcement with countdown timer", "4.1", "8.6", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24167, 1189, "widget_deal_or_announcement_with_countdown_timer_management", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24168, 1189, "deal_or_announcement_with_countdown_timer_deactivation", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24169, 1189, "deal_or_announcement_with_countdown_timer_install", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24170, 1189, "deal_or_announcement_with_countdown_timer_control", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24171, 1189, "deal_or_announcement_with_countdown_timer_textdomain", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24172, 1189, "deal_or_announcement_with_countdown_timer_show", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24173, 1189, "deal_or_announcement_with_countdown_timer_add_to_menu", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24174, 1189, "deal_or_announcement_with_countdown_timer_widget_init", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24175, 1189, "deal", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24176, 1189, "deal_or_announcement_with_countdown_timer_widget", "/deal-or-announcement-with-countdown-timer.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13132, 1189, "init", "'deal_or_announcement_with_countdown_timer_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13133, 1189, "plugins_loaded", "'deal_or_announcement_with_countdown_timer_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13134, 1189, "admin_menu", "'deal_or_announcement_with_countdown_timer_add_to_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13135, 1189, "plugins_loaded", "'deal_or_announcement_with_countdown_timer_textdomain'", 10, now(), now());

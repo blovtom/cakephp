@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5622, "Yada Wiki", "4.1.1", "1.1.0", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98332, 5622, "yada_wiki_add_buttons", "/includes/add-editor-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98333, 5622, "yada_wiki_toc_add_plugin", "/includes/add-editor-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98334, 5622, "is_edit_page", "/includes/add-editor-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98335, 5622, "yada_wiki_shortcode", "/includes/handle-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98336, 5622, "yada_wiki_toc_register_button", "/includes/add-editor-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98337, 5622, "register_yada_wiki", "/includes/register-wiki-cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98338, 5622, "yada_wiki_add_plugin", "/includes/add-editor-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98339, 5622, "get_yada_wiki_link", "/includes/handle-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98340, 5622, "yada_wiki_toc_shortcode", "/includes/handle-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98341, 5622, "register_yada_wiki_tags", "/includes/register-wiki-cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98342, 5622, "register_yada_wiki_cats", "/includes/register-wiki-cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98343, 5622, "yada_wiki_init", "/yada-wiki.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98344, 5622, "get_yada_wiki_toc", "/includes/handle-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (98345, 5622, "yada_wiki_register_button", "/includes/add-editor-buttons.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61568, 5622, "init", "'register_yada_wiki'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61569, 5622, "init", "'register_yada_wiki_tags'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61570, 5622, "init", "'register_yada_wiki_cats'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61571, 5622, "plugins_loaded", "'yada_wiki_add_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21241, 5622, "mce_external_plugins", "'yada_wiki_add_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21242, 5622, "mce_external_plugins", "'yada_wiki_toc_add_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21243, 5622, "mce_buttons", "'yada_wiki_register_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21244, 5622, "mce_buttons", "'yada_wiki_toc_register_button'", 10, now(), now());

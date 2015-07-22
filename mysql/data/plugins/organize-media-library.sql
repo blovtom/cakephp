@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3033, "Organize Media Library", "4.1.1", "1.2", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399723, 3033, "OrganizeMediaLibrary", "getmeta", "/inc/OrganizeMediaLibrary.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399724, 3033, "OrganizeMediaLibraryRegist", "register_settings", "/req/OrganizeMediaLibraryRegist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399725, 3033, "OrganizeMediaLibraryAdmin", "add_js", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399726, 3033, "OrganizeMediaLibraryAdmin", "modify_attachment_link", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399727, 3033, "OrganizeMediaLibraryAdmin", "manage_page", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399728, 3033, "OrganizeMediaLibraryAdmin", "load_custom_wp_admin_style2", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399729, 3033, "OrganizeMediaLibraryAdmin", "load_custom_wp_admin_style", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399730, 3033, "OrganizeMediaLibrary", "regist", "/inc/OrganizeMediaLibrary.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399731, 3033, "OrganizeMediaLibraryAdmin", "options_updated", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399732, 3033, "OrganizeMediaLibraryAdmin", "add_pages", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399733, 3033, "OrganizeMediaLibraryAdmin", "settings_link", "/req/OrganizeMediaLibraryAdmin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33277, 3033, "admin_footer", "array($organizemedialibraryadmin,'load_custom_wp_admin_style2')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33278, 3033, "admin_enqueue_scripts", "array($organizemedialibraryadmin,'load_custom_wp_admin_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33279, 3033, "admin_init", "array($organizemedialibraryregist,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33280, 3033, "admin_menu", "array($organizemedialibraryadmin,'add_pages')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11129, 3033, "plugin_action_links", "array($organizemedialibraryadmin,'settings_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11130, 3033, "wp_get_attachment_link", "array($organizemedialibraryadmin,'modify_attachment_link')", 10, now(), now());

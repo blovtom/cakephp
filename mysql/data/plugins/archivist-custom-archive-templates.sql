@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (312, "Archivist - Custom Archive Templates", "4.1.1", "trunk", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36617, 312, "archivist", "load_scripts", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36618, 312, "archivist", "render_element", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36619, 312, "archivist", "load_textdomain", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36620, 312, "archivist", "shortcode", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36621, 312, "archivist", "settings_page", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36622, 312, "archivist", "add_menu_entry", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36623, 312, "archivist", "display_by_tag", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36624, 312, "archivist", "display_by_query", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36625, 312, "archivist", "get_default_template_name", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36626, 312, "archivist", "create_default_template", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36627, 312, "archivist", "display_by_category", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36628, 312, "archivist", "activation_hook", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36629, 312, "archivist", "__construct", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36630, 312, "archivist", "get_object", "/archivist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36631, 312, "Archivist_Parser", "render", "/parser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (36632, 312, "Archivist_Parser", "__construct", "/parser.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2934, 312, "admin_menu", "array($this,'add_menu_entry')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2935, 312, "activate_archivist-custom-archive-templates/archivist.php", "array('archivist','activation_hook')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2936, 312, "admin_enqueue_scripts", "array($this,'load_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2937, 312, "plugins_loaded", "array('archivist','get_object')", 10, now(), now());

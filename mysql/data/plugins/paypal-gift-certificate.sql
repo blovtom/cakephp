@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3115, "Easy PayPal Gift Certificate", "4.1", "1.2.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56121, 3115, "wpppgc_plugin_menu", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56122, 3115, "wpppgc_add_inline_popup_content", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56123, 3115, "wpppgc_options", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56124, 3115, "wpppgc_my_plugin_admin_notices", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56125, 3115, "wpppgc_myplugin_plugin_action_links", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56126, 3115, "wpppgc_plugin_settings_link", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56127, 3115, "wpppgc_plugin_options", "/paypal-gift-certificate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56128, 3115, "wpppgc_add_my_media_button", "/paypal-gift-certificate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (405782, 3115, "wpppgc_wpppgc", "wpppgc_uninstall", "/paypal-gift-certificate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (405783, 3115, "wpppgc_wpppgc", "wpppgc_deactivate", "/paypal-gift-certificate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (405784, 3115, "wpppgc_wpppgc", "init_wpppgcfn", "/paypal-gift-certificate.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34074, 3115, "admin_notices", "'wpppgc_my_plugin_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34075, 3115, "admin_footer", "'wpppgc_add_inline_popup_content'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34076, 3115, "admin_menu", "'wpppgc_plugin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34077, 3115, "media_buttons", "'wpppgc_add_my_media_button'", 20, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11438, 3115, "plugin_action_links", "'wpppgc_myplugin_plugin_action_links'", 10, now(), now());

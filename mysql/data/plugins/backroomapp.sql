@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (433, "Backroomapp : Enable private sharing and chatting over your Wordpress blog", "4.0", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6770, 433, "backroom_shortcode", "/backroom-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6771, 433, "backroom_widget", "/backroom-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6772, 433, "register_backroom_widget", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42342, 433, "Backroom_Widget", "microtime_float", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42343, 433, "Backroom_Widget", "widget", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42344, 433, "Backroom_Widget", "render_widget", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42345, 433, "Backroom_Widget", "form", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42346, 433, "Backroom_Widget", "update", "/backroom-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42347, 433, "Backroom_Widget", "__construct", "/backroom-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4033, 433, "widgets_init", "register_backroom_widget", 10, now(), now());

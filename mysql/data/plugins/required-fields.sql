@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3580, "Required Fields", "4.1.1", "1.7", "3.x", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64700, 3580, "rf_save_draft_text", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64701, 3580, "required_fields", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64702, 3580, "rf_for_page_text", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64703, 3580, "rf_settings_init", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64704, 3580, "rf_for_page_enabled", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64705, 3580, "rf_title_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64706, 3580, "rf_excerpt_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64707, 3580, "wp_rf_sc", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64708, 3580, "rf_settings_validate", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64709, 3580, "rf_custom_tag_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64710, 3580, "rf_enabled_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64711, 3580, "rf_image_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64712, 3580, "rf_error_logs_text", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64713, 3580, "rf_admin_actions", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64714, 3580, "rf_admin_panel", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64715, 3580, "rf_tag_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64716, 3580, "rf_main_section_text", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64717, 3580, "rf_deactivated", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64718, 3580, "rf_activated", "/required-fields.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64719, 3580, "rf_category_settings", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64720, 3580, "rf_settings_link", "/required-fields.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39142, 3580, "admin_footer-post-new.php", "'required_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39143, 3580, "admin_menu", "'rf_admin_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39144, 3580, "admin_init", "'rf_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39145, 3580, "wp_enqueue_script", "'wp_rf_sc'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39146, 3580, "admin_footer-post.php", "'required_fields'", 10, now(), now());

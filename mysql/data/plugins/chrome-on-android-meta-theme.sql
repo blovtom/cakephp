@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (814, "Chrome on Android Meta Theme", "4.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17608, 814, "wp_head_chrome_android_meta_theme", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69640, 814, "chromeAndroidMetaThemeSettingsPage", "meta_theme_color_callback", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69641, 814, "chromeAndroidMetaThemeSettingsPage", "create_admin_page", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69642, 814, "chromeAndroidMetaThemeSettingsPage", "add_plugin_page", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69643, 814, "chromeAndroidMetaThemeSettingsPage", "page_init", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69644, 814, "chromeAndroidMetaThemeSettingsPage", "__construct", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69645, 814, "chromeAndroidMetaThemeSettingsPage", "print_section_info", "/chrome-meta-theme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69646, 814, "chromeAndroidMetaThemeSettingsPage", "sanitize", "/chrome-meta-theme.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9089, 814, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9090, 814, "wp_head", "'wp_head_chrome_android_meta_theme'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9091, 814, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());

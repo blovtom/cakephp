@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (378, "Auto Post Scheduler", "4.1", "1.63", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6058, 378, "check_for_restart", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6059, 378, "aps_auto_post", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6060, 378, "aps_schedule_event", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6061, 378, "aps_time_seconds", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6062, 378, "aps_deactivation", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6063, 378, "aps_restart_event", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6064, 378, "aps_write_log", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6065, 378, "aps_activation", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6066, 378, "aps_show_log", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6067, 378, "aps_options_styles", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6068, 378, "aps_plugin_action_links", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6069, 378, "aps_set_next_schedule", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6070, 378, "aps_heartbeat", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6071, 378, "aps_add_options", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6072, 378, "aps_time_check", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6073, 378, "aps_options_page", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6074, 378, "aps_plugin_init", "/auto-post-scheduler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6075, 378, "aps_admin_init", "/auto-post-scheduler.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3490, 378, "wp_head", "'aps_heartbeat'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3491, 378, "plugins_loaded", "'aps_plugin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3492, 378, "admin_init", "'aps_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3493, 378, "publish_post", "'check_for_restart'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3494, 378, "admin_menu", "'aps_add_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3495, 378, "aps_auto_post_hook", "'aps_auto_post'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1061, 378, "plugin_action_links", "'aps_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1062, 378, "cron_schedules", "'aps_set_next_schedule'", 99, now(), now());

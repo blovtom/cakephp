@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1571, "Extract Filters and Actions from Plugins", "4.1", "trunk", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193359, 1571, "ExtractFiltersActions", "admin_menu", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193360, 1571, "ExtractFiltersActions", "adminPanel", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193361, 1571, "WPCubeDashboardWidget", "dashboardWidget", "/_modules/dashboard/dashboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193362, 1571, "WPCubeDashboardWidget", "adminScriptsAndCSS", "/_modules/dashboard/dashboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193363, 1571, "ExtractFiltersActions", "__construct", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193364, 1571, "WPCubeDashboardWidget", "adminFooterText", "/_modules/dashboard/dashboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193365, 1571, "ExtractFiltersActions", "load_language_files", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193366, 1571, "ExtractFiltersActions", "admin_scripts_css", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193367, 1571, "WPCubeDashboardWidget", "outputDashboardWidget", "/_modules/dashboard/dashboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193368, 1571, "ExtractFiltersActions", "get_plugins", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193369, 1571, "ExtractFiltersActions", "run", "/extract-filters-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193370, 1571, "WPCubeDashboardWidget", "__construct", "/_modules/dashboard/dashboard.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17710, 1571, "wp_network_dashboard_setup", "array(&$this,'dashboardWidget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17711, 1571, "admin_enqueue_scripts", "array(&$this,'adminScriptsAndCSS')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17712, 1571, "wp_dashboard_setup", "array(&$this,'dashboardWidget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17713, 1571, "admin_enqueue_scripts", "array(&$this,'admin_scripts_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17714, 1571, "admin_menu", "array(&$this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17715, 1571, "plugins_loaded", "array(&$this,'load_language_files')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5918, 1571, "admin_footer_text", "array(&$this,'adminFooterText')", 10, now(), now());

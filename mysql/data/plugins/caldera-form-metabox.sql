@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (703, "Caldera Form Metabox", "4.1", "1.0.4", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15834, 703, "cf_form_as_metabox_save_meta_data", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15835, 703, "cf_form_as_metabox", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15836, 703, "cf_form_as_metabox_get_post_details", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15837, 703, "cf_form_as_metabox_render", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15838, 703, "cf_form_as_metabox_save_post", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15839, 703, "cf_form_as_metabox_prevent_redirect", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15840, 703, "register_metabox_processor", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15841, 703, "cf_form_as_metabox_get_meta_data", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15842, 703, "cf_form_as_metabox_save_form", "/core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15843, 703, "cf_form_as_metabox_submit_button_removal", "/core.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7873, 703, "save_post", "'cf_form_as_metabox_save_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7874, 703, "caldera_forms_save_form_register", "'cf_form_as_metabox_save_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7875, 703, "add_meta_boxes", "'cf_form_as_metabox'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2827, 703, "caldera_forms_get_form_processors", "'register_metabox_processor'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2828, 703, "caldera_forms_render_setup_field", "'cf_form_as_metabox_submit_button_removal'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2829, 703, "caldera_forms_render_get_entry", "'cf_form_as_metabox_get_meta_data'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2830, 703, "caldera_forms_redirect_url", "'cf_form_as_metabox_prevent_redirect'", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2831, 703, "caldera_forms_get_entry_detail", "'cf_form_as_metabox_get_post_details'", 10, now(), now());

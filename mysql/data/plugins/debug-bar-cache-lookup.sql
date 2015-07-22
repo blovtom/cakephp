@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1192, "Debug Bar Cache Lookup", "4.1.1", "0.1.0", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24447, 1192, "dbcl_add_panel", "/debug_bar_cache_lookup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24448, 1192, "dbcl_ajax", "/debug_bar_cache_lookup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24449, 1192, "dbcl_enqueue", "/debug_bar_cache_lookup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (108818, 1192, "Debug_Bar_Cache_Lookup", "render", "/includes/class-debug-bar-cache-lookup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (108819, 1192, "Debug_Bar_Cache_Lookup", "init", "/includes/class-debug-bar-cache-lookup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (108820, 1192, "Debug_Bar_Cache_Lookup", "prerender", "/includes/class-debug-bar-cache-lookup.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13355, 1192, "debug_bar_enqueue_scripts", "'dbcl_enqueue'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13356, 1192, "wp_ajax_dbcl", "'dbcl_ajax'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4524, 1192, "debug_bar_panels", "'dbcl_add_panel'", 10, now(), now());

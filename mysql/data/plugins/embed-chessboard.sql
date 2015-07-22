@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1476, "Embed Chessboard", "4.1", "2.90.00", "2.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29662, 1476, "embedchessboard_create_menu", "/embedchessboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29663, 1476, "embedchessboard_no_texturize", "/embedchessboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29664, 1476, "embedchessboard_settings_page", "/embedchessboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29665, 1476, "get_embedchessboard_option", "/embedchessboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29666, 1476, "BitsToBytes", "/pgn4web/pgn-encoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29667, 1476, "EncodePGN", "/pgn4web/pgn-encoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29668, 1476, "register_embedchessboard_settings", "/embedchessboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146469, 1476, "pgnBBCode", "pgnBBCode", "/embedchessboard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146470, 1476, "pgnBBCode", "shortcode_pgn", "/embedchessboard.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16354, 1476, "admin_menu", "'embedchessboard_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16355, 1476, "admin_init", "'register_embedchessboard_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16356, 1476, "plugins_loaded", "create_function('','global $pgnBBCode; $pgnBBCode = new pgnBBCode();')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5441, 1476, "no_texturize_shortcodes", "'embedchessboard_no_texturize'", 10, now(), now());

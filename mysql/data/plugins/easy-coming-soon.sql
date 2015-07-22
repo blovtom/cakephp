@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1327, "Easy Coming Soon", "4.1", "1.6.3", "3.3+", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26250, 1327, "my_page_template_redirect", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26251, 1327, "coming_soon_page_design_save_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26252, 1327, "coming_soon_page_design_reset_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26253, 1327, "coming_soon_general_page_reset_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26254, 1327, "coming_soon_menu", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26255, 1327, "coming_soon_page_notification_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26256, 1327, "coming_soon_general_page_save_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26257, 1327, "construction", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26258, 1327, "coming_soon_page_reset_notification_settings", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26259, 1327, "coming_soon_plugin_js_css", "/coming-soon-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (26260, 1327, "my_custom_menu", "/coming-soon-plugin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14601, 1327, "template_redirect", "'my_page_template_redirect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14602, 1327, "admin_bar_menu", "'my_custom_menu'", 1000, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14603, 1327, "admin_menu", "'coming_soon_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14604, 1327, "wp_ajax_coming_soon_page_design_reset_settings", "'coming_soon_page_design_reset_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14605, 1327, "wp_ajax_coming_soon_page_design_settings", "'coming_soon_page_design_save_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14606, 1327, "wp_ajax_coming_soon_page_reset_notification_settings", "'coming_soon_page_reset_notification_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14607, 1327, "wp_ajax_coming_soon_page_notification_settings", "'coming_soon_page_notification_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14608, 1327, "wp_ajax_coming_soon_page_reset_settings", "'coming_soon_general_page_reset_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14609, 1327, "wp_ajax_coming_soon_page_settings", "'coming_soon_general_page_save_settings'", 10, now(), now());

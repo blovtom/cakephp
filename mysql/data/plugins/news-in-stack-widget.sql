@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2883, "News In Stack Widget", "4.1.1", "1.3.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52770, 2883, "aq_resize", "/aq_resize.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385384, 2883, "News_In_Stack_Widget", "update", "/news-in-stack-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385385, 2883, "Aq_Resize", "aq_upscale", "/aq_resize.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385386, 2883, "News_In_Stack_Widget", "form", "/news-in-stack-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385387, 2883, "News_In_Stack_Widget", "returnDefaults", "/news-in-stack-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385388, 2883, "Aq_Resize", "process", "/aq_resize.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385389, 2883, "News_In_Stack_Widget", "__construct", "/news-in-stack-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385390, 2883, "Aq_Resize", "getInstance", "/aq_resize.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385391, 2883, "News_In_Stack_Widget", "widget", "/news-in-stack-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31283, 2883, "widgets_init", "create_function('','return register_widget("News_In_Stack_Widget");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10525, 2883, "excerpt_more", "$new_excerpt_more", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10526, 2883, "excerpt_length", "$new_excerpt_length", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10527, 2883, "image_resize_dimensions", "array($this,'aq_upscale')", 10, now(), now());

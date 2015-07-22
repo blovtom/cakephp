@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1997, "Gravity Forms - Infobox field", "4.1", "1.2.3", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317894, 1997, "ITSP_GF_Infobox", "infobox_custom_js_script", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317895, 1997, "ITSP_GF_Infobox", "__construct", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317896, 1997, "ITSP_GF_Infobox", "infobox_editor_js", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317897, 1997, "ITSP_GF_Infobox", "infobox_display_field", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317898, 1997, "ITSP_GF_Infobox", "infobox_custom_class", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317899, 1997, "ITSP_GF_Infobox", "infobox_add_field", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317900, 1997, "ITSP_GF_Infobox", "infobox_custom_js", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317901, 1997, "ITSP_GF_Infobox", "admin_warnings", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317902, 1997, "ITSP_GF_Infobox", "infobox_settings_more_info", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317903, 1997, "ITSP_GF_Infobox", "infobox_settings_type", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317904, 1997, "ITSP_GF_Infobox", "infobox_title", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317905, 1997, "ITSP_GF_Infobox", "infobox_tooltip_more_info", "/gravity_forms_infobox_field_plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21898, 1997, "gform_enqueue_scripts", "array(&$this,'infobox_custom_js')", 90, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21899, 1997, "wp_footer", "array(&$this,'infobox_custom_js_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21900, 1997, "gform_editor_js", "array(&$this,'infobox_editor_js')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21901, 1997, "gform_field_standard_settings", "array(&$this,'infobox_settings_more_info')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21902, 1997, "gform_field_css_class", "array(&$this,'infobox_custom_class')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21903, 1997, "gform_field_standard_settings", "array(&$this,'infobox_settings_type')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21904, 1997, "admin_notices", "array('ITSP_GF_Infobox','admin_warnings')", 20, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7241, 1997, "gform_field_content", "array(&$this,'infobox_display_field')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7242, 1997, "gform_add_field_buttons", "array(&$this,'infobox_add_field')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7243, 1997, "gform_field_type_title", "array(&$this,'infobox_title')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7244, 1997, "gform_tooltips", "array(&$this,'infobox_tooltip_more_info')", 10, now(), now());

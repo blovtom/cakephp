@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3904, "Simple Follow Me Social Buttons Widget", "4.1.1", "3.3.1", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502358, 3904, "SFMSB", "load_textdomain", "/simple-follow-me-social-buttons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502359, 3904, "Sfmsb_Widget", "form", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502360, 3904, "Sfmsb_Widget", "admin_widget_scripts", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502361, 3904, "Sfmsb_Widget", "register_widgets", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502362, 3904, "Sfmsb_Widget", "add_admin_scripts", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502363, 3904, "Sfmsb_Widget", "__construct", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502364, 3904, "SFMSB", "instance", "/simple-follow-me-social-buttons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502365, 3904, "Sfmsb_Admin", "add_admin_scripts", "/includes/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502366, 3904, "Sfmsb_Widget", "widget", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502367, 3904, "SFMSB", "specificfeeds_save_notice_viewed", "/simple-follow-me-social-buttons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502368, 3904, "Sfmsb_Widget", "update", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502369, 3904, "Sfmsb_Widget", "add_scripts", "/includes/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (502370, 3904, "SFMSB", "specificfeeds_notice", "/simple-follow-me-social-buttons-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42085, 3904, "admin_enqueue_scripts", "array('Sfmsb_Admin','add_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42086, 3904, "admin_enqueue_scripts", "array('Sfmsb_Widget','admin_widget_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42087, 3904, "wp_ajax_sfmsb_notice_viewed", "array('SFMSB','specificfeeds_save_notice_viewed')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42088, 3904, "admin_notices", "array('SFMSB','specificfeeds_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42089, 3904, "admin_enqueue_scripts", "array('Sfmsb_Widget','add_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42090, 3904, "wp_ajax_nopriv_sfmsb_notice_viewed", "array('SFMSB','specificfeeds_save_notice_viewed')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42091, 3904, "widgets_init", "array('Sfmsb_Widget','register_widgets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42092, 3904, "wp_enqueue_scripts", "array('Sfmsb_Widget','add_scripts')", 10, now(), now());

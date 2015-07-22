@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (441, "Bake Posts", "4.1.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7235, 441, "bake_post_recent", "/bake-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7236, 441, "bakeposts_admin_init", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7237, 441, "bakeposts_settings_page", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7238, 441, "bake_post_category", "/bake-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7239, 441, "bakeposts_admin_scripts", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7240, 441, "bakeposts_create_menu", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7241, 441, "bake_post_tags", "/bake-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (47940, 441, "bakePost", "__construct", "/bake-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (47941, 441, "bakePost", "showAll", "/bake-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (47942, 441, "bakePost", "get_posts", "/bake-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (47943, 441, "bakePost", "bake_me", "/bake-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (47944, 441, "bakePost", "get_to_show", "/bake-posts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4274, 441, "admin_init", "'bakeposts_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4275, 441, "admin_menu", "'bakeposts_create_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1297, 441, "widget_text", "'do_shortcode'", 10, now(), now());

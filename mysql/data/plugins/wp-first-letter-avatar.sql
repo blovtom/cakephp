@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5173, "WP First Letter Avatar", "4.1.1", "trunk", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671173, 5173, "WP_First_Letter_Avatar_Config", "wpfla_unknown_image_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671174, 5173, "WP_First_Letter_Avatar", "__construct", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671175, 5173, "WP_First_Letter_Avatar_Config", "wpfla_letter_index_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671176, 5173, "WP_First_Letter_Avatar_Config", "wpfla_settings_init", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671177, 5173, "WP_First_Letter_Avatar", "wpfla_add_settings_link", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671178, 5173, "WP_First_Letter_Avatar", "set_comment_avatar", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671179, 5173, "WP_First_Letter_Avatar_Config", "wpfla_options_page", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671180, 5173, "WP_First_Letter_Avatar_Config", "__construct", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671181, 5173, "WP_First_Letter_Avatar_Config", "wpfla_file_format_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671182, 5173, "WP_First_Letter_Avatar", "wpfla_add_scripts", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671183, 5173, "WP_First_Letter_Avatar_Config", "wpfla_settings_section_callback", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671184, 5173, "WP_First_Letter_Avatar", "set_userbar_avatar", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671185, 5173, "WP_First_Letter_Avatar_Config", "wpfla_avatar_set_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671186, 5173, "WP_First_Letter_Avatar_Config", "wpfla_use_gravatar_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671187, 5173, "WP_First_Letter_Avatar_Config", "wpfla_round_avatars_render", "/wp-first-letter-avatar-config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671188, 5173, "WP_First_Letter_Avatar", "add_set_userbar_avatar_filter", "/wp-first-letter-avatar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671189, 5173, "WP_First_Letter_Avatar_Config", "wpfla_add_admin_menu", "/wp-first-letter-avatar-config.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56150, 5173, "admin_menu", "array($this,'wpfla_add_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56151, 5173, "admin_init", "array($this,'wpfla_settings_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56152, 5173, "wp_enqueue_scripts", "array($this,'wpfla_add_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56153, 5173, "admin_bar_menu", "array($this,'add_set_userbar_avatar_filter')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19187, 5173, "get_avatar", "array($this,'set_userbar_avatar')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19188, 5173, "get_avatar", "array($this,'set_comment_avatar')", 10, now(), now());

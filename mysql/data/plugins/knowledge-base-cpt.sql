@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2434, "Knowledge Base CPT", "4.1", "trunk", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45238, 2434, "knowledge_cpt", "/includes/register-cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45239, 2434, "olympus_knowledge_flush_rewrites", "/knowledge-base-CPT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45240, 2434, "register_olympus_kb_articles_widget", "/includes/register-recent-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45241, 2434, "knowledge_section", "/includes/register-taxonomy.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45242, 2434, "olympus_knowledge_flush_rewrites_deactivate", "/knowledge-base-CPT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45243, 2434, "olympus_knowledge_load_textdomain", "/knowledge-base-CPT.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (342893, 2434, "Olympus_KB_Articles_Widget", "update", "/includes/register-recent-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (342894, 2434, "Olympus_KB_Articles_Widget", "__construct", "/includes/register-recent-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (342895, 2434, "Olympus_KB_Articles_Widget", "form", "/includes/register-recent-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (342896, 2434, "Olympus_KB_Articles_Widget", "widget", "/includes/register-recent-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26071, 2434, "init", "'knowledge_cpt'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26072, 2434, "init", "'knowledge_section'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26073, 2434, "plugins_loaded", "'olympus_knowledge_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26074, 2434, "widgets_init", "'register_olympus_kb_articles_widget'", 10, now(), now());

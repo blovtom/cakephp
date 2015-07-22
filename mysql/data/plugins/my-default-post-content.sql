@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2824, "My Default Post Content", "4.1", "trunk", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382154, 2824, "defaultpostcontent", "return_title", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382155, 2824, "defaultpostcontent", "pluginmenu", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382156, 2824, "defaultpostcontent", "admin_donate", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382157, 2824, "defaultpostcontent", "admin_validate", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382158, 2824, "defaultpostcontent", "activation", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382159, 2824, "defaultpostcontent", "return_content", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382160, 2824, "defaultpostcontent", "admin_content", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382161, 2824, "defaultpostcontent", "action_links", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382162, 2824, "defaultpostcontent", "admin_section", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382163, 2824, "defaultpostcontent", "admin_title", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382164, 2824, "defaultpostcontent", "options_page", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382165, 2824, "defaultpostcontent", "admin_menu", "/my-default-post-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382166, 2824, "defaultpostcontent", "admin_init", "/my-default-post-content.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30431, 2824, "admin_init", "array($MyClass,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30432, 2824, "admin_menu", "array($MyClass,'admin_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10168, 2824, "plugin_action_links", "array($MyClass,'action_links')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10169, 2824, "default_content", "array($MyClass,'return_content')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10170, 2824, "plugin_row_meta", "array($MyClass,'pluginmenu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10171, 2824, "default_title", "array($MyClass,'return_title')", 10, now(), now());

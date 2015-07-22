@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3518, "Recent Tweets Slider", "4.1.1", "1.0.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63797, 3518, "WP_Time", "/recent-tweets-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63798, 3518, "RecentTweetsSlider_Include_JS_CSS", "/recent-tweets-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63799, 3518, "WP_Time_Page", "/recent-tweets-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463244, 3518, "RecentTweetsSliderWidget", "widget", "/recent-tweets-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463245, 3518, "RecentTweetsSliderWidget", "form", "/recent-tweets-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463246, 3518, "WpTwitterApi", "__construct", "/twitter.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463247, 3518, "WpTwitterApi", "query", "/twitter.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463248, 3518, "RecentTweetsSliderWidget", "update", "/recent-tweets-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463249, 3518, "RecentTweetsSliderWidget", "RecentTweetsSliderWidget", "/recent-tweets-slider.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38488, 3518, "wp_enqueue_scripts", "'RecentTweetsSlider_Include_JS_CSS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38489, 3518, "widgets_init", "create_function('','return register_widget("RecentTweetsSliderWidget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38490, 3518, "admin_menu", "'WP_Time'", 10, now(), now());

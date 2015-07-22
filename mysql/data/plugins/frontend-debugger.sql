@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1771, "Frontend Debugger", "4.1.1", "0.5", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35042, 1771, "html_element", "/test/html_element.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213319, 1771, "Frontend_Debugger", "get_template_uri", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213320, 1771, "Frontend_Debugger", "run_template", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213321, 1771, "Frontend_Debugger", "load_template", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213322, 1771, "Frontend_Debugger", "print_content_id", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213323, 1771, "Frontend_Debugger", "html_element", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213324, 1771, "Frontend_Debugger", "set_footer", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213325, 1771, "Frontend_Debugger", "get_instance", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213326, 1771, "Frontend_Debugger", "set_header", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213327, 1771, "Frontend_Debugger", "get_template_path", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213328, 1771, "Frontend_Debugger", "__construct", "/frontend-debugger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (213329, 1771, "Frontend_Debugger", "get_parts", "/frontend-debugger.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19595, 1771, "get_footer", "array($this,'set_footer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19596, 1771, "get_header", "array($this,'set_header')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6483, 1771, "template_include", "array($this,'load_template')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6484, 1771, "the_content", "array($this,'print_content_id')", 0, now(), now());

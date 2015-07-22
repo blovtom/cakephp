@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1188, "DD Last Viewed", "4.1.1", "2.2", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24162, 1188, "shortcode_lastviewed", "/inc/shortcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24163, 1188, "dd_lastviewed_admin", "/lastViewed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24164, 1188, "inputSwitch", "/inc/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24165, 1188, "dd_lastviewed_add_front", "/lastViewed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24166, 1188, "add_lastviewed_id", "/lastViewed.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104348, 1188, "lastviewed", "update", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104349, 1188, "lastviewed", "lastviewed", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104350, 1188, "lastviewed", "widget", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104351, 1188, "lastviewed", "form", "/inc/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13128, 1188, "wp_footer", "'add_lastviewed_id'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13129, 1188, "admin_init", "'dd_lastviewed_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13130, 1188, "wp_enqueue_scripts", "'dd_lastviewed_add_front'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13131, 1188, "widgets_init", "create_function('','return register_widget("lastviewed");')", 10, now(), now());

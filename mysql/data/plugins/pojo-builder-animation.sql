@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3217, "Pojo Builder Animation", "4.1", "1.0.1", "3.9", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420590, 3217, "Pojo_Builder_Animation_Actions", "widget_attributes", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420591, 3217, "Pojo_Builder_Animation", "__wakeup", "/pojo-builder-animation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420592, 3217, "Pojo_Builder_Animation", "load_textdomain", "/pojo-builder-animation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420593, 3217, "Pojo_Builder_Animation", "__clone", "/pojo-builder-animation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420594, 3217, "Pojo_Builder_Animation_Scripts", "__construct", "/classes/class-pojo-builder-animation-scripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420595, 3217, "Pojo_Builder_Animation_Actions", "get_animations", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420596, 3217, "Pojo_Builder_Animation_Actions", "__construct", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420597, 3217, "Pojo_Builder_Animation_Actions", "pb_after_widget_form", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420598, 3217, "Pojo_Builder_Animation_Actions", "pb_widget_update_callback", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420599, 3217, "Pojo_Builder_Animation", "bootstrap", "/pojo-builder-animation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420600, 3217, "Pojo_Builder_Animation_Actions", "widget_css_classes", "/classes/class-pojo-builder-animation-actions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420601, 3217, "Pojo_Builder_Animation", "instance", "/pojo-builder-animation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420602, 3217, "Pojo_Builder_Animation_Scripts", "enqueue_scripts", "/classes/class-pojo-builder-animation-scripts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35501, 3217, "plugins_loaded", "array(&$this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35502, 3217, "pb_after_widget_form", "array(&$this,'pb_after_widget_form')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35503, 3217, "wp_enqueue_scripts", "array(&$this,'enqueue_scripts')", 200, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35504, 3217, "init", "array(&$this,'bootstrap')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35505, 3217, "pb_widget_attributes", "array(&$this,'widget_attributes')", 30, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11951, 3217, "pb_widget_css_classes", "array(&$this,'widget_css_classes')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11952, 3217, "pb_widget_update_callback", "array(&$this,'pb_widget_update_callback')", 10, now(), now());

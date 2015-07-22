@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3006, "OpenLinks Network", "4.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54442, 3006, "openlinks_init", "/loader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54443, 3006, "openlinks_locale_init", "/loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393798, 3006, "openlinks_widget", "openlinks_widget", "/openlinks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393799, 3006, "openlinks_widget", "widget", "/openlinks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393800, 3006, "openlinks_widget", "form", "/openlinks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393801, 3006, "openlinks_widget", "update", "/openlinks.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32755, 3006, "widgets_init", "create_function('','return register_widget("openlinks_widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32756, 3006, "plugins_loaded", "'openlinks_locale_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32757, 3006, "plugins_loaded", "'openlinks_init'", 10, now(), now());

@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3402, "PWD WP Login", "4.1", "1.1", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (61863, 3402, "init_pwd_loginplugin", "/pwd-wp-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (61864, 3402, "_pwd_login_load_files", "/pwd-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454725, 3402, "PWD_LOGIN_Plugin", "register", "/classes/plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454726, 3402, "PWD_LOGIN_Plugin", "generate_css", "/classes/plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454727, 3402, "PWD_LOGIN_Plugin", "__construct", "/classes/plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454728, 3402, "PWD_LOGIN_Plugin", "pwd_login_login_headertitle", "/classes/plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454729, 3402, "PWD_LOGIN_Plugin", "pwd_login_login_headerurl", "/classes/plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (454730, 3402, "PWD_LOGIN_Plugin", "header_output", "/classes/plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37413, 3402, "plugins_loaded", "'init_pwd_loginplugin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37414, 3402, "login_enqueue_scripts", "array(__CLASS__,'header_output')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37415, 3402, "customize_register", "array(__CLASS__,'register')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12793, 3402, "login_headerurl", "array(__CLASS__,'pwd_login_login_headerurl')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12794, 3402, "login_headertitle", "array(__CLASS__,'pwd_login_login_headertitle')", 10, now(), now());

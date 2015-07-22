@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4890, "WooCommerce Improved External Products", "4.1", "1.1.2", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621804, 4890, "ImprovedExternalProducts", "__construct", "/improved_external_prod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621805, 4890, "ImprovedExternalProducts", "myplugin_woocommerce_locate_template", "/improved_external_prod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621806, 4890, "ImprovedExternalProducts", "javascript_backup", "/improved_external_prod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621807, 4890, "ImprovedExternalProducts", "myplugin_plugin_path", "/improved_external_prod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621808, 4890, "ImprovedExternalProducts", "shop_loop_link", "/improved_external_prod.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52522, 4890, "wp_footer", "array(&$this,'javascript_backup')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17721, 4890, "woocommerce_locate_template", "array(&$this,'myplugin_woocommerce_locate_template')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17722, 4890, "woocommerce_loop_add_to_cart_link", "array(&$this,'shop_loop_link')", 10, now(), now());

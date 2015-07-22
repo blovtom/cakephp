@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4467, "trendcounter Stats for WordPress", "4.1", "0.4", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77638, 4467, "tcwidget_options_add", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77639, 4467, "myplugin_register_widgets", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77640, 4467, "tcwidget_add_error", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77641, 4467, "tcwidget_activate_plugin", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77642, 4467, "tcwidget_options_content", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77643, 4467, "tcwidget_debug", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77644, 4467, "tcwidget_render", "/trendcounter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77645, 4467, "tcwidget_get_config", "/trendcounter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556173, 4467, "tcWidget", "update", "/trendcounter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556174, 4467, "tcWidget", "tcWidget", "/trendcounter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556175, 4467, "tcWidget", "form", "/trendcounter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556176, 4467, "tcWidget", "widget", "/trendcounter.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47689, 4467, "admin_menu", "'tcwidget_options_add'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47690, 4467, "wp_footer", "'tcwidget_render'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47691, 4467, "widgets_init", "'myplugin_register_widgets'", 10, now(), now());

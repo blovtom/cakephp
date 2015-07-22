@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (803, "Plugin Name", "4.0", "1.3", "3.0 or higher", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69313, 803, "CheckCopyContents", "_", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69314, 803, "CheckCopyContents", "filter_header", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69315, 803, "CheckCopyContents", "filter_footer", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69316, 803, "CheckCopyContents", "__construct", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69317, 803, "CheckCopyContents", "uninstallHook", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69318, 803, "CheckCopyContents", "activationHook", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69319, 803, "CheckCopyContents", "ccc_edit_setting", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69320, 803, "CheckCopyContents", "ccc_admin_menu", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69321, 803, "CheckCopyContents", "use_CCC", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69322, 803, "CheckCopyContents", "init", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69323, 803, "CheckCopyContents", "e", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69324, 803, "CheckCopyContents", "cccAjax", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69325, 803, "CheckCopyContents", "deactivationHook", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69326, 803, "CheckCopyContents", "filter_wrap_content", "/check-copy-contents.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (69327, 803, "CheckCopyContents", "load_textdomain", "/check-copy-contents.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8995, 803, "init", "array($this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8996, 803, "wp_ajax_nopriv_cccAjax", "array($this,'cccAjax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8997, 803, "wp_ajax_cccAjax", "array($this,'cccAjax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8998, 803, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8999, 803, "admin_menu", "array($this,'ccc_admin_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3152, 803, "wp_head", "array($this,'filter_header')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3153, 803, "wp_footer", "array($this,'filter_footer')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3154, 803, "the_content", "array($this,'filter_wrap_content')", 10, now(), now());

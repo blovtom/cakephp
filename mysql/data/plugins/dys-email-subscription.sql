@@ -1,0 +1,35 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1312, "DYS Emailing Subscription", "4.1", "trunk", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25848, 1312, "emailing_install_data", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25849, 1312, "emailing", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25850, 1312, "theme_settings_init", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25851, 1312, "emailing_form", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25852, 1312, "remove_subscriber", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25853, 1312, "add_settings_page", "/emailing-lista.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25854, 1312, "emailing_install", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113100, 1312, "pagination", "limit", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113101, 1312, "pagination", "getOutput", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113102, 1312, "pagination", "nextLabel", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113103, 1312, "pagination", "prevLabel", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113104, 1312, "DYSemailingList", "update", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113105, 1312, "pagination", "parameterName", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113106, 1312, "pagination", "target", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113107, 1312, "pagination", "pagination", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113108, 1312, "DYSemailingList", "__construct", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113109, 1312, "pagination", "calculate", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113110, 1312, "pagination", "items", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113111, 1312, "pagination", "show", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113112, 1312, "DYSemailingList", "widget", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113113, 1312, "pagination", "showCounter", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113114, 1312, "pagination", "prevIcon", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113115, 1312, "pagination", "changeClass", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113116, 1312, "DYSemailingList", "form", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113117, 1312, "pagination", "nextIcon", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113118, 1312, "pagination", "adjacents", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113119, 1312, "pagination", "get_pagenum_link", "/emailing-lista.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (113120, 1312, "pagination", "currentPage", "/emailing-lista.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14425, 1312, "admin_init", "'theme_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14426, 1312, "admin_menu", "'add_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14427, 1312, "widgets_init", "function ()
+{
+	register_widget('DYSemailingList');
+}", 10, now(), now());

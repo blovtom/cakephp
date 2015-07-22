@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (722, "Canada Post Shipping For WooCommerce", "4.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16027, 722, "canada_post_shipping_init", "/canadapost.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16028, 722, "add_your_shipping_method", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65618, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "get_normalized_weight", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65619, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "init_form_fields", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65620, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "get_normalized_dimension", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65621, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "init", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65622, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "calculate_shipping", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65623, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "generate_settings_html", "/canadapost.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65624, 722, "Canada_Post_Shipping_For_WooCommerce_By_CanShip", "__construct", "/canadapost.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8029, 722, "woocommerce_shipping_init", "'canada_post_shipping_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2914, 722, "woocommerce_shipping_methods", "'add_your_shipping_method'", 10, now(), now());

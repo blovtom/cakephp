@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4148, "SRS Simple Hits Counter", "4.1", "0.1.3", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73358, 4148, "srs_shc_register_widget", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73359, 4148, "srs_getTotal_visitors", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73360, 4148, "srs_simple_hits_counter", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73361, 4148, "srs_getTotal_pageViews", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (520167, 4148, "SRS_SHC_Widget", "widget", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (520168, 4148, "SRS_SHC_Widget", "__construct", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (520169, 4148, "SRS_SHC_Widget", "form", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (520170, 4148, "SRS_SHC_Widget", "update", "/SRS_Simple_Hits_Counter.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44824, 4148, "widgets_init", "'srs_shc_register_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44825, 4148, "wp_head", "'srs_simple_hits_counter'", 10, now(), now());

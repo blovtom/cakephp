@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (363, "Author Wordcount", "4.1", "1.0", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5984, 363, "register_author_wordcount", "/author-wordcount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40253, 363, "WP_Author_Wordcount", "widget", "/author-wordcount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40254, 363, "WP_Author_Wordcount", "load_plugin_textdomain", "/author-wordcount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40255, 363, "WP_Author_Wordcount", "__construct", "/author-wordcount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40256, 363, "WP_Author_Wordcount", "add_menu", "/author-wordcount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40257, 363, "WP_Author_Wordcount", "plugin_settings_page", "/author-wordcount.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3452, 363, "widgets_init", "'register_author_wordcount'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3453, 363, "admin_menu", "array($this,'add_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3454, 363, "init", "array($this,'load_plugin_textdomain')", 10, now(), now());

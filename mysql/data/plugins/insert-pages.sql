@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2259, "Insert Pages", "4.1.1", "trunk", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329853, 2259, "InsertPagesPlugin", "getPageID", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329854, 2259, "InsertPagesPlugin", "insertPages_admin_init", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329855, 2259, "InsertPagesPlugin", "setPageID", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329856, 2259, "InsertPagesPlugin", "insertPages_handleFilter_mceButtons", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329857, 2259, "InsertPagesPlugin", "insertPages_handleShortcode_insert", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329858, 2259, "InsertPagesPlugin", "insertPages_handleFilter_mceExternalPlugins", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329859, 2259, "InsertPagesPlugin", "insertPages_wp_tinymce_dialog", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329860, 2259, "InsertPagesPlugin", "insertPages_insert_page_callback", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329861, 2259, "InsertPagesPlugin", "insertPages_init", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329862, 2259, "InsertPagesPlugin", "InsertPagesPlugin", "/insert-pages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329863, 2259, "InsertPagesPlugin", "insertPages_wp_query", "/insert-pages.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23735, 2259, "admin_head", "array($insertPages_plugin,'insertPages_admin_init')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23736, 2259, "before_wp_tiny_mce", "array($insertPages_plugin,'insertPages_wp_tinymce_dialog')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23737, 2259, "init", "array($insertPages_plugin,'insertPages_init')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23738, 2259, "wp_ajax_insertpage", "array($insertPages_plugin,'insertPages_insert_page_callback')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7827, 2259, "mce_external_plugins", "array($this,'insertPages_handleFilter_mceExternalPlugins')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7828, 2259, "mce_buttons", "array($this,'insertPages_handleFilter_mceButtons')", 10, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4516, "Plugin Name", "4.1", "security, checker, tool, wordpress, wordpress.org", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560727, 4516, "TZGuard", "tzguard_i18n", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560728, 4516, "TZGuard", "__construct", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560729, 4516, "TZGuard", "convertip", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560730, 4516, "TZGuard", "themecheck_add_page", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560731, 4516, "TZGuard", "getTraffic", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560732, 4516, "TZGuard", "admin_help", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560733, 4516, "TZGuard", "check_securitycode", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560734, 4516, "TZ_Guard_Browser_Detect", "which_os", "/helpers/browser_detection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560735, 4516, "TZGuard", "register_mysettings", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560736, 4516, "TZ_Guard_Browser_Detect", "browser_version", "/helpers/browser_detection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560737, 4516, "TZGuard", "getRealIpAddr", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560738, 4516, "TZ_Guard_Browser_Detect", "browser_detection", "/helpers/browser_detection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560739, 4516, "TZGuard", "onlydomain", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560740, 4516, "TZGuard", "getconfig", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560741, 4516, "TZGuard", "getServer", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560742, 4516, "TZGuard", "black_ip", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560743, 4516, "TZGuard", "is_login_page", "/tz-guard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (560744, 4516, "TZGuard", "check_blacklist_bot", "/tz-guard.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48314, 4516, "admin_init", "array($this,'tzguard_i18n')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48315, 4516, "admin_menu", "array($this,'themecheck_add_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48316, 4516, "init", "array($this,'check_securitycode')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48317, 4516, "init", "array($this,'check_blacklist_bot')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48318, 4516, "admin_init", "array($this,'register_mysettings')", 10, now(), now());

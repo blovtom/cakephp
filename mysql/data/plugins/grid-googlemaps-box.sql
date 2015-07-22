@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2018, "Grid GoogleMaps Box", "4.1", "1.0.1", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38964, 2018, "grid_gmaps_box_load", "/grid-gmaps-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38965, 2018, "grid_gmaps_box_tempaltes_path", "/grid-gmaps-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38966, 2018, "grid_gmaps_box_editor_widgets", "/grid-gmaps-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (321381, 2018, "grid_gmaps_box", "contentStructure", "/boxes/grid-gmaps-box.inc", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (321382, 2018, "grid_gmaps_box", "build", "/boxes/grid-gmaps-box.inc", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (321383, 2018, "grid_gmaps_box", "__construct", "/boxes/grid-gmaps-box.inc", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (321384, 2018, "grid_gmaps_box", "type", "/boxes/grid-gmaps-box.inc", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22034, 2018, "grid_load_classes", "'grid_gmaps_box_load'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7329, 2018, "grid_editor_widgets", "'grid_gmaps_box_editor_widgets'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7330, 2018, "grid_templates_paths", "'grid_gmaps_box_tempaltes_path'", 10, now(), now());

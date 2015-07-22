@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (62, "Acurax On Click Pop Under", "4.1.1", "trunk", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (783, 62, "enqueue_acx_popunder_script", "/acx_onclick_popunder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (784, 62, "acx_onclick_popunder_admin_actions", "/acx_onclick_popunder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (785, 62, "acx_onclick_popunder_render_list_page", "/acx_onclick_popunder_admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (786, 62, "acx_onclick_popunder_admin", "/acx_onclick_popunder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3378, 62, "Acx_Onclick_Popunder_My_List_Table", "acx_onclick_popunder_usort_reorder", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3379, 62, "Acx_Onclick_Popunder_My_List_Table", "acx_onclick_popunder_get_sortable_columns", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3380, 62, "Acx_Onclick_Popunder_My_List_Table", "acx_onclick_popunder_get_columns", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3381, 62, "Acx_Onclick_Popunder_My_List_Table", "no_items", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3382, 62, "Acx_Onclick_Popunder_My_List_Table", "__construct", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3383, 62, "Acx_Onclick_Popunder_My_List_Table", "acx_onclick_popunder_prepare_items", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3384, 62, "Acx_Onclick_Popunder_My_List_Table", "column_default", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3385, 62, "Acx_Onclick_Popunder_My_List_Table", "column_URL", "/acx_onclick_popunder_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3386, 62, "Acx_Onclick_Popunder_My_List_Table", "acx_onclick_popunder_data", "/acx_onclick_popunder_admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (509, 62, "admin_menu", "'acx_onclick_popunder_admin_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (510, 62, "get_footer", "'enqueue_acx_popunder_script'", 10, now(), now());

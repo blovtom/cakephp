@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (752, "Catch IDs", "4.1", "1.2.3", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16852, 752, "catchids_return_value", "/catch-ids.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16853, 752, "catchids_css", "/catch-ids.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16854, 752, "catchids_add", "/catch-ids.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16855, 752, "catchids_column", "/catch-ids.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16856, 752, "catchids_value", "/catch-ids.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8458, 752, "admin_init", "'catchids_add'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8459, 752, "manage_users_columns", "'catchids_column'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8460, 752, "manage_edit-link-categories_columns", "'catchids_column'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8461, 752, "manage_link_custom_column", "'catchids_value'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8462, 752, "manage_edit-comments_columns", "'catchids_column'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8463, 752, "manage_posts_custom_column", "'catchids_value'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8464, 752, "manage_comments_custom_column", "'catchids_value'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8465, 752, "admin_head", "'catchids_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8466, 752, "manage_pages_custom_column", "'catchids_value'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8467, 752, "manage_media_custom_column", "'catchids_value'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3001, 752, "manage_link_categories_custom_column", "'catchids_return_value'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3002, 752, "manage_users_custom_column", "'catchids_return_value'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3003, 752, "manage_posts_columns", "'catchids_column'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3004, 752, "manage_link-manager_columns", "'catchids_column'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3005, 752, "manage_pages_columns", "'catchids_column'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3006, 752, "manage_media_columns", "'catchids_column'", 10, now(), now());

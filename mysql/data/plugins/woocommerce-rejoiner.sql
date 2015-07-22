@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4956, "WooCommerce Rejoiner", "4.1.1", "1.2.3", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85416, 4956, "wc_rejoiner", "/woocommerce-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629608, 4956, "WC_Rejoiner", "rejoiner_encode", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629609, 4956, "WC_Rejoiner", "__construct", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629610, 4956, "WC_Rejoiner", "format_description", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629611, 4956, "WC_Rejoiner", "format_money", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629612, 4956, "WC_Rejoiner", "escape_for_json", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629613, 4956, "WC_Rejoiner", "rejoiner_conversion_code", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629614, 4956, "WC_Rejoiner", "init_form_fields", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629615, 4956, "WC_Rejoiner", "format_image_url", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629616, 4956, "WC_Rejoiner", "build_rejoiner_push", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629617, 4956, "WC_Rejoiner", "rejoiner_tracking_code", "/includes/class-wc-rejoiner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (629618, 4956, "WC_Rejoiner", "refill_cart", "/includes/class-wc-rejoiner.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53365, 4956, "init", "array($this,'refill_cart')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53366, 4956, "wp_footer", "array($this,'rejoiner_tracking_code')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53367, 4956, "woocommerce_update_options_integration_wc_rejoiner", "array($this,'process_admin_options')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53368, 4956, "woocommerce_thankyou", "array($this,'rejoiner_conversion_code')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18267, 4956, "woocommerce_integrations", "'wc_rejoiner'", 10, now(), now());

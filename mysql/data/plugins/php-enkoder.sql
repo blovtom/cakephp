@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3158, "PHPEnkoder", "4.1", "1.13", "2.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56742, 3158, "enkoder_conf", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56743, 3158, "enkode_plaintext_emails", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56744, 3158, "enk_hide_emails", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56745, 3158, "enkode_pass", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56746, 3158, "enkode_mailtos", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56747, 3158, "enkoder_manage_single", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56748, 3158, "enkoder_unregister_filters", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56749, 3158, "enkoder_manage_filters", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56750, 3158, "enkoder_config_page", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56751, 3158, "enk_enc_swap", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56752, 3158, "mb_addslashes", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56753, 3158, "enk_extract_linktext", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56754, 3158, "enk_enc_num", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56755, 3158, "enk_enc_reverse", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56756, 3158, "enk_enc_at", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56757, 3158, "enk_shortcode_handler", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56758, 3158, "enk_email_to_link", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56759, 3158, "enkode", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56760, 3158, "enkoder_manage_multi", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56761, 3158, "enk_build_js", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56762, 3158, "enk_hide_link", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56763, 3158, "enkode_mailto", "/enkoder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56764, 3158, "enk_mailto_to_linktext", "/enkoder.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34377, 3158, "admin_init", "'enkoder_unregister_filters'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34378, 3158, "admin_menu", "'enkoder_config_page'", 10, now(), now());

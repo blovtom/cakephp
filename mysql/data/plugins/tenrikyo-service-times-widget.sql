@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4332, "Tenrikyo Service Times Widget", "4.1", "4.3", "2.0.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75781, 4332, "trst_load_widgets", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546099, 4332, "trServiceTimes", "update", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546100, 4332, "trServiceTimes", "__construct", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546101, 4332, "trServiceTimes", "widget", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546102, 4332, "trServiceTimes", "trans", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546103, 4332, "trServiceTimes", "getAnnualEvent", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546104, 4332, "trServiceTimes", "form", "/tenrikyo-service-times-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (546105, 4332, "trServiceTimes", "_displayServiceTimes", "/tenrikyo-service-times-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46465, 4332, "widgets_init", "'trst_load_widgets'", 10, now(), now());

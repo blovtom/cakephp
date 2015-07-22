@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1156, "Customize Login Image", "4.0.0", "2.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23719, 1156, "cli_custom_css", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23720, 1156, "cli_logo_title", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23721, 1156, "cli_plugin_action_links", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23722, 1156, "cli_create_menu", "/customize-login-image-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23723, 1156, "cli_login_background_color", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23724, 1156, "cli_settings_page", "/customize-login-image-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23725, 1156, "cli_logo_file", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23726, 1156, "cli_admin_styles", "/customize-login-image-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23727, 1156, "cli_load_language", "/customize-login-image-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23728, 1156, "cli_register_settings", "/customize-login-image-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23729, 1156, "cli_logo_url", "/customize-login-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23730, 1156, "cli_admin_scripts", "/customize-login-image-options.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12868, 1156, "admin_menu", "'cli_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12869, 1156, "login_head", "'cli_logo_file'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12870, 1156, "admin_print_styles", "'cli_admin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12871, 1156, "admin_init", "'cli_load_language'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12872, 1156, "login_head", "'cli_custom_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12873, 1156, "admin_init", "'cli_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12874, 1156, "admin_print_scripts", "'cli_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12875, 1156, "login_head", "'cli_login_background_color'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4420, 1156, "login_headerurl", "'cli_logo_url'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4421, 1156, "login_headertitle", "'cli_logo_title'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4422, 1156, "plugin_action_links", "'cli_plugin_action_links'", 10, now(), now());

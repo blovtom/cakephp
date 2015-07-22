@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2028, "GSY Content Filter", "4.1", "trunk", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322595, 2028, "GSY_Content_Filter", "old_word_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322596, 2028, "GSY_Content_Filter", "sanitize", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322597, 2028, "GSY_Content_Filter", "page_init", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322598, 2028, "GSY_Content_Filter", "case_sensitive_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322599, 2028, "GSY_Content_Filter", "__construct", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322600, 2028, "GSY_Content_Filter", "the_title_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322601, 2028, "GSY_Content_Filter", "add_filters", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322602, 2028, "GSY_Content_Filter", "the_tags_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322603, 2028, "GSY_Content_Filter", "print_section_info", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322604, 2028, "GSY_Content_Filter", "filter_type_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322605, 2028, "GSY_Content_Filter", "new_word_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322606, 2028, "GSY_Content_Filter", "add_plugin_page", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322607, 2028, "GSY_Content_Filter", "the_content_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322608, 2028, "GSY_Content_Filter", "gsy_content_filter_add_styles", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322609, 2028, "GSY_Content_Filter", "the_excerpt_callback", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322610, 2028, "GSY_Content_Filter", "gsy_content_filter_add_scripts", "/includes/class-gsy-content-filter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (322611, 2028, "GSY_Content_Filter", "create_admin_page", "/includes/class-gsy-content-filter.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22068, 2028, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22069, 2028, "admin_enqueue_scripts", "array($this,'gsy_content_filter_add_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22070, 2028, "admin_enqueue_scripts", "array($this,'gsy_content_filter_add_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22071, 2028, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7347, 2028, "the_excerpt", "array($this,'the_excerpt_callback')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7348, 2028, "the_content", "array($this,'the_content_callback')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7349, 2028, "the_tags", "array($this,'the_tags_callback')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7350, 2028, "the_title", "array($this,'the_title_callback')", 10, now(), now());

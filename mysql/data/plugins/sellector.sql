@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3771, "Sellector", "4.1.1", "0.0.2", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66991, 3771, "sellector_selectbox_shortcode_translator", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66992, 3771, "add_sellector_meta_box", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66993, 3771, "get_sellector_posts", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66994, 3771, "add_sellector_meta_boxes", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66995, 3771, "sellector_post", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66996, 3771, "sellector_button_css", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66997, 3771, "save_sellector_fields", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66998, 3771, "sellector_register_add_button", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66999, 3771, "sellector_add_tinymce_plugin", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (67000, 3771, "sellector_register_buttons", "/sellector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (67001, 3771, "sellector_resultbox_shortcode_translator", "/sellector.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40829, 3771, "admin_head", "'sellector_register_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40830, 3771, "admin_init", "'add_sellector_meta_boxes'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40831, 3771, "admin_enqueue_scripts", "'sellector_button_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40832, 3771, "init", "'sellector_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40833, 3771, "save_post", "'save_sellector_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40834, 3771, "wp_ajax_get_sellector_posts", "'get_sellector_posts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13929, 3771, "mce_buttons", "'sellector_register_add_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13930, 3771, "mce_external_plugins", "'sellector_add_tinymce_plugin'", 10, now(), now());

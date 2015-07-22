@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (252, "amazon-product-price", "4.0", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3899, 252, "price_handler", "/amazon-product-price.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3900, 252, "amproductprice_install", "/amazon-product-price.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3901, 252, "amazon_setting", "/amazon-product-price.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3902, 252, "add_settings_menu", "/amazon-product-price.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3903, 252, "am_setting_url", "/amazon-product-price.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3904, 252, "aws_signed_request", "/includes/aws_signed_request.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (20667, 252, "AmazonProductAPI", "getItemByKeyword", "/includes/amazon_api_class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (20668, 252, "AmazonProductAPI", "searchProducts", "/includes/amazon_api_class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (20669, 252, "AmazonProductAPI", "getItemByUpc", "/includes/amazon_api_class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (20670, 252, "AmazonProductAPI", "getItemByAsin", "/includes/amazon_api_class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2211, 252, "admin_menu", "'add_settings_menu'", 10, now(), now());

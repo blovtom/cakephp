@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (901, "WP CN Excerpt", "4.1", NULL, "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18998, 901, "the_advanced_excerpt", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84400, 901, "AdvancedCNExcerpt", "install", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84401, 901, "AdvancedCNExcerpt", "adminPage", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84402, 901, "AdvancedCNExcerpt", "uninstall", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84403, 901, "AdvancedCNExcerpt", "instance", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84404, 901, "AdvancedCNExcerpt", "optionPage", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84405, 901, "AdvancedCNExcerpt", "pluginLinks", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84406, 901, "AdvancedCNExcerpt", "pageScript", "/wp-cn-excerpt.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (84407, 901, "AdvancedCNExcerpt", "filter", "/wp-cn-excerpt.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9864, 901, "admin_menu", "array($this,'adminPage')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3362, 901, "the_excerpt", "array($this,'filter')", 99999999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3363, 901, "plugin_action_links", "array($this,'pluginLinks')", 10, now(), now());

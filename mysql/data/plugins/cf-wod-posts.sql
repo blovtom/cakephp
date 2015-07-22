@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (779, "CF WOD Posts", "4.1", "1.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17131, 779, "cf_wod_custom_posts_word_trimmer", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17132, 779, "cf_wod_initialize_wod_options", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17133, 779, "cf_wod_create_post_type", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17134, 779, "toggle_wods_main_query_callback", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17135, 779, "cf_wods_custom_shortcode", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17136, 779, "cf_wod_add_shortcode", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17137, 779, "cf_wod_settings_callback", "/cf-wod.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17138, 779, "cf_wod_add_my_post_types_to_query", "/cf-wod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (68273, 779, "WODPostsContent", "form", "/cf-wod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (68274, 779, "WODPostsContent", "update", "/cf-wod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (68275, 779, "WODPostsContent", "widget", "/cf-wod.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (68276, 779, "WODPostsContent", "WODPostsContent", "/cf-wod.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8692, 779, "init", "'cf_wod_add_shortcode'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8693, 779, "init", "'cf_wod_create_post_type'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8694, 779, "admin_init", "'cf_wod_initialize_wod_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8695, 779, "pre_get_posts", "'cf_wod_add_my_post_types_to_query'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8696, 779, "widgets_init", "create_function('','return register_widget("WODPostsContent");')", 10, now(), now());

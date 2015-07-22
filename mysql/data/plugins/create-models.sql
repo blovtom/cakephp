@@ -1,0 +1,48 @@
+CREATE TABLE plugins (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50),
+  testedUpTo VARCHAR(50),
+  stableTag VARCHAR(50),
+  requiresAtLeast VARCHAR(50),
+  created DATETIME DEFAULT NULL,
+  modified DATETIME DEFAULT NULL
+);
+
+CREATE TABLE functions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  plugin_id INT UNSIGNED,
+  function_name VARCHAR(255),
+  function_loc VARCHAR(255),
+  created DATETIME DEFAULT NULL,
+  modified DATETIME DEFAULT NULL
+);
+
+CREATE TABLE methods (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  plugin_id INT UNSIGNED,
+  class_name VARCHAR(255),
+  method_name VARCHAR(255),
+  method_loc VARCHAR(255),
+  created DATETIME DEFAULT NULL,
+  modified DATETIME DEFAULT NULL
+);
+
+CREATE TABLE hooks (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  plugin_id INT UNSIGNED,
+  hook_name VARCHAR(255),
+  hook_callback VARCHAR(255),
+  hook_priority INT UNSIGNED,
+  created DATETIME DEFAULT NULL,
+  modified DATETIME DEFAULT NULL
+);
+
+CREATE TABLE filters (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  plugin_id INT UNSIGNED,
+  tag_name VARCHAR(255),
+  filter_callback VARCHAR(255),
+  filter_priority INT UNSIGNED,
+  created DATETIME DEFAULT NULL,
+  modified DATETIME DEFAULT NULL
+);

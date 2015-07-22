@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2187, "Image Annotations", "4.1", "1.03", "3.8.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40739, 2187, "ia_admin_page", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40740, 2187, "ia_admin_init", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40741, 2187, "ia_add_form", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40742, 2187, "ia_add_text", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40743, 2187, "ia_add_scripts", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40744, 2187, "ia_register_menu", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40745, 2187, "ia_changepar", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40746, 2187, "ia_delete_text", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40747, 2187, "ia_add_style", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40748, 2187, "ia_getcolor", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40749, 2187, "ia_init", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40750, 2187, "ia_display_annotation", "/image-annotations.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40751, 2187, "ia_edit_text", "/image-annotations.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23206, 2187, "admin_init", "'ia_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23207, 2187, "wp_ajax_edit_annotation", "'ia_edit_text'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23208, 2187, "admin_menu", "'ia_register_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23209, 2187, "wp_ajax_add_annotation", "'ia_add_text'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23210, 2187, "wp_enqueue_scripts", "'ia_add_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23211, 2187, "plugins_loaded", "'ia_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23212, 2187, "wp_ajax_del_annotation", "'ia_delete_text'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23213, 2187, "wp_enqueue_scripts", "'ia_add_style'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7631, 2187, "comments_array", "'ia_display_annotation'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7632, 2187, "the_content", "'ia_add_form'", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4513, "Typekit Fonts for WordPress", "4.1", "1.7.1", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559584, 4513, "OM4_Typekit", "GetAccountID", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559585, 4513, "OM4_Typekit", "GetEmbedCode", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559586, 4513, "OM4_Typekit", "GetCSSRules", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559587, 4513, "OM4_Typekit_Admin", "AdminMenu", "/typekit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559588, 4513, "OM4_Typekit", "SaveSettings", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559589, 4513, "OM4_Typekit", "OM4_Typekit", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559590, 4513, "OM4_Typekit", "Activate", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559591, 4513, "OM4_Typekit", "HeaderCode", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559592, 4513, "OM4_Typekit", "Initialise", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559593, 4513, "OM4_Typekit", "CheckVersion", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559594, 4513, "OM4_Typekit_Admin", "OM4_Typekit_Admin", "/typekit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559595, 4513, "OM4_Typekit", "SetCSSRules", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559596, 4513, "OM4_Typekit", "LoadDomain", "/typekit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559597, 4513, "OM4_Typekit_Admin", "AdminPage", "/typekit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559598, 4513, "OM4_Typekit", "ParseEmbedCode", "/typekit.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48146, 4513, "wp_head", "array($this,'HeaderCode')", 99, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48147, 4513, "admin_menu", "array(&$this,'AdminMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48148, 4513, "init", "array($this,'Initialise')", 10, now(), now());

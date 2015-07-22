@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (747, "Casals Online SEO", "4.2", NULL, "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16731, 747, "cos_add_user_bio_box", "/functions/filters.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16732, 747, "cos_meta_box_callback", "/functions/metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16733, 747, "meta_box_field", "/functions/metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16734, 747, "cos_head", "/functions/actions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16735, 747, "cos_save_meta_box_data", "/functions/metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16736, 747, "cos_add_meta_box", "/functions/metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16737, 747, "cos_menu", "/functions/actions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16738, 747, "cos_enqueue_scripts", "/functions/actions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16739, 747, "cos_save_extra_profile_fields", "/functions/actions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16740, 747, "cos_extra_user_details", "/functions/actions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16741, 747, "cos_construct_user_bio_box", "/functions/filters.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16742, 747, "admin_config_page", "/functions/actions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8420, 747, "edit_user_profile", "'cos_extra_user_details'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8421, 747, "personal_options_update", "'cos_save_extra_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8422, 747, "add_meta_boxes", "'cos_add_meta_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8423, 747, "show_user_profile", "'cos_extra_user_details'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8424, 747, "admin_menu", "'cos_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8425, 747, "edit_user_profile_update", "'cos_save_extra_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8426, 747, "wp_head", "'cos_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8427, 747, "save_post", "'cos_save_meta_box_data'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8428, 747, "wp_enqueue_scripts", "'cos_enqueue_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2988, 747, "the_content", "'cos_add_user_bio_box'", 15, now(), now());

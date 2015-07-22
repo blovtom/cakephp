@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4912, "Plugin Name", "4.1", "2.3.3", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85013, 4912, "woocommerce_pis_init", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85014, 4912, "woocommerce_add_pis_gateway", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623938, 4912, "WC_Gateway_PIS", "is_available", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623939, 4912, "WC_Gateway_PIS", "__construct", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623940, 4912, "WC_Gateway_PIS", "thankyou_page", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623941, 4912, "WC_Gateway_PIS", "init_form_fields", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623942, 4912, "WC_Gateway_PIS", "email_instructions", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623943, 4912, "WC_Gateway_PIS", "process_payment", "/woocommerce-payment-gateway-pis.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52942, 4912, "woocommerce_thankyou_pis", "array($this,'thankyou_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52943, 4912, "woocommerce_email_before_order_table", "array($this,'email_instructions')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52944, 4912, "plugins_loaded", "'woocommerce_pis_init'", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18078, 4912, "woocommerce_payment_gateways", "'woocommerce_add_pis_gateway'", 10, now(), now());

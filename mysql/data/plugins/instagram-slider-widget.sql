@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2266, "Instagram Slider Widget", "4.1", NULL, "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329944, 2266, "JR_InstagramSlider", "sort_timestamp_DESC", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329945, 2266, "JR_InstagramSlider", "instagram_images", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329946, 2266, "JR_InstagramSlider", "shortcode", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329947, 2266, "JR_InstagramSlider", "register_widget", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329948, 2266, "JR_InstagramSlider", "insta_attachment_fields", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329949, 2266, "JR_InstagramSlider", "unblock_images", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329950, 2266, "JR_InstagramSlider", "sort_timestamp_ASC", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329951, 2266, "JR_InstagramSlider", "admin_enqueue", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329952, 2266, "JR_InstagramSlider", "form", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329953, 2266, "JR_InstagramSlider", "widget", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329954, 2266, "JR_InstagramSlider", "delete_wp_attachment", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329955, 2266, "JR_InstagramSlider", "update", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329956, 2266, "JR_InstagramSlider", "sort_popularity_DESC", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329957, 2266, "JR_InstagramSlider", "selected", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329958, 2266, "JR_InstagramSlider", "__construct", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329959, 2266, "JR_InstagramSlider", "sort_popularity_ASC", "/instaram_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329960, 2266, "JR_InstagramSlider", "public_enqueue", "/instaram_slider.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23756, 2266, "admin_enqueue_scripts", "array($this,'admin_enqueue')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23757, 2266, "wp_ajax_jr_unblock_images", "array($this,'unblock_images')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23758, 2266, "jr_instagram", "array($this,'instagram_images')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23759, 2266, "delete_attachment", "array($this,'delete_wp_attachment')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23760, 2266, "widgets_init", "array('JR_InstagramSlider','register_widget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23761, 2266, "wp_enqueue_scripts", "array($this,'public_enqueue')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7832, 2266, "attachment_fields_to_edit", "array($this,'insta_attachment_fields')", 10, now(), now());

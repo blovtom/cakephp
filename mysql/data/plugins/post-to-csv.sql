@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3268, "Post To CSV", "4.1.1", "1.2.3", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59026, 3268, "psttcsv_print_scv", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59027, 3268, "psttcsv_register_plugin_links", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59028, 3268, "psttcsv_version_check", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59029, 3268, "psttcsv_plugin_action_links", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59030, 3268, "bws_plugin_init", "/bws_menu/bws_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59031, 3268, "psttcsv_plugin_init", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59032, 3268, "psttcsv_settings_page", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59033, 3268, "bws_admin_enqueue_scripts", "/bws_menu/bws_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59034, 3268, "bws_add_menu_render", "/bws_menu/bws_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59035, 3268, "psttcsv_plugin_admin_init", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59036, 3268, "psttcsv_plugin_uninstall", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59037, 3268, "bws_admin_head", "/bws_menu/bws_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59038, 3268, "add_psttcsv_admin_menu", "/post-to-csv.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (59039, 3268, "register_psttcsv_settings", "/post-to-csv.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36115, 3268, "admin_menu", "'add_psttcsv_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36116, 3268, "admin_init", "'bws_plugin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36117, 3268, "admin_init", "'psttcsv_plugin_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36118, 3268, "init", "'psttcsv_plugin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36119, 3268, "admin_head", "'bws_admin_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36120, 3268, "admin_enqueue_scripts", "'bws_admin_enqueue_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12226, 3268, "plugin_action_links", "'psttcsv_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12227, 3268, "plugin_row_meta", "'psttcsv_register_plugin_links'", 10, now(), now());

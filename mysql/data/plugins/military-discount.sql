@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2721, "Plugin Name", "4.1", "4.3", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371251, 2721, "gruntroll", "hook_footer", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371252, 2721, "gruntroll", "hide_other_coupons", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371253, 2721, "gruntroll", "add_admin_page", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371254, 2721, "gruntroll", "deleteOld", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371255, 2721, "gruntroll", "hook_before_checkout", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371256, 2721, "gruntroll", "hook_discount_label", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371257, 2721, "gruntroll", "show_admin_page", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371258, 2721, "gruntroll", "__construct", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371259, 2721, "gruntroll", "filter_success_message", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371260, 2721, "gruntroll", "add_settings_link", "/gr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371261, 2721, "gruntroll", "hook_verify_and_apply", "/gr.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29548, 2721, "wp_footer", "array($this,'hook_footer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29549, 2721, "wp_ajax_nopriv_grverify", "array($this,'hook_verify_and_apply')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29550, 2721, "admin_menu", "array($this,'add_admin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29551, 2721, "woocommerce_before_checkout_form", "array($this,'hook_before_checkout')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29552, 2721, "wp_ajax_grverify", "array($this,'hook_verify_and_apply')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29553, 2721, "woocommerce_cart_totals_coupon_label", "array($this,'hook_discount_label')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9804, 2721, "woocommerce_coupons_enabled", "array($this,'hide_other_coupons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9805, 2721, "plugin_action_links", "array($this,'add_settings_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9806, 2721, "woocommerce_coupon_message", "array($this,'filter_success_message')", 10, now(), now());

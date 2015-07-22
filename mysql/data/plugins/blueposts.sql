@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (568, "Blueposts for WordPress", "4.1", "1.0.0", "3.5.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9760, 568, "run_Blueposts", "/blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53942, 568, "Blueposts_Deactivator", "deactivate", "/includes/class-blueposts-deactivator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53943, 568, "Blueposts_Shortcodes", "setup_shortcodes", "/includes/class-blueposts-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53944, 568, "Blueposts_Shortcodes", "__construct", "/includes/class-blueposts-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53945, 568, "Blueposts", "get_version", "/includes/class-blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53946, 568, "Blueposts", "get_Blueposts", "/includes/class-blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53947, 568, "Blueposts_Activator", "activate", "/includes/class-blueposts-activator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53948, 568, "Blueposts", "__construct", "/includes/class-blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53949, 568, "Blueposts_Loader", "add_action", "/includes/class-blueposts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53950, 568, "Blueposts_Admin", "enqueue_styles", "/admin/class-blueposts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53951, 568, "Blueposts_Public", "enqueue_styles", "/public/class-blueposts-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53952, 568, "Blueposts_Loader", "add_filter", "/includes/class-blueposts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53953, 568, "Blueposts_Admin", "enqueue_scripts", "/admin/class-blueposts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53954, 568, "Blueposts", "run", "/includes/class-blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53955, 568, "Blueposts_i18n", "load_plugin_textdomain", "/includes/class-blueposts-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53956, 568, "Blueposts_Admin", "__construct", "/admin/class-blueposts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53957, 568, "Blueposts_i18n", "set_domain", "/includes/class-blueposts-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53958, 568, "Blueposts_Public", "__construct", "/public/class-blueposts-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53959, 568, "Blueposts_Public", "enqueue_scripts", "/public/class-blueposts-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53960, 568, "Blueposts", "get_loader", "/includes/class-blueposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53961, 568, "Blueposts_Loader", "__construct", "/includes/class-blueposts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53962, 568, "Blueposts_Loader", "run", "/includes/class-blueposts-loader.php", now(), now());
+

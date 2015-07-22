@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (414, "Plugin Name", "4.2", "trunk", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6639, 414, "awesome_weather_setup", "/awesome-weather.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6640, 414, "awesome_weather_error", "/awesome-weather.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6641, 414, "awesome_weather_logic", "/awesome-weather.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6642, 414, "awesome_weather_wp_head", "/awesome-weather.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6643, 414, "awesome_weather_shortcode", "/awesome-weather.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42169, 414, "AwesomeWeatherWidget", "update", "/awesome-weather.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42170, 414, "AwesomeWeatherWidget", "form", "/awesome-weather.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42171, 414, "AwesomeWeatherWidget", "AwesomeWeatherWidget", "/awesome-weather.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42172, 414, "AwesomeWeatherWidget", "widget", "/awesome-weather.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3954, 414, "widgets_init", "create_function('','return register_widget("AwesomeWeatherWidget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3955, 414, "plugins_loaded", "'awesome_weather_setup'", 99999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3956, 414, "wp_enqueue_scripts", "'awesome_weather_wp_head'", 10, now(), now());

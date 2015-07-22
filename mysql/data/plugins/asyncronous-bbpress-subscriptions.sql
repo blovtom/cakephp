@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (343, "AsynCRONous bbPress Subscriptions", "4.1.1", "1.0", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5664, 343, "abbps_notify_forum_subscribers", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5665, 343, "abbps_mail", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5666, 343, "abbps_notify_subscribers", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37935, 343, "ABBPSEmail", "__construct", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37936, 343, "ABBPSNewReply", "__construct", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37937, 343, "ABBPSEmail", "schedule_sending", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37938, 343, "ABBPSEmail", "add_recipient", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37939, 343, "ABBPSNewTopic", "__construct", "/asyncronous-bbpress-subscriptions.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3236, 343, "bbp_new_reply", "'abbps_notify_subscribers'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3237, 343, "abbps_sending_time", "'abbps_mail'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3238, 343, "bbp_new_topic", "'abbps_notify_forum_subscribers'", 11, now(), now());

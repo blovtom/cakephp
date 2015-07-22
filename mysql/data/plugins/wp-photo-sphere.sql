@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5328, "WP Photo Sphere", "4.1", "3.0.2", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93109, 5328, "wpps_sanitize_settings", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93110, 5328, "wpps_sanitize_size", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93111, 5328, "wpps_style_for_textarea", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93112, 5328, "wpps_options_page", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93113, 5328, "wpps_lang", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93114, 5328, "wpps_sanitize_style", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93115, 5328, "wpps_register_scripts", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93116, 5328, "wpps_add_pano_button", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93117, 5328, "wpps_activation", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93118, 5328, "wpps_create_menu", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93119, 5328, "wpps_shortcode_attributes", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93120, 5328, "wpps_enqueue_admin_scripts", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93121, 5328, "wpps_handle_shortcode", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93122, 5328, "wpps_deactivation", "/wp-photo-sphere.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93123, 5328, "wpps_register_settings", "/wp-photo-sphere.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57760, 5328, "admin_init", "'wpps_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57761, 5328, "plugins_loaded", "'wpps_register_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57762, 5328, "plugins_loaded", "'wpps_lang'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57763, 5328, "admin_menu", "'wpps_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57764, 5328, "wp_enqueue_media", "'wpps_enqueue_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57765, 5328, "media_buttons", "'wpps_add_pano_button'", 15, now(), now());

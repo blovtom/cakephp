@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2690, "Mention comment's Authors by Wabeo", "4.1", "0.9.7", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49103, 2690, "mca_printnames", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49104, 2690, "mca_enqueue_admin_comments_scripts", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49105, 2690, "mca_get_previous_commentators", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49106, 2690, "mca_enqueue_comments_scripts", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49107, 2690, "mca_admin_get_previous_commentators", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49108, 2690, "mca_comment_admin_callback", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49109, 2690, "mca_modify_comment_excerpt", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49110, 2690, "mca_email_poked_ones", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49111, 2690, "mca_modify_comment_text", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49112, 2690, "mca_comment_callback", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49113, 2690, "mca_maybe_email_poked_ones", "/mention-comments-authors.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49114, 2690, "mca_lang_init", "/mention-comments-authors.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29290, 2690, "comment_post", "'mca_email_poked_ones'", 90, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29291, 2690, "init", "'mca_lang_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29292, 2690, "admin_enqueue_scripts", "'mca_enqueue_admin_comments_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29293, 2690, "wp_enqueue_scripts", "'mca_enqueue_comments_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29294, 2690, "wp_ajax_mca_admin_get_previous_commentators", "'mca_admin_get_previous_commentators'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29295, 2690, "comment_form", "'mca_printnames'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29296, 2690, "wp_set_comment_status", "'mca_maybe_email_poked_ones'", 90, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9751, 2690, "wp_mail_content_type", "create_function('','return "text/html"; ')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9752, 2690, "comment_text", "'mca_modify_comment_text'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9753, 2690, "get_comment_excerpt", "'mca_modify_comment_excerpt'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9754, 2690, "mca_send_email_on_mention", "true", 10, now(), now());

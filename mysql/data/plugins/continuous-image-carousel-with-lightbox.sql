@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1021, "Continuous Image Carousel With Lightbox", NULL, NULL, NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21202, 1021, "continuous_slider_plus_lightbox_admin_notices", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21203, 1021, "continuous_slider_plus_lightbox_load_styles_and_js", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21204, 1021, "continuous_thumbnail_slider_with_lightbox_image_management_func", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21205, 1021, "continuous_thumbnail_slider_with_lightbox_admin_options_func", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21206, 1021, "continuous_slider_plus_lightbox_add_admin_menu", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21207, 1021, "install_continuous_slider_plus_lightbox", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21208, 1021, "print_continuous_slider_plus_lightbox_func", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21209, 1021, "continuous_thumbnail_slider_with_lightbox_admin_preview_func", "/continuous-image-carousel-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21210, 1021, "continuous_slider_plus_lightbox_plugin_admin_init", "/continuous-image-carousel-with-lightbox.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11292, 1021, "admin_menu", "'continuous_slider_plus_lightbox_add_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11293, 1021, "admin_notices", "'continuous_slider_plus_lightbox_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11294, 1021, "wp_enqueue_scripts", "'continuous_slider_plus_lightbox_load_styles_and_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3885, 1021, "widget_text", "'do_shortcode'", 10, now(), now());

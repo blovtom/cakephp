@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4826, "WooCommerce Birthday Reminder", "4.1", "1.0.0", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616598, 4826, "WooCommerce_Birthday_Reminder", "__construct", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616599, 4826, "WooCommerce_Birthday_Reminder", "get_instance", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616600, 4826, "WC_User_Birthday_Email", "init_form_fields", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616601, 4826, "WooCommerce_Birthday_Reminder", "check_birthday", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616602, 4826, "WC_User_Birthday_Email", "get_content_plain", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616603, 4826, "WooCommerce_Birthday_Reminder", "activate", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616604, 4826, "WC_User_Birthday_Email", "trigger", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616605, 4826, "WC_User_Birthday_Email", "__construct", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616606, 4826, "WC_User_Birthday_Email", "trigger_day", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616607, 4826, "WooCommerce_Birthday_Reminder", "plugin_path", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616608, 4826, "WC_User_Birthday_Email", "get_content_html", "/class-wc-user-birthday-email.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616609, 4826, "WooCommerce_Birthday_Reminder", "deactivate", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616610, 4826, "WooCommerce_Birthday_Reminder", "add_user_birthday_email", "/woocommerce-birthday-reminder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616611, 4826, "WC_User_Birthday_Email", "trigger_month", "/class-wc-user-birthday-email.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51773, 4826, "plugins_loaded", "array('WooCommerce_Birthday_Reminder','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51774, 4826, "check-user-birthday", "array($this,'check_birthday')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51775, 4826, "birthdays_users_of_the_day", "array($this,'trigger_day')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51776, 4826, "birthdays_users_of_the_month", "array($this,'trigger_month')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17426, 4826, "woocommerce_email_classes", "array($this,'add_user_birthday_email')", 10, now(), now());

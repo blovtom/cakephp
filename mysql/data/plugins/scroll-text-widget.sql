@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3737, "Plugin Name", "4.1", "1.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66624, 3737, "stw_setting_options", "/ScrollTextWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66625, 3737, "stw_menu_page", "/ScrollTextWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66626, 3737, "st_register_scroll", "/ScrollTextWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66627, 3737, "stw_setting_page", "/ScrollTextWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66628, 3737, "admin_load_js", "/ScrollTextWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66629, 3737, "add_menu_icons_styles", "/ScrollTextWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486765, 3737, "ScrollTextWidget", "__construct", "/ScrollTextWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486766, 3737, "ScrollTextWidget", "widget", "/ScrollTextWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486767, 3737, "ScrollTextWidget", "form", "/ScrollTextWidget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40563, 3737, "widgets_init", "'st_register_scroll'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40564, 3737, "admin_head", "'add_menu_icons_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40565, 3737, "admin_init", "'stw_setting_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40566, 3737, "wp_enqueue_scripts", "'admin_load_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40567, 3737, "admin_menu", "'stw_menu_page'", 10, now(), now());

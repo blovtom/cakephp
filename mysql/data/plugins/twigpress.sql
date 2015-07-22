@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4498, "TwigPress", "4.1", "1.1.2", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78087, 4498, "twigpress_render_twig_template", "/twigpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78088, 4498, "twigpress_get_the_content", "/twigpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (558792, 4498, "TwigPress", "twig_files_not_found_notification", "/class-twigpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (558793, 4498, "TwigPress", "get_instance", "/class-twigpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (558794, 4498, "TwigPress", "render_template", "/class-twigpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (558795, 4498, "TwigPress", "get_chosen_template_name", "/class-twigpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (558796, 4498, "TwigPress", "setup_twig_environment", "/class-twigpress.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48007, 4498, "init", "array($this,'setup_twig_environment')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48008, 4498, "admin_notices", "array($this,'twig_files_not_found_notification')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16151, 4498, "template_include", "array($this,'get_chosen_template_name')", 10, now(), now());

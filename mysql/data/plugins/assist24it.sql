@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (340, "Assist24 Help Desk", "4.0", "trunk", "3.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5644, 340, "elapp_add_defaults", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5645, 340, "elapp_plugin_action_links", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5646, 340, "elapp_i18n_init", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5647, 340, "elapp_render_form", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5648, 340, "elapp_add_options_page", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5649, 340, "assist24_room_code", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5650, 340, "elapp_delete_plugin_options", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5651, 340, "add_elapp_links", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5652, 340, "elapp_validate_options", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5653, 340, "elapp_init", "/el-assist24.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5654, 340, "elapp_require_wp_version", "/el-assist24.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3226, 340, "wp_head", "'assist24_room_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3227, 340, "wp_footer", "'assist24_room_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3228, 340, "plugins_loaded", "'elapp_i18n_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3229, 340, "admin_menu", "'elapp_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3230, 340, "admin_init", "'elapp_require_wp_version'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3231, 340, "admin_init", "'elapp_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1013, 340, "plugin_action_links", "'elapp_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1014, 340, "plugin_row_meta", "'add_elapp_links'", 10, now(), now());

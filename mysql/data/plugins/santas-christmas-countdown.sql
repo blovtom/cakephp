@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3703, "Christmas Countdown Widget", "4.0", "2.5", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66185, 3703, "cw_CountDownShortcode_left", "/xmascount.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66186, 3703, "cw_CountDownShortcode_right", "/xmascount.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66187, 3703, "cw_CountDownShortcode_center", "/xmascount.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66188, 3703, "cw_santas_countdown_scripts", "/xmascount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485395, 3703, "cw_axmascount", "cw_axmascount", "/xmascount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485396, 3703, "cw_axmascount", "form", "/xmascount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485397, 3703, "cw_axmascount", "widget", "/xmascount.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485398, 3703, "cw_axmascount", "update", "/xmascount.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40301, 3703, "widgets_init", "create_function('','return register_widget("cw_axmascount");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40302, 3703, "wp_enqueue_scripts", "'cw_santas_countdown_scripts'", 10, now(), now());

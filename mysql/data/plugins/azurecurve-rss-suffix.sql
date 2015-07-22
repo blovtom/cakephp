@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (425, "azurecurve RSS Suffix", "4.1.0", "1.0.4", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6707, 425, "process_azc_rss_network_options", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6708, 425, "azc_rss_set_default_options", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6709, 425, "agentwp_append_rss_suffix", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6710, 425, "azc_rss_admin_init", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6711, 425, "add_azc_rss_network_settings_page", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6712, 425, "azc_rss_load_plugin_textdomain", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6713, 425, "azc_rss_plugin_action_links", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6714, 425, "azc_rss_settings_menu", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6715, 425, "azc_rss_network_settings_page", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6716, 425, "azc_rss_config_page", "/azurecurve-rss-suffix.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6717, 425, "process_azc_rss_options", "/azurecurve-rss-suffix.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3992, 425, "admin_post_save_azc_rss_options", "'process_azc_rss_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3993, 425, "admin_menu", "'azc_rss_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3994, 425, "network_admin_edit_update_azc_rss_network_options", "'process_azc_rss_network_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3995, 425, "network_admin_menu", "'add_azc_rss_network_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3996, 425, "plugins_loaded", "'azc_rss_load_plugin_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3997, 425, "admin_init", "'azc_rss_admin_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1218, 425, "the_content", "'agentwp_append_rss_suffix'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1219, 425, "the_excerpt_rss", "'agentwp_append_rss_suffix'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1220, 425, "plugin_action_links", "'azc_rss_plugin_action_links'", 10, now(), now());

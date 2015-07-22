@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5258, "Plugin Name", "4.1", "1.2", "3.5.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91500, 5258, "wldelay_auth_login", "/wp-login-delay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691358, 5258, "WPDelay_Settings", "__construct", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691359, 5258, "WPDelay_Settings", "create_admin_page", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691360, 5258, "WPDelay_Settings", "page_init", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691361, 5258, "WPDelay_Settings", "sanitize", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691362, 5258, "WPDelay_Settings", "add_plugin_page", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691363, 5258, "WPDelay_Settings", "print_section_info", "/wldelay-settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691364, 5258, "WPDelay_Settings", "delay_callback", "/wldelay-settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57032, 5258, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57033, 5258, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19545, 5258, "wp_authenticate_user", "'wldelay_auth_login'", 1, now(), now());

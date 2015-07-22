@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2831, "MY SMTP WP", "4.1.1", "1.2", "2.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51405, 2831, "my_smtp_wp_admin", "/class-my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51406, 2831, "my_smtp_wp_settings_link", "/my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51407, 2831, "my_smtp_wp", "/my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51408, 2831, "my_smtp_wp_page", "/class-my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51409, 2831, "my_smtp_wp_activate", "/my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51410, 2831, "my_smtp_wp_help_tab", "/class-my-smtp-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51411, 2831, "load_my_smtp_wp_lang", "/my-smtp-wp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382315, 2831, "email_return_path", "fix", "/my-smtp-wp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (382316, 2831, "email_return_path", "__construct", "/my-smtp-wp.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30517, 2831, "admin_menu", "'my_smtp_wp_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30518, 2831, "load-my_smtp_wp_admin", "'my_smtp_wp_help_tab'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30519, 2831, "phpmailer_init", "'my_smtp_wp'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30520, 2831, "phpmailer_init", "array($this,'fix')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10224, 2831, "plugin_action_links", "'my_smtp_wp_settings_link'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10225, 2831, "init", "'load_my_smtp_wp_lang'", 10, now(), now());

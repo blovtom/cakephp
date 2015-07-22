@@ -1,0 +1,66 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5024, "WOW Slider", "4.0", "trunk", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86683, 5024, "wowslider_add", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86684, 5024, "wowslider_load_css", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86685, 5024, "wowslider_delete", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86686, 5024, "wowslider_view", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86687, 5024, "wowslider_admin_bar_menu", "/admin-bar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86688, 5024, "wowslider_import", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86689, 5024, "wowslider", "/wowslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86690, 5024, "wowslider_admin_menu", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86691, 5024, "wowslider_add_new", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86692, 5024, "wowslider_help", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86693, 5024, "wowslider_sliders", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86694, 5024, "wowslider_add_new_from_plugins", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86695, 5024, "wowslider_install", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86696, 5024, "wowslider_table_include", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86697, 5024, "wowslider_old_version", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86698, 5024, "wowslider_tinymce_button", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86699, 5024, "wowslider_upload_dir", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86700, 5024, "wowslider_get", "/api.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86701, 5024, "wowslider_set_screen_id", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640022, 5024, "WOWSlider_List_Table", "get_views", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640023, 5024, "WOWSlider_Helpers", "is_new_plugin", "/helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640024, 5024, "WOWSlider_List_Table", "get_sortable_columns", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640025, 5024, "WOWSlider_List_Table", "get_bulk_actions", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640026, 5024, "WOWSlider_List_Table", "extra_tablenav", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640027, 5024, "WOWSlider_List_Table", "bulk_actions", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640028, 5024, "WOWSlider_List_Table", "display_rows", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640029, 5024, "WOWSlider_List_Table", "get_table_classes", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640030, 5024, "WOWSlider_List_Table", "pagination", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640031, 5024, "WOWSlider_List_Table", "prepare_items", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640032, 5024, "WOWSlider_List_Table", "get_columns", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640033, 5024, "WOWSlider_List_Table", "single_row", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640034, 5024, "WOWSlider_List_Table", "months_dropdown", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640035, 5024, "WOWSlider_List_Table", "__construct", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640036, 5024, "WOWSlider_Helpers", "filesystem_move", "/helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640037, 5024, "WOWSlider_Helpers", "filesystem_copy", "/helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640038, 5024, "WOWSlider_List_Table", "no_items", "/list-table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640039, 5024, "WOWSlider_Helpers", "filesystem_dirlist", "/helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640040, 5024, "WOWSlider_Helpers", "filesystem_delete", "/helpers.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54460, 5024, "admin_enqueue_scripts", "'wowslider_load_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54461, 5024, "admin_menu", "'wowslider_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54462, 5024, "wp_before_admin_bar_render", "'wowslider_admin_bar_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54463, 5024, "init", "'wowslider_tinymce_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54464, 5024, "init", "'wowslider_old_version'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54465, 5024, "init", "create_function('','
+    wp_enqueue_script("jquery");
+    if (file_exists(WOWSLIDER_PLUGIN_PATH . "data/wowslider.js")){
+        wp_register_script("wowslider", WOWSLIDER_PLUGIN_URL . "data/wowslider.js", array("jquery"));
+        wp_enqueue_script("wowslider");
+    }
+')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54466, 5024, "wpmu_new_blog", "'wowslider_install'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18581, 5024, "admin_head", "create_function('','wowslider_tinymce_button("admin_head");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18582, 5024, "contextual_help", "'wowslider_help'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18583, 5024, "load-toplevel_page_wowslider/admin", "'wowslider_set_screen_id'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18584, 5024, "mce_external_plugins", "'wowslider_tinymce_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18585, 5024, "manage_wowslider_sliders_columns", "array('WOWSlider_List_Table','get_columns')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18586, 5024, "in_admin_header", "'wowslider_table_include'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18587, 5024, "upgrader_source_selection", "'wowslider_add_new_from_plugins'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18588, 5024, "admin_body_class", "create_function('$class','
+        if ((float)get_bloginfo("version") >= 3.5)
+            $class .= "wp-gte-3-5";
+        return $class;
+    ')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18589, 5024, "mce_buttons", "'wowslider_tinymce_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18590, 5024, "filesystem_method", "create_function('','return "direct";')", 10, now(), now());

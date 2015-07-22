@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4004, "Slash Edit", "4.1", "1.1.1", "3.9.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70108, 4004, "slash_edit_instantiate", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507799, 4004, "Slash_Edit", "maybe_redirect", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507800, 4004, "Slash_Edit", "init", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507801, 4004, "Slash_Edit", "activate", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507802, 4004, "Slash_Edit", "get_endpoint", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507803, 4004, "Slash_Edit", "add_rewrite_rules", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507804, 4004, "Slash_Edit", "deactivate", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507805, 4004, "Slash_Edit", "get_instance", "/slash-edit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (507806, 4004, "Slash_Edit", "save_post", "/slash-edit.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43076, 4004, "save_post", "array('Slash_Edit','save_post')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43077, 4004, "init", "array($this,'init')", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43078, 4004, "template_redirect", "array('Slash_Edit','maybe_redirect')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43079, 4004, "plugins_loaded", "'slash_edit_instantiate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14566, 4004, "rewrite_rules_array", "array('Slash_Edit','add_rewrite_rules')", 10, now(), now());

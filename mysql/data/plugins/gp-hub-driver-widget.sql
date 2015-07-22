@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1975, "Plugin Name", "4.1", "1.0", "3.8.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38688, 1975, "gphub419231_get_driver_options", "/gphub-driver-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38689, 1975, "gphub419231_driver_widget_scripts", "/gphub-driver-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38690, 1975, "gphub419231_register_driver_widget", "/gphub-driver-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314898, 1975, "gphub419231_driver_widget", "update", "/gphub-driver-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314899, 1975, "gphub419231_driver_widget", "widget", "/gphub-driver-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314900, 1975, "gphub419231_driver_widget", "__construct", "/gphub-driver-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314901, 1975, "gphub419231_driver_widget", "form", "/gphub-driver-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21737, 1975, "wp_enqueue_scripts", "'gphub419231_driver_widget_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21738, 1975, "widgets_init", "'gphub419231_register_driver_widget'", 12, now(), now());

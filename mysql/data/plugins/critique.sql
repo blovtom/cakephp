@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1077, "Critique", "4.1", "1.2.3", "3.4", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96854, 1077, "critique", "save_metabox", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96855, 1077, "critique", "init_metabox", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96856, 1077, "critique", "add_to_post", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96857, 1077, "critique", "__construct", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96858, 1077, "critique", "admin_enqueued", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96859, 1077, "critique", "critique_score_shortcode", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96860, 1077, "critique", "settings_page", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96861, 1077, "critique", "add_menu_item", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96862, 1077, "critique", "save_settings", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96863, 1077, "critique", "enqueued", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96864, 1077, "critique", "build_metabox", "/critique.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96865, 1077, "critique", "post_more_link", "/critique.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11909, 1077, "admin_enqueue_scripts", "array($this,'admin_enqueued')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11910, 1077, "save_post", "array($this,'save_metabox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11911, 1077, "admin_menu", "array($this,'add_menu_item')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11912, 1077, "add_meta_boxes", "array($this,'init_metabox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11913, 1077, "wp_enqueue_scripts", "array($this,'enqueued')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11914, 1077, "edit_attachment", "array($this,'save_metabox')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4045, 1077, "the_content_more_link", "array($this,'post_more_link')", 9001, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4046, 1077, "the_content", "array($this,'add_to_post')", 10, now(), now());

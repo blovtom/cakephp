@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5213, "DM WP SLIDER", "4.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90642, 5213, "wpideal_columns_head", "/ideal-slider-type.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90643, 5213, "wpideal_script", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90644, 5213, "wpideal_insert_slider", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90645, 5213, "wpideal_columns_content", "/ideal-slider-type.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90646, 5213, "wpideal_register_styles", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90647, 5213, "wpideal_get_featured_image", "/ideal-slider-type.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90648, 5213, "wpideal_register", "/ideal-slider-type.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90649, 5213, "wpideal_get_slider", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90650, 5213, "wpideal_style", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90651, 5213, "wpideal_register_scripts", "/dmwpslider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90652, 5213, "wpideal_slider", "/dmwpslider.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56529, 5213, "wp_footer", "'wpideal_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56530, 5213, "init", "'wpideal_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56531, 5213, "wp_head", "'wpideal_register_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56532, 5213, "admin_print_styles", "'wpideal_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56533, 5213, "manage_posts_custom_column", "'wpideal_columns_content'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56534, 5213, "wp_head", "'wpideal_register_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19408, 5213, "manage_posts_columns", "'wpideal_columns_head'", 10, now(), now());

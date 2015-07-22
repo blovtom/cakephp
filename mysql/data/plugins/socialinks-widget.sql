@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4089, "Socialinks Widget", "4.1", "1.0.3", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71680, 4089, "socialinks_widget_plugins_loaded", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71681, 4089, "_my_portfolio", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71682, 4089, "socialinks_load_widgets", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (515323, 4089, "Socialink_Widget", "Socialink_Widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (515324, 4089, "Socialink_Widget", "update", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (515325, 4089, "Socialink_Widget", "form", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (515326, 4089, "Socialink_Widget", "socialinks_admin", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (515327, 4089, "Socialink_Widget", "widget", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43948, 4089, "widgets_init", "'socialinks_load_widgets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43949, 4089, "load-widgets.php", "array(&$this,'socialinks_admin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43950, 4089, "plugins_loaded", "'socialinks_widget_plugins_loaded'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14774, 4089, "plugin_row_meta", "'_my_portfolio'", 10, now(), now());

@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2745, "Mmm Simple File List", "4.1", "4.1", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49734, 2745, "MM_FileList_Init", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378640, 2745, "MM_FileList", "_AddFileAttsToTemplate", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378641, 2745, "MM_FileList", "_MakeTabularList", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378642, 2745, "MM_FileList", "rearrange_files_by_date", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378643, 2745, "MM_FileList", "MM_FileList", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378644, 2745, "MM_FileList", "_OutputList", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378645, 2745, "MM_FileList", "_check_for_slashes", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378646, 2745, "MM_FileList", "_flip_slahes", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378647, 2745, "MM_FileList", "human_filesize", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378648, 2745, "MM_FileList", "ListFiles", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378649, 2745, "MM_FileList", "_MakeUnorderedList", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378650, 2745, "MM_FileList", "copter_remove_crappy_markup", "/mm_filelist_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378651, 2745, "MM_FileList", "_MakeCommaDelimitedList", "/mm_filelist_plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29792, 2745, "init", "'MM_FileList_Init'", 5, now(), now());

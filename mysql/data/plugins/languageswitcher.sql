@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2452, "Languageswitcher", "4.1", "0.2.4", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343653, 2452, "Languageswitcher", "filter_content_feed", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343654, 2452, "Languageswitcher", "settings_link", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343655, 2452, "Languageswitcher", "behaviour_info", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343656, 2452, "Languageswitcher", "general_info", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343657, 2452, "Languageswitcher", "callback_input", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343658, 2452, "Languageswitcher", "quicktags", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343659, 2452, "Languageswitcher", "filter_content", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343660, 2452, "Languageswitcher", "settings_page", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343661, 2452, "Languageswitcher", "color_info", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343662, 2452, "Languageswitcher", "scripts_and_styles", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343663, 2452, "Languageswitcher", "settings", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343664, 2452, "Languageswitcher", "callback_radio", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343665, 2452, "Languageswitcher", "add_settings_page", "/languageswitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343666, 2452, "Languageswitcher", "getInstance", "/languageswitcher.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26338, 2452, "wp_enqueue_scripts", "array(&$this,'scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26339, 2452, "admin_print_footer_scripts", "array(&$this,'quicktags')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26340, 2452, "admin_menu", "array(&$this,'add_settings_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8808, 2452, "admin_init", "array(&$this,'settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8809, 2452, "plugin_row_meta", "array(&$this,'settings_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8810, 2452, "the_content", "array(&$this,'filter_content')", 10, now(), now());

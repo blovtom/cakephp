@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (706, "Caldera SMTP Mailer", "4.0", "1.0.1", "3.9", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64197, 706, "Caldera_Smtp_Mailer", "caldera_smtp_setup", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64198, 706, "Caldera_Smtp_Mailer", "load_plugin_textdomain", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64199, 706, "Caldera_Smtp_Mailer", "get_instance", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64200, 706, "Settings_Caldera_Smtp_Mailer", "__construct", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64201, 706, "Settings_Caldera_Smtp_Mailer", "save_config", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64202, 706, "Caldera_Smtp_Mailer", "enqueue_admin_stylescripts", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64203, 706, "Caldera_Smtp_Mailer", "deactivate", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64204, 706, "Caldera_Smtp_Mailer", "caldera_smtp_mailer", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64205, 706, "Settings_Caldera_Smtp_Mailer", "send_test_mail", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64206, 706, "Caldera_Smtp_Mailer", "activate_new_site", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64207, 706, "Caldera_Smtp_Mailer", "activate", "/core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64208, 706, "Settings_Caldera_Smtp_Mailer", "add_settings_pages", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (64209, 706, "Settings_Caldera_Smtp_Mailer", "create_admin_page", "/includes/settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7918, 706, "phpmailer_init", "array($this,'caldera_smtp_mailer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7919, 706, "admin_menu", "array($this,'add_settings_pages')", 25, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7920, 706, "init", "array($this,'load_plugin_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7921, 706, "init", "array($this,'save_config')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7922, 706, "admin_enqueue_scripts", "array($this,'enqueue_admin_stylescripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7923, 706, "wpmu_new_blog", "array($this,'activate_new_site')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7924, 706, "plugins_loaded", "array('Caldera_Smtp_Mailer','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7925, 706, "init", "array($this,'caldera_smtp_setup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7926, 706, "wp_ajax_csmtp_save_config", "array($this,'save_config')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7927, 706, "wp_ajax_csmtp_send_test", "array($this,'send_test_mail')", 10, now(), now());

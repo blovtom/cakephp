@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2633, "MarcTV Moderate Comments", "4.1", "1.2.6", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364235, 2633, "MarcTVModerateComments", "getStrings", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364236, 2633, "MarcTVModerateComments", "replaceComment", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364237, 2633, "MarcTVModerateComments", "flagComment", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364238, 2633, "MarcTVModerateComments", "trashComment", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364239, 2633, "MarcTVModerateComments", "printModerateLinks", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364240, 2633, "MarcTVModerateComments", "activate", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364241, 2633, "MarcTVModerateComments", "registerSettingsPage", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364242, 2633, "MarcTVModerateComments", "showSettingsPage", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364243, 2633, "MarcTVModerateComments", "registerCommentsPage", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364244, 2633, "MarcTVModerateComments", "backendInit", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364245, 2633, "MarcTVModerateComments", "frontendInit", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364246, 2633, "MarcTVModerateComments", "commentsPage", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364247, 2633, "MarcTVModerateComments", "__construct", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364248, 2633, "MarcTVModerateComments", "replaceCommentReport", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364249, 2633, "MarcTVModerateComments", "ignoreReport", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364250, 2633, "MarcTVModerateComments", "settingsCallback", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364251, 2633, "MarcTVModerateComments", "registerSettings", "/marctv-moderate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364252, 2633, "MarcTVModerateComments", "enqueScripts", "/marctv-moderate.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28662, 2633, "admin_menu", "array($this,'registerSettingsPage')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28663, 2633, "wp_print_styles", "array($this,'enqueScripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28664, 2633, "admin_init", "array($this,'registerSettings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28665, 2633, "admin_menu", "array($this,'registerCommentsPage')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9534, 2633, "comment_text", "array($this,'printModerateLinks')", 100, now(), now());

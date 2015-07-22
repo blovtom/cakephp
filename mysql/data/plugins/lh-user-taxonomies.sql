@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2490, "LH User Taxonomies", "4.1", "trunk", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349648, 2490, "LH_User_Taxonomies_plugin", "__construct", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349649, 2490, "LH_User_Taxonomies_plugin", "lh_user_taxonomies_add_user_id_column", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349650, 2490, "LH_User_Taxonomies_plugin", "user_profile", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349651, 2490, "LH_User_Taxonomies_plugin", "set_user_column_values", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349652, 2490, "LH_User_Taxonomies_plugin", "lh_user_taxonomies_add_taxonomy_column_content", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349653, 2490, "LH_User_Taxonomies_plugin", "save_profile", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349654, 2490, "LH_User_Taxonomies_plugin", "restrict_username", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349655, 2490, "LH_User_Taxonomies_plugin", "update_count", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349656, 2490, "LH_User_Taxonomies_plugin", "admin_menu", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349657, 2490, "LH_User_Taxonomies_plugin", "parent_menu", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349658, 2490, "LH_User_Taxonomies_plugin", "user_query", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349659, 2490, "LH_User_Taxonomies_plugin", "set_user_column", "/lh-user-taxonomies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349660, 2490, "LH_User_Taxonomies_plugin", "registered_taxonomy", "/lh-user-taxonomies.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27036, 2490, "admin_menu", "array($this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27037, 2490, "edit_user_profile_update", "array($this,'save_profile')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27038, 2490, "pre_user_query", "array($this,'user_query')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27039, 2490, "edit_user_profile", "array($this,'user_profile')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27040, 2490, "user_register", "array($this,'save_profile')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27041, 2490, "registered_taxonomy", "array($this,'registered_taxonomy')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27042, 2490, "personal_options_update", "array($this,'save_profile')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27043, 2490, "manage_users_custom_column", "array($this,'lh_user_taxonomies_add_taxonomy_column_content')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27044, 2490, "show_user_profile", "array($this,'user_profile')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9048, 2490, "parent_file", "array($this,'parent_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9049, 2490, "manage_users_columns", "array($this,'lh_user_taxonomies_add_user_id_column')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9050, 2490, "sanitize_user", "array($this,'restrict_username')", 10, now(), now());

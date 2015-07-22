@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2767, "Momapix Image Selector", "4.1.1", "1.4.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50282, 2767, "moma_js", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50283, 2767, "media_upload_momapix_iframe2", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50284, 2767, "exception_handler", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50285, 2767, "momapix_menu_page", "/admin/momapix_admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50286, 2767, "momapix_file_get_contents", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50287, 2767, "MomapixMediaUpload", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50288, 2767, "moma_css", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50289, 2767, "checkMomaPIXKey", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50290, 2767, "MomapixMediaTab", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50291, 2767, "media_upload_momapix_iframe", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50292, 2767, "momapix_set_default_value", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50293, 2767, "media_upload_momapix_settings", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50294, 2767, "register_momapix_menu_page", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50295, 2767, "add_momapix_button", "/momapix-image-selector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50296, 2767, "momapixKey2SearchUrl", "/admin/momapix_json_parse2.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50297, 2767, "process_momapix_default_value", "/admin/momapix_admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50298, 2767, "momapix_admin_init", "/admin/momapix_admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29988, 2767, "admin_post_save_momapix_default_value", "'process_momapix_default_value'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29989, 2767, "media_upload_wp_momapix_photo", "'MomapixMediaUpload'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29990, 2767, "admin_init", "'momapix_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29991, 2767, "media_buttons", "'add_momapix_button'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29992, 2767, "admin_menu", "'register_momapix_menu_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29993, 2767, "admin_head", "'moma_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29994, 2767, "admin_head", "'moma_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9913, 2767, "media_upload_tabs", "'MomapixMediaTab'", 10, now(), now());

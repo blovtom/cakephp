@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (191, "Affiliates Contact Form 7 Integration", "4.1", "3.3.0", "3.5.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10576, 191, "Affiliates_CF7_Handler", "wp_init", "/includes/class-affiliates-cf7-handler.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10577, 191, "Affiliates_CF7", "admin_notices", "/includes/class-affiliates-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10578, 191, "Affiliates_CF7_Admin", "wp_init", "/includes/class-affiliates-cf7-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10579, 191, "Affiliates_CF7_Admin", "affiliates_admin_cf7", "/includes/class-affiliates-cf7-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10580, 191, "Affiliates_CF7", "activate", "/includes/class-affiliates-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10581, 191, "Affiliates_CF7_Handler", "init", "/includes/class-affiliates-cf7-handler.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10582, 191, "Affiliates_CF7_Admin", "init", "/includes/class-affiliates-cf7-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10583, 191, "Affiliates_CF7_Admin", "affiliates_admin_menu", "/includes/class-affiliates-cf7-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10584, 191, "Affiliates_CF7", "check_dependencies", "/includes/class-affiliates-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10585, 191, "Affiliates_CF7", "init", "/includes/class-affiliates-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10586, 191, "Affiliates_CF7_Admin", "affiliates_footer", "/includes/class-affiliates-cf7-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (10587, 191, "Affiliates_CF7_Handler", "wpcf7_before_send_mail", "/includes/class-affiliates-cf7-handler.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1606, 191, "affiliates_admin_menu", "array(__CLASS__,'affiliates_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1607, 191, "wpcf7_before_send_mail", "array(__CLASS__,'wpcf7_before_send_mail')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1608, 191, "admin_notices", "array(__CLASS__,'admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1609, 191, "init", "array(__CLASS__,'wp_init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (521, 191, "affiliates_footer", "array(__CLASS__,'affiliates_footer')", 10, now(), now());

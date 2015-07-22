@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1957, "Google Plus Badge Widget", "4.1", "1.5", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38483, 1957, "display_google_plus_widget_page", "/weblizar-google-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38484, 1957, "google_plus_widget_menu", "/weblizar-google-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38485, 1957, "ReadyTranslation", "/weblizar-google-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38486, 1957, "google_plus_activate", "/weblizar-google-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38487, 1957, "wl_googleplus_widgets", "/google-plus-badge-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38488, 1957, "google_admin_enqueue_script", "/weblizar-google-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314662, 1957, "googleplus_Widget", "update", "/google-plus-badge-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314663, 1957, "googleplus_Widget", "__construct", "/google-plus-badge-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314664, 1957, "googleplus_Widget", "widget", "/google-plus-badge-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314665, 1957, "googleplus_Widget", "form", "/google-plus-badge-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21622, 1957, "admin_menu", "'google_plus_widget_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21623, 1957, "plugins_loaded", "'ReadyTranslation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21624, 1957, "widgets_init", "'wl_googleplus_widgets'", 10, now(), now());

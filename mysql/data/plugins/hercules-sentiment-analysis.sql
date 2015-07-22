@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2069, "Hercules Sentiment Analysis", "4.0", "1.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323489, 2069, "HercSentimentAnalysis", "PostTitleSentimentColumns", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323490, 2069, "Autoloader", "__construct", "/php-insight/lib/PHPInsight/Autoloader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323491, 2069, "HercSentimentAnalysis", "GetSettings", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323492, 2069, "Sentiment", "setDictionary", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323493, 2069, "HercSentimentAnalysis", "CommentSentimentColumns", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323494, 2069, "HercSentimentAnalysis", "AddSettingsPage", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323495, 2069, "Sentiment", "categorise", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323496, 2069, "Autoloader", "register", "/php-insight/lib/PHPInsight/Autoloader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323497, 2069, "HercSentimentAnalysis", "PostSentimentColumn", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323498, 2069, "Sentiment", "setDataFolder", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323499, 2069, "HercSentimentAnalysis", "__construct", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323500, 2069, "Sentiment", "getList", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323501, 2069, "Sentiment", "score", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323502, 2069, "HercSentimentAnalysis", "CommentSentimentColumn", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323503, 2069, "HercSentimentAnalysis", "SetSettingsVariables", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323504, 2069, "Autoloader", "autoload", "/php-insight/lib/PHPInsight/Autoloader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323505, 2069, "HercSentimentAnalysis", "PostContentSentimentColumns", "/hercules_sentiment_analysis.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323506, 2069, "Sentiment", "__construct", "/php-insight/lib/PHPInsight/Sentiment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323507, 2069, "HercSentimentAnalysis", "GenerateSettingsPage", "/hercules_sentiment_analysis.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22332, 2069, "manage_comments_custom_column", "array($this,'CommentSentimentColumn')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22333, 2069, "manage_posts_custom_column", "array($this,'PostSentimentColumn')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7409, 2069, "manage_posts_columns", "array($this,'PostTitleSentimentColumns')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7410, 2069, "manage_posts_columns", "array($this,'PostContentSentimentColumns')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7411, 2069, "manage_edit-comments_columns", "array($this,'CommentSentimentColumns')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7412, 2069, "manage_edit-comments_sortable_columns", "array($this,'CommentSentimentColumns')", 10, now(), now());

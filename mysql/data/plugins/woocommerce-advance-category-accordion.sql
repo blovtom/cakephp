@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4812, "Woocommerce Category Accordion Widget", "4.1.1", "0.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84264, 4812, "reg_wooadac_scripts", "/woocommerce-advance-accordion.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84265, 4812, "wooadac_init", "/woocommerce-advance-accordion.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84266, 4812, "wooadac_color_picker_scripts", "/woocommerce-advance-accordion.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84267, 4812, "wc_category_accordion_fn", "/includes/wooadac-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84268, 4812, "wc_category_accordion_sc", "/includes/wooadac-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615886, 4812, "wc_category_accordion", "wc_category_accordion", "/includes/wooadac-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615887, 4812, "wc_category_accordion", "wc_cat_accordion_get_settings", "/includes/wooadac-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615888, 4812, "wc_category_accordion", "update", "/includes/wooadac-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615889, 4812, "wc_category_accordion", "woocommerce_category_accordion_defaults", "/includes/wooadac-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615890, 4812, "wc_category_accordion", "form", "/includes/wooadac-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615891, 4812, "wc_category_accordion", "widget", "/includes/wooadac-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51599, 4812, "init", "'wooadac_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51600, 4812, "widgets_init", "'wc_category_accordion_fn'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51601, 4812, "wp_enqueue_scripts", "'reg_wooadac_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51602, 4812, "admin_enqueue_scripts", "wooadac_color_picker_scripts", 10, now(), now());

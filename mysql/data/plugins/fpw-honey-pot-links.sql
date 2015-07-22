@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1756, "FPW Honey Pot Links", "4.0.1", "1.0.0", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210464, 1756, "fpwHoneyPotLinks", "init", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210465, 1756, "fpwHoneyPotLinks", "pluginSettings", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210466, 1756, "fpwHoneyPotLinks", "afterPluginMeta", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210467, 1756, "fpwHoneyPotLinks", "pluginLinks", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210468, 1756, "fpwHoneyPotLinks", "insertHoneyPotLink", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210469, 1756, "fpwHoneyPotLinks", "pluginActivate", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210470, 1756, "fpwHoneyPotLinks", "enqueueScripts", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210471, 1756, "fpwHoneyPotLinks", "__construct", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210472, 1756, "fpwHoneyPotLinks", "pluginMetaLinks", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210473, 1756, "fpwHoneyPotLinks", "enqueuePointerScripts", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210474, 1756, "fpwHoneyPotLinks", "custom_print_footer_scripts", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210475, 1756, "fpwHoneyPotLinks", "help33", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210476, 1756, "fpwHoneyPotLinks", "adminMenu", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210477, 1756, "fpwHoneyPotLinks", "pluginToAdminBar", "/classes/fpw-honey-pot-links.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19379, 1756, "admin_bar_menu", "array(&$this,'pluginToAdminBar')", 1030, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19380, 1756, "admin_print_footer_scripts", "array(&$this,'custom_print_footer_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19381, 1756, "admin_menu", "array(&$this,'adminMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19382, 1756, "admin_enqueue_scripts", "array(&$this,'enqueueScripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19383, 1756, "after_plugin_row_fpw-honey-pot-links/fpw-honey-pot-links.php", "array(&$this,'afterPluginMeta')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19384, 1756, "admin_enqueue_scripts", "array(&$this,'enqueuePointerScripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19385, 1756, "init", "array(&$this,'init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6424, 1756, "plugin_action_links_fpw-honey-pot-links/fpw-honey-pot-links.php", "array(&$this,'pluginLinks')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6425, 1756, "plugin_row_meta", "array(&$this,'pluginMetaLinks')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6426, 1756, "wp_insert_post_data", "array(&$this,'insertHoneyPotLink')", 10, now(), now());

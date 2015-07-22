@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4008, "Slick Popup", "4.1", "1.2.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70202, 4008, "enqueue_popup_scripts", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70203, 4008, "add_my_popup", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70204, 4008, "mw_enqueue_color_picker", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70205, 4008, "create_share_button", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70206, 4008, "mypopup_install", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70207, 4008, "my_plugin_options", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70208, 4008, "slick_popup_init", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70209, 4008, "register_settings", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70210, 4008, "toolbar_link_to_slick_popup", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70211, 4008, "option_css", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70212, 4008, "add_html_and_scripts", "/slick-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70213, 4008, "my_plugin_menu", "/slick-popup.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43112, 4008, "admin_init", "'register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43113, 4008, "wp_footer", "'option_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43114, 4008, "admin_enqueue_scripts", "'mw_enqueue_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43115, 4008, "wp_footer", "'add_my_popup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43116, 4008, "wp_enqueue_scripts", "'enqueue_popup_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43117, 4008, "admin_bar_menu", "'toolbar_link_to_slick_popup'", 999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43118, 4008, "admin_menu", "'my_plugin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43119, 4008, "init", "'slick_popup_init'", 10, now(), now());

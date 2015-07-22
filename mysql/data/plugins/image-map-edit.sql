@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2195, "Image Map Edit", "4.1", "trunk", "3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40775, 2195, "image_map_options", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40776, 2195, "image_map_menu", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40777, 2195, "image_map_options_page", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40778, 2195, "image_map_shortcode", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40779, 2195, "image_map_deactivation", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40780, 2195, "image_map_load_maps", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40781, 2195, "image_map_maps_list", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40782, 2195, "image_map_enqueue_scripts", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40783, 2195, "image_map_enqueue_color_picker", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40784, 2195, "image_map_enqueue_styles", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40785, 2195, "hex2rgb", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40786, 2195, "image_map_activation", "/image_map.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40787, 2195, "image_map_dynamic_scripts", "/image_map.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23227, 2195, "wp_enqueue_scripts", "'image_map_enqueue_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23228, 2195, "wp_head", "'image_map_dynamic_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23229, 2195, "admin_menu", "'image_map_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23230, 2195, "wp_enqueue_scripts", "'image_map_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23231, 2195, "admin_enqueue_scripts", "'image_map_enqueue_color_picker'", 10, now(), now());

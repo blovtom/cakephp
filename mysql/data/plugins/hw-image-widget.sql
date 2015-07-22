@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2149, "HW Image Widget", "4.1.1", "4.3", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325331, 2149, "HWIM_Setup", "filter_carrington_enabled_post_types", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325332, 2149, "HWIM_Setup", "__construct", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325333, 2149, "HWIM_Setup", "action_plugins_loaded", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325334, 2149, "HWIM_Setup", "filter_carrington_admin_form", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325335, 2149, "HW_Image_Widget", "update", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325336, 2149, "HWIM_Setup", "action_admin_enqueue_scripts", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325337, 2149, "HW_Image_Widget", "form", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325338, 2149, "HW_Image_Widget", "widget", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325339, 2149, "HWIM_Setup", "action_admin_print_footer_scripts", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325340, 2149, "HW_Image_Widget", "__construct", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325341, 2149, "HWIM_Setup", "filter_carrington_edit_post_type", "/hw-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (325342, 2149, "HWIM_Setup", "action_widgets_init", "/hw-image-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22787, 2149, "admin_print_footer_scripts", "array($this,'action_admin_print_footer_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22788, 2149, "admin_enqueue_scripts", "array($this,'action_admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22789, 2149, "widgets_init", "array($this,'action_widgets_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22790, 2149, "plugins_loaded", "array($this,'action_plugins_loaded')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7526, 2149, "cfct-admin-edit-post-type", "array($this,'filter_carrington_edit_post_type')", 99999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7527, 2149, "cfct-build-enabled-post-types", "array($this,'filter_carrington_enabled_post_types')", 99999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7528, 2149, "cfct-module-cfct-widget-module-hwim-admin-form", "array($this,'filter_carrington_admin_form')", 10, now(), now());

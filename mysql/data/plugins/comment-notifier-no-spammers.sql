@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (939, "Comment Notifier No Spammers", "4.1", "1.1", "3.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19581, 939, "cmnt_nospammers_comment_form", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19582, 939, "cmnt_nospammers_deactivate", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19583, 939, "cmnt_nospammers_notify", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19584, 939, "cmnt_nospammers_wp_set_comment_status", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19585, 939, "cmnt_nospammers_after_setup_theme", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19586, 939, "cmnt_nospammers_unsubscribe", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19587, 939, "cmnt_nospammers_cleanup_prior", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19588, 939, "cmnt_nospammers_activate", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19589, 939, "cmnt_nospammers_comment_post", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19590, 939, "cmnt_nospammers_options_page", "/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19591, 939, "cmnt_nospammers_replace", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19592, 939, "cmnt_nospammers_mail", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19593, 939, "cmnt_nospammers_init", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19594, 939, "cmnt_nospammers_subscribe_later", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19595, 939, "cmnt_nospammers_settings_link", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19596, 939, "cmnt_nospammers_subscribe", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19597, 939, "cmnt_nospammers_load_textdomain", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19598, 939, "cmnt_nospammers_admin_menu", "/comment-notifier-no-spammers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19599, 939, "cmnt_nospammers_thankyou", "/comment-notifier-no-spammers.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10265, 939, "wp_set_comment_status", "'cmnt_nospammers_wp_set_comment_status'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10266, 939, "plugins_loaded", "'cmnt_nospammers_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10267, 939, "after_setup_theme", "'cmnt_nospammers_after_setup_theme'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10268, 939, "admin_menu", "'cmnt_nospammers_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10269, 939, "comment_form", "'cmnt_nospammers_comment_form'", 99, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10270, 939, "init", "'cmnt_nospammers_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10271, 939, "comment_post", "'cmnt_nospammers_comment_post'", 10, now(), now());

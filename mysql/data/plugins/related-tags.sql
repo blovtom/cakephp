@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3558, "Plugin Name", "4.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64418, 3558, "reltags_getPostTags", "/related_tags.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64419, 3558, "related_tags_load_widget", "/RelatedTagsWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64420, 3558, "related_tags_admin_init", "/admin_add_related_tags_settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64421, 3558, "add_count_posts_to_group_plugins_option_menu", "/admin_add_related_tags_settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64422, 3558, "reltags_getCloudRelatedTags", "/related_tags.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64423, 3558, "add_count_posts_to_group_plugins_options", "/admin_add_related_tags_settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64424, 3558, "reltags_getListRelatedTags", "/related_tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466796, 3558, "RelatedTagsWidget", "display", "/RelatedTagsWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466797, 3558, "RelatedTagsWidget", "__construct", "/RelatedTagsWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466798, 3558, "RelatedTagsWidget", "widget", "/RelatedTagsWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466799, 3558, "RelatedTagsWidget", "update", "/RelatedTagsWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466800, 3558, "RelatedTagsWidget", "form", "/RelatedTagsWidget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38995, 3558, "widgets_init", "'related_tags_load_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38996, 3558, "admin_init", "'related_tags_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38997, 3558, "admin_menu", "'add_count_posts_to_group_plugins_option_menu'", 10, now(), now());

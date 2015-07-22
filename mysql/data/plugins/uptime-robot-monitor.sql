@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4565, "Plugin Name", "4.1.0", "1.4.5", "3.5.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79883, 4565, "dashboard_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79884, 4565, "register_setting_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79885, 4565, "uptime_robot_nh_delete", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79886, 4565, "dashboard_widget_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79887, 4565, "uptime_robot_nh_version", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79888, 4565, "load_plugin_textdomain_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79889, 4565, "uptime_robot_nh_widget", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79890, 4565, "menu_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79891, 4565, "register_shortcodes_uptime_robot", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79892, 4565, "uptime_robot_nh_widget_control", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79893, 4565, "uptime_robot_nh_scripts", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79894, 4565, "uptime_robot_plugin_options", "/uptime-robot-nh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79895, 4565, "init_sidebar_widget_uptime_robot_nh", "/uptime-robot-nh.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49062, 4565, "admin_menu", "'menu_uptime_robot'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49063, 4565, "init", "'register_shortcodes_uptime_robot'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49064, 4565, "admin_init", "'register_setting_uptime_robot'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49065, 4565, "admin_menu", "'uptime_robot_nh_version'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49066, 4565, "wp_dashboard_setup", "'dashboard_uptime_robot'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49067, 4565, "admin_enqueue_scripts", "'uptime_robot_nh_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49068, 4565, "plugins_loaded", "'load_plugin_textdomain_uptime_robot'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49069, 4565, "plugins_loaded", "'init_sidebar_widget_uptime_robot_nh'", 10, now(), now());

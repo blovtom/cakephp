@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2380, "JS File Selector", "4.1", "1.0.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44557, 2380, "gil_js_file_selector_save_postdata", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44558, 2380, "gil_js_file_selector_insert_js_functions_footer", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44559, 2380, "gil_js_file_selector_add_custom_box", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44560, 2380, "gil_js_delete_post_meta", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44561, 2380, "gil_js_file_selector_admin_scripts", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44562, 2380, "gil_read_js_directories", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44563, 2380, "gil_js_file_selector_insert_js_functions_head", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44564, 2380, "gil_get_js_file", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44565, 2380, "gil_js_file_selector_insert_js_file", "/jsfileselector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44566, 2380, "gil_js_file_selector_inner_custom_box", "/jsfileselector.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25614, 2380, "save_post", "'gil_js_file_selector_save_postdata'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25615, 2380, "delete_post", "'gil_js_delete_post_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25616, 2380, "admin_init", "'gil_js_file_selector_add_custom_box'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25617, 2380, "wp_footer", "'gil_js_file_selector_insert_js_functions_footer'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25618, 2380, "add_meta_boxes", "'gil_js_file_selector_add_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25619, 2380, "wp_head", "'gil_js_file_selector_insert_js_functions_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25620, 2380, "wp_enqueue_scripts", "'gil_js_file_selector_insert_js_file'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25621, 2380, "admin_enqueue_scripts", "'gil_js_file_selector_admin_scripts'", 10, now(), now());

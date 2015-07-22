@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5570, "WPsite Follow Us Badges", "4.1.1", "2.0.6", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97107, 5570, "wpsite_follow_us_badges_shortcode", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730785, 5570, "WPsiteFollowUs", "wpsite_follow_us_include_admin_scripts", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730786, 5570, "WPsiteFollowUs", "save_order", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730787, 5570, "WPsiteFollowUs", "form", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730788, 5570, "WPsiteFollowUs", "update", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730789, 5570, "WPsiteFollowUs", "add_menu_page", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730790, 5570, "WPsiteFollowUs", "load_textdoamin", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730791, 5570, "WPsiteFollowUs", "wpsite_follow_us_admin_settings", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730792, 5570, "WPsiteFollowUs", "wpsite_follow_us_badges_settings_link", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730793, 5570, "WPsiteFollowUs", "__construct", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730794, 5570, "WPsiteFollowUs", "widget", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730795, 5570, "WPsiteFollowUs", "wpsite_register_widget", "/wpsite-follow-us-badges.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730796, 5570, "WPsiteFollowUs", "register_activation", "/wpsite-follow-us-badges.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60903, 5570, "admin_menu", "array('WPsiteFollowUs','add_menu_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60904, 5570, "widgets_init", "array('WPsiteFollowUs','wpsite_register_widget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60905, 5570, "wp_ajax_wpsite_save_order", "array('WPsiteFollowUs','save_order')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60906, 5570, "init", "array('WPsiteFollowUs','load_textdoamin')", 10, now(), now());

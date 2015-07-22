@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2841, "myCRED ZarinPal", "4.1", "1.0.0", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52222, 2841, "mycred_zarinpal_loader", "/zarinpal.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52223, 2841, "Add_Zarinpal_to_Buycred_Log_Refs_By_HANNANStd", "/zarinpal.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52224, 2841, "Add_Zarinpal_to_Gateways_By_HANNANStd", "/zarinpal.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52225, 2841, "Add_Zarinpal_to_Buycred_Refs_By_HANNANStd", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383567, 2841, "myCred_Zarinpal", "preferences", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383568, 2841, "myCred_Zarinpal", "buy", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383569, 2841, "myCred_Zarinpal", "returning", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383570, 2841, "myCred_Zarinpal", "__construct", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383571, 2841, "myCred_Zarinpal", "Zarinpal_Iranian_currencies_By_HANNANStd", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383572, 2841, "myCred_Zarinpal", "process", "/zarinpal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (383573, 2841, "myCred_Zarinpal", "sanitise_preferences", "/zarinpal.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30984, 2841, "mycred_buycred_load_gateways", "'mycred_zarinpal_loader'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10408, 2841, "mycred_setup_gateways", "'Add_Zarinpal_to_Gateways_By_HANNANStd'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10409, 2841, "mycred_dropdown_currencies", "array($this,'Zarinpal_Iranian_currencies_By_HANNANStd')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10410, 2841, "mycred_buycred_log_refs", "'Add_Zarinpal_to_Buycred_Log_Refs_By_HANNANStd'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10411, 2841, "mycred_buycred_refs", "'Add_Zarinpal_to_Buycred_Refs_By_HANNANStd'", 10, now(), now());

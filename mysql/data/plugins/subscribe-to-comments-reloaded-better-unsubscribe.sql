@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4225, "Subscribe to Comments Reloaded Better Unsubscribe", "4.1", "trunk", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74088, 4225, "FV_STCR_Unsubscribe", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74089, 4225, "FV_STCR_UnsubscribeLink", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74090, 4225, "fv_subscribe_to_comments_reloaded_better_unsubscribe_plugin_action_links", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74091, 4225, "FV_STCR_removeBrokenCanonical", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74092, 4225, "FV_STCR_ShowNotice", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74093, 4225, "FV_STCR_checkEmail", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74094, 4225, "FV_STCR_changeEmail", "/fv-subscribe-to-comments-reloaded-better-unsubscribe.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45525, 4225, "init", "'FV_STCR_Unsubscribe'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45526, 4225, "wp_head", "'FV_STCR_removeBrokenCanonical'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15301, 4225, "wp_mail", "'FV_STCR_UnsubscribeLink'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15302, 4225, "the_content", "'FV_STCR_ShowNotice'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15303, 4225, "plugin_action_links", "'fv_subscribe_to_comments_reloaded_better_unsubscribe_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15304, 4225, "fvseop_canonical_url", "'__return_false'", 10, now(), now());

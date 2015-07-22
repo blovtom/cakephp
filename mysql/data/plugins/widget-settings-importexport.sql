@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4775, "Widget Settings Importer/Exporter", "4.1", "1.5.0", "2.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611880, 4775, "Widget_Data", "order_sidebar_widgets", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611881, 4775, "Widget_Data", "export_settings_page", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611882, 4775, "Widget_Data", "enqueue_admin_scripts", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611883, 4775, "Widget_Data", "parse_export_data", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611884, 4775, "Widget_Data", "export_widget_settings", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611885, 4775, "Widget_Data", "json_upload_mimes", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611886, 4775, "Widget_Data", "import_settings_page", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611887, 4775, "Widget_Data", "init", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611888, 4775, "Widget_Data", "add_admin_menus", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611889, 4775, "Widget_Data", "ajax_import_widget_data", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611890, 4775, "Widget_Data", "get_new_widget_name", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611891, 4775, "Widget_Data", "parse_import_data", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611892, 4775, "Widget_Data", "get_widget_settings_json", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611893, 4775, "Widget_Data", "get_sidebar_info", "/class-widget-data.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611894, 4775, "Widget_Data", "upload_widget_settings_file", "/class-widget-data.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51080, 4775, "admin_enqueue_scripts", "array(__CLASS__,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51081, 4775, "init", "array('Widget_Data','init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51082, 4775, "admin_menu", "array(__CLASS__,'add_admin_menus')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51083, 4775, "load-tools_page_widget-settings-export", "array(__CLASS__,'export_widget_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51084, 4775, "wp_ajax_import_widget_data", "array(__CLASS__,'ajax_import_widget_data')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17188, 4775, "upload_mimes", "array(__CLASS__,'json_upload_mimes')", 10, now(), now());

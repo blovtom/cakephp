@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3260, "Post Popularity Chart Widget Lite", "4.1", "0.6.1", "2.8.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58901, 3260, "post_popularity_graph_activate", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58902, 3260, "show_graph", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58903, 3260, "post_popularity_graph_uninstall", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58904, 3260, "add_hits", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423455, 3260, "post_popularity_graph", "update", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423456, 3260, "post_popularity_graph", "widget", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423457, 3260, "post_popularity_graph", "post_popularity_graph", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423458, 3260, "post_popularity_graph", "form", "/post-popularity-chart-widget-lite.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36048, 3260, "widgets_init", "create_function('','return register_widget("post_popularity_graph");')", 10, now(), now());

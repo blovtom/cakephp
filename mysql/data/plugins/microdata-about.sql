@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2715, "Microdata About", "4.1", "1.1", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49310, 2715, "microdata_menu", "/microdata-about.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49311, 2715, "microdata_address", "/microdata-about.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49312, 2715, "microdata_array", "/microdata-about.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49313, 2715, "microdata_array_structure", "/microdata-about.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49314, 2715, "my_plugin_microdata", "/microdata-about.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371091, 2715, "MDaddress", "widget", "/microdata-about.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371092, 2715, "MDaddress", "MDaddress", "/microdata-about.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371093, 2715, "MDaddress", "form", "/microdata-about.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371094, 2715, "MDaddress", "update", "/microdata-about.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29527, 2715, "admin_menu", "'microdata_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29528, 2715, "widgets_init", "create_function('','return register_widget("MDaddress");')", 10, now(), now());

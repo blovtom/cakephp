@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1998, "Gravity Forms - List Field Date Picker", "4.1", "1.0", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317906, 1998, "ITSG_GF_List_Field_Date_Picker", "itsg_gp_list_field_datepicker_js_script", "/gravity-forms-list-field-datepicker-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317907, 1998, "ITSG_GF_List_Field_Date_Picker", "itsg_gp_list_field_datepicker_js", "/gravity-forms-list-field-datepicker-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317908, 1998, "ITSG_GF_List_Field_Date_Picker", "itsg_gp_list_field_datepicker_editor_js", "/gravity-forms-list-field-datepicker-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317909, 1998, "ITSG_GF_List_Field_Date_Picker", "itsg_gp_list_field_datepicker_change_column_content", "/gravity-forms-list-field-datepicker-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317910, 1998, "ITSG_GF_List_Field_Date_Picker", "__construct", "/gravity-forms-list-field-datepicker-plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21905, 1998, "gform_enqueue_scripts", "array(&$this,'itsg_gp_list_field_datepicker_js')", 90, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21906, 1998, "wp_footer", "array(&$this,'itsg_gp_list_field_datepicker_js_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21907, 1998, "gform_editor_js", "array(&$this,'itsg_gp_list_field_datepicker_editor_js')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7245, 1998, "gform_column_input_content", "array(&$this,'itsg_gp_list_field_datepicker_change_column_content')", 10, now(), now());

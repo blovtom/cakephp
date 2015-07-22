@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1797, "GA Google Analytics", "4.1", "trunk", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35505, 1797, "add_gap_links", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35506, 1797, "gap_i18n_init", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35507, 1797, "gap_validate_options", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35508, 1797, "gap_init", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35509, 1797, "google_analytics_tracking_code", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35510, 1797, "gap_delete_plugin_options", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35511, 1797, "gap_add_defaults", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35512, 1797, "gap_add_options_page", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35513, 1797, "gap_require_wp_version", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35514, 1797, "gap_plugin_action_links", "/ga-google-analytics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35515, 1797, "gap_render_form", "/ga-google-analytics.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19817, 1797, "plugins_loaded", "'gap_i18n_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19818, 1797, "admin_head", "'google_analytics_tracking_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19819, 1797, "admin_menu", "'gap_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19820, 1797, "wp_head", "'google_analytics_tracking_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19821, 1797, "wp_footer", "'google_analytics_tracking_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19822, 1797, "admin_init", "'gap_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19823, 1797, "admin_footer", "'google_analytics_tracking_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19824, 1797, "admin_init", "'gap_require_wp_version'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6594, 1797, "plugin_row_meta", "'add_gap_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6595, 1797, "plugin_action_links", "'gap_plugin_action_links'", 10, now(), now());

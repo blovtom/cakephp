@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5019, "Worona - Native Mobile App for free (iOS & Android)", "4.1", "0.7", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86583, 5019, "worona", "/worona.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638074, 5019, "worona", "init", "/worona.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638075, 5019, "worona", "worona_admin", "/worona.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638076, 5019, "worona", "add_worona_content_to_api", "/worona.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638077, 5019, "worona", "__construct", "/worona.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638078, 5019, "worona", "worona_admin_actions", "/worona.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54415, 5019, "init", "array($this,'init')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54416, 5019, "admin_menu", "array($this,'worona_admin_actions')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18561, 5019, "json_prepare_post", "array($this,'add_worona_content_to_api')", 10, now(), now());

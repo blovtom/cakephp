@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2821, "my beautiful tubes", "4.1", "1.8.9", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51003, 2821, "my_beautifultubes_TinyMCE_button", "/my-beautifultubes-register-tinymce-buttons.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51004, 2821, "my_beautiful_tubes_meta_box_init", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51005, 2821, "my_tube_post_video_widget_display", "/my-beautiful-tubes-side-widget.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51006, 2821, "mytube_tutorial_link", "/my-beautiful-tubes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51007, 2821, "my_beauty_tube_share_button_loaded", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51008, 2821, "tube_meta_box", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51009, 2821, "add_tube_plugin", "/my-beautifultubes-register-tinymce-buttons.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51010, 2821, "my_beautiful_tubes_second_meta_box_init", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51011, 2821, "beautiful_tubes_widget", "/my-beautiful-tubes-side-widget.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51012, 2821, "tube_save_meta_box", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51013, 2821, "displays_video", "/my-beautiful-tubes-displays-content.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51014, 2821, "register_tube_button", "/my-beautifultubes-register-tinymce-buttons.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51015, 2821, "my_tube_feature_video_widget_display", "/my-beautiful-tubes-side-widget.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51016, 2821, "tubes_meta_box", "/my-beautiful-tubes-meta-box-setting.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (51017, 2821, "load_beautiful_script", "/my-beautiful-tubes.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30392, 2821, "init", "'my_beautifultubes_TinyMCE_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30393, 2821, "init", "'load_beautiful_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30394, 2821, "admin_init", "'my_beautiful_tubes_meta_box_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30395, 2821, "admin_init", "'my_beautiful_tubes_second_meta_box_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30396, 2821, "wp_head", "'my_beauty_tube_share_button_loaded'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30397, 2821, "save_post", "'tube_save_meta_box'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10141, 2821, "plugin_action_links", "'mytube_tutorial_link'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10142, 2821, "mce_buttons", "'register_tube_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10143, 2821, "the_content", "'displays_video'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10144, 2821, "mce_external_plugins", "'add_tube_plugin'", 10, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2295, "IP2Location Tags", "4.1", "2.4.0", "2.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330842, 2295, "IP2LocationTags", "parse_content", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330843, 2295, "IP2LocationTags", "set_case", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330844, 2295, "IP2LocationTags", "parse_tag", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330845, 2295, "IP2LocationTags", "get_location", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330846, 2295, "IP2LocationTags", "replace_content", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330847, 2295, "IP2LocationTags", "admin_options", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330848, 2295, "IP2Location", "__construct", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330849, 2295, "IP2LocationTags", "get_country_name", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330850, 2295, "IP2LocationTags", "parse_widget", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330851, 2295, "IP2LocationTags", "set_defaults", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330852, 2295, "IP2Location", "dbVersion", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330853, 2295, "IP2LocationTags", "region_list", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330854, 2295, "IP2LocationTags", "init", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330855, 2295, "IP2Location", "lookup", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330856, 2295, "IP2LocationTags", "admin_page", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330857, 2295, "IP2LocationTags", "download", "/ip2location-tags.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330858, 2295, "IP2LocationTags", "uninstall", "/ip2location-tags.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23966, 2295, "wp_ajax_get_region_list", "array($ip2location_tags,'region_list')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23967, 2295, "admin_menu", "array(&$this,'admin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23968, 2295, "wp_ajax_update_ip2location_tags_database", "array($ip2location_tags,'download')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23969, 2295, "wp_enqueue_script", "'load_jquery'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7903, 2295, "the_content", "array(&$this,'parse_content')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7904, 2295, "widget_text", "array(&$this,'parse_widget')", 10, now(), now());

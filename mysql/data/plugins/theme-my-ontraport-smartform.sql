@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4367, "Theme My Ontraport Smartform", "4.1.1", "1.2.2", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548536, 4367, "itmooti_oap_custom_theme", "itmooti_oap_custom_js", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548537, 4367, "itmooti_oap_custom_theme", "add_itmooti_oap_custom_theme", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548538, 4367, "itmooti_oap_custom_theme", "itmooti_plugin_action_link", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548539, 4367, "itmooti_oap_custom_theme", "itmooti_plugin_meta_link", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548540, 4367, "itmooti_oap_custom_theme", "show_license_info", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548541, 4367, "itmooti_oap_custom_theme", "create_admin_page", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548542, 4367, "itmooti_oap_custom_theme", "__construct", "/theme-my-smartform.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (548543, 4367, "itmooti_oap_custom_theme", "itmooti_oap_custom_theme", "/theme-my-smartform.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46828, 4367, "admin_menu", "array($this,'add_itmooti_oap_custom_theme')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46829, 4367, "wp_enqueue_scripts", "array($this,'itmooti_oap_custom_js')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46830, 4367, "admin_notices", "array($this,'show_license_info')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15768, 4367, "plugin_row_meta", "array($this,'itmooti_plugin_meta_link')", 10, now(), now());

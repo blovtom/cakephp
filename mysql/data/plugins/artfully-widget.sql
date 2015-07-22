@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (326, "Artful.ly Widget", "4.1", "1.0.1", "3.3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5502, 326, "nme_art_notice", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5503, 326, "art_event_data", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5504, 326, "nme_load_admin_script", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5505, 326, "nme_artful_tinymce_registerbutton", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5506, 326, "nme_artful_tinymce_addbuttons", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5507, 326, "nme_artful_tinymce_addplugin", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5508, 326, "art_donation_data", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5509, 326, "nme_artful_options", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5510, 326, "nme_art_plugin_action_links", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5511, 326, "nme_add_scripts", "/wp_artful.ly.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5512, 326, "nme_artful_menu", "/wp_artful.ly.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3081, 326, "wp_head", "'nme_add_scripts'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3082, 326, "admin_notices", "'nme_art_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3083, 326, "init", "'nme_artful_tinymce_addbuttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3084, 326, "admin_enqueue_scripts", "'nme_load_admin_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3085, 326, "admin_menu", "'nme_artful_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (985, 326, "mce_external_plugins", "'nme_artful_tinymce_addplugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (986, 326, "plugin_action_links", "'nme_art_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (987, 326, "mce_buttons", "'nme_artful_tinymce_registerbutton'", 10, now(), now());

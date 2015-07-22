@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (953, "Compress PNG for WP", "4.1", "1.3.5", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88448, 953, "GD_Tiny_PNG", "render_gd_tiny_png_settings", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88449, 953, "GD_Tiny_PNG", "compress_existing", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88450, 953, "GD_Tiny_PNG", "render_gd_tiny_png_media_column", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88451, 953, "GD_Tiny_PNG", "parse_meta_data", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88452, 953, "GD_Tiny_PNG", "jpeg_full_quality", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88453, 953, "GD_Tiny_PNG", "no_curl_admin_notices", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88454, 953, "GD_Tiny_PNG", "gd_tiny_png_render_sizes_option", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88455, 953, "GD_Tiny_PNG", "gd_tiny_png_render_auto_shrink_field", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88456, 953, "GD_Tiny_PNG", "gd_tiny_png_render_key_field", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88457, 953, "GD_Tiny_PNG", "setup_gd_tiny_png_settings", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88458, 953, "GD_Tiny_PNG", "add_gd_tiny_png_media_column", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88459, 953, "GD_Tiny_PNG", "__construct", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88460, 953, "GD_Tiny_PNG", "bulk_action_handler", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88461, 953, "GD_Tiny_PNG", "tiny_png_request", "/gecko-tiny-png-index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88462, 953, "GD_Tiny_PNG", "add_bulk_actions_via_javascript", "/gecko-tiny-png-index.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10413, 953, "admin_head-upload.php", "array(&$this,'add_bulk_actions_via_javascript')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10414, 953, "manage_media_custom_column", "array(&$this,'render_gd_tiny_png_media_column')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10415, 953, "admin_notices", "array(&$this,'no_curl_admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10416, 953, "admin_action_gd_tinypng_compress_existing", "array(&$this,'compress_existing')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10417, 953, "admin_action_bulk_compress_png", "array(&$this,'bulk_action_handler')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10418, 953, "admin_init", "array(&$this,'setup_gd_tiny_png_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3592, 953, "manage_media_columns", "array(&$this,'add_gd_tiny_png_media_column')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3593, 953, "wp_generate_attachment_metadata", "array(&$this,'parse_meta_data')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3594, 953, "jpeg_quality", "array(&$this,'jpeg_full_quality')", 10, now(), now());

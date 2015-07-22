@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1147, "Custom Upload Folders Plus", "4.1", "1.0", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100911, 1147, "Custom_Upload_Folders_Plus", "handle_upload_prefilter", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100912, 1147, "Custom_Upload_Folders_Plus", "get_select2_used_mime_types", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100913, 1147, "Custom_Upload_Folders_Plus", "get_select2_user_data", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100914, 1147, "Custom_Upload_Folders_Plus", "validate_file_types", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100915, 1147, "Custom_Upload_Folders_Plus", "handle_upload", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100916, 1147, "Custom_Upload_Folders_Plus", "jwcuf_load_scripts", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100917, 1147, "Custom_Upload_Folders_Plus", "load_language", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100918, 1147, "Custom_Upload_Folders_Plus", "__construct", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100919, 1147, "Custom_Upload_Folders_Plus", "custom_upload_dir", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100920, 1147, "Custom_Upload_Folders_Plus", "register_fields", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100921, 1147, "Custom_Upload_Folders_Plus", "validate_folder_name_default", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100922, 1147, "Custom_Upload_Folders_Plus", "settings_plugin_link", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100923, 1147, "Custom_Upload_Folders_Plus", "validate_folder_builder", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100924, 1147, "Custom_Upload_Folders_Plus", "get_select2_allowed_mime_types", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100925, 1147, "Custom_Upload_Folders_Plus", "jwcuf_settings_page", "/custom-upload-folders-plus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100926, 1147, "Custom_Upload_Folders_Plus", "get_formatted_user_data", "/custom-upload-folders-plus.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12745, 1147, "admin_enqueue_scripts", "array($this,'jwcuf_load_scripts')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4351, 1147, "wp_handle_upload_prefilter", "array($this,'handle_upload_prefilter')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4352, 1147, "plugin_action_links", "array($this,'settings_plugin_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4353, 1147, "wp_handle_upload", "array($this,'handle_upload')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4354, 1147, "admin_init", "array($this,'register_fields')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4355, 1147, "upload_dir", "array($this,'custom_upload_dir')", 10, now(), now());

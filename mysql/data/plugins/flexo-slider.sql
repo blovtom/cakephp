@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1691, "Flexo Slider", "4.0.1", NULL, NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33784, 1691, "NivoHeader", "/nsl/nivo-slider-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33785, 1691, "NivoInit", "/nsl/nivo-slider-light.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206081, 1691, "flexoslider", "flexo_slider_option", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206082, 1691, "flexoslider", "nivo_init", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206083, 1691, "flexoslider", "nggGetSliderPics", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206084, 1691, "flexoslider", "filter", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206085, 1691, "flexoslider", "flexo_slider_menu", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206086, 1691, "flexoslider", "show_gallery", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206087, 1691, "flexoslider", "get_gallery", "/flexo-slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (206088, 1691, "flexoslider", "gen_nivo_script", "/flexo-slider.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18672, 1691, "init", "'flexoslider::nivo_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18673, 1691, "admin_menu", "'flexoslider::flexo_slider_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18674, 1691, "init", "'NivoInit'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18675, 1691, "wp_head", "'NivoHeader'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6186, 1691, "the_content", "'flexoslider::filter'", 1, now(), now());

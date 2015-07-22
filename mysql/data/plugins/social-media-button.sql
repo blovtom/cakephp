@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4070, "Social Media Buttons", "4.0", "1.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71182, 4070, "find_me_plugin_scripts", "/social-media-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71183, 4070, "sm_buttons_register_widgets", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (512958, 4070, "SMButtonsWidget", "form", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (512959, 4070, "SMButtonsWidget", "SMButtonsWidget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (512960, 4070, "SMButtonsWidget", "sm_buttons_custom_style", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (512961, 4070, "SMButtonsWidget", "widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (512962, 4070, "SMButtonsWidget", "update", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43753, 4070, "wp_footer", "array($this,'sm_buttons_custom_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43754, 4070, "widgets_init", "'sm_buttons_register_widgets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43755, 4070, "init", "'find_me_plugin_scripts'", 10, now(), now());

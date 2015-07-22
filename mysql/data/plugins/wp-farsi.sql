@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5162, "WP-Farsi", "4.2", "4.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89575, 5162, "wpfa_activate", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89576, 5162, "_isKabise", "/pdate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89577, 5162, "wpfa_load", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89578, 5162, "wpfa_date_i18n", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89579, 5162, "_div", "/pdate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89580, 5162, "dreg_jsfa", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89581, 5162, "wpfa_init", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89582, 5162, "wpfa_date", "/pdate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89583, 5162, "wpfa_patch_func", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89584, 5162, "_DayOfYear", "/pdate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89585, 5162, "jalali2gregorian", "/pdate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89586, 5162, "wpfa_nums", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89587, 5162, "numbers_fa", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89588, 5162, "timestampdiv", "/wp-farsi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89589, 5162, "gregorian2jalali", "/pdate.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55999, 5162, "wp_print_scripts", "'dreg_jsfa'", 98, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56000, 5162, "plugins_loaded", "'wpfa_load'", 98, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56001, 5162, "admin_init", "'wpfa_nums'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56002, 5162, "init", "'wpfa_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56003, 5162, "admin_footer", "'timestampdiv'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19078, 5162, "number_format_i18n", "'numbers_fa'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19079, 5162, "date_i18n", "'wpfa_date_i18n'", 10, now(), now());

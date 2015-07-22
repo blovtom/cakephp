@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1903, "Plugin Name", "4.1.1", "2.5.3", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236448, 1903, "GoLiveUpdateUrls", "UpdateSeralizedTable", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236449, 1903, "GoLiveUpdateUrls", "__construct", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236450, 1903, "GoLiveUpdateUrls", "pro_notice", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236451, 1903, "GoLiveUpdateUrls", "get_all_tables", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236452, 1903, "GoLiveUpdateUrls", "replaceTree", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236453, 1903, "GoLiveUpdateUrls", "getSerializedTables", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236454, 1903, "GoLiveUpdateUrls", "fileHyercy", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236455, 1903, "GoLiveUpdateUrls", "makeCheckBoxes", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236456, 1903, "GoLiveUpdateUrls", "adminToolsPage", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236457, 1903, "GoLiveUpdateUrls", "epic_fail", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236458, 1903, "GoLiveUpdateUrls", "gluu_add_url_options", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236459, 1903, "GoLiveUpdateUrls", "css", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236460, 1903, "GoLiveUpdateUrls", "success", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236461, 1903, "GoLiveUpdateUrls", "maybe_run_updates", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236462, 1903, "GoLiveUpdateUrls", "makeTheUpdates", "/lib/GoLiveUpdateUrls.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21125, 1903, "admin_notices", "array($this,'success')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21126, 1903, "init", "array($this,'maybe_run_updates')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21127, 1903, "admin_head", "array($this,'css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21128, 1903, "admin_notices", "array($this,'pro_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21129, 1903, "admin_menu", "array($this,'gluu_add_url_options')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21130, 1903, "admin_notices", "array($this,'epic_fail')", 10, now(), now());

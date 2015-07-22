@@ -1,0 +1,35 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1008, "Content Switcher", "4.1.1", "3.6.2", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21081, 1008, "content_switcher_row_meta", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21082, 1008, "install_content_switcher", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21083, 1008, "content_switcher_optimizer_content", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21084, 1008, "content_switcher_filter_data", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21085, 1008, "content_switcher_string", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21086, 1008, "content_switcher_random_content", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21087, 1008, "content_switcher_analytics_tracking_js", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21088, 1008, "content_switcher_do_shortcode", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21089, 1008, "replace_content_switcher_shortcodes", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21090, 1008, "content_switcher_action_links", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21091, 1008, "content_switcher_meta_box", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21092, 1008, "content_switcher_options_page", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21093, 1008, "content_switcher_optimizer_tracking_js", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21094, 1008, "content_switcher_optimizer_control_js", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21095, 1008, "content_switcher_variable_string", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21096, 1008, "reset_content_switcher", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21097, 1008, "content_switcher_format_nice_name", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21098, 1008, "content_switcher_data", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21099, 1008, "uninstall_content_switcher", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21100, 1008, "content_switcher_random_number", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21101, 1008, "content_switcher_options_page_css", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21102, 1008, "content_switcher_strip_accents", "/content-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21103, 1008, "content_switcher_variable_content", "/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21104, 1008, "content_switcher_i18n", "/content-switcher.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11044, 1008, "admin_menu", "'content_switcher_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11045, 1008, "add_meta_boxes", "create_function('','if (current_user_can("manage_options")) {
+foreach (array("page", "post") as $type) { add_meta_box("content-switcher", "Content Switcher", "content_switcher_meta_box", $type, "side"); } }')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11046, 1008, "wp_head", "'content_switcher_optimizer_control_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11047, 1008, "admin_footer", "'content_switcher_analytics_tracking_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11048, 1008, "wp_footer", "'content_switcher_optimizer_tracking_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11049, 1008, "admin_head", "'content_switcher_options_page_css'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3825, 1008, "plugin_row_meta", "'content_switcher_row_meta'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3826, 1008, "wp_insert_post_data", "'replace_content_switcher_shortcodes'", 10, now(), now());

@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1827, "Genesis Featured Page Advanced", "4.1.1", "1.8.0", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36146, 1827, "fpa_deactivate_check", "/genesis-featured-page-advanced.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36147, 1827, "fpa_activation_check", "/genesis-featured-page-advanced.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36148, 1827, "fpa_register_widget", "/genesis-featured-page-advanced.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217598, 1827, "Genesis_Featured_Page_Advanced", "widget", "/inc/fpa-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217599, 1827, "Genesis_Featured_Page_Advanced", "form", "/inc/fpa-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217600, 1827, "Genesis_Featured_Page_Advanced", "__construct", "/inc/fpa-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217601, 1827, "Genesis_Featured_Page_Advanced", "update", "/inc/fpa-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217602, 1827, "Genesis_Featured_Page_Advanced", "fpa_admin_scripts_enqueue", "/inc/fpa-widget-class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20250, 1827, "widgets_init", "'fpa_register_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20251, 1827, "admin_enqueue_scripts", "array($this,'fpa_admin_scripts_enqueue')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20252, 1827, "admin_init", "'fpa_deactivate_check'", 10, now(), now());

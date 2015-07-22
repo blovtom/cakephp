@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2522, "List Last Changes", "4.2.0", "0.4.1", "3.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46846, 2522, "sort_pages_by_date", "/list-last-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46847, 2522, "sort_pages_by_date_desc", "/list-last-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46848, 2522, "list_last_changes_register_widgets", "/list-last-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46849, 2522, "list_last_changes_register_plugin_styles", "/list-last-changes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350653, 2522, "ListLastChangesWidget", "wp_get_pages", "/list-last-changes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350654, 2522, "ListLastChangesWidget", "widget", "/list-last-changes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350655, 2522, "ListLastChangesWidget", "form", "/list-last-changes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350656, 2522, "ListLastChangesWidget", "update", "/list-last-changes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350657, 2522, "ListLastChangesWidget", "ListLastChangesWidget", "/list-last-changes.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27278, 2522, "wp_enqueue_scripts", "'list_last_changes_register_plugin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27279, 2522, "widgets_init", "'list_last_changes_register_widgets'", 10, now(), now());

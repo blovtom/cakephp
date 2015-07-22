@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3709, "SB Banner Widget", "4.1", "1.0.6", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66221, 3709, "sb_banner_widget_check_core", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66222, 3709, "sb_banner_widget_init", "/inc/sb-plugin-hook.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66223, 3709, "sb_banner_widget_check_admin_notices", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66224, 3709, "sb_banner_widget_textdomain", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66225, 3709, "sb_banner_widget_settings_link", "/inc/sb-plugin-install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66226, 3709, "sb_banner_widget_admin_style_and_script", "/inc/sb-plugin-hook.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66227, 3709, "sb_banner_widget_activation", "/inc/sb-plugin-install.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485443, 3709, "SB_Banner_Widget", "__construct", "/inc/class-sb-banner-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485444, 3709, "SB_Banner_Widget", "widget", "/inc/class-sb-banner-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485445, 3709, "SB_Banner_Widget", "update", "/inc/class-sb-banner-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (485446, 3709, "SB_Banner_Widget", "form", "/inc/class-sb-banner-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40339, 3709, "widgets_init", "'sb_banner_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40340, 3709, "admin_enqueue_scripts", "'sb_banner_widget_admin_style_and_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40341, 3709, "admin_notices", "'sb_banner_widget_check_admin_notices'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40342, 3709, "plugins_loaded", "'sb_banner_widget_textdomain'", 10, now(), now());

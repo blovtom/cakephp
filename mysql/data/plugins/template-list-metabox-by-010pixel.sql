@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4330, "Template List Metabox", "4.1.1", "1.1.1", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545861, 4330, "Template_List_Metabox_010Pixel", "__construct", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545862, 4330, "Template_List_Metabox_Admin_010Pixel", "add_tmplt_mngr_page", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545863, 4330, "Template_List_Metabox_Admin_010Pixel", "post_types_list_callback", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545864, 4330, "Template_List_Metabox_Admin_010Pixel", "template_page_list_callback", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545865, 4330, "Load_Template_010Pixel", "load_custom_template", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545866, 4330, "Template_List_Metabox_010Pixel", "addSettingsLink", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545867, 4330, "Template_List_Metabox_010Pixel", "add_post_template_metabox_template", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545868, 4330, "Load_Template_010Pixel", "__construct", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545869, 4330, "Template_List_Metabox_010Pixel", "post_template_meta_box", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545870, 4330, "Template_List_Metabox_Admin_010Pixel", "__construct", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545871, 4330, "Template_List_Metabox_010Pixel", "save_post_template", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545872, 4330, "Template_List_Metabox_Admin_010Pixel", "tmplt_mngr_serialize", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545873, 4330, "Template_List_Metabox_Admin_010Pixel", "template_list_plugin_options", "/010pixel_tmplt_list_metabox.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46421, 4330, "admin_init", "array(&$this,'tmplt_mngr_serialize')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46422, 4330, "add_meta_boxes", "array(&$this,'add_post_template_metabox_template')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46423, 4330, "save_post", "array(&$this,'save_post_template')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46424, 4330, "admin_menu", "array(&$this,'add_tmplt_mngr_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15563, 4330, "single_template", "array($this,'load_custom_template')", 10, now(), now());

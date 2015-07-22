@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1281, "dotEPUB, a push-button cloud-based e-book maker", "4.1", "1.1.0", "2.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25421, 1281, "dotEPUB_setting_lang", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25422, 1281, "dotEPUB_setting_icon", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25423, 1281, "dotEPUB_eb_settings_text", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25424, 1281, "dotEPUB_plugin_options", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25425, 1281, "dotEPUB_blog_settings_text", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25426, 1281, "dotEPUB_setting_imm", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25427, 1281, "dotEPUB_init", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25428, 1281, "dotEPUB_shortcode", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25429, 1281, "dotEPUB_enqueue_style", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25430, 1281, "dotEPUB_setting_pos", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25431, 1281, "dotEPUB_setting_align", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25432, 1281, "dotEPUB_plugin_menu", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25433, 1281, "dotEPUB_plugin", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25434, 1281, "get_dotEPUB_plugin_options", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25435, 1281, "dotEPUB_setting_string", "/dotepub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25436, 1281, "dotEPUB_plugin_admin_init", "/dotepub.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14016, 1281, "wp_enqueue_scripts", "'dotEPUB_enqueue_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14017, 1281, "admin_menu", "'dotEPUB_plugin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14018, 1281, "admin_init", "'dotEPUB_plugin_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14019, 1281, "plugins_loaded", "'dotEPUB_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4719, 1281, "the_content", "'dotEPUB_plugin'", 10, now(), now());

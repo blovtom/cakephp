@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (756, "Categories Multiple Images", "4.1", "trunk", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67243, 756, "Categories_Multiple_Images", "get_image", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67244, 756, "Categories_Multiple_Images", "options_page", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67245, 756, "Categories_Multiple_Images", "settings", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67246, 756, "Categories_Multiple_Images", "__construct", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67247, 756, "Categories_Multiple_Images", "options_section", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67248, 756, "Categories_Multiple_Images", "save_taxonomy_images", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67249, 756, "Categories_Multiple_Images", "register_hooks", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67250, 756, "Categories_Multiple_Images", "include_assets", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67251, 756, "Categories_Multiple_Images", "add_taxonomy_field", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67252, 756, "Categories_Multiple_Images", "register_settings", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67253, 756, "Categories_Multiple_Images", "options_menu", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67254, 756, "Categories_Multiple_Images", "get_attachment_id_from_url", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67255, 756, "Categories_Multiple_Images", "validate", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67256, 756, "Categories_Multiple_Images", "options_inputs", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67257, 756, "Categories_Multiple_Images", "edit_texonomy_field", "/categories-multiple-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67258, 756, "Categories_Multiple_Images", "get_placeholder_image", "/categories-multiple-images.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8514, 756, "edit_term", "array($this,'save_taxonomy_images')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8515, 756, "create_term", "array($this,'save_taxonomy_images')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8516, 756, "admin_init", "array($this,'register_hooks')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8517, 756, "admin_menu", "array($this,'options_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8518, 756, "admin_init", "array($this,'register_settings')", 11, now(), now());

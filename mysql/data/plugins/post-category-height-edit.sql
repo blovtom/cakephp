@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3250, "POST CATEGORY HEIGHT EDIT", "4.1.1", "1.4", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58839, 3250, "post_category_height_edit_is_category_box", "/post-category-height-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58840, 3250, "post_category_height_edit_print_css", "/post-category-height-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58841, 3250, "post_category_height_edit_third_party_connections", "/post-category-height-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58842, 3250, "post_category_height_edit_is_third_party", "/post-category-height-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58843, 3250, "post_category_height_edit_plugin_action_links", "/post-category-height-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58844, 3250, "post_category_height_edit_enqueue_script", "/post-category-height-edit.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35940, 3250, "admin_print_styles-post-new.php", "'post_category_height_edit_print_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35941, 3250, "load-post-new.php", "'post_category_height_edit_is_category_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35942, 3250, "admin_print_styles-post.php", "'post_category_height_edit_print_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35943, 3250, "load-connections_page_connections_add", "'post_category_height_edit_third_party_connections'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35944, 3250, "admin_print_styles-connections_page_connections_manage", "'post_category_height_edit_print_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35945, 3250, "admin_init", "'post_category_height_edit_is_third_party'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35946, 3250, "load-post.php", "'post_category_height_edit_is_category_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35947, 3250, "load-connections_page_connections_manage", "'post_category_height_edit_third_party_connections'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35948, 3250, "admin_print_styles-connections_page_connections_add", "'post_category_height_edit_print_css'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12182, 3250, "plugin_action_links", "'post_category_height_edit_plugin_action_links'", 10, now(), now());

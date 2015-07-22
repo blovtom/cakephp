@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1973, "GoUrl WP eCommerce - Bitcoin Altcoin Payment Gateway Addon", "4.2", "1.0.1", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38683, 1973, "gourl_wpsc_action_links", "/gourl-wp-ecommerce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38684, 1973, "gourlwpecommerce_gourlcallback", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314878, 1973, "wpsc_gourl_gateway", "process_gateway_notification", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314879, 1973, "wpsc_gourl_gateway", "cryptocoin_payment", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314880, 1973, "wpsc_gourl_gateway", "parse_gateway_notification", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314881, 1973, "wpsc_gourl_gateway", "display_config", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314882, 1973, "wpsc_gourl_gateway", "save_config", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314883, 1973, "wpsc_gourl_gateway", "sel", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314884, 1973, "wpsc_gourl_gateway", "display_order_notes", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314885, 1973, "wpsc_gourl_gateway", "gourl_upgrade", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314886, 1973, "wpsc_gourl_gateway", "add_order_note", "/gourl-wp-ecommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314887, 1973, "wpsc_gourl_gateway", "submit", "/gourl-wp-ecommerce.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21734, 1973, "wpsc_transaction_result_cart_item", "array('wpsc_gourl_gateway','cryptocoin_payment')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21735, 1973, "wpsc_billing_details_bottom", "array('wpsc_gourl_gateway','display_order_notes')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7173, 1973, "plugin_action_links", "'gourl_wpsc_action_links'", 10, now(), now());

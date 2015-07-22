@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4083, "Plugin Name", "4.1.0", "7.7.1", "2.9.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71637, 4083, "SocialSliderUstawienia", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71638, 4083, "SocialSliderJS", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71639, 4083, "SocialSliderCSS", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71640, 4083, "adres", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71641, 4083, "SocialSliderAdminHead", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71642, 4083, "SocialSliderNotice", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71643, 4083, "headCSS", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71644, 4083, "ss_language", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71645, 4083, "SocialSlider", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71646, 4083, "SocialSliderMenu", "/social-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71647, 4083, "katalog_ikon", "/social-slider.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43882, 4083, "wp_print_styles", "'SocialSliderCSS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43883, 4083, "admin_menu", "'SocialSliderMenu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43884, 4083, "wp_head", "'headCSS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43885, 4083, "init", "'ss_language'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43886, 4083, "wp_print_scripts", "'SocialSliderJS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43887, 4083, "admin_init", "'SocialSliderAdminHead'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43888, 4083, "wp_footer", "'SocialSlider'", 10, now(), now());

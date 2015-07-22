@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1785, "Google Maps Retailers", "4.1.1", "/trunk/", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35335, 1785, "fusion_output_state_details_metaboxes", "/fusion_retailers_metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35336, 1785, "fusion_import_retailers", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35337, 1785, "fusion_add_retailers_preference_page", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35338, 1785, "fusion_admin_enqueue_scripts", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35339, 1785, "fusion_save_retailer_post", "/fusion_retailers_metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35340, 1785, "fusion_retailer_post_type", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35341, 1785, "fusion_get_settings", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35342, 1785, "fusion_output_settings_page", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35343, 1785, "fusion_output_state_map", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35344, 1785, "fusion_add_admin_metaboxes", "/fusion_retailers_metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35345, 1785, "fusion_output_states_metaboxes", "/fusion_retailers_metaboxes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35346, 1785, "fusion_enqueue_scripts_styles", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35347, 1785, "dout", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35348, 1785, "fusion_update_settings", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35349, 1785, "get_retailers", "/fusion_retailers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (35350, 1785, "fusion_setup_initial_state_options", "/fusion_retailers.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19675, 1785, "admin_menu", "'fusion_add_retailers_preference_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19676, 1785, "wp_enqueue_scripts", "'fusion_enqueue_scripts_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19677, 1785, "add_meta_boxes", "'fusion_add_admin_metaboxes'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19678, 1785, "init", "'fusion_retailer_post_type'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19679, 1785, "save_post", "'fusion_save_retailer_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19680, 1785, "admin_enqueue_scripts", "'fusion_admin_enqueue_scripts'", 10, now(), now());

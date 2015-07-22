@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (274, "Anonymize Links", "4.1", "1.1", "2.0.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4397, 274, "add_settings_link", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25232, 274, "anonymize_links", "add_anonymize_links_js", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25233, 274, "anonymize_links", "anonymize_links_scripts", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25234, 274, "anonymize_links", "anonymize_links_menu", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25235, 274, "anonymize_links", "anonymize_links_deactivate", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25236, 274, "anonymize_links", "anonymize_links_options_page", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25237, 274, "anonymize_links", "anonymize_links_activate", "/anonymize-links.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (25238, 274, "anonymize_links", "anonymize_links_init", "/anonymize-links.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2398, 274, "init", "array($__anonymize_links,'anonymize_links_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2399, 274, "admin_menu", "array($__anonymize_links,'anonymize_links_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2400, 274, "wp_enqueue_scripts", "array($__anonymize_links,'anonymize_links_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2401, 274, "wp_footer", "array($__anonymize_links,'add_anonymize_links_js')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (805, 274, "plugin_action_links", "'add_settings_link'", 10, now(), now());

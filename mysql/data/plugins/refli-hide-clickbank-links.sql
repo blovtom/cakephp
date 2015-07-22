@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3542, "Refli Hide Clickbank Links [Official]", "4.1.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64049, 3542, "get_refli_url", "/refli_clickbank.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64050, 3542, "curl_get_url", "/refli_clickbank.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64051, 3542, "refli_show_url", "/refli_clickbank.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64052, 3542, "refli_shortcode_handler", "/refli_clickbank.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466019, 3542, "refli_Short_URL", "api_urls", "/refli_clickbank.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466020, 3542, "refli_Short_URL", "create", "/refli_clickbank.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466021, 3542, "refli_Short_URL", "pre_get_shortlink", "/refli_clickbank.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466022, 3542, "refli_Short_URL", "display", "/refli_clickbank.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38810, 3542, "save_post", "array(&$refli,'create')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38811, 3542, "edit_post", "array(&$refli,'create')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38812, 3542, "publish_post", "array(&$refli,'create')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13297, 3542, "the_content", "array(&$refli,'display')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13298, 3542, "pre_get_shortlink", "array(&$refli,'pre_get_shortlink')", 10, now(), now());

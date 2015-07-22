@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4546, "Uncomplicated SEO", "4.1.1", "1.1.7", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79680, 4546, "uncomplicated_seo_setup", "/inc/form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79681, 4546, "uncomplicated_seo_open_graph", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79682, 4546, "uncomplicated_seo_menu", "/inc/form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79683, 4546, "uncomplicated_seo_options", "/inc/form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79684, 4546, "uncomplicated_seo_meta_tags", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79685, 4546, "uncomplicated_seo_print_header", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79686, 4546, "ep_after_content", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79687, 4546, "uncomplicated_seo_save_post_class_meta", "/inc/meta-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79688, 4546, "uncomplicated_seo_post_class_meta_box", "/inc/meta-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79689, 4546, "uncomplicated_seo_twitter_card", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79690, 4546, "uncomplicated_seo_print_footer", "/uncomplicated-seo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79691, 4546, "uncomplicated_seo_post_class", "/inc/meta-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79692, 4546, "uncomplicated_seo_post_meta_boxes_setup", "/inc/meta-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79693, 4546, "uncomplicated_seo_add_post_meta_boxes", "/inc/meta-box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79694, 4546, "uncomplicated_seo_styles", "/inc/form.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48849, 4546, "wp_footer", "'uncomplicated_seo_print_footer'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48850, 4546, "admin_init", "'uncomplicated_seo_setup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48851, 4546, "wp_head", "'uncomplicated_seo_print_header'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48852, 4546, "admin_menu", "'uncomplicated_seo_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48853, 4546, "save_post", "'uncomplicated_seo_save_post_class_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48854, 4546, "load-post.php", "'uncomplicated_seo_post_meta_boxes_setup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48855, 4546, "add_meta_boxes", "'uncomplicated_seo_add_post_meta_boxes'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48856, 4546, "load-post-new.php", "'uncomplicated_seo_post_meta_boxes_setup'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16418, 4546, "post_class", "'uncomplicated_seo_post_class'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16419, 4546, "the_content", "'ep_after_content'", 10, now(), now());

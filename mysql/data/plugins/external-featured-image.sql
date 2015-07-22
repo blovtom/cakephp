@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1568, "Nelio External Featured Image", "4.1", "1.2.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32250, 1568, "nelioefi_genesis_thumbnail", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32251, 1568, "nelioab_campaign_dismiss_notice", "/includes/admin/nelioab-campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32252, 1568, "nelioefi_url_metabox", "/includes/admin/edit-post.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32253, 1568, "nelioefi_fake_featured_image_if_necessary", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32254, 1568, "_nelioefi_url", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32255, 1568, "nelioefi_save_url", "/includes/admin/edit-post.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32256, 1568, "uses_nelioefi", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32257, 1568, "nelioefi_replace_thumbnail", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32258, 1568, "nelioab_campaign_notice", "/includes/admin/nelioab-campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32259, 1568, "nelioefi_add_url_metabox", "/includes/admin/edit-post.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32260, 1568, "nelioefi_the_html_thumbnail", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32261, 1568, "nelioefi_get_thumbnail_src", "/includes/nelio-efi-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32262, 1568, "nelioefi_get_html_thumbnail", "/includes/nelio-efi-main.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17703, 1568, "save_post", "'nelioefi_save_url'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17704, 1568, "wp_ajax_nelioab_campaign_dismiss_notice", "'nelioab_campaign_dismiss_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17705, 1568, "the_post", "'nelioefi_fake_featured_image_if_necessary'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17706, 1568, "admin_notices", "'nelioab_campaign_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17707, 1568, "add_meta_boxes", "'nelioefi_add_url_metabox'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5906, 1568, "post_thumbnail_html", "'nelioefi_replace_thumbnail'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5907, 1568, "genesis_pre_get_image", "'nelioefi_genesis_thumbnail'", 10, now(), now());

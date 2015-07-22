@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1979, "Grabber for QQWorld Auto Save Images", "4.1", "1.0.1", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314929, 1979, "Grabber_for_QQWorld_auto_save_images", "load_language", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314930, 1979, "Grabber_for_QQWorld_auto_save_images", "registerPluginLinks", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314931, 1979, "Grabber_for_QQWorld_auto_save_images", "__construct", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314932, 1979, "Grabber_for_QQWorld_auto_save_images", "insert_attachment", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314933, 1979, "Grabber_for_QQWorld_auto_save_images", "register_settings", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314934, 1979, "Grabber_for_QQWorld_auto_save_images", "format", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314935, 1979, "Grabber_for_QQWorld_auto_save_images", "content_save_pre", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314936, 1979, "Grabber_for_QQWorld_auto_save_images", "encode_pattern", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314937, 1979, "Grabber_for_QQWorld_auto_save_images", "save", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314938, 1979, "Grabber_for_QQWorld_auto_save_images", "get_filename", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314939, 1979, "Grabber_for_QQWorld_auto_save_images", "download", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314940, 1979, "Grabber_for_QQWorld_auto_save_images", "general_options_form", "/grabber-4-qasi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314941, 1979, "Grabber_for_QQWorld_auto_save_images", "outside_language", "/grabber-4-qasi.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21745, 1979, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21746, 1979, "qqworld-auto-save-images-general-options-form", "array($this,'general_options_form')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21747, 1979, "plugins_loaded", "array($this,'load_language')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7178, 1979, "plugin_row_meta", "array($this,'registerPluginLinks')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7179, 1979, "qqworld-auto-save-images-content-save-pre", "array($this,'content_save_pre')", 10, now(), now());

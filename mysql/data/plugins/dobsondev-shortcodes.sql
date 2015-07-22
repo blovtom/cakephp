@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1267, "DobsonDev Shortcodes", "4.1", "1.0.2", "2.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25147, 1267, "dobsondev_shrtcode_code_block_end", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25148, 1267, "dobsondev_shrtcode_related_posts", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25149, 1267, "dobsondev_shrtcode_inline_code_end", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25150, 1267, "dobsondev_shrtcode_enqueue_scripts", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25151, 1267, "dobsondev_shrtcode_embed_twitch", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25152, 1267, "dobsondev_shrtcode_inline_code_start", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25153, 1267, "get_excerpt_by_id", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25154, 1267, "dobsondev_shrtcode_embed_twitch_chat", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25155, 1267, "dobsondev_shrtcode_error_message", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25156, 1267, "dobsondev_shrtcode_success_message", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25157, 1267, "dobsondev_shrtcode_warning_message", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25158, 1267, "dobsondev_shrtcode_make_button", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25159, 1267, "dobsondev_shrtcode_embed_PDF", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25160, 1267, "dobsondev_shrtcode_info_message", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25161, 1267, "dobsondev_shrtcode_embed_youtube", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25162, 1267, "dobsondev_shrtcode_code_block_start", "/dobsondev-shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25163, 1267, "dobsondev_shrtcode_create_github_gist", "/dobsondev-shortcodes.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13844, 1267, "wp_enqueue_scripts", "'dobsondev_shrtcode_enqueue_scripts'", 10, now(), now());

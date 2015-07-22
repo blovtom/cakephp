@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (28, "ABS Accordion", "4.1", "1.0", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (408, 28, "abs_faq_main_jquery", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (409, 28, "our_awesome_buttons", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (410, 28, "abs_accordion_custom_post_taxonomy", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (411, 28, "abs_accordion_buttons", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (412, 28, "abs_accordion_custompost", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (413, 28, "abs_accordion_plugin_meta_box_callback", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (414, 28, "my_external_js", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (415, 28, "abs_accordion_save_meta_box_data", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (416, 28, "abs_accordion_add_meta_box", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (417, 28, "abs_accordion_latest_jquery", "/main-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (418, 28, "abs_accordion_shortcode", "/main-functions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (292, 28, "init", "'abs_accordion_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (293, 28, "save_post", "'abs_accordion_save_meta_box_data'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (294, 28, "add_meta_boxes", "'abs_accordion_add_meta_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (295, 28, "init", "'abs_accordion_custompost'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (296, 28, "init", "'abs_faq_main_jquery'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (297, 28, "init", "'abs_accordion_custom_post_taxonomy'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (298, 28, "init", "'abs_accordion_latest_jquery'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (77, 28, "mce_buttons", "'our_awesome_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (78, 28, "mce_external_plugins", "'my_external_js'", 10, now(), now());

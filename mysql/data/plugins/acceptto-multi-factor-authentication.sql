@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (30, "Plugin Name", "4.1.1", "1.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (430, 30, "acceptto_save_extra_user_profile_fields", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (431, 30, "register_mysettings", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (432, 30, "acceptto_extra_user_profile_fields", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (433, 30, "myStartSession", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (434, 30, "config_review", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (435, 30, "two_validate", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (436, 30, "acceptto_auth", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (437, 30, "get_cUrl", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (438, 30, "acceptto_login_form", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (439, 30, "acceptto_admin_menu", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (440, 30, "acceptto_option", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (441, 30, "acceptto_login_styles", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (442, 30, "acceptto_sub_menu", "/acceptto.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (443, 30, "unsetAll", "/acceptto.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (306, 30, "init", "'myStartSession'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (307, 30, "edit_user_profile", "'acceptto_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (308, 30, "init", "'two_validate'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (309, 30, "edit_user_profile_update", "'acceptto_save_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (310, 30, "login_form", "'acceptto_login_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (311, 30, "personal_options_update", "'acceptto_save_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (312, 30, "admin_menu", "'acceptto_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (313, 30, "admin_init", "'register_mysettings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (314, 30, "show_user_profile", "'acceptto_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (315, 30, "admin_menu", "'acceptto_sub_menu'", 10, now(), now());

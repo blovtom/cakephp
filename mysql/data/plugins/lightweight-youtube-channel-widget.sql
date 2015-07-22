@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2496, "Lightweight YouTube Channel Widget", "4.1", "10.0", "3.9.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46644, 2496, "lycw_register_widget", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349695, 2496, "LYCW", "output", "/youtube-channel.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349696, 2496, "LYCW_Widget", "__construct", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349697, 2496, "LYCW", "enqueue_scripts", "/youtube-channel.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349698, 2496, "LYCW_Widget", "form", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349699, 2496, "LYCW_Widget", "update", "/inc/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349700, 2496, "LYCW", "__construct", "/youtube-channel.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349701, 2496, "LYCW_Widget", "widget", "/inc/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27069, 2496, "wp_enqueue_scripts", "array($this,'enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27070, 2496, "widgets_init", "'lycw_register_widget'", 10, now(), now());

@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5266, "MailUp newsletter sign-up form", "4.1.1", "1.3.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91645, 5266, "wpmailup_save_config", "/ajax.functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91646, 5266, "wpmailup_deactive", "/wp-mailup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91647, 5266, "wpmailup_active", "/wp-mailup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91648, 5266, "wpmailup_load_config", "/ajax.functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91649, 5266, "wpmailup_admin_menu", "/wp-mailup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91650, 5266, "wp_mailup_admin", "/wp-mailup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91651, 5266, "wpmailup_init", "/wp-mailup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691681, 5266, "WPMailUp_Widget", "form", "/wp-mailup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691682, 5266, "WPMailUp_Widget", "widget", "/wp-mailup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691683, 5266, "WPMailUp_Widget", "update", "/wp-mailup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (691684, 5266, "WPMailUp_Widget", "WPMailUp_Widget", "/wp-mailup.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57089, 5266, "init", "'wpmailup_load_config'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57090, 5266, "init", "'wpmailup_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57091, 5266, "init", "'wpmailup_save_config'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57092, 5266, "admin_menu", "'wpmailup_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57093, 5266, "widgets_init", "create_function('','return register_widget("WPMailUp_Widget");')", 10, now(), now());

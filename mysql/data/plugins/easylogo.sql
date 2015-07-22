@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1403, "Easy Logo", "4.0", "1.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28349, 1403, "elv_easylogo_display_main_page", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28350, 1403, "elv_easylogo_hover_select", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28351, 1403, "elv_easylogo_image_path_input", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28352, 1403, "elv_easylogo_add_settings_page", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28353, 1403, "show_easylogo", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28354, 1403, "elv_easylogo_retina_version_upload", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28355, 1403, "elv_easylogo_styles_front_end", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28356, 1403, "elv_easylogo_responsive_select", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28357, 1403, "elv_easylogo_validate_options", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28358, 1403, "elv_easylogo_scripts_theme_only", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28359, 1403, "elv_easylogo_text", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28360, 1403, "elv_easylogo_scripts", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28361, 1403, "elv_easylogo_register_settings", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28362, 1403, "elv_easylogo_get_options", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28363, 1403, "elv_easylogo_uninstall", "/easylogo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28364, 1403, "elv_easylogo_styles_admin", "/easylogo.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15684, 1403, "admin_print_scripts", "'elv_easylogo_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15685, 1403, "admin_init", "'elv_easylogo_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15686, 1403, "template_redirect", "'elv_easylogo_scripts_theme_only'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15687, 1403, "admin_menu", "'elv_easylogo_add_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15688, 1403, "admin_print_styles", "'elv_easylogo_styles_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15689, 1403, "template_redirect", "'elv_easylogo_styles_front_end'", 10, now(), now());

@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2408, "Backend Localization", "4.1", "2.1.6", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44873, 2408, "backend_localization_admin_menu", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44874, 2408, "backend_localization_get_locale", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44875, 2408, "backend_localization_login_form", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44876, 2408, "init_backend_localization", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44877, 2408, "localize_backend", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44878, 2408, "backend_localization_filter_plugin_actions", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44879, 2408, "backend_localization_get_languages", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44880, 2408, "backend_localization_set_login_language", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44881, 2408, "backend_localization_admin_settings", "/backend_localization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44882, 2408, "backend_localization_save_setting", "/backend_localization.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25801, 2408, "wp_login", "'backend_localization_set_login_language'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25802, 2408, "init", "'init_backend_localization'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25803, 2408, "admin_menu", "'backend_localization_save_setting'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25804, 2408, "admin_menu", "'backend_localization_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25805, 2408, "login_head", "'localize_backend'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25806, 2408, "login_form_locale", "'localize_backend'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25807, 2408, "login_form", "'backend_localization_login_form'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8643, 2408, "plugin_action_links", "'backend_localization_filter_plugin_actions'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8644, 2408, "locale", "'localize_backend'", 10, now(), now());

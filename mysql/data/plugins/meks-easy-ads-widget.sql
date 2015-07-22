@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2670, "Meks Easy Ads Widget", "4.1.1", "1.1.5", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48661, 2670, "mks_load_ads_widget_text_domain", "/inc/class-ads-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48662, 2670, "mks_ads_widget_init", "/meks-easy-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366295, 2670, "MKS_Ads_Widget", "MKS_Ads_Widget", "/inc/class-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366296, 2670, "MKS_Ads_Widget", "update", "/inc/class-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366297, 2670, "MKS_Ads_Widget", "enqueue_admin_scripts", "/inc/class-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366298, 2670, "MKS_Ads_Widget", "enqueue_scripts", "/inc/class-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366299, 2670, "MKS_Ads_Widget", "widget", "/inc/class-ads-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366300, 2670, "MKS_Ads_Widget", "form", "/inc/class-ads-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29063, 2670, "admin_enqueue_scripts", "array($this,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29064, 2670, "widgets_init", "'mks_ads_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29065, 2670, "plugins_loaded", "'mks_load_ads_widget_text_domain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29066, 2670, "wp_enqueue_scripts", "array($this,'enqueue_scripts')", 10, now(), now());

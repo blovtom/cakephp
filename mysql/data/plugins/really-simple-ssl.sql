@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3507, "Really Simple SSL", "4.1", "1.0.1", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463072, 3507, "rlrsssl_really_simple_ssl", "__construct", "/rlrsssl-really-simple-ssl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463073, 3507, "rlrsssl_really_simple_ssl", "end_buffer_capture", "/rlrsssl-really-simple-ssl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463074, 3507, "rlrsssl_really_simple_ssl", "replace_http_with_https", "/rlrsssl-really-simple-ssl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463075, 3507, "rlrsssl_really_simple_ssl", "force_ssl_url_scheme_script", "/rlrsssl-really-simple-ssl.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38412, 3507, "wp_print_scripts", "array($this,'force_ssl_url_scheme_script')", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13206, 3507, "template_include", "array($this,'replace_http_with_https')", 1, now(), now());

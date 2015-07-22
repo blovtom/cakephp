@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4419, "Plugin Name", "4.1", "0.1.2", "3.4.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77199, 4419, "tixys_multilangStringToObject", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77200, 4419, "tixys_init", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77201, 4419, "tixys_admin_notice", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77202, 4419, "tixys_adminpage", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77203, 4419, "tixys_process_settings", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77204, 4419, "tixys_activate", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77205, 4419, "tixys_out", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77206, 4419, "tixys_admin_notice_ok", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77207, 4419, "tixys_generate_form", "/tixys.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77208, 4419, "tixys_admin_notice_error", "/tixys.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554390, 4419, "tixys_backend", "__construct", "/backend.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554391, 4419, "tixys_backend", "get_result", "/backend.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47333, 4419, "admin_notices", "'tixys_admin_notice_ok'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47334, 4419, "admin_init", "'tixys_process_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47335, 4419, "admin_notices", "'tixys_admin_notice_error'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47336, 4419, "admin_menu", "'tixys_adminpage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47337, 4419, "init", "'tixys_init'", 10, now(), now());

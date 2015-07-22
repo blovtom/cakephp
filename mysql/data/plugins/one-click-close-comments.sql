@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2992, "One Click Close Comments", "4.1", "2.3.3", "2.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393343, 2992, "c2c_OneClickCloseComments", "init", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393344, 2992, "c2c_OneClickCloseComments", "enqueue_scripts_and_styles", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393345, 2992, "c2c_OneClickCloseComments", "toggle_comment_status", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393346, 2992, "c2c_OneClickCloseComments", "register_styles", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393347, 2992, "c2c_OneClickCloseComments", "enqueue_admin_css", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393348, 2992, "c2c_OneClickCloseComments", "enqueue_admin_js", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393349, 2992, "c2c_OneClickCloseComments", "handle_column_data", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393350, 2992, "c2c_OneClickCloseComments", "do_init", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393351, 2992, "c2c_OneClickCloseComments", "add_post_column", "/one-click-close-comments.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393352, 2992, "c2c_OneClickCloseComments", "version", "/one-click-close-comments.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32622, 2992, "manage_pages_custom_column", "array(__CLASS__,'handle_column_data')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32623, 2992, "admin_enqueue_scripts", "array(__CLASS__,'enqueue_admin_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32624, 2992, "admin_init", "array(__CLASS__,'do_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32625, 2992, "manage_posts_custom_column", "array(__CLASS__,'handle_column_data')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32626, 2992, "load-edit-pages.php", "array(__CLASS__,'do_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32627, 2992, "load-edit.php", "array(__CLASS__,'enqueue_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32628, 2992, "admin_enqueue_scripts", "array(__CLASS__,'enqueue_admin_js')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32629, 2992, "load-edit-pages.php", "array(__CLASS__,'enqueue_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32630, 2992, "load-edit.php", "array(__CLASS__,'do_init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10887, 2992, "manage_posts_columns", "array(__CLASS__,'add_post_column')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10888, 2992, "manage_pages_columns", "array(__CLASS__,'add_post_column')", 10, now(), now());

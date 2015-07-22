@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1045, "Course", "4.1.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21735, 1045, "create_my_taxonomies", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21736, 1045, "my_admin", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21737, 1045, "my_columns", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21738, 1045, "populate_columns", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21739, 1045, "display_course_meta_box", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21740, 1045, "my_filter_list", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21741, 1045, "create_course", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21742, 1045, "include_template_function", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21743, 1045, "add_course_fields", "/course.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21744, 1045, "perform_filtering", "/course.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11518, 1045, "save_post", "'add_course_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11519, 1045, "init", "'create_my_taxonomies'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11520, 1045, "init", "'create_course'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11521, 1045, "restrict_manage_posts", "'my_filter_list'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11522, 1045, "admin_init", "'my_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11523, 1045, "manage_posts_custom_column", "'populate_columns'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3912, 1045, "parse_query", "'perform_filtering'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3913, 1045, "template_include", "'include_template_function'", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3914, 1045, "manage_edit-course_columns", "'my_columns'", 10, now(), now());

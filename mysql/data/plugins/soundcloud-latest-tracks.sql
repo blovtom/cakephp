@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4102, "Soundcloud Latest Tracks", "4.0", "1.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (72142, 4102, "soundcloud_latest_tracks_shortcode", "/soundcloud-latest-tracks.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (72143, 4102, "register_mysettings", "/soundcloud-latest-tracks.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (72144, 4102, "slt_enqueue_scripts", "/soundcloud-latest-tracks.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (72145, 4102, "add_admin_menu_items", "/soundcloud-latest-tracks.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (72146, 4102, "slt_settings_show", "/soundcloud-latest-tracks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (516581, 4102, "slt_plugin", "widget", "/soundcloud-latest-tracks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (516582, 4102, "slt_plugin", "slt_plugin", "/soundcloud-latest-tracks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (516583, 4102, "slt_plugin", "form", "/soundcloud-latest-tracks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (516584, 4102, "slt_plugin", "update", "/soundcloud-latest-tracks.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44221, 4102, "wp_enqueue_scripts", "'slt_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44222, 4102, "widgets_init", "create_function('','return register_widget("slt_plugin");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44223, 4102, "admin_init", "'register_mysettings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44224, 4102, "admin_menu", "'add_admin_menu_items'", 10, now(), now());

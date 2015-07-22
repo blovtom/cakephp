@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2547, "Loading Page with Loading Screen", "4.1", "1.0.1", "3.0.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47047, 2547, "loading_page_install", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47048, 2547, "loading_page_loading_screen", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47049, 2547, "_loading_page_options", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47050, 2547, "loading_page_get_screen_list", "/includes/admin_functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47051, 2547, "loading_page_settings_menu", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47052, 2547, "loading_page_links", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47053, 2547, "loading_page_get_screen", "/includes/admin_functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47054, 2547, "loading_page_replace_the_header", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47055, 2547, "loading_page_admin_init", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47056, 2547, "loading_page_new_blog", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47057, 2547, "loading_page_settings_page", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47058, 2547, "loading_page_admin_resources", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47059, 2547, "loading_page_enqueue_scripts", "/loading-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47060, 2547, "loading_page_init", "/loading-page.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27566, 2547, "admin_init", "'loading_page_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27567, 2547, "wpmu_new_blog", "'loading_page_new_blog'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27568, 2547, "admin_enqueue_scripts", "'loading_page_admin_resources'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27569, 2547, "wp_head", "'loading_page_replace_the_header'", 99, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27570, 2547, "admin_menu", "'loading_page_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27571, 2547, "init", "'loading_page_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27572, 2547, "wp_enqueue_scripts", "'loading_page_enqueue_scripts'", 1, now(), now());

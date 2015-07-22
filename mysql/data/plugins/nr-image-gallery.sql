@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2963, "NR Image Gallery", "4.1", NULL, "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54043, 2963, "mr_delete_resized_images", "/includes/mr-image-resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54044, 2963, "nr_image_gallery_admin_styles", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54045, 2963, "mr_image_resize", "/includes/mr-image-resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54046, 2963, "edit_gallery", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54047, 2963, "createNRImageGallery", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54048, 2963, "define_options", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54049, 2963, "customcss", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54050, 2963, "showNRIMenu", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54051, 2963, "attach_NRImageGallery_scripts", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54052, 2963, "nr_image_gallery_install", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54053, 2963, "add_nri_menu", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54054, 2963, "mr_common_info", "/includes/mr-image-resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54055, 2963, "attach_NR_Image_Gallery_JS", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54056, 2963, "nr_image_gallery_admin_scripts", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54057, 2963, "NRImageGallery_Handler", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54058, 2963, "add_gallery", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54059, 2963, "wp_custom_style", "/nr-image-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54060, 2963, "add_images", "/nr-image-gallery.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32373, 2963, "wp_head", "'attach_NR_Image_Gallery_JS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32374, 2963, "init", "'define_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32375, 2963, "wp_enqueue_scripts", "'attach_NRImageGallery_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32376, 2963, "admin_print_styles", "'nr_image_gallery_admin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32377, 2963, "admin_enqueue_scripts", "'nr_image_gallery_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32378, 2963, "wp_head", "'wp_custom_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32379, 2963, "delete_attachment", "'mr_delete_resized_images'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32380, 2963, "admin_menu", "'add_nri_menu'", 10, now(), now());

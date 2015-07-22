@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2325, "Javascript HTML Text Adder", "4.1", "1.0.0", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42843, 2325, "hja_load_widget", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334995, 2325, "Hja_Widget", "update", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334996, 2325, "Hja_Widget", "Hja_Widget", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334997, 2325, "Hja_Widget", "hide_post_check", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334998, 2325, "Hja_Widget", "form", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334999, 2325, "Hja_Widget", "page_check", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335000, 2325, "Hja_Widget", "show_post_check", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335001, 2325, "Hja_Widget", "all_ok", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335002, 2325, "Hja_Admin_Pages", "__construct", "/includes/admin/class-hja-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335003, 2325, "Hja_Admin_Pages", "hja_include_files", "/includes/admin/class-hja-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335004, 2325, "Hja_Admin_Pages", "add_hooks", "/includes/admin/class-hja-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335005, 2325, "Hja_Admin_Pages", "hja_admin_footer", "/includes/admin/class-hja-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335006, 2325, "Hja_Widget", "widget", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335007, 2325, "Hja_Widget", "admin_check", "/includes/widgets/class-hja-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24440, 2325, "widgets_init", "'hja_load_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24441, 2325, "admin_enqueue_scripts", "array($this,'hja_include_files')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24442, 2325, "admin_footer", "array($this,'hja_admin_footer')", 10, now(), now());

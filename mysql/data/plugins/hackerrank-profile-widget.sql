@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2039, "HackerRank Profile Widget", "4.4.1", "1.0.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39143, 2039, "hackerRankGetUrlVariables", "/requests.functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39144, 2039, "hackerRankGetHackerRankContent", "/requests.functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39145, 2039, "htmlCompress", "/config.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39146, 2039, "hackerRankAddJavaScriptAndCss", "/config.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323228, 2039, "HackerRankProfile", "__construct", "/widget.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323229, 2039, "HackerRankProfile", "update", "/widget.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323230, 2039, "HackerRankProfile", "form", "/widget.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323231, 2039, "HackerRankProfile", "widget", "/widget.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22139, 2039, "wp_print_scripts", "'hackerRankAddJavaScriptAndCss'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22140, 2039, "widgets_init", "create_function('','return register_widget("HackerRankProfile");')", 10, now(), now());

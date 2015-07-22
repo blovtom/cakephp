@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3172, "Pinterest Pinboard Widget", "4.1.1", "1.0.7", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57169, 3172, "pinterest_pinboard_widget_css", "/pinterest-pinboard-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57170, 3172, "pinterest_pinboard_widget_shortcode", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410829, 3172, "Pinterest_Pinboard", "render", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410830, 3172, "Pinterest_Pinboard_Widget", "widget", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410831, 3172, "Pinterest_Pinboard", "get_pins", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410832, 3172, "Pinterest_Pinboard", "get_footer", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410833, 3172, "Pinterest_Pinboard", "get_version", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410834, 3172, "Pinterest_Pinboard_Widget", "form", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410835, 3172, "Pinterest_Pinboard", "Pinterest_Pinboard", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410836, 3172, "Pinterest_Pinboard_Widget", "Pinterest_Pinboard_Widget", "/pinterest-pinboard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410837, 3172, "Pinterest_Pinboard_Widget", "update", "/pinterest-pinboard-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34640, 3172, "wp_enqueue_scripts", "'pinterest_pinboard_widget_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34641, 3172, "widgets_init", "create_function('','return register_widget("Pinterest_Pinboard_Widget");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11644, 3172, "wp_feed_cache_transient_lifetime", "create_function('$a',(('return ' . $this->cache_lifetime) . ';'))", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (535, "Bitcoin Currency Calculator", "4.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9315, 535, "add_bitcoin_calculator_options", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9316, 535, "bitcion_calculator_widget", "/lib/calculator-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9317, 535, "widget_bitcoin_calculator", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9318, 535, "bitcoinCalculatorWidget_init", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9319, 535, "sctn_bitcoin_calculator", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9320, 535, "bitcoin_calculator_plugin_unininstall", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9321, 535, "bitcoin_calculator_plugin_install", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9322, 535, "set_bitcoin_calculator_dropdown", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9323, 535, "bitcoin_currency_calculator_fn", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9324, 535, "bitcoin_calculator_html", "/lib/admin-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9325, 535, "create_bitcoin_calculator_admin", "/lib/install.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9326, 535, "bitcoin_calculator_head_css_jq", "/lib/install.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5322, 535, "admin_init", "'bitcoin_calculator_plugin_unininstall'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5323, 535, "admin_menu", "'create_bitcoin_calculator_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5324, 535, "admin_init", "'bitcoin_calculator_plugin_install'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5325, 535, "plugins_loaded", "'bitcoinCalculatorWidget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5326, 535, "wp_head", "'bitcoin_calculator_head_css_jq'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5327, 535, "admin_init", "'add_bitcoin_calculator_options'", 10, now(), now());

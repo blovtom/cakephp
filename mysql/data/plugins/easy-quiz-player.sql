@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1378, "Plugin Name", "4.1.1", "1.0.8", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27838, 1378, "easy_quiz_player_load_css", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27839, 1378, "easy_quiz_player_manage", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27840, 1378, "easyquizplayer_manage_page", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27841, 1378, "easyquizplayer_func", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136240, 1378, "EAZYQUIZPLAYER", "add_plugin_action_links", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136241, 1378, "EAZYQUIZPLAYER", "plugin_url", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136242, 1378, "EAZYQUIZPLAYER", "add_options_menu", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136243, 1378, "EAZYQUIZPLAYER", "plugin_path", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136244, 1378, "EAZYQUIZPLAYER", "__construct", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136245, 1378, "EAZYQUIZPLAYER", "plugin_includes", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (136246, 1378, "EAZYQUIZPLAYER", "plugin_scripts", "/main.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15446, 1378, "wp_enqueue_scripts", "array(&$this,'plugin_scripts')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15447, 1378, "admin_menu", "'easyquizplayer_manage_page'", 10, now(), now());

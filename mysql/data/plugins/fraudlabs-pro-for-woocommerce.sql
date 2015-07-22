@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1758, "FraudLabs Pro for WooCommerce", "4.1", "2.1.1", "2.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210494, 1758, "WC_Integration_FraudLabs_Pro", "admin_notifications", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210495, 1758, "WC_Integration_FraudLabs_Pro", "process_order", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210496, 1758, "WC_Integration_FraudLabs_Pro", "render_fraud_report", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210497, 1758, "WC_Integration_FraudLabs_Pro", "__construct", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210498, 1758, "WC_Integration_FraudLabs_Pro", "validate_test_ip_field", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210499, 1758, "FraudLabsPro_WooCommerce", "__construct", "/fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210500, 1758, "WC_Integration_FraudLabs_Pro", "http", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210501, 1758, "FraudLabsPro_WooCommerce", "add_integration", "/fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210502, 1758, "WC_Integration_FraudLabs_Pro", "init_form_fields", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210503, 1758, "FraudLabsPro_WooCommerce", "init", "/fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210504, 1758, "WC_Integration_FraudLabs_Pro", "display_errors", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210505, 1758, "WC_Integration_FraudLabs_Pro", "validate_message_field", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (210506, 1758, "WC_Integration_FraudLabs_Pro", "validate_risk_score_field", "/includes/class-wc-fraudlabspro-woocommerce.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19394, 1758, "plugins_loaded", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19395, 1758, "woocommerce_admin_order_data_after_billing_address", "array($this,'render_fraud_report')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19396, 1758, "admin_notices", "array($this,'admin_notifications')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19397, 1758, "woocommerce_checkout_order_processed", "array($this,'process_order')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6430, 1758, "woocommerce_integrations", "array($this,'add_integration')", 10, now(), now());

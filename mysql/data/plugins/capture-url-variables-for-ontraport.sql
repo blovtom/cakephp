@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (732, "Capture URL Variables for Ontraport", "4.1.1", "1.3.1", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65690, 732, "OAPUTM", "get_variable_value", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65691, 732, "OAPUTM", "oap_utm_enqueue_js", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65692, 732, "OAPUTM", "create_admin_page", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65693, 732, "OAPUTM", "add_oap_utm_page", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65694, 732, "OAPUTM", "load_admin_style", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65695, 732, "OAPUTM", "__construct", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65696, 732, "OAPUTM", "oap_utm_custom_cookies", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65697, 732, "OAPUTM", "shortcode_cuv", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65698, 732, "OAPUTM", "itmooti_plugin_action_link", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65699, 732, "OAPUTM", "oap_utm_custom_js", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65700, 732, "OAPUTM", "get_oap_forms", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65701, 732, "OAPUTM", "show_license_info", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65702, 732, "OAPUTM", "create_cuv_page", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65703, 732, "OAPUTM", "itmooti_plugin_meta_link", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65704, 732, "OAPUTM", "get_real_ip", "/capture-url-variables-for-ontraport.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8101, 732, "wp_enqueue_scripts", "array($this,'oap_utm_enqueue_js')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8102, 732, "wp_head", "array($this,'oap_utm_custom_js')", 300, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8103, 732, "admin_menu", "array($this,'add_oap_utm_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8104, 732, "send_headers", "array($this,'oap_utm_custom_cookies')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8105, 732, "admin_enqueue_scripts", "array($this,'load_admin_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8106, 732, "admin_notices", "array($this,'show_license_info')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2936, 732, "plugin_row_meta", "array($this,'itmooti_plugin_meta_link')", 10, now(), now());

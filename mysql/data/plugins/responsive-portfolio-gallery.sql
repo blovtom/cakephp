@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3604, "Responsive Portfolio Gallery", "4.1", "trunk", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467759, 3604, "ResponsivePortfolioGallery", "responsive_portfolio_gallery_deactivate", "/responsive-portfolio-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467760, 3604, "PortfolioItemPostType", "init", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467761, 3604, "ResponsivePortfolioGallery", "unregister_post_type", "/responsive-portfolio-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467762, 3604, "Responsive_Portfolio_Gallery_Shortcodes", "the_excerpt_max_charlength", "/shortcodes/shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467763, 3604, "ResponsivePortfolioGallery", "enqueue_frontend_files", "/responsive-portfolio-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467764, 3604, "Responsive_Portfolio_Gallery_Shortcodes", "content", "/shortcodes/shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467765, 3604, "Two_Column_Portfolio_Shortcode", "shortcode", "/shortcodes/two-column-portfolio.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467766, 3604, "ResponsivePortfolioGallery", "__construct", "/responsive-portfolio-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467767, 3604, "PortfolioItemPostType", "portfolio_meta_setup", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467768, 3604, "PortfolioItemPostType", "save_post", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467769, 3604, "PortfolioItemPostType", "create_portfolio_item_post_type", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467770, 3604, "PortfolioItemPostType", "add_meta_boxes", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467771, 3604, "Responsive_Portfolio_Gallery_Shortcodes", "__construct", "/shortcodes/shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467772, 3604, "Three_Column_Portfolio_Shortcode", "shortcode", "/shortcodes/three-column-portfolio.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467773, 3604, "PortfolioItemPostType", "insert_my_template", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467774, 3604, "Four_Column_Portfolio_Shortcode", "shortcode", "/shortcodes/four-column-portfolio.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467775, 3604, "Responsive_Portfolio_Gallery_Shortcodes", "shortcode", "/shortcodes/shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467776, 3604, "ResponsivePortfolioGallery", "responsive_portfolio_gallery_activate", "/responsive-portfolio-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467777, 3604, "PortfolioItemPostType", "admin_init", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467778, 3604, "PortfolioItemPostType", "__construct", "/post-types/portfolio-item-post-type.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39290, 3604, "wp_enqueue_scripts", "array(&$this,'enqueue_frontend_files')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39291, 3604, "admin_init", "array(&$this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39292, 3604, "add_meta_boxes", "array(&$this,'add_meta_boxes')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39293, 3604, "save_post", "array(&$this,'save_post')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39294, 3604, "init", "array(&$this,'init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13465, 3604, "template_include", "array(&$this,'insert_my_template')", 10, now(), now());

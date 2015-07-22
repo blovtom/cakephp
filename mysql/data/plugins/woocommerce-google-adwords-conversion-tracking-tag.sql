@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4885, "Plugin Name", "4.1", "0.2.0", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84877, 4885, "cdata_markupfix", "/wgact.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84878, 4885, "cdata_template_redirect", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621759, 4885, "WGACT", "wgact_plugin_options_validate", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621760, 4885, "WGACT", "wgact_plugin_admin_add_page", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621761, 4885, "WGACT", "__construct", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621762, 4885, "WGACT", "wgact_plugin_setting_string_1", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621763, 4885, "WGACT", "wgact_plugin_section_text", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621764, 4885, "WGACT", "wgact_settings_link", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621765, 4885, "WGACT", "GoogleAdWordsTag", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621766, 4885, "WGACT", "wgact_plugin_options_page", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621767, 4885, "WGACT", "wgact_plugin_setting_string_2", "/wgact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621768, 4885, "WGACT", "wgact_plugin_admin_init", "/wgact.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52493, 4885, "admin_menu", "array($this,'wgact_plugin_admin_add_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52494, 4885, "woocommerce_thankyou", "array($this,'GoogleAdWordsTag')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52495, 4885, "admin_init", "array($this,'wgact_plugin_admin_init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17713, 4885, "plugin_action_links", "array($this,'wgact_settings_link')", 10, now(), now());

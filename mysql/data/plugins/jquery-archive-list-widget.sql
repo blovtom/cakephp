@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2365, "jQuery Archive List Widget", "4.1", "3.0.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44452, 2365, "jal_register_widget", "/jquery-archive-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340712, 2365, "JQArchiveList", "__construct", "/jquery-archive-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340713, 2365, "JQArchiveList", "widget", "/jquery-archive-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340714, 2365, "JQArchiveList", "filter", "/jquery-archive-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340715, 2365, "JAW_Walker_Category_Checklist", "__construct", "/admin/JAW_Walker_Category_Checklist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340716, 2365, "JAW_Walker_Category_Checklist", "start_el", "/admin/JAW_Walker_Category_Checklist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340717, 2365, "JQArchiveList", "form", "/jquery-archive-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (340718, 2365, "JQArchiveList", "update", "/jquery-archive-list-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25517, 2365, "widgets_init", "'jal_register_widget'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8593, 2365, "widget_text", "'do_shortcode'", 10, now(), now());

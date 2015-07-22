@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2007, "Gravity Forms - WCAG 2.0 form fields", "4.1", "1.2.7", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320903, 2007, "ITSP_GF_WCAG20_Form_Fields", "change_fields_content_wcag", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320904, 2007, "ITSP_GF_WCAG20_Form_Fields", "css_styles", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320905, 2007, "ITSP_GF_WCAG20_Form_Fields", "__construct", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320906, 2007, "ITSP_GF_WCAG20_Form_Fields", "queue_scripts", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320907, 2007, "ITSP_GF_WCAG20_Form_Fields", "change_column_add_title_wcag", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320908, 2007, "ITSP_GF_WCAG20_Form_Fields", "change_validation_message", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320909, 2007, "ITSP_GF_WCAG20_Form_Fields", "set_save_continue_button", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320910, 2007, "ITSP_GF_WCAG20_Form_Fields", "admin_warnings", "/gravity_forms_wcag20_form_fields_plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21972, 2007, "admin_notices", "array('ITSP_GF_WCAG20_Form_Fields','admin_warnings')", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21973, 2007, "gform_enqueue_scripts", "array(&$this,'queue_scripts')", 90, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7297, 2007, "gform_validation_message", "array(&$this,'change_validation_message')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7298, 2007, "gform_field_content", "array(&$this,'change_fields_content_wcag')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7299, 2007, "gform_tabindex", "create_function('','return false;')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7300, 2007, "gform_column_input_content", "array(&$this,'change_column_add_title_wcag')", 10, now(), now());

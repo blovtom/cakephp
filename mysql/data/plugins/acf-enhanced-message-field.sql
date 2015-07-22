@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (45, "ACF Enhanced Message Field", "4.1", NULL, "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (523, 45, "include_field_type_enhancedMessage", "/acf-enhanced-message.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (524, 45, "register_fields_enhancedMessage", "/acf-enhanced-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2975, 45, "acf_field_enhanced_message", "field_group_admin_enqueue_scripts", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2976, 45, "acf_field_enhanced_message", "field_group_admin_enqueue_scripts", "/acf-enhanced-message-v5.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2977, 45, "acf_field_enhanced_message", "__construct", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2978, 45, "acf_field_enhanced_message", "load_field", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2979, 45, "acf_field_enhanced_message", "create_options", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2980, 45, "acf_field_enhanced_message", "create_field", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2981, 45, "acf_field_enhanced_message", "load_field", "/acf-enhanced-message-v5.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2982, 45, "acf_field_enhanced_message", "field_group_admin_head", "/acf-enhanced-message-v5.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2983, 45, "acf_field_enhanced_message", "__construct", "/acf-enhanced-message-v5.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2984, 45, "acf_field_enhanced_message", "render_field_settings", "/acf-enhanced-message-v5.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2985, 45, "acf_field_enhanced_message", "field_group_admin_head", "/acf-enhanced-message-v4.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2986, 45, "acf_field_enhanced_message", "render_field", "/acf-enhanced-message-v5.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (422, 45, "acf/register_fields", "'register_fields_enhancedMessage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (423, 45, "acf/include_field_types", "'include_field_type_enhancedMessage'", 10, now(), now());

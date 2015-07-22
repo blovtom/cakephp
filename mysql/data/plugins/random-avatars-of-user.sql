@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3470, "Customize Random Avatar", "4.1", "1.0.0", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63141, 3470, "bc_add_avatar", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63142, 3470, "deleteDirectory", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63143, 3470, "resize_image", "/image_resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63144, 3470, "destroy_session_val", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63145, 3470, "makeThumbnails", "/image_resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63146, 3470, "avatar_folders", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63147, 3470, "createScaledImage_crop", "/image_resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63148, 3470, "remove_folders", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63149, 3470, "my_avatar", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63150, 3470, "dispaly_avatar_style", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63151, 3470, "bc_get_avatar", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63152, 3470, "create_cropped_thumbnail", "/image_resize.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63153, 3470, "validate_steamid_field", "/display-user-avatar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63154, 3470, "createScaledImage", "/image_resize.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38003, 3470, "user_profile_update_errors", "'validate_steamid_field'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38004, 3470, "init", "'dispaly_avatar_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38005, 3470, "edit_user_profile", "'bc_get_avatar'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38006, 3470, "personal_options_update", "'bc_add_avatar'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38007, 3470, "show_user_profile", "'bc_get_avatar'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38008, 3470, "get_avatar", "'my_avatar'", 10, now(), now());

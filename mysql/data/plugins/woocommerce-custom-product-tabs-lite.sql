@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4849, "WooCommerce Custom Product Tabs Lite", "4.1", "1.2.7", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618293, 4849, "WooCommerceCustomProductTabsLite", "product_save_data", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618294, 4849, "WooCommerceCustomProductTabsLite", "product_write_panel_tab", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618295, 4849, "WooCommerceCustomProductTabsLite", "custom_product_tabs_panel_content", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618296, 4849, "WooCommerceCustomProductTabsLite", "load_translation", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618297, 4849, "WooCommerceCustomProductTabsLite", "init", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618298, 4849, "WooCommerceCustomProductTabsLite", "product_write_panel", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618299, 4849, "WooCommerceCustomProductTabsLite", "add_custom_product_tabs", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618300, 4849, "WooCommerceCustomProductTabsLite", "is_woocommerce_active", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618301, 4849, "WooCommerceCustomProductTabsLite", "__construct", "/woocommerce-custom-product-tabs-lite.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52009, 4849, "woocommerce_product_write_panel_tabs", "array($this,'product_write_panel_tab')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52010, 4849, "woocommerce_product_write_panels", "array($this,'product_write_panel')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52011, 4849, "woocommerce_process_product_meta", "array($this,'product_save_data')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52012, 4849, "init", "array($this,'load_translation')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52013, 4849, "woocommerce_init", "array($this,'init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17486, 4849, "woocommerce_product_tabs", "array($this,'add_custom_product_tabs')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17487, 4849, "woocommerce_custom_product_tabs_lite_content", "'do_shortcode'", 10, now(), now());

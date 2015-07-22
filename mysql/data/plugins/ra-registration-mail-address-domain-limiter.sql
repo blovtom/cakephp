@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3457, "RA - Registration Mail Address Domain Limiter", "4.1.1", "1.2.7", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456776, 3457, "RMADL_Limitter_Execute", "new_user_regist_limiter", "/class/rmadl_execute_limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456777, 3457, "RMADL_Limitter_Execute", "mail_addr_domain_check", "/class/rmadl_execute_limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456778, 3457, "RMADL_Settings_Page", "rmadl_display_settins_page", "/class/rmadl_settings_page.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456779, 3457, "RMADL_Limitter_Execute", "profile_mailupdate_limiter", "/class/rmadl_execute_limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456780, 3457, "RMADL_Settings_Page", "__construct", "/class/rmadl_settings_page.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456781, 3457, "RMADL", "rmadl_load_admin_page", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456782, 3457, "RMADL", "rmadl_init", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456783, 3457, "RMADL_Settings_Page_HTML", "output_settings_html", "/class/rmadl_settings_page_html.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456784, 3457, "RMADL_Settings_Page", "rmadl_add_admin_css", "/class/rmadl_settings_page.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456785, 3457, "RMADL_COMMON", "get_limiter_domains", "/class/rmadl_common.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456786, 3457, "RMADL_Settings_Page", "rmadl_add_menu", "/class/rmadl_settings_page.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456787, 3457, "RMADL", "rmadl_profile_mailupdate_limiter", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456788, 3457, "RMADL", "__construct", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456789, 3457, "RMADL", "RMADL", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456790, 3457, "RMADL", "rmadl_new_user_regist_limiter", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456791, 3457, "RMADL", "plugin_basename", "/ra-mail-domain-limiter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456792, 3457, "RMADL_COMMON", "plugin_settings_page_links", "/class/rmadl_common.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456793, 3457, "RMADL_COMMON", "rmadl_init", "/class/rmadl_common.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456794, 3457, "RMADL_COMMON", "get_settings_data", "/class/rmadl_common.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37927, 3457, "profile_update", "array(&$this,'rmadl_profile_mailupdate_limiter')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37928, 3457, "admin_print_styles", "array(&$this,'rmadl_add_admin_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37929, 3457, "init", "array(&$this,'rmadl_load_admin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37930, 3457, "admin_menu", "array(&$this,'rmadl_add_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13061, 3457, "registration_errors", "array(&$this,'rmadl_new_user_regist_limiter')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13062, 3457, "plugin_action_links", "array('rmadl_common','plugin_settings_page_links')", 10, now(), now());

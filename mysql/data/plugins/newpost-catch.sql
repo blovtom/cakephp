@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2880, "Plugin Name", "4.1", "1.2.7", "3.3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52742, 2880, "no_thumb_image", "/class.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52743, 2880, "no_thumb_image", "/class.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52744, 2880, "npc_plugin_menu", "/newpost-catch.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52745, 2880, "npc_options_page", "/newpost-catch.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385376, 2880, "NewpostCatch", "enqueue_stylesheet", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385377, 2880, "NewpostCatch", "NewpostCatch", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385378, 2880, "NewpostCatch", "form", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385379, 2880, "NewpostCatch_SC", "npc_sc", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385380, 2880, "NewpostCatch", "NewpostCatch_textdomain", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385381, 2880, "NewpostCatch", "update", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385382, 2880, "NewpostCatch_SC", "__construct", "/class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (385383, 2880, "NewpostCatch", "widget", "/class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31268, 2880, "get_header", "array(&$this,'enqueue_stylesheet')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31269, 2880, "widgets_init", "create_function('','return register_widget("NewpostCatch");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31270, 2880, "init", "array(&$this,'NewpostCatch_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31271, 2880, "admin_menu", "'npc_plugin_menu'", 10, now(), now());

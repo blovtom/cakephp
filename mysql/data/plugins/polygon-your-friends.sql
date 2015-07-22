@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3225, "Polygon Your Friends", "4.1", "1.6.3", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58166, 3225, "UserNameASC", "/polygon-your-friends.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58167, 3225, "polygon_validate_gravatar", "/polygon-your-friends.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58168, 3225, "UserNameDESC", "/polygon-your-friends.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58169, 3225, "UserCreateDateASC", "/polygon-your-friends.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58170, 3225, "UserCreateDateDESC", "/polygon-your-friends.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58171, 3225, "POLYGON_Your_Friends", "/polygon-your-friends.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420698, 3225, "POLYGON_Widget_Your_Friends", "form", "/polygon-your-friends.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420699, 3225, "POLYGON_Widget_Your_Friends", "widget", "/polygon-your-friends.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420700, 3225, "POLYGON_Widget_Your_Friends", "__construct", "/polygon-your-friends.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420701, 3225, "POLYGON_Widget_Your_Friends", "update", "/polygon-your-friends.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35540, 3225, "widgets_init", "'POLYGON_Your_Friends'", 10, now(), now());

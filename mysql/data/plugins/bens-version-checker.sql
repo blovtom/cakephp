@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (488, "Ben’s Version Checker", "4.1", "version-checker", "4.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8795, 488, "activate_version_checker", "/version-checker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8796, 488, "deactivate_version_checker", "/version-checker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8797, 488, "run_version_checker", "/version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49649, 488, "Version_Checker_Admin", "__construct", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49650, 488, "Version_Checker_Admin", "render_page", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49651, 488, "Version_Checker", "get_version", "/includes/class-version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49652, 488, "Version_Checker", "get_loader", "/includes/class-version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49653, 488, "Version_Checker_Activator", "activate", "/includes/class-version-checker-activator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49654, 488, "Version_Checker_Loader", "run", "/includes/class-version-checker-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49655, 488, "Version_Checker_Loader", "add_filter", "/includes/class-version-checker-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49656, 488, "Version_Checker_Admin", "add_menu", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49657, 488, "Version_Checker_Admin", "register_settings", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49658, 488, "Version_Checker", "run", "/includes/class-version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49659, 488, "Version_Checker_i18n", "load_plugin_textdomain", "/includes/class-version-checker-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49660, 488, "Version_Checker", "__construct", "/includes/class-version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49661, 488, "Version_Checker_Admin", "enqueue_styles", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49662, 488, "Version_Checker_Loader", "__construct", "/includes/class-version-checker-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49663, 488, "Version_Checker_Admin", "check_site", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49664, 488, "Version_Checker_Loader", "add_action", "/includes/class-version-checker-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49665, 488, "Version_Checker", "get_plugin_name", "/includes/class-version-checker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49666, 488, "Version_Checker_i18n", "set_domain", "/includes/class-version-checker-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49667, 488, "Version_Checker_Admin", "site_json_setting_callback", "/admin/class-version-checker-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49668, 488, "Version_Checker_Deactivator", "deactivate", "/includes/class-version-checker-deactivator.php", now(), now());
+

@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3201, "Plug-N-Edit Drag & Drop HTML Visual Editor with Web Page Builder WYSIWYG", "4.0", "5.0.8", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57623, 3201, "pne_load_plugin_css", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57624, 3201, "PNEcheckpost", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57625, 3201, "Plugnedit_css", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57626, 3201, "my_default_editor", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57627, 3201, "PNE_jsscripts", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57628, 3201, "PNEADDPAGE", "/pagebuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57629, 3201, "do_aPlugnedit", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57630, 3201, "PnEPageBuilder", "/pagebuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57631, 3201, "pnemy_template_redirect", "/PlugNedit-WP.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57632, 3201, "PNEOlinks", "/pnemed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57633, 3201, "PNEMedfile", "/pnemed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57634, 3201, "do_pPlugnedit", "/PNEBlogBuilder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57635, 3201, "my_the_content_filter", "/PNEBlogBuilder.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35145, 3201, "template_redirect", "'pnemy_template_redirect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35146, 3201, "admin_footer", "'do_pPlugnedit'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35147, 3201, "admin_menu", "'PNEADDPAGE'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35148, 3201, "edit_page_form", "'do_aPlugnedit'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35149, 3201, "wp_enqueue_scripts", "'pne_load_plugin_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35150, 3201, "wp_enqueue_scripts", "'PNE_jsscripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35151, 3201, "wp_head", "'Plugnedit_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35152, 3201, "edit_form_advanced", "'do_aPlugnedit'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11787, 3201, "the_content", "'PNEcheckpost'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11788, 3201, "the_editor_content", "'my_the_content_filter'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11789, 3201, "wp_default_editor", "'my_default_editor'", 10, now(), now());

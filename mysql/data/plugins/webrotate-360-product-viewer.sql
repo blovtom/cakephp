@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4733, "360 Product Viewer", "4.0.0", "2.5.1", "3.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82689, 4733, "admin_webrotate360_menu", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82690, 4733, "add_filter_webrotate_embed_viewer", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82691, 4733, "admin_register_webrotate360_settings", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82692, 4733, "wr360embed_shortcode_hanlder", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82693, 4733, "wr360popup_shortcode_hanlder", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82694, 4733, "add_action_webrotate_styles", "/webrotate360.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82695, 4733, "admin_webrotate360_options", "/webrotate360.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595058, 4733, "WR360DefaultsConfig", "init_header", "/webrotate360.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595059, 4733, "WR360DefaultsConfig", "init_shortcode", "/webrotate360.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50740, 4733, "wp_enqueue_scripts", "'add_action_webrotate_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50741, 4733, "admin_menu", "'admin_webrotate360_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50742, 4733, "admin_init", "'admin_register_webrotate360_settings'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17099, 4733, "the_content", "'add_filter_webrotate_embed_viewer'", 10, now(), now());

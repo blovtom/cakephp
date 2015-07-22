@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4836, "WooCommerce ChainPay", "4.1", "1.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84474, 4836, "wcchainpay_woocommerce_fallback_notice", "/woocommerce-chainpay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84475, 4836, "wcchainpay_init", "/woocommerce-chainpay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84476, 4836, "wcchainpay_add", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617392, 4836, "WC_ChainPay", "__construct", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617393, 4836, "WC_ChainPay", "ChainPay_Callback", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617394, 4836, "WC_ChainPay", "init_form_fields", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617395, 4836, "WC_ChainPay", "process_payment", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617396, 4836, "WC_ChainPay", "ChainPay_MissingApiKey", "/woocommerce-chainpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (617397, 4836, "WC_ChainPay", "ChainPay_MissingPrivateKey", "/woocommerce-chainpay.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51860, 4836, "admin_notices", "array(&$this,'ChainPay_MissingApiKey')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51861, 4836, "admin_notices", "array(&$this,'ChainPay_MissingPrivateKey')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51862, 4836, "plugins_loaded", "'wcchainpay_init'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51863, 4836, "woocommerce_api_wc_chainpay", "array(&$this,'ChainPay_Callback')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51864, 4836, "admin_notices", "'wcchainpay_woocommerce_fallback_notice'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17452, 4836, "woocommerce_payment_gateways", "'wcchainpay_add'", 10, now(), now());

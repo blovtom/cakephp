@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (310, "Archived Post Status", "4.1", "0.3.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5362, 310, "aps_i18n", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5363, 310, "aps_post_screen_js", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5364, 310, "aps_is_frontend", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5365, 310, "aps_current_user_can_view", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5366, 310, "aps_edit_screen_js", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5367, 310, "aps_is_excluded_post_type", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5368, 310, "aps_the_title", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5369, 310, "aps_load_post_screen", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5370, 310, "aps_register_archive_post_status", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5371, 310, "aps_i18n_strings", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5372, 310, "aps_display_post_states", "/archived-post-status.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5373, 310, "aps_save_post", "/archived-post-status.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2926, 310, "load-post.php", "'aps_load_post_screen'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2927, 310, "init", "'aps_register_archive_post_status'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2928, 310, "admin_footer-post.php", "'aps_post_screen_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2929, 310, "save_post", "__FUNCTION__", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2930, 310, "save_post", "'aps_save_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2931, 310, "admin_footer-edit.php", "'aps_edit_screen_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2932, 310, "plugins_loaded", "'aps_i18n'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (960, 310, "the_title", "'aps_the_title'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (961, 310, "aps_status_arg_exclude_from_search", "'aps_is_frontend'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (962, 310, "display_post_states", "'aps_display_post_states'", 10, now(), now());

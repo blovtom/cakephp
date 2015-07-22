@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4987, "WordPress Word Count and Limit", "4.0", "1.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85640, 4987, "wpwcl_func_format_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85641, 4987, "wpwcl_func_contributor_message_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85642, 4987, "wpwcl_option_section_text", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85643, 4987, "wpwcl_options_add_page", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85644, 4987, "wpwcl_func_ask_limitation_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85645, 4987, "wpwcl_options_settings", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85646, 4987, "wpwcl_func_impacted_post_types_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85647, 4987, "wpwcl_func_maxchars_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85648, 4987, "wpwcl_func_warning_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85649, 4987, "wpwcl_options_validate", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85650, 4987, "wpwcl_func_warning_message_option", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85651, 4987, "wpwcl_maxcharreached", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85652, 4987, "wpwcl_scripts", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85653, 4987, "wpwcl_lang_init", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85654, 4987, "wpwcl_options_do_page", "/wpwcl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85655, 4987, "wpwcl_func_impacted_users_option", "/wpwcl.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53756, 4987, "plugins_loaded", "'wpwcl_lang_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53757, 4987, "pending_to_publish", "'wpwcl_maxcharreached'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53758, 4987, "draft_to_publish", "'wpwcl_maxcharreached'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53759, 4987, "after_wp_tiny_mce", "'wpwcl_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53760, 4987, "admin_init", "'wpwcl_options_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53761, 4987, "draft_to_pending", "'wpwcl_maxcharreached'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53762, 4987, "admin_menu", "'wpwcl_options_add_page'", 10, now(), now());

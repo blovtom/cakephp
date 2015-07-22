@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1575, "EZ Backup", "4.1.1", "4.15.12", "2.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32401, 1575, "ezbackup_set_plugin_row_meta", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32402, 1575, "ezbackup_query", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32403, 1575, "ezbackup_set_plugin_action_links", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32404, 1575, "ezbackup_set_backupdir", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32405, 1575, "ezbackup_activation", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32406, 1575, "ezbackup_admin_notices", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32407, 1575, "ezbackup_display_header", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32408, 1575, "ezbackup_install", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32409, 1575, "ezbackup_enqueue_scripts", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32410, 1575, "ezbackup_get_data", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32411, 1575, "ezbackup_menu", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32412, 1575, "ezbackup_db2file", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32413, 1575, "ezbackup_settings", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32414, 1575, "ezbackup_link", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32415, 1575, "ezbackup_get_structure", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32416, 1575, "ezbackup_box", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32417, 1575, "ezbackup_deactivation", "/index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17726, 1575, "admin_notices", "'ezbackup_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17727, 1575, "admin_menu", "'ezbackup_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17728, 1575, "ezbackup_db_hourly", "'ezbackup_db2file'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17729, 1575, "wp_enqueue_scripts", "'ezbackup_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17730, 1575, "ezbackup_db_daily", "'ezbackup_db2file'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5919, 1575, "plugin_action_links", "'ezbackup_set_plugin_action_links'", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5920, 1575, "plugin_row_meta", "'ezbackup_set_plugin_row_meta'", 1, now(), now());

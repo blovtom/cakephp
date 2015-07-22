@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (339, "Plugin Name", "4.0", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5635, 339, "__as_posted", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5636, 339, "__as_contact_form", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5637, 339, "admin_register_head", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5638, 339, "show_as_contact_config", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5639, 339, "show_as_contact_settings", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5640, 339, "as_send_contact_form", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5641, 339, "as_validate_form", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5642, 339, "register_as_contact_settings_page", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5643, 339, "add_as_contact_form_stylesheet", "/assupport.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37926, 339, "unity_invoices", "path", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37927, 339, "unity_invoices", "is_validated", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37928, 339, "unity_invoices", "validated_invoices_count", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37929, 339, "unity_invoices", "validate_invoices", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37930, 339, "unity_invoices", "validate_entry", "/functions.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3223, 339, "admin_menu", "'register_as_contact_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3224, 339, "admin_head", "'admin_register_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3225, 339, "wp_enqueue_scripts", "'add_as_contact_form_stylesheet'", 10, now(), now());

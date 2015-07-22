@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3114, "Paypal Frontend Registration", "4.1", "3.6.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56114, 3114, "pro_admin_menu", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56115, 3114, "pro_uninstall", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56116, 3114, "registartion_form_shortcode", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56117, 3114, "pro_admin_list_site", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56118, 3114, "pro_admin_menu_list", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56119, 3114, "pro_install", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56120, 3114, "post_word_count", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (405781, 3114, "pra_stripe", "init", "/main.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34070, 3114, "admin_menu", "'pro_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34071, 3114, "wp_ajax_nopriv_post_word_count", "'post_word_count'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34072, 3114, "wp_ajax_post_word_count", "'post_word_count'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34073, 3114, "init", "array('pra_stripe','init')", 10, now(), now());

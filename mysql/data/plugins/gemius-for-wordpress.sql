@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1818, "Gemius for WordPress", "4.1", "1.2.2", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36068, 1818, "tla_gemiuswp_script", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217242, 1818, "TLA_GemiusWP_Admin", "uninstall_plugin", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217243, 1818, "TLA_GemiusWP_Admin", "options_page", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217244, 1818, "TLA_GemiusWP_Admin", "setting_string", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217245, 1818, "TLA_GemiusWP_Admin", "gemius_warning", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217246, 1818, "TLA_GemiusWP_Admin", "__construct", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217247, 1818, "TLA_GemiusWP_Admin", "check_configuration", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217248, 1818, "TLA_GemiusWP_Admin", "section_text", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217249, 1818, "TLA_GemiusWP_Admin", "admin_init", "/gemius.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217250, 1818, "TLA_GemiusWP_Admin", "admin_add_page", "/gemius.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20157, 1818, "wp_footer", "'tla_gemiuswp_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20158, 1818, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20159, 1818, "admin_notices", "array($this,'gemius_warning')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20160, 1818, "admin_menu", "array($this,'admin_add_page')", 10, now(), now());

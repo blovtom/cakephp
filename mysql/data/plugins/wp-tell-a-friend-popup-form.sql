@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5462, "wp tell a friend popup form", "4.1", "5.5", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95517, 5462, "TellAFriend_deactivation", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95518, 5462, "TellAFriend_widget_init", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95519, 5462, "TellAFriend", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95520, 5462, "TellAFriend_shortcode", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95521, 5462, "TellAFriend_admin", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95522, 5462, "TellAFriend_plugin_parse_request", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95523, 5462, "TellAFriend_control", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95524, 5462, "TellAFriend_widget", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95525, 5462, "TellAFriend_textdomain", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95526, 5462, "TellAFriend_install", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95527, 5462, "TellAFriend_plugin_query_vars", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95528, 5462, "TellAFriend_add_javascript_files", "/wp-tell-a-friend-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95529, 5462, "TellAFriend_add_to_menu", "/wp-tell-a-friend-popup-form.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59195, 5462, "wp_enqueue_scripts", "'TellAFriend_add_javascript_files'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59196, 5462, "plugins_loaded", "'TellAFriend_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59197, 5462, "init", "'TellAFriend_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59198, 5462, "parse_request", "'TellAFriend_plugin_parse_request'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59199, 5462, "plugins_loaded", "'TellAFriend_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59200, 5462, "admin_menu", "'TellAFriend_add_to_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20286, 5462, "query_vars", "'TellAFriend_plugin_query_vars'", 10, now(), now());

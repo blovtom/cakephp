@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3274, "Post Type Switcher", "4.1", "1.5", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423929, 3274, "Post_Type_Switcher", "quickedit", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423930, 3274, "Post_Type_Switcher", "quickedit_script", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423931, 3274, "Post_Type_Switcher", "__construct", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423932, 3274, "Post_Type_Switcher", "admin_head", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423933, 3274, "Post_Type_Switcher", "save_post", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423934, 3274, "Post_Type_Switcher", "metabox", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423935, 3274, "Post_Type_Switcher", "select_box", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423936, 3274, "Post_Type_Switcher", "add_column", "/post-type-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423937, 3274, "Post_Type_Switcher", "manage_column", "/post-type-switcher.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36154, 3274, "post_submitbox_misc_actions", "array($this,'metabox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36155, 3274, "admin_head", "array($this,'admin_head')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36156, 3274, "manage_posts_custom_column", "array($this,'manage_column')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36157, 3274, "manage_posts_columns", "array($this,'add_column')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36158, 3274, "admin_enqueue_scripts", "array($this,'quickedit_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36159, 3274, "manage_pages_columns", "array($this,'add_column')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36160, 3274, "bulk_edit_custom_box", "array($this,'quickedit')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36161, 3274, "manage_pages_custom_column", "array($this,'manage_column')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36162, 3274, "quick_edit_custom_box", "array($this,'quickedit')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36163, 3274, "save_post", "array($this,'save_post')", 999, now(), now());

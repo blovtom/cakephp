@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1883, "Glance That", "4.2.1", "2.3", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236223, 1883, "Glance_That", "get_instance", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236224, 1883, "Glance_That", "check_user_cap", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236225, 1883, "Glance_That", "get_dashicon_field", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236226, 1883, "Glance_That", "add_form_activation_link", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236227, 1883, "Glance_That", "show_notices", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236228, 1883, "Glance_That", "customize_items", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236229, 1883, "Glance_That", "sort_glances", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236230, 1883, "Glance_That", "process_form", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236231, 1883, "Glance_That", "add_sort_order", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236232, 1883, "Glance_That", "add_stylesheets_and_javascript", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236233, 1883, "Glance_That", "get_users_glances", "/glance-that.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236234, 1883, "Glance_That", "add_form", "/glance-that.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21017, 1883, "admin_init", "array($this,'process_form')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21018, 1883, "wp_ajax_sort_glances", "array($this,'sort_glances')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21019, 1883, "init", "array($this,'get_users_glances')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21020, 1883, "admin_enqueue_scripts", "array($this,'add_stylesheets_and_javascript')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21021, 1883, "plugins_loaded", "array($this,'check_user_cap')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21022, 1883, "admin_footer", "array($this,'add_sort_order')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21023, 1883, "admin_notices", "array($this,'show_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21024, 1883, "activity_box_end", "array($this,'add_form')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6971, 1883, "dashboard_glance_items", "array($this,'add_form_activation_link')", 20, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6972, 1883, "dashboard_glance_items", "array($this,'customize_items')", 10, now(), now());

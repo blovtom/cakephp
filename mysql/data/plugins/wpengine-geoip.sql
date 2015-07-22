@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5531, "WP Engine GeoIP", "4.1.1", "1.0.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724955, 5531, "GeoIp", "do_shortcode_country", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724956, 5531, "GeoIp", "get_actuals", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724957, 5531, "GeoIp", "setup", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724958, 5531, "GeoIp", "action_admin_notices", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724959, 5531, "GeoIp", "do_shortcode_region", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724960, 5531, "GeoIp", "postal_code", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724961, 5531, "GeoIp", "action_init_register_shortcodes", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724962, 5531, "GeoIp", "do_shortcode_location", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724963, 5531, "GeoIp", "longitude", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724964, 5531, "GeoIp", "do_shortcode_city", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724965, 5531, "GeoIp", "instance", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724966, 5531, "GeoIp", "region", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724967, 5531, "GeoIp", "init", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724968, 5531, "GeoIp", "latitude", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724969, 5531, "GeoIp", "country", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724970, 5531, "GeoIp", "do_shortcode_postal_code", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724971, 5531, "GeoIp", "city", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724972, 5531, "GeoIp", "do_shortcode_longitude", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724973, 5531, "GeoIp", "do_shortcode_latitude", "/wpengine-geoip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (724974, 5531, "GeoIp", "action_admin_init_check_plugin_dependencies", "/wpengine-geoip.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60219, 5531, "admin_init", "array(self::instance(),'action_admin_init_check_plugin_dependencies')", 9999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60220, 5531, "init", "array(self::instance(),'setup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60221, 5531, "init", "array(self::instance(),'action_init_register_shortcodes')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60222, 5531, "admin_notices", "array(self::instance(),'action_admin_notices')", 10, now(), now());

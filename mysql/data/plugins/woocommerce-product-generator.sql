@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4937, "WooCommerce Product Generator", "4.1.1", "1.0.1", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625825, 4937, "WooCommerce_Product_Generator", "get_product_count", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625826, 4937, "WooCommerce_Product_Generator", "get_title", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625827, 4937, "WooCommerce_Product_Generator", "init", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625828, 4937, "WooCommerce_Product_Generator", "get_image", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625829, 4937, "WooCommerce_Product_Generator", "admin_menu", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625830, 4937, "WooCommerce_Product_Generator", "get_user_id", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625831, 4937, "WooCommerce_Product_Generator", "admin_settings_link", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625832, 4937, "WooCommerce_Product_Generator", "wp_init", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625833, 4937, "WooCommerce_Product_Generator", "get_content", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625834, 4937, "WooCommerce_Product_Generator", "deactivate", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625835, 4937, "WooCommerce_Product_Generator", "load", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625836, 4937, "WooCommerce_Product_Generator", "generator", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625837, 4937, "WooCommerce_Product_Generator", "activate", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625838, 4937, "WooCommerce_Product_Generator", "get_image_name", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625839, 4937, "WooCommerce_Product_Generator", "run", "/woocommerce-product-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625840, 4937, "WooCommerce_Product_Generator", "create_product", "/woocommerce-product-generator.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53186, 4937, "init", "array(__CLASS__,'wp_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53187, 4937, "admin_menu", "array(__CLASS__,'admin_menu')", 10, now(), now());

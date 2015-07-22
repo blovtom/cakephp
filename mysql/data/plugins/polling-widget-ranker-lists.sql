@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3221, "Polling Widget: Ranker Lists", "4.1", "2.2.3", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58148, 3221, "rnkrwp_build_shortcodes", "/admin/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58149, 3221, "rnkrwp_admin_head", "/admin/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58150, 3221, "rnkrwp_plugin_shortcodes", "/admin/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58151, 3221, "rnkrwp_menu", "/admin/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58152, 3221, "rnkrwp_shortcode", "/includes/controller.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58153, 3221, "rnkrwp_place_scripts", "/includes/controller.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58154, 3221, "rnkrwp_load_plugin_textdomain", "/rnkr-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58155, 3221, "rnkrwp_js_utils", "/admin/utils.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58156, 3221, "rnkrwp_place_defaults", "/includes/controller.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58157, 3221, "rnkrwp_init", "/rnkr-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58158, 3221, "rnkrwp_build_options", "/admin/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58159, 3221, "rnkrwp_update_options", "/admin/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58160, 3221, "rnkrwp_is_boolean", "/admin/utils.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58161, 3221, "rnkrwp_process_shortcode", "/includes/controller.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58162, 3221, "rnkrwp_plugin_options", "/admin/admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35522, 3221, "init", "'rnkrwp_place_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35523, 3221, "wp_footer", "'rnkrwp_place_defaults'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35524, 3221, "init", "'rnkrwp_load_plugin_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35525, 3221, "admin_menu", "'rnkrwp_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35526, 3221, "init", "'rnkrwp_init'", 10, now(), now());

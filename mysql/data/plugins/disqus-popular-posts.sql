@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1255, "Disqus Popular Posts", "4.1.1", "1.6.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25068, 1255, "disqus_fetch", "/dpp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25069, 1255, "dpp_render", "/dpp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25070, 1255, "dpp_widget_init", "/dpp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25071, 1255, "dpp_add_action_link", "/dpp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110520, 1255, "dpp_widget", "widget", "/dpp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110521, 1255, "dpp_widget", "__construct", "/dpp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110522, 1255, "dpp_widget", "update", "/dpp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110523, 1255, "dpp_widget", "form", "/dpp.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13799, 1255, "wp_ajax_nopriv_dpp_render", "'dpp_render'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13800, 1255, "widgets_init", "'dpp_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13801, 1255, "wp_ajax_dpp_render", "'dpp_render'", 10, now(), now());

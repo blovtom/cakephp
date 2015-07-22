@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2645, "Plugin Name", "4.1", "0.4.0.8b", "3.9.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48404, 2645, "cmpg_add_instructions", "/cactus-masonry-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48405, 2645, "cmpg_instructions_page", "/cactus-masonry-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364581, 2645, "Cactus_Masonry", "cmpg_add_dependencies", "/masonry-post-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364582, 2645, "Cactus_Masonry", "masonrypostgallery_handler", "/masonry-post-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364583, 2645, "Cactus_Masonry", "init", "/masonry-post-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364584, 2645, "Cactus_Masonry", "cmpg_add_header", "/masonry-post-gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364585, 2645, "Cactus_Masonry", "plugin_settings_link", "/masonry-post-gallery.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28736, 2645, "admin_menu", "'cmpg_add_instructions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28737, 2645, "wp_enqueue_scripts", "array(__CLASS__,'cmpg_add_dependencies')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28738, 2645, "wp_headers", "array(__CLASS__,'cmpg_add_header')", 10, now(), now());

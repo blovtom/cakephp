@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1994, "Gravity Forms Entry Expiration", "4.1.0", "4.1.0", "3.9.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38835, 1994, "gf_entryexpiration_delete_old_entries_action", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317695, 1994, "GFEntryExpiration", "init", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317696, 1994, "GFEntryExpiration", "plugin_settings_fields", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317697, 1994, "GFEntryExpiration", "run_deactivation_routine", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317698, 1994, "GFEntryExpiration", "delete_old_entries", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317699, 1994, "GFEntryExpiration", "add_form_setting", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317700, 1994, "GFEntryExpiration", "save_form_setting", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317701, 1994, "GFEntryExpiration", "get_instance", "/entryexpiration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317702, 1994, "GFEntryExpiration", "run_activation_routine", "/entryexpiration.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21890, 1994, "gf_entryexpiration_delete_old_entries", "'gf_entryexpiration_delete_old_entries_action'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7235, 1994, "gform_form_settings", "array($this,'add_form_setting')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7236, 1994, "gform_pre_form_settings_save", "array($this,'save_form_setting')", 10, now(), now());

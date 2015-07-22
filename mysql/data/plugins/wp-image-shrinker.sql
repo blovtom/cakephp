@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5216, "WordPress Image shrinker", "4.1", NULL, NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90669, 5216, "hetworkstinypng_displayoptionspage", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90670, 5216, "hetworkstinypng_createoptionspage", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90671, 5216, "hetworkstinypng_metadata", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90672, 5216, "hetworkstinypng_ajaxaction_tinypngimage", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90673, 5216, "hetworkstinypng_ajaxaction_tinypngdone", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90674, 5216, "hetworkstinypng_uploadevent", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90675, 5216, "hetworkstinypng_ajaxaction_getimages", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90676, 5216, "hetworkstinypng_registersettings", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90677, 5216, "hetworkstinypng_tinypngrequest", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90678, 5216, "hetworkstinypng_add_settings_link", "/hetworkstinypng.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90679, 5216, "hetworkstinypng_ajaxactionrequest", "/hetworkstinypng.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56541, 5216, "wp_ajax_hetworkstinypng_ajaxaction_tinypngimage", "'hetworkstinypng_ajaxaction_tinypngimage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56542, 5216, "wp_ajax_hetworkstinypng_ajaxaction_getimages", "'hetworkstinypng_ajaxaction_getimages'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56543, 5216, "wp_ajax_hetworkstinypng_ajaxaction_tinypngdone", "'hetworkstinypng_ajaxaction_tinypngdone'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56544, 5216, "admin_footer", "'hetworkstinypng_ajaxactionrequest'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56545, 5216, "admin_menu", "'hetworkstinypng_createoptionspage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56546, 5216, "admin_init", "'hetworkstinypng_registersettings'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19409, 5216, "wp_generate_attachment_metadata", "'hetworkstinypng_metadata'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19410, 5216, "wp_handle_upload_prefilter", "'hetworkstinypng_uploadevent'", 10, now(), now());

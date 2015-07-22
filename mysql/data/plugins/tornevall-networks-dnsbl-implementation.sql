@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4436, "Plugin Name", "4.x", "1.0.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77360, 4436, "tornevall_wp_dnsbl_install_db", "/tornevall-wp-dnsbl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77361, 4436, "register_dnsbl_settings", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77362, 4436, "dnsbl_disable_comments", "/tornevall-wp-dnsbl-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77363, 4436, "tornevall_wp_dnsbl_admin", "/tornevall-wp-dnsbl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77364, 4436, "tornevall_dnsbl_options", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554968, 4436, "t_dnsbl", "rblresolve", "/tornevall-wp-dnsbl-functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554969, 4436, "t_dnsbl", "torneBits", "/tornevall-wp-dnsbl-functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554970, 4436, "t_dnsbl", "testip", "/tornevall-wp-dnsbl-functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554971, 4436, "t_dnsbl", "v6arpa", "/tornevall-wp-dnsbl-functions.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47436, 4436, "admin_init", "'register_dnsbl_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47437, 4436, "admin_menu", "'tornevall_wp_dnsbl_admin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16043, 4436, "comments_open", "'dnsbl_disable_comments'", 10, now(), now());

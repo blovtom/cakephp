@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1452, "Elegant Subscription Popup", "4.1.0", "1.2", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145231, 1452, "elegant_subscription_form", "register_scripts", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145232, 1452, "elegant_subscription_form", "deactivate", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145233, 1452, "elegant_subscription_form_settings", "daysinterval_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145234, 1452, "elegant_subscription_form_settings", "page_init", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145235, 1452, "elegant_subscription_form", "can_show_popup", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145236, 1452, "elegant_subscription_form", "set_elegant_popup_cookie", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145237, 1452, "elegant_subscription_form", "activate", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145238, 1452, "elegant_subscription_form_settings", "feedBurner_id_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145239, 1452, "elegant_subscription_form", "register_styles", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145240, 1452, "elegant_subscription_form_settings", "section_1_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145241, 1452, "elegant_subscription_form_settings", "__construct", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145242, 1452, "elegant_subscription_form_settings", "add_plugin_menu", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145243, 1452, "elegant_subscription_form", "__construct", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145244, 1452, "elegant_subscription_form", "run_plugin", "/elegant-subscription-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145245, 1452, "elegant_subscription_form_settings", "create_admin_page", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145246, 1452, "elegant_subscription_form_settings", "credittoauthor_callback", "/settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16168, 1452, "wp_enqueue_scripts", "array($this,'register_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16169, 1452, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16170, 1452, "admin_menu", "array($this,'add_plugin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16171, 1452, "wp_enqueue_scripts", "array($this,'register_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16172, 1452, "wp_footer", "array($this,'run_plugin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16173, 1452, "init", "array($this,'set_elegant_popup_cookie')", 10, now(), now());

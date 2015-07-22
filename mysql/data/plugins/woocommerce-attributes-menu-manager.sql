@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4820, "WooCommerce Attributes Menu Manager", "4.1", "0.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84429, 4820, "wc_attributes_menu_manager_plugin_notice", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616374, 4820, "wc_attributes_menu_manager", "wc_attribute_menu", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616375, 4820, "wc_attributes_menu_manager", "save_settings", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616376, 4820, "wc_attributes_menu_manager", "register_menu", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616377, 4820, "wc_attributes_menu_manager", "admin_register_menu", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616378, 4820, "wc_attributes_menu_manager", "__construct", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616379, 4820, "wc_attributes_menu_manager", "_activate", "/index.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51697, 4820, "admin_menu", "array($this,'admin_register_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51698, 4820, "admin_notices", "'wc_attributes_menu_manager_plugin_notice'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17421, 4820, "woocommerce_attribute_show_in_nav_menus", "array($this,'register_menu')", 99, now(), now());

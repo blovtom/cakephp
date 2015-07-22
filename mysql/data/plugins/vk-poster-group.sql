@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4673, "VK Poster Group", "4.1", "4.0", "3.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589595, 4673, "VKPOSTERBASE", "__construct", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589596, 4673, "VKPOSTERBASE", "showSettingPage", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589597, 4673, "VKPOSTERBASE", "addOptions", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589598, 4673, "VKPOSTERFUNCTION", "cutTextStartEnd", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589599, 4673, "VKPOSTERBASE", "adminOptions", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589600, 4673, "VKPOSTERFUNCTION", "__construct", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589601, 4673, "VKPOSTERBASE", "settingMetabos", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589602, 4673, "VKPOSTERBASE", "metaboxSentVK", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589603, 4673, "VKPOSTERBASE", "metaboxSavePost", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589604, 4673, "VKPOSTERFUNCTION", "setImageVK", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589605, 4673, "VKPOSTERFUNCTION", "searchImgaeText", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589606, 4673, "VKPOSTERBASE", "addActios", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589607, 4673, "VKPOSTERBASE", "metabosHtml", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589608, 4673, "VKPOSTERFUNCTION", "sentRequesVK", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589609, 4673, "VKPOSTERFUNCTION", "IfElseUpdate", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589610, 4673, "VKPOSTERBASE", "pluginLinkSetting", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589611, 4673, "VKPOSTERFUNCTION", "logJornal", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589612, 4673, "VKPOSTERBASE", "syleScriptAddpage", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589613, 4673, "VKPOSTERFUNCTION", "getTokenUrl", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589614, 4673, "VKPOSTERFUNCTION", "setVkWall", "/inc/vkp-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589615, 4673, "VKPOSTERBASE", "deactivationPlugin", "/inc/vkp-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589616, 4673, "VKPOSTERFUNCTION", "chekedOptions", "/inc/vkp-function-class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50069, 4673, "admin_menu", "array($this,'adminOptions')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50070, 4673, "add_meta_boxes", "array($this,'settingMetabos')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16795, 4673, "plugin_action_links", "array($this,'pluginLinkSetting')", 10, now(), now());

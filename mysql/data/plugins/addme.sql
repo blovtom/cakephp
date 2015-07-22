@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (95, "Take the Control of your Content!", "4.1", "0.1", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4348, 95, "ContentAdder", "add_where_todo", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4349, 95, "ContentAdder", "add_is_priority", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4350, 95, "ContentAdder", "addme_in_content", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4351, 95, "ContentAdder", "add_admin", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4352, 95, "ContentAdder", "add_keys_filter", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4353, 95, "ContentAdder", "add_who_exclus", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4354, 95, "ContentAdder", "add_init", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4355, 95, "ContentAdder", "add_settings_register", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4356, 95, "ContentAdder", "add_sanz_preced", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4357, 95, "ContentAdder", "add_sanz_exclue", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4358, 95, "ContentAdder", "ContentAdder", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4359, 95, "ContentAdder", "add_build_array", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4360, 95, "ContentAdder", "add_locale_btn", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4361, 95, "ContentAdder", "add_the_string", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4362, 95, "ContentAdder", "add_sanz_affich", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4363, 95, "ContentAdder", "add_sanz_zonetx", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4364, 95, "ContentAdder", "add_get_tax_array", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4365, 95, "ContentAdder", "add_last_option", "/adder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (4366, 95, "ContentAdder", "add_flush_options", "/adder.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (762, 95, "admin_menu", "array($this,'add_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (763, 95, "admin_init", "array($this,'add_settings_register')", 10, now(), now());

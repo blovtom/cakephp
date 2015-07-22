@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5094, "Conditional CAPTCHA", "4.1", "trunk", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662801, 5094, "Conditional_Captcha", "set_passed_comment_status", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662802, 5094, "Conditional_Captcha", "load", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662803, 5094, "Conditional_Captcha", "do_captcha", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662804, 5094, "Conditional_Captcha", "settings_menu", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662805, 5094, "Conditional_Captcha", "settings_page", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662806, 5094, "Conditional_Captcha", "prevent_akismet_history", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662807, 5094, "Conditional_Captcha", "set_comment_status", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662808, 5094, "Conditional_Captcha", "spam_handler", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662809, 5094, "Conditional_Captcha", "__construct", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662810, 5094, "Conditional_Captcha", "rightnow", "/wp-conditional-captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662811, 5094, "Conditional_Captcha", "check_captcha", "/wp-conditional-captcha.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55273, 5094, "comment_post", "array($this,'do_captcha')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55274, 5094, "admin_menu", "array($this,'settings_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55275, 5094, "rightnow_end", "array($this,'rightnow')", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55276, 5094, "wp_loaded", "array($this,'load')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18828, 5094, "preprocess_comment", "array($this,'check_captcha')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18829, 5094, "add_comment_metadata", "array($this,'prevent_akismet_history')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18830, 5094, "pre_comment_approved", "array($this,'set_comment_status')", 50, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18831, 5094, "pre_comment_approved", "array($this,'set_passed_comment_status')", 10, now(), now());

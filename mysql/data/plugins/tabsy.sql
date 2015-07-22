@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4304, "Tabsy", "4.1", "1.0", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75183, 4304, "wptabsy_scripts_method", "/core/functions.enqueue.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (544564, 4304, "WPTABSY_SHORTCODE", "__construct", "/core/functions.shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (544565, 4304, "WPTABSY_SHORTCODE", "shortcode_handler", "/core/functions.shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (544566, 4304, "WPTABSY_SHORTCODE", "register_shortcode", "/core/functions.shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (544567, 4304, "WPTABSY_SHORTCODE", "extract_tab", "/core/functions.shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (544568, 4304, "WPTABSY_SHORTCODE", "extract_tabcontent", "/core/functions.shortcode.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46143, 4304, "init", "array($this,'register_shortcode')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46144, 4304, "wp_enqueue_scripts", "'wptabsy_scripts_method'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15480, 4304, "widget_text", "'do_shortcode'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15481, 4304, "wptabsy_shortcode", "array($this,'shortcode_handler')", 999, now(), now());

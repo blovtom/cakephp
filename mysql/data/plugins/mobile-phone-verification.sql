@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2756, "Mobile Phone Verification", "4.2-alpha", "1.0", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50000, 2756, "mcv_activation", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50001, 2756, "mcv_deactivation", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50002, 2756, "mcv_send_sms_verify_function", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50003, 2756, "mcv_admin_menu", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50004, 2756, "mcv_send_sms_function", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50005, 2756, "mcv_scripts", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50006, 2756, "mcv_resend_function", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50007, 2756, "mcv_country_code", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50008, 2756, "mcv_styles", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50009, 2756, "non_verified_mobiles", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50010, 2756, "verified_mobiles", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50011, 2756, "mcv_sendPostData_api", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50012, 2756, "mcv_authentication", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50013, 2756, "mcv_information", "/index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29860, 2756, "wp_ajax_mcv_send_sms_verify", "'mcv_send_sms_verify_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29861, 2756, "wp_enqueue_scripts", "'mcv_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29862, 2756, "admin_enqueue_scripts", "'mcv_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29863, 2756, "admin_menu", "'mcv_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29864, 2756, "wp_ajax_mcv_send_sms", "'mcv_send_sms_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29865, 2756, "wp_ajax_nopriv_mcv_resend", "'mcv_resend_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29866, 2756, "wp_enqueue_scripts", "'mcv_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29867, 2756, "wp_ajax_mcv_resend", "'mcv_resend_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29868, 2756, "wp_ajax_mcv_country_code", "'mcv_country_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29869, 2756, "wp_ajax_nopriv_mcv_send_sms_verify", "'mcv_send_sms_verify_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29870, 2756, "wp_ajax_nopriv_mcv_country_code", "'mcv_country_code'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29871, 2756, "wp_ajax_nopriv_mcv_send_sms", "'mcv_send_sms_function'", 10, now(), now());

@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1592, "Facebook Like Lock", "4.1.1", "1.0", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196093, 1592, "SlSettingsPage", "tw_user_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196094, 1592, "sociallock_main", "sl_add_tinymce", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196095, 1592, "SlSettingsPage", "fb_app_id_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196096, 1592, "sociallock_main", "__construct", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196097, 1592, "SlSettingsPage", "sanitize", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196098, 1592, "SlSettingsPage", "add_plugin_page", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196099, 1592, "SlSettingsPage", "load_sl_wp_style", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196100, 1592, "sociallock_main", "fblock_handler", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196101, 1592, "sociallock_main", "render_sl_mce_button", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196102, 1592, "sociallock_main", "inject", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196103, 1592, "sociallock_main", "generate_mce_plugin", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196104, 1592, "SlSettingsPage", "sl_default_msg_callback", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196105, 1592, "SlSettingsPage", "page_init", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196106, 1592, "sociallock_main", "wplikelocker_callback", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196107, 1592, "sociallock_main", "print_sl_dialog", "/wp-like-lock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196108, 1592, "SlSettingsPage", "__construct", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196109, 1592, "SlSettingsPage", "create_admin_page", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196110, 1592, "SlSettingsPage", "print_section_info", "/settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17850, 1592, "admin_head", "array(&$this,'sl_add_tinymce')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17851, 1592, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17852, 1592, "wp_ajax_wplikelocker", "array(&$this,'wplikelocker_callback')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17853, 1592, "wp_footer", "array(&$this,'inject')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17854, 1592, "wp_ajax_nopriv_wplikelocker", "array(&$this,'wplikelocker_callback')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17855, 1592, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5947, 1592, "mce_buttons", "array(&$this,'render_sl_mce_button')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5948, 1592, "mce_external_plugins", "array(&$this,'generate_mce_plugin')", 10, now(), now());

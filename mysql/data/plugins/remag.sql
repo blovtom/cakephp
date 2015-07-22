@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3561, "Remag", "4.1", "1.0.0", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466823, 3561, "Remag_Admin", "enqueue_admin_scripts", "/admin/class-remag-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466824, 3561, "Remag", "deactivate", "/public/class-remag.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466825, 3561, "Remag", "get_instance", "/public/class-remag.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466826, 3561, "Remag", "activate", "/public/class-remag.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466827, 3561, "Remag_Admin", "add_plugin_admin_menu", "/admin/class-remag-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466828, 3561, "Remag", "activate_new_site", "/public/class-remag.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466829, 3561, "Remag", "get_plugin_slug", "/public/class-remag.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466830, 3561, "Remag_Admin", "add_action_links", "/admin/class-remag-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466831, 3561, "Remag_Admin", "display_plugin_admin_page", "/admin/class-remag-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466832, 3561, "Remag_Admin", "get_instance", "/admin/class-remag-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (466833, 3561, "Remag_Admin", "enqueue_admin_styles", "/admin/class-remag-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39014, 3561, "admin_enqueue_scripts", "array($this,'enqueue_admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39015, 3561, "plugins_loaded", "array('Remag_Admin','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39016, 3561, "plugins_loaded", "array('Remag','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39017, 3561, "admin_enqueue_scripts", "array($this,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39018, 3561, "admin_menu", "array($this,'add_plugin_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39019, 3561, "wpmu_new_blog", "array($this,'activate_new_site')", 10, now(), now());

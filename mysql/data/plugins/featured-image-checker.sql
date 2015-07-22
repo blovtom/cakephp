@@ -1,0 +1,6 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1640, "Featured Image Checker", "4.0", "1.0.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201824, 1640, "FIC_Columns", "fic_register_custom_column_headings", "/columns.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201825, 1640, "FIC_Columns", "fic_register_custom_columns", "/columns.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18152, 1640, "manage_posts_custom_column", "array('FIC_Columns','fic_register_custom_columns')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6033, 1640, "manage_posts_columns", "array('FIC_Columns','fic_register_custom_column_headings')", 10, now(), now());

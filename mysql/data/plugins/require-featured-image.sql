@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3578, "Require Featured Image", "4.1.1", "1.0.5", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64685, 3578, "rfi_admin_add_page", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64686, 3578, "rfi_enqueue_edit_screen_js", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64687, 3578, "rfi_textdomain_init", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64688, 3578, "rfi_options_page", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64689, 3578, "rfi_set_default_on_activation", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64690, 3578, "rfi_return_post_types_which_support_featured_images", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64691, 3578, "rfi_admin_init", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64692, 3578, "rfi_should_let_post_publish", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64693, 3578, "rfi_dont_publish_post", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64694, 3578, "rfi_main_section_text_output", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64695, 3578, "rfi_post_types_input_renderer", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64696, 3578, "rfi_return_post_types_option", "/require-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64697, 3578, "rfi_return_post_types", "/require-featured-image.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39135, 3578, "admin_enqueue_scripts", "'rfi_enqueue_edit_screen_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39136, 3578, "transition_post_status", "'rfi_dont_publish_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39137, 3578, "plugins_loaded", "'rfi_textdomain_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39138, 3578, "admin_init", "'rfi_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39139, 3578, "admin_menu", "'rfi_admin_add_page'", 10, now(), now());

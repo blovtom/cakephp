@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5134, "WP Easy Bubble Menu", "4.1", "1.1.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88668, 5134, "get_wpcm_list", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88669, 5134, "wpcm_load_for_edit", "/core/wpcm_ajax_handler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88670, 5134, "wpcm_admin", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88671, 5134, "load_wp_bubble_menu_scripts", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88672, 5134, "wpcm_prod_load", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88673, 5134, "wpcm_delete_bubble_menu", "/core/wpcm_ajax_handler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88674, 5134, "wpcm_install", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88675, 5134, "wpcm_history", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88676, 5134, "wpcm_actions", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88677, 5134, "wpcm_save_bubble_menu", "/core/wpcm_ajax_handler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88678, 5134, "wpcm_delete_bm_callback", "/core/wpcm_ajax_handler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88679, 5134, "wpcm_save_bm_callback", "/core/wpcm_ajax_handler.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88680, 5134, "wp_easy_bubble_menu_shortcode", "/wp_bubble_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88681, 5134, "load_wp_bubble_menu_styles", "/wp_bubble_menu.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55538, 5134, "admin_menu", "'wpcm_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55539, 5134, "wp_ajax_wpcm_save_bm", "'wpcm_save_bm_callback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55540, 5134, "wp_ajax_wpcm_delete_bm", "'wpcm_delete_bm_callback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55541, 5134, "admin_enqueue_scripts", "'load_wp_bubble_menu_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55542, 5134, "admin_enqueue_scripts", "'load_wp_bubble_menu_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55543, 5134, "wp_enqueue_scripts", "'wpcm_prod_load'", 10, now(), now());

@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3893, "Simple Custom Content", "4.1", "trunk", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68979, 3893, "scs_both_shortcode", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68980, 3893, "scs_init", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68981, 3893, "scs_add_options_page", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68982, 3893, "add_scs_links", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68983, 3893, "scs_validate_options", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68984, 3893, "scs_plugin_action_links", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68985, 3893, "simple_custom_content_feeds", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68986, 3893, "scs_i18n_init", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68987, 3893, "scs_alt_shortcode", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68988, 3893, "scs_render_form", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68989, 3893, "simple_custom_content_posts", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68990, 3893, "scs_delete_plugin_options", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68991, 3893, "scs_post_shortcode", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68992, 3893, "scs_feed_shortcode", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68993, 3893, "require_wp_version", "/simple-custom-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68994, 3893, "scs_add_defaults", "/simple-custom-content.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41960, 3893, "admin_init", "'scs_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41961, 3893, "admin_menu", "'scs_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41962, 3893, "plugins_loaded", "'scs_i18n_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41963, 3893, "admin_init", "'require_wp_version'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14265, 3893, "the_content", "'simple_custom_content_posts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14266, 3893, "the_excerpt_rss", "'simple_custom_content_feeds'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14267, 3893, "plugin_row_meta", "'add_scs_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14268, 3893, "the_excerpt", "'simple_custom_content_posts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14269, 3893, "plugin_action_links", "'scs_plugin_action_links'", 10, now(), now());

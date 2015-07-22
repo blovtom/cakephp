@@ -1,0 +1,44 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4777, "Widget4Call", "4.1", "1.0.7", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611915, 4777, "Widget4CallWidget", "form", "/widget4callWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611916, 4777, "Widget4CallUserPage", "process_action", "/widget4callUserPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611917, 4777, "Widget4CallHomePage", "__construct", "/widget4callHomePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611918, 4777, "Widget4CallUserPage", "__construct", "/widget4callUserPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611919, 4777, "Widget4CallDeletePage", "process_action", "/widget4callDeletePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611920, 4777, "Widget4CallInstall", "uninstall", "/widget4callInstall.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611921, 4777, "Widget4CallNotices", "__construct", "/widget4callNotices.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611922, 4777, "Widget4CallCdrPage", "__construct", "/widget4callCdrPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611923, 4777, "Widget4CallCdrPage", "process_action", "/widget4callCdrPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611924, 4777, "Widget4CallHomePage", "html_w4c_homepage", "/widget4callHomePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611925, 4777, "Widget4CallListPage", "add_external_widget", "/widget4callListPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611926, 4777, "Widget4CallNotices", "notices_action", "/widget4callNotices.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611927, 4777, "Widget4Call_Plugin", "register_session", "/widget4call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611928, 4777, "Widget4CallShortcode", "__construct", "/widget4callShortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611929, 4777, "Widget4CallFormPage", "__construct", "/widget4callFormPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611930, 4777, "Widget4CallWidget", "__construct", "/widget4callWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611931, 4777, "Widget4CallMenu", "add_admin_menu", "/widget4callMenu.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611932, 4777, "Widget4CallInstall", "install", "/widget4callInstall.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611933, 4777, "Widget4CallFormPage", "process_action", "/widget4callFormPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611934, 4777, "Widget4CallListPage", "process_action", "/widget4callListPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611935, 4777, "Widget4CallShortcode", "w4c_shortcode", "/widget4callShortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611936, 4777, "Widget4CallAssets", "__construct", "/widget4callAssets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611937, 4777, "Widget4CallDeletePage", "html_w4c_widgetdeletepage", "/widget4callDeletePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611938, 4777, "Widget4CallCdrPage", "html_w4c_cdrpage", "/widget4callCdrPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611939, 4777, "Widget4Call_Plugin", "getUser", "/widget4call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611940, 4777, "Widget4CallDeletePage", "__construct", "/widget4callDeletePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611941, 4777, "Widget4CallUserPage", "html_w4c_widgetuserpage", "/widget4callUserPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611942, 4777, "Widget4CallInstall", "__construct", "/widget4callInstall.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611943, 4777, "Widget4Call_Plugin", "__construct", "/widget4call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611944, 4777, "Widget4CallHomePage", "process_action", "/widget4callHomePage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611945, 4777, "Widget4CallWidget", "widget", "/widget4callWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611946, 4777, "Widget4CallFormPage", "html_w4c_widgetformpage", "/widget4callFormPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611947, 4777, "Widget4CallListPage", "html_w4c_widgetspage", "/widget4callListPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611948, 4777, "Widget4CallListPage", "__construct", "/widget4callListPage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611949, 4777, "Widget4CallMenu", "__construct", "/widget4callMenu.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51085, 4777, "widgets_init", "function ()
+{
+	register_widget('Widget4CallWidget');
+}", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51086, 4777, "admin_notices", "array($this,'notices_action')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51087, 4777, "init", "array($this,'register_session')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51088, 4777, "admin_menu", "array($this,'add_admin_menu')", 10, now(), now());

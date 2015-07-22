@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5099, "WP Content Copy Protection & No Right Click", "4.1.1", "trunk", "2.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88184, 5099, "wccp_css_settings", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88185, 5099, "wccp_read_options", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88186, 5099, "right_click_premium_settings", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88187, 5099, "wccp_css_script", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88188, 5099, "wccp_main_settings", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88189, 5099, "wccp_options_page_pro", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88190, 5099, "plugin_add_settings_link", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88191, 5099, "wpcp_disable_Right_Click", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88192, 5099, "wpcp_disable_selection", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88193, 5099, "wccp_class_names", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88194, 5099, "wccp_enqueue_scripts", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88195, 5099, "wccp_default_options", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88196, 5099, "add_items", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88197, 5099, "wccp_add_options", "/preventer-index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88198, 5099, "alert_message", "/preventer-index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55309, 5099, "wp_footer", "'alert_message'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55310, 5099, "admin_bar_menu", "'add_items'", 40, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55311, 5099, "admin_enqueue_scripts", "'wccp_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55312, 5099, "wp_head", "'right_click_premium_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55313, 5099, "wp_head", "'wccp_main_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55314, 5099, "wp_head", "'wccp_css_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55315, 5099, "admin_menu", "'wccp_add_options'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18838, 5099, "body_class", "'wccp_class_names'", 10, now(), now());

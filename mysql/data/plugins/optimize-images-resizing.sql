@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3016, "Optimize Images Resizing", "4.1", "trunk", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397169, 3016, "OIR_Init", "load_textdomain", "/optimize-images-resizing.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397170, 3016, "OIR_Remove_Image_Sizes", "remove_image_sizes", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397171, 3016, "OIR_Remove_Image_Sizes", "enqueue_assets", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397172, 3016, "OIR_Remove_Image_Sizes", "add_post_meta_filters", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397173, 3016, "OIR_Remove_Image_Sizes", "add_media_settings", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397174, 3016, "OIR_Resize_Image", "image_downsize", "/inc/class-resize-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397175, 3016, "OIR_Remove_Image_Sizes", "media_settings_output", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397176, 3016, "OIR_Init", "instantiate", "/optimize-images-resizing.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397177, 3016, "OIR_Remove_Image_Sizes", "instantiate", "/inc/class-remove-image-sizes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397178, 3016, "OIR_Resize_Image", "instantiate", "/inc/class-resize-image.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33057, 3016, "added_post_meta", "array(self::$instance,'add_post_meta_filters')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33058, 3016, "admin_enqueue_scripts", "array(self::$instance,'enqueue_assets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33059, 3016, "admin_init", "array(self::$instance,'add_media_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33060, 3016, "plugins_loaded", "array(self::$instance,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33061, 3016, "wp_ajax_oir_remove_image_sizes", "array(self::$instance,'remove_image_sizes')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11089, 3016, "image_downsize", "array(self::$instance,'image_downsize')", 10, now(), now());

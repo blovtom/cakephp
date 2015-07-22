@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1460, "Email Marketing by Drip", "4.1", "1.0.0", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145594, 1460, "WP_Drip", "__construct", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145595, 1460, "WP_Drip", "activate", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145596, 1460, "WP_Drip", "do_activation_redirect", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145597, 1460, "WP_Drip", "validate_settings", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145598, 1460, "WP_Drip", "admin_option_account_id", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145599, 1460, "WP_Drip", "instance", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145600, 1460, "WP_Drip", "admin_option_is_disabled", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145601, 1460, "WP_Drip", "admin_enqueue_scripts", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145602, 1460, "WP_Drip", "admin_section_code_settings", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145603, 1460, "WP_Drip", "admin_register_settings", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145604, 1460, "WP_Drip", "account_id", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145605, 1460, "WP_Drip", "delete_option", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145606, 1460, "WP_Drip", "admin_options_page", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145607, 1460, "WP_Drip", "deactivate", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145608, 1460, "WP_Drip", "tracking_code", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145609, 1460, "WP_Drip", "admin_menu", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145610, 1460, "WP_Drip", "get_option", "/drip.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (145611, 1460, "WP_Drip", "plugin_action_links", "/drip.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16233, 1460, "wp_footer", "array(&$this,'tracking_code')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16234, 1460, "admin_menu", "array(&$this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16235, 1460, "admin_init", "array(&$this,'admin_register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16236, 1460, "admin_init", "array(&$this,'do_activation_redirect')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16237, 1460, "admin_enqueue_scripts", "array(&$this,'admin_enqueue_scripts')", 10, now(), now());

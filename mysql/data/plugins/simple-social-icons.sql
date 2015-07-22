@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3947, "Plugin Name", "4.1", "1.0.8", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69463, 3947, "ssiw_load_widget", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504371, 3947, "Simple_Social_Icons_Widget", "update", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504372, 3947, "Simple_Social_Icons_Widget", "css", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504373, 3947, "Simple_Social_Icons_Widget", "__construct", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504374, 3947, "Simple_Social_Icons_Widget", "widget", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504375, 3947, "Simple_Social_Icons_Widget", "enqueue_css", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504376, 3947, "Simple_Social_Icons_Widget", "form", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504377, 3947, "Simple_Social_Icons_Widget", "print_scripts", "/simple-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504378, 3947, "Simple_Social_Icons_Widget", "load_color_picker", "/simple-social-icons.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42577, 3947, "wp_head", "array($this,'css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42578, 3947, "wp_enqueue_scripts", "array($this,'enqueue_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42579, 3947, "admin_enqueue_scripts", "array($this,'load_color_picker')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42580, 3947, "widgets_init", "'ssiw_load_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42581, 3947, "admin_footer-widgets.php", "array($this,'print_scripts')", 9999, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4613, "Plugin Name", "4.1", "2.22", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80795, 4613, "LiveSettings", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80796, 4613, "vbean_endsWith", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80797, 4613, "vbean_rendersettings", "/inc/admin/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80798, 4613, "vbean_favicon_settings_save", "/vanilla-bean-icon-setter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80799, 4613, "vbean_setfavicons", "/vanilla-bean-icon-setter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80800, 4613, "vbean_setting", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80801, 4613, "vbean_createicons", "/vanilla-bean-icon-setter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80802, 4613, "vbean_favicon_create_menu", "/vanilla-bean-icon-setter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80803, 4613, "vbean_favicon_admin_scripts", "/inc/admin/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80804, 4613, "vbean_image_bmp", "/inc/image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80805, 4613, "vanillabeans_settings", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80806, 4613, "vbean_ListPhp", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80807, 4613, "vbean_textsetting", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80808, 4613, "RegisterSettings", "/inc/admin/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80809, 4613, "vbean_urlexists", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80810, 4613, "vbean_startsWith", "/inc/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80811, 4613, "vbean_favicon_admin_styles", "/inc/admin/settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49655, 4613, "admin_init", "'VanillaBeans\Favicon\RegisterSettings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49656, 4613, "admin_print_styles", "'\VanillaBeans\Favicon\vbean_favicon_admin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49657, 4613, "admin_print_scripts", "'\VanillaBeans\Favicon\vbean_favicon_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49658, 4613, "wp_head", "'vbean_setfavicons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49659, 4613, "admin_menu", "'vbean_favicon_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49660, 4613, "admin_head", "'vbean_setfavicons'", 10, now(), now());

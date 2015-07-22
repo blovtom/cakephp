@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (491, "BePro Listings Business Directory", "4.0", "1.0.01", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49704, 491, "Bl_business_directory", "bepro_listings_list_business_contact_name", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49705, 491, "Bl_business_directory", "alpha_list", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49706, 491, "Bl_business_directory", "start_listing", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49707, 491, "Bl_business_directory", "before_listing", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49708, 491, "Bl_business_directory", "spawn", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49709, 491, "Bl_business_directory", "end_listing", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49710, 491, "Bl_business_directory", "after_listing", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49711, 491, "Bl_business_directory", "bepro_listings_list_business_contact_item", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49712, 491, "Bl_business_directory", "start_header", "/bepro_listings_business_directory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (49713, 491, "Bl_business_directory", "__construct", "/bepro_listings_business_directory.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4908, 491, "wp_head", "array($this,'start_header')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1663, 491, "bl_start_bepro_listing_template", "array($this,'start_listing')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1664, 491, "bl_end_bepro_listing_template", "array($this,'end_listing')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1665, 491, "bl_before_bepro_listing_template", "array($this,'before_listing')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1666, 491, "bl_after_bepro_listing_template", "array($this,'after_listing')", 10, now(), now());

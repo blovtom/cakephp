@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2304, "Islamic Phrases", "4.1", "2.12.2015", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41968, 2304, "IsP_style", "/islamic-phrases.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41969, 2304, "register_islamic_phrases_mce_button", "/islamic-phrases.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41970, 2304, "IsP_admin_script", "/islamic-phrases.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41971, 2304, "islamic_phrases_function", "/islamic-phrases.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41972, 2304, "islamic_phrases_mce_button", "/islamic-phrases.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41973, 2304, "add_islamic_phrases_tinymce_plugin", "/islamic-phrases.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (331078, 2304, "new_general_setting", "new_general_setting", "/islamic-phrases.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (331079, 2304, "new_general_setting", "fields_html", "/islamic-phrases.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (331080, 2304, "new_general_setting", "register_fields", "/islamic-phrases.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24019, 2304, "wp_enqueue_scripts", "'IsP_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24020, 2304, "admin_head", "'IsP_admin_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24021, 2304, "admin_head", "'islamic_phrases_mce_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7913, 2304, "mce_external_plugins", "'add_islamic_phrases_tinymce_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7914, 2304, "admin_init", "array(&$this,'register_fields')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7915, 2304, "mce_buttons", "'register_islamic_phrases_mce_button'", 10, now(), now());

@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4568, "Plugin Name", "4.1", "1.1", "3.2", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570332, 4568, "RadLabs_Urdu_Keyboard", "init", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570333, 4568, "RadLabs_Urdu_Keyboard", "rluk_options_page", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570334, 4568, "RadLabs_Urdu_Keyboard", "popup", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570335, 4568, "RadLabs_Urdu_Keyboard", "radlabs_urdu_writing_title_text_input", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570336, 4568, "RadLabs_Urdu_Keyboard", "__construct", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570337, 4568, "RadLabs_Urdu_Keyboard", "com_radlabs_urduwriting_adminpanel", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570338, 4568, "RadLabs_Urdu_Keyboard", "admin_scripts", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570339, 4568, "RadLabs_Urdu_Keyboard", "add_editor_buttons", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570340, 4568, "RadLabs_Urdu_Keyboard", "add_keyboard_help_button", "/urduwriting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (570341, 4568, "RadLabs_Urdu_Keyboard", "admin_styles", "/urduwriting.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49082, 4568, "media_buttons", "array($this,'add_keyboard_help_button')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49083, 4568, "admin_menu", "array($this,'com_radlabs_urduwriting_adminpanel')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49084, 4568, "admin_footer", "array($this,'popup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49085, 4568, "admin_init", "array($this,'add_editor_buttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49086, 4568, "wp_loaded", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49087, 4568, "admin_print_styles", "array($this,'admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49088, 4568, "admin_print_styles", "array($this,'admin_styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16474, 4568, "enter_title_here", "array($this,'radlabs_urdu_writing_title_text_input')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16475, 4568, "wp_default_editor", "create_function('','return "html";')", 10, now(), now());

@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5336, "WP Plugin Reviews", "4.1", "0.4", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93213, 5336, "WP_Plugin_Reviews", "/wp-plugin-reviews.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93214, 5336, "get_plugin_reviews", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701140, 5336, "WP_Plugin_Review_Widget", "form", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701141, 5336, "WP_Plugin_Reviews", "get_plugin_reviews", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701142, 5336, "WP_Plugin_Reviews", "filter_title", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701143, 5336, "WP_Plugin_Review_Widget", "__construct", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701144, 5336, "WP_Plugin_Reviews", "__construct", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701145, 5336, "WP_Plugin_Review_Widget", "widget", "/wp-plugin-reviews.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (701146, 5336, "WP_Plugin_Review_Widget", "update", "/wp-plugin-reviews.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57812, 5336, "widgets_init", "create_function('','return register_widget("WP_Plugin_Review_Widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57813, 5336, "init", "'WP_Plugin_Reviews'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19814, 5336, "plugin-reviews-title", "array(&$this,'filter_title')", 10, now(), now());

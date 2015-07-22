@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3055, "Plugin Name", "4.1", "1.0", "2.7.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55397, 3055, "login_form", "/library/screen.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55398, 3055, "enqueue_color_picker", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55399, 3055, "override_settings_dummy", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55400, 3055, "register_stylesheets", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55401, 3055, "register_override", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55402, 3055, "Overide_callback", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55403, 3055, "override_settings_fields", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55404, 3055, "my_login_logo", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55405, 3055, "enqueue_media", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55406, 3055, "login_stylesheets", "/library/initialization.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55407, 3055, "override_settings_page", "/library/initialization.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33529, 3055, "admin_menu", "'register_override'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33530, 3055, "admin_init", "'override_settings_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33531, 3055, "admin_enqueue_scripts", "'enqueue_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33532, 3055, "login_enqueue_scripts", "'register_stylesheets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33533, 3055, "login_enqueue_scripts", "'login_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33534, 3055, "admin_enqueue_scripts", "'enqueue_media'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33535, 3055, "login_enqueue_scripts", "'login_stylesheets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33536, 3055, "login_enqueue_scripts", "'my_login_logo'", 10, now(), now());

@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (416, "AyateQurani", "4.1", "1.0.3", "3.4", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42297, 416, "NTX_plugin", "admin_enqueue_styles", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42298, 416, "NTX_plugin", "enqueue_scripts", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42299, 416, "NTX_plugin", "instance", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42300, 416, "NTX_plugin", "__construct", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42301, 416, "NTX_plugin", "load_localisation", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42302, 416, "NTX_plugin", "load_plugin_textdomain", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42303, 416, "NTX_plugin", "enqueue_styles", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42304, 416, "NTX_plugin", "__clone", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42305, 416, "NTX_plugin", "__wakeup", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42306, 416, "NTX_plugin", "uninstall", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42307, 416, "NTX_plugin", "install", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42308, 416, "NTX_plugin", "shortcodecb", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42309, 416, "NTX_plugin", "mk_go_nitro_link", "/inc/plugin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (42310, 416, "NTX_plugin", "admin_enqueue_scripts", "/inc/plugin.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3961, 416, "init", "array($this,'load_localisation')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3962, 416, "wp_enqueue_scripts", "array($this,'enqueue_styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1213, 416, "widget_text", "'do_shortcode'", 10, now(), now());

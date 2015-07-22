@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1569, "Extra Classes", "4.1", "0.3.1", "3.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193319, 1569, "ExtraClasses_Menu_Selector", "register_deselected_state", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193320, 1569, "ExtraClasses", "_attachment_page_menu_item_filters", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193321, 1569, "ExtraClasses", "wp_nav_menu_objects", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193322, 1569, "ExtraClasses", "_add_menu_item_ancestors_to_array", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193323, 1569, "ExtraClasses", "_get_menu_item_ancestor_ids", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193324, 1569, "ExtraClasses", "_add_classes_to_menu_items", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193325, 1569, "ExtraClasses", "is_post_type_single", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193326, 1569, "ExtraClasses", "plugins_loaded", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193327, 1569, "ExtraClasses_Body", "body_class", "/modules/body.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193328, 1569, "ExtraClasses", "get_taxonomies", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193329, 1569, "ExtraClasses_Menu_Selector", "register_selected_state", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193330, 1569, "ExtraClasses_Menu_Selector", "apply_menu_class_filters", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193331, 1569, "ExtraClasses_Menu_Selector", "get_selected_classes", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193332, 1569, "ExtraClasses_Menu_Selector", "get_current_deselected_states", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193333, 1569, "ExtraClasses_Menu_Selector", "get_current_selected_states", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193334, 1569, "ExtraClasses", "_add_classes_to_menu_item", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193335, 1569, "ExtraClasses_Menu_Selector", "sanitize_state", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193336, 1569, "ExtraClasses_Menu_Selector", "setup_inbuilt_states", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193337, 1569, "ExtraClasses_Menu_Selector", "format_current_state", "/modules/menu-selector.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193338, 1569, "ExtraClasses", "get_post_types", "/extra-classes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (193339, 1569, "ExtraClasses", "_single_post_menu_item_filters", "/extra-classes.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17708, 1569, "plugins_loaded", "array('ExtraClasses','plugins_loaded')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17709, 1569, "wp", "array('ExtraClasses_Menu_Selector','setup_inbuilt_states')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5908, 1569, "body_class", "array('ExtraClasses_Body','body_class')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5909, 1569, "wp_nav_menu_objects", "array('ExtraClasses','wp_nav_menu_objects')", 5, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5910, 1569, "wp_nav_menu_objects", "array('ExtraClasses_Menu_Selector','apply_menu_class_filters')", 10, now(), now());

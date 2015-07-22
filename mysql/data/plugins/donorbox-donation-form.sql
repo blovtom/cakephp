@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1280, "Donorbox Donation Form", "4.1", "2.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25415, 1280, "donorbox_embed_campaign_set_plugin_meta", "/donorbox_embed_campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25416, 1280, "donorbox_add_options_page_function", "/donorbox_embed_campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25417, 1280, "display_donorbox_iframe", "/donorbox_embed_campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25418, 1280, "donorbox_initiate_class", "/donorbox_embed_campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25419, 1280, "display_donorbox_iframe_with_info", "/donorbox_embed_campaign.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25420, 1280, "generate_donorbox_iframe_src", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111200, 1280, "Donorbox_donation_form", "donorbox_embed_campaign_id_settings", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111201, 1280, "Donorbox_donation_form", "donorbox_embed_widget_height_settings", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111202, 1280, "Donorbox_donation_form", "donorbox_embed_campaign_instructions_text", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111203, 1280, "Donorbox_donation_form", "donorbox_embed_campaign_callback", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111204, 1280, "Donorbox_donation_form", "donorbox_add_menu_page", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111205, 1280, "Donorbox_donation_form", "donorbox_register_settings_and_fields", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111206, 1280, "Donorbox_donation_form", "__construct", "/donorbox_embed_campaign.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111207, 1280, "Donorbox_donation_form", "donorbox_display_options_page", "/donorbox_embed_campaign.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14014, 1280, "admin_menu", "'donorbox_add_options_page_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14015, 1280, "admin_init", "'donorbox_initiate_class'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4718, 1280, "plugin_row_meta", "'donorbox_embed_campaign_set_plugin_meta'", 10, now(), now());

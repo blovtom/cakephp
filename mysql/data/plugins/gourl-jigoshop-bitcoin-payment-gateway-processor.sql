@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1970, "GoUrl Jigoshop - Bitcoin Altcoin Payment Gateway Processor", "4.2", "1.0.2", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38669, 1970, "gourl_jigoshop_gateway_add", "/jigoshop-gateway-gourl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38670, 1970, "gourl_jigoshop_gateway_load", "/jigoshop-gateway-gourl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38671, 1970, "gourl_jigoshop_currency_symbol", "/jigoshop-gateway-gourl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38672, 1970, "gourl_jigoshop_currency", "/jigoshop-gateway-gourl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38673, 1970, "gourljigoshop_gourlcallback", "/jigoshop-gateway-gourl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38674, 1970, "gourl_jigoshop_action_links", "/jigoshop-gateway-gourl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314859, 1970, "Jigoshop_Gateway_GoUrl", "payment_fields", "/jigoshop-gateway-gourl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314860, 1970, "Jigoshop_Gateway_GoUrl", "gourlcallback", "/jigoshop-gateway-gourl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314861, 1970, "Jigoshop_Gateway_GoUrl", "cryptocoin_payment", "/jigoshop-gateway-gourl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314862, 1970, "Jigoshop_Gateway_GoUrl", "process_payment", "/jigoshop-gateway-gourl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314863, 1970, "Jigoshop_Gateway_GoUrl", "__construct", "/jigoshop-gateway-gourl.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21722, 1970, "plugins_loaded", "'gourl_jigoshop_gateway_load'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21723, 1970, "thankyou_gourlpayments", "array($this,'cryptocoin_payment')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7164, 1970, "jigoshop_payment_gateways", "'gourl_jigoshop_gateway_add'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7165, 1970, "plugin_action_links", "'gourl_jigoshop_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7166, 1970, "jigoshop_currencies", "'gourl_jigoshop_currency'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7167, 1970, "jigoshop_currency_symbol", "'gourl_jigoshop_currency_symbol'", 10, now(), now());

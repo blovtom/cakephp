@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (451, "bbp buddypress profile information", "3.9.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7305, 451, "labelshow_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7306, 451, "rbi_register_settings", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7307, 451, "activate_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7308, 451, "itemshow_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7309, 451, "activate_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7310, 451, "labelshow_item1_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7311, 451, "rbi_settings_page", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7312, 451, "bbp_buddypress_profile_information", "/includes/display.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7313, 451, "itemshow_item1_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7314, 451, "rbi_settings_menu", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7315, 451, "itemshow_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7316, 451, "itemshow_item4_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7317, 451, "activate_item1_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7318, 451, "labelshow_item4_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7319, 451, "labelshow_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7320, 451, "activate_item4_checkbox", "/includes/settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4324, 451, "admin_menu", "'rbi_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4325, 451, "admin_init", "'rbi_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4326, 451, "bbp_theme_after_reply_author_details", "'bbp_buddypress_profile_information'", 10, now(), now());

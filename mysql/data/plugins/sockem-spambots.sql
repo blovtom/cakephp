@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4091, "Plugin Name", "4.1.1", "trunk", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71691, 4091, "sockem_plugin_settings_link", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71692, 4091, "sockem_format_debug_value", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71693, 4091, "sockem_make_speed_hash", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71694, 4091, "sockem_settings_menu", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71695, 4091, "sockem_validate_speed_hash", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71696, 4091, "sockem_comment_form", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71697, 4091, "sockem_debug_log", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71698, 4091, "sockem_count_links", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71699, 4091, "sockem_test_cookie", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71700, 4091, "sockem_comment_form_validation", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71701, 4091, "sockem_get_option", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71702, 4091, "sockem_make_js_hash", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71703, 4091, "sockem_settings", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71704, 4091, "sockem_make_cookie_hash", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (71705, 4091, "sockem_make_salt", "/index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43955, 4091, "send_headers", "'sockem_test_cookie'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43956, 4091, "admin_menu", "'sockem_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43957, 4091, "comment_form", "'sockem_comment_form'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14776, 4091, "preprocess_comment", "'sockem_comment_form_validation'", 1, now(), now());

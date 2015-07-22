@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (355, "CP Media Player - Audio Player and Video Player", "4.1", "1.0.1", "3.0.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5925, 355, "cpmp_init", "/codepeople-media-player.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5926, 355, "cpmp_admin_menu", "/codepeople-media-player.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5927, 355, "cpmp_settings_link", "/codepeople-media-player.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5928, 355, "cpmp_admin_scripts", "/codepeople-media-player.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38321, 355, "CodePeopleMediaPlayer", "_get_skin_list", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38322, 355, "CodePeopleMediaPlayer", "_create_db_structure", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38323, 355, "CodePeopleMediaPlayer", "installing_new_blog", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38324, 355, "CodePeopleMediaPlayer", "register_plugin", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38325, 355, "CodePeopleMediaPlayer", "insert_player_button", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38326, 355, "CodePeopleMediaPlayer", "admin_page", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38327, 355, "CodePeopleMediaPlayer", "set_load_media_player_window", "/codepeople-media-player.clss.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (38328, 355, "CodePeopleMediaPlayer", "replace_shortcode", "/codepeople-media-player.clss.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3384, 355, "media_buttons", "array(&$cpmp_obj,'insert_player_button')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3385, 355, "admin_menu", "'cpmp_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3386, 355, "wpmu_new_blog", "array(&$cpmp_obj,'installing_new_blog')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3387, 355, "admin_enqueue_scripts", "'cpmp_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3388, 355, "init", "'cpmp_init'", 10, now(), now());

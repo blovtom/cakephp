@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (146, "AdSense Targeting", "4.2", "1.5.1", "0.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8798, 146, "A5_AddMceButton", "addbuttons", "/class-lib/A5_MCEButtonClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8799, 146, "AdSenseTargeting", "google_start", "/adsense-targeting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8800, 146, "A5_AddMceButton", "change_tinymce_version", "/class-lib/A5_MCEButtonClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8801, 146, "AdSenseTargeting", "AdSenseTargeting", "/adsense-targeting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8802, 146, "A5_AddMceButton", "A5_AddMceButton", "/class-lib/A5_MCEButtonClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8803, 146, "AdSenseTargeting", "google_end", "/adsense-targeting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8804, 146, "AdSenseTargeting", "at_wrap_ignore", "/adsense-targeting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8805, 146, "AdSenseTargeting", "register_links", "/adsense-targeting.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8806, 146, "A5_AddMceButton", "register_button", "/class-lib/A5_MCEButtonClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8807, 146, "A5_AddMceButton", "add_tinymce_plugin", "/class-lib/A5_MCEButtonClass.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8808, 146, "AdSenseTargeting", "at_header", "/adsense-targeting.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1197, 146, "init", "array(&$this,'addbuttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1198, 146, "wp_head", "array($this,'at_header')", 1000, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (367, 146, "plugin_row_meta", "array($this,'register_links')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (368, 146, "loop_end", "array($this,'google_end')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (369, 146, "tiny_mce_version", "array(&$this,'change_tinymce_version')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (370, 146, "loop_start", "array($this,'google_start')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (371, 146, "mce_external_plugins", "array(&$this,'add_tinymce_plugin')", 5, now(), now());

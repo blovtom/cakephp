@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (461, "bbPress Like Topics", "4.1", "4.1", "3.5.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8658, 461, "bbplt_ajax_handler", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8659, 461, "getLikesOnAuthorPosts", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8660, 461, "shortcodeCaller", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8661, 461, "addToFavorites", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8662, 461, "removeFromFavorites", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8663, 461, "shortcodeCaller4", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8664, 461, "likeIt", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8665, 461, "unlikeIt", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8666, 461, "getBar", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8667, 461, "getBar_withLike", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8668, 461, "getMostLikedTopics", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8669, 461, "getFavorites", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8670, 461, "shortcodeCaller2", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8671, 461, "checkIfHasAlreadyLiked", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8672, 461, "leoniBBPressLikeTopicsActivation", "/bbpress-like-topics.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8673, 461, "shortcodeCaller3", "/bbpress-like-topics.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4647, 461, "wp_ajax_unlikeIt", "'unlikeIt'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4648, 461, "wp_ajax_nopriv_unlikeIt", "'unlikeIt'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4649, 461, "wp_ajax_nopriv_likeIt", "'likeIt'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4650, 461, "wp_ajax_likeIt", "'likeIt'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4651, 461, "wp_enqueue_scripts", "'bbplt_ajax_handler'", 10, now(), now());

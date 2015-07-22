@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (161, "Advanced Custom Facebook Likebox Widget", "4.1.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (2441, 161, "sparxfb_sample_load_color_picker_script", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (2442, 161, "sparxfb_sample_load_color_picker_style", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (2443, 161, "register_sparx_advancedCustomFacebookLikeboxWidget", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9292, 161, "advancedCustomFacebookLikeboxWidget", "form", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9293, 161, "advancedCustomFacebookLikeboxWidget", "__construct", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9294, 161, "advancedCustomFacebookLikeboxWidget", "widget", "/advancedCustomFacebookLikeboxWidget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1363, 161, "widgets_init", "'register_sparx_advancedCustomFacebookLikeboxWidget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1364, 161, "admin_print_scripts-widgets.php", "'sparxfb_sample_load_color_picker_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1365, 161, "admin_print_styles-widgets.php", "'sparxfb_sample_load_color_picker_style'", 10, now(), now());

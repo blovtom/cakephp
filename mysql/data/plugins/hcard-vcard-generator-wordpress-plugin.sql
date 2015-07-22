@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2048, "hCard & vCard Generator", "4.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39256, 2048, "add_additional_user_fields", "/hcard-vcard-generator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39257, 2048, "cardByShortcode", "/hcard-vcard-shortcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39258, 2048, "generate_card", "/hcard-vcard-generator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39259, 2048, "save_additional_user_fields", "/hcard-vcard-generator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39260, 2048, "init_hcard_vcard_generator", "/hcard-vcard-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323345, 2048, "Widget_hCard_vCard", "widget", "/hcard-vcard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323346, 2048, "Widget_hCard_vCard", "update", "/hcard-vcard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323347, 2048, "Widget_hCard_vCard", "Widget_hCard_vCard", "/hcard-vcard-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323348, 2048, "Widget_hCard_vCard", "form", "/hcard-vcard-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22213, 2048, "personal_options_update", "'save_additional_user_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22214, 2048, "show_user_profile", "'add_additional_user_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22215, 2048, "edit_user_profile_update", "'save_additional_user_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22216, 2048, "init", "'init_hcard_vcard_generator'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22217, 2048, "edit_user_profile", "'add_additional_user_fields'", 10, now(), now());

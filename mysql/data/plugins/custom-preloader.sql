@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1133, "Custom Preloader", "4.1.1", "1.4", "3.x", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23314, 1133, "bg_gradient_enabled", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23315, 1133, "pr_deactivated", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23316, 1133, "image_width_settings", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23317, 1133, "gradient_section_text", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23318, 1133, "advanced_section_text", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23319, 1133, "footer_cpreloader", "/include/frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23320, 1133, "head_cpreloader", "/include/frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23321, 1133, "settings_page_link", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23322, 1133, "pr_activated", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23323, 1133, "enqueue_AP", "/include/frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23324, 1133, "main_section_text", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23325, 1133, "bg_color_settings", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23326, 1133, "pr_settings_validate", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23327, 1133, "image_height_settings", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23328, 1133, "enabled_settings", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23329, 1133, "image_settings", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23330, 1133, "bg_gradient_code", "/include/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23331, 1133, "ap_admin_actions", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23332, 1133, "pr_settings_init", "/preloader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23333, 1133, "cp_admin_panel", "/preloader.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12629, 1133, "wp_enqueue_scripts", "'enqueue_AP'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12630, 1133, "wp_head", "'head_cpreloader'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12631, 1133, "admin_menu", "'ap_admin_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12632, 1133, "admin_init", "'pr_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12633, 1133, "wp_footer", "'footer_cpreloader'", 10, now(), now());

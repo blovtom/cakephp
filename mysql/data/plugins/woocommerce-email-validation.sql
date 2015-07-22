@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4866, "WooCommerce Email Validation", "4.1", "1.2.7", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619854, 4866, "WooCommerce_Email_Validation", "__construct", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619855, 4866, "WooCommerce_Email_Validation", "load_localisation", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619856, 4866, "WooCommerce_Email_Validation", "default_field_value", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619857, 4866, "WooCommerce_Email_Validation", "validate_email_address", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619858, 4866, "WooCommerce_Email_Validation", "load_plugin_textdomain", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (619859, 4866, "WooCommerce_Email_Validation", "add_checkout_field", "/classes/class-woocommerce-email-validation.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52245, 4866, "init", "array($this,'load_localisation')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17609, 4866, "woocommerce_process_checkout_field_billing_email-2", "array($this,'validate_email_address')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17610, 4866, "woocommerce_checkout_fields", "array($this,'add_checkout_field')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17611, 4866, "default_checkout_billing_email-2", "array($this,'default_field_value')", 10, now(), now());

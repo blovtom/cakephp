@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2675, "Meks ThemeForest Smart Widget", "4.1.1", "1.1.5", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48695, 2675, "mtw_widget_init", "/meks-themeforest-smart-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48696, 2675, "mks_load_tf_widget_text_domain", "/meks-themeforest-smart-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366321, 2675, "MKS_ThemeForest_Widget", "MKS_ThemeForest_Widget", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366322, 2675, "MKS_ThemeForest_Widget", "cmp", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366323, 2675, "MKS_ThemeForest_Widget", "get_items_from_users", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366324, 2675, "MKS_ThemeForest_Widget", "form", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366325, 2675, "MKS_ThemeForest_Widget", "widget", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366326, 2675, "MKS_ThemeForest_Widget", "enqueue_styles", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366327, 2675, "MKS_ThemeForest_Widget", "get_popular_items", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366328, 2675, "MKS_ThemeForest_Widget", "item_type_check", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366329, 2675, "MKS_ThemeForest_Widget", "update", "/inc/class-themeforest-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366330, 2675, "MKS_ThemeForest_Widget", "get_latest_items", "/inc/class-themeforest-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29083, 2675, "wp_enqueue_scripts", "array($this,'enqueue_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29084, 2675, "widgets_init", "'mtw_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29085, 2675, "plugins_loaded", "'mks_load_tf_widget_text_domain'", 10, now(), now());

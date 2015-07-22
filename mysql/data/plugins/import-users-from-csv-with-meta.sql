@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2226, "Import users from CSV with meta", "4.1.0", "1.2", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41064, 2226, "acui_detect_delimiter", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41065, 2226, "acui_import_users", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41066, 2226, "acui_extra_user_profile_fields", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41067, 2226, "str_getcsv", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41068, 2226, "acui_save_extra_user_profile_fields", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41069, 2226, "acui_options", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41070, 2226, "acui_string_conversion", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41071, 2226, "acui_get_roles", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41072, 2226, "acui_fileupload_process", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41073, 2226, "acui_deactivate", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41074, 2226, "acui_init", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41075, 2226, "acui_get_editable_roles", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41076, 2226, "acui_activate", "/import-users-from-csv-with-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41077, 2226, "acui_menu", "/import-users-from-csv-with-meta.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23492, 2226, "plugins_loaded", "'acui_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23493, 2226, "edit_user_profile", "'acui_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23494, 2226, "show_user_profile", "'acui_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23495, 2226, "personal_options_update", "'acui_save_extra_user_profile_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23496, 2226, "admin_menu", "'acui_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23497, 2226, "edit_user_profile_update", "'acui_save_extra_user_profile_fields'", 10, now(), now());

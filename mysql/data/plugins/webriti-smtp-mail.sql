@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4732, "Webriti SMTP Mail", "4.1", "1.5", "3.3+", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82682, 4732, "webriti_smtp_mail_from", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82683, 4732, "webriti_phpmailer_init_smtp", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82684, 4732, "webriti_smtpmail_options_panels_page", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82685, 4732, "webriti_smtp_mail_from_name", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82686, 4732, "webriti_smtp_activate", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82687, 4732, "load_webriti_smtpmail_css_js", "/webriti-smtp-mail.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82688, 4732, "webriti_smtp_mail_admin_menu", "/webriti-smtp-mail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595054, 4732, "WebritiSmtpMail", "load_plugin_textdomain", "/webriti-smtp-mail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595055, 4732, "WebritiSmtpMail", "load_plugin_hooks_file", "/webriti-smtp-mail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595056, 4732, "WebritiSmtpMail", "webriti_smtp_form", "/webriti-smtp-mail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (595057, 4732, "WebritiSmtpMail", "__construct", "/webriti-smtp-mail.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50738, 4732, "phpmailer_init", "'webriti_phpmailer_init_smtp'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50739, 4732, "admin_menu", "'webriti_smtp_mail_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17097, 4732, "wp_mail_from_name", "'webriti_smtp_mail_from_name'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17098, 4732, "wp_mail_from", "'webriti_smtp_mail_from'", 10, now(), now());

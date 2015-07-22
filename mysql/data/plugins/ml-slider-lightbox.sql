@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2741, "Plugin Name", "4.1", "1.5", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378621, 2741, "MetaSliderLightboxPlugin", "metaslider_lightbox_dependency_warning", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378622, 2741, "MetaSliderLightboxPlugin", "metaslider_lightbox_checkbox", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378623, 2741, "MetaSliderLightboxPlugin", "__construct", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378624, 2741, "MetaSliderLightboxPlugin", "setup_admin_actions", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378625, 2741, "MetaSliderLightboxPlugin", "metaslider_lightbox_multiple_warning", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378626, 2741, "MetaSliderLightboxPlugin", "setup_filters", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378627, 2741, "MetaSliderLightboxPlugin", "metaslider_class", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378628, 2741, "MetaSliderLightboxPlugin", "metaslider_check_lightbox_install", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378629, 2741, "MetaSliderLightboxPlugin", "metaslider_lightbox_settings", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378630, 2741, "MetaSliderLightboxPlugin", "metaslider_lightbox", "/ml-slider-lightbox.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378631, 2741, "MetaSliderLightboxPlugin", "init", "/ml-slider-lightbox.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29778, 2741, "admin_notices", "array($this,'metaslider_lightbox_multiple_warning')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29779, 2741, "plugins_loaded", "array('MetaSliderLightboxPlugin','init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29780, 2741, "admin_init", "array($this,'metaslider_check_lightbox_install')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29781, 2741, "admin_notices", "array($this,'metaslider_lightbox_dependency_warning')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9882, 2741, "metaslider_advanced_settings", "array($this,'metaslider_lightbox_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9883, 2741, "metaslider_css_classes", "array($this,'metaslider_class')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9884, 2741, "metaslider_checkbox_settings", "array($this,'metaslider_lightbox_checkbox')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9885, 2741, "metaslider_flex_slider_anchor_attributes", "array($this,'metaslider_lightbox')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9886, 2741, "metaslider_coin_slider_anchor_attributes", "array($this,'metaslider_lightbox')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9887, 2741, "metaslider_responsive_slider_anchor_attributes", "array($this,'metaslider_lightbox')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9888, 2741, "metaslider_nivo_slider_anchor_attributes", "array($this,'metaslider_lightbox')", 10, now(), now());

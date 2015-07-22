@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5049, "Wp anything slider", "4.1", "7.4", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87036, 5049, "wpanything_control", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87037, 5049, "ShowTinyMCE", "/pages/content-edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87038, 5049, "wpanything_init", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87039, 5049, "wpanything", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87040, 5049, "wpanything_textdomain", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87041, 5049, "wpanything_add_javascript_files", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87042, 5049, "wpanything_admin_options", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87043, 5049, "wpanything_add_to_menu", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87044, 5049, "wpanything_deactivation", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87045, 5049, "wpanything_install", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87046, 5049, "ShowTinyMCE", "/pages/content-add.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87047, 5049, "wpanything_widget", "/wp-anything-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (87048, 5049, "wpanything_shortcode", "/wp-anything-slider.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54739, 5049, "plugins_loaded", "'wpanything_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54740, 5049, "admin_menu", "'wpanything_add_to_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54741, 5049, "plugins_loaded", "'wpanything_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54742, 5049, "wp_enqueue_scripts", "'wpanything_add_javascript_files'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18713, 5049, "admin_head", "'ShowTinyMCE'", 10, now(), now());

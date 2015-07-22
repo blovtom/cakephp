@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3177, "Pixabay Images", "4.0", "2.3", "3.5.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57208, 3177, "pixabay_images_render_language", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57209, 3177, "pixabay_images_options_validate", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57210, 3177, "pixabay_images_render_attribution", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57211, 3177, "media_upload_pixabaytab_handler", "/pixabay-images.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57212, 3177, "pixabay_images_render_image_type", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57213, 3177, "pixabay_images_render_button", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57214, 3177, "media_upload_tabs_handler", "/pixabay-images.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57215, 3177, "pixabay_images_render_per_page", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57216, 3177, "pixabay_images_add_settings_menu", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57217, 3177, "pixabay_images_render_orientation", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57218, 3177, "register_pixabay_images_options", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57219, 3177, "pixabay_images_load_textdomain", "/pixabay-images.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57220, 3177, "media_buttons_context_handler", "/pixabay-images.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57221, 3177, "media_pixabay_images_tab", "/pixabay-images.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57222, 3177, "pixabay_images_settings_page", "/settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34668, 3177, "plugins_loaded", "'pixabay_images_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34669, 3177, "admin_init", "'register_pixabay_images_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34670, 3177, "admin_menu", "'pixabay_images_add_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34671, 3177, "media_upload_pixabaytab", "'media_upload_pixabaytab_handler'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11654, 3177, "media_buttons_context", "'media_buttons_context_handler'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11655, 3177, "media_upload_tabs", "'media_upload_tabs_handler'", 10, now(), now());

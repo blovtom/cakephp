@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (320, "ark-commenteditor", "4.1.1", "1.91", "3.6.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5478, 320, "ark_wce_init_option", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5479, 320, "ark_commenteditor_uninstall", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5480, 320, "set_style_arkwce", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5481, 320, "ark_wce_options_page", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5482, 320, "tinyMCE_comment_form", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5483, 320, "graphene_comment_reply_link", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5484, 320, "graphene_wp_head", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5485, 320, "graphene_scripts", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5486, 320, "ark_wce_add_pages", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5487, 320, "ark_remove_comment_form_allowed_tags", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5488, 320, "ark_commenteditor_activation", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5489, 320, "ark_pre_kses", "/ark-commenteditor.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5490, 320, "init_lang", "/ark-commenteditor.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3068, 320, "admin_menu", "'ark_wce_add_pages'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3069, 320, "wp_enqueue_scripts", "'graphene_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3070, 320, "wp_enqueue_scripts", "'set_style_arkwce'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3071, 320, "comment_form", "'tinyMCE_comment_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3072, 320, "plugins_loaded", "'init_lang'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3073, 320, "wp_head", "'graphene_wp_head'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (981, 320, "pre_kses", "'ark_pre_kses'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (982, 320, "comment_form_defaults", "'ark_remove_comment_form_allowed_tags'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (983, 320, "comment_reply_link", "'graphene_comment_reply_link'", 10, now(), now());

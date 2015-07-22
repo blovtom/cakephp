@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5697, "Zip Attachments", "4.1", "1.3", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100112, 5697, "za_show_button", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100113, 5697, "za_create_zip_callback", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100114, 5697, "za_plugin_scripts", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100115, 5697, "za_columns_values", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100116, 5697, "za_sort_all_public_post_types", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100117, 5697, "za_column_sort_orderby", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100118, 5697, "za_sortable_columns", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100119, 5697, "za_show_download_button_callback", "/zip-attachments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (100120, 5697, "za_columns", "/zip-attachments.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63125, 5697, "manage_pages_custom_column", "'za_columns_values'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63126, 5697, "wp_ajax_za_create_zip_file", "'za_create_zip_callback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63127, 5697, "wp_ajax_nopriv_za_create_zip_file", "'za_create_zip_callback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63128, 5697, "manage_posts_custom_column", "'za_columns_values'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63129, 5697, "wp_enqueue_scripts", "'za_plugin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63130, 5697, "admin_init", "'za_sort_all_public_post_types'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21627, 5697, "manage_pages_columns", "'za_columns'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21628, 5697, "request", "'za_column_sort_orderby'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21629, 5697, "manage_posts_columns", "'za_columns'", 10, now(), now());

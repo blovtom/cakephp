@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3588, "Multi-language Responsive Contact Form", "4.1", "2.7", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64749, 3588, "ai_register_fields", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64750, 3588, "ai_cf_add_menu_icons_styles", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64751, 3588, "ai_user_list", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64752, 3588, "ai_shortcode", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64753, 3588, "update_notification_message", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64754, 3588, "ai_contact_init", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64755, 3588, "ai_contact_settings", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64756, 3588, "hexrgb", "/include/captcha_code_file.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64757, 3588, "ai_add_contact_table", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64758, 3588, "contactFormShortcode", "/include/ai-contact-form-template.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64759, 3588, "ai_action_call", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64760, 3588, "ai_contact_setting", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64761, 3588, "ai_contact_form_uninstall", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64762, 3588, "ai_scripts", "/ai-responsive-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64763, 3588, "ai_load_admin_scripts", "/ai-responsive-contact-form.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39206, 3588, "admin_init", "'ai_register_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39207, 3588, "admin_enqueue_scripts", "'ai_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39208, 3588, "admin_menu", "'ai_contact_setting'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39209, 3588, "plugins_loaded", "'ai_contact_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39210, 3588, "wp_ajax_ai_action", "'ai_action_call'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39211, 3588, "wp_ajax_nopriv_ai_action", "'ai_action_call'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39212, 3588, "admin_enqueue_scripts", "'ai_load_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39213, 3588, "admin_head", "'ai_cf_add_menu_icons_styles'", 10, now(), now());

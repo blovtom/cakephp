@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4571, "Use Any Font", "4.1.1", "4.3.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80505, 4571, "uaf_move_file_to_newPath", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80506, 4571, "adminCsslibs", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80507, 4571, "uaf_create_folder", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80508, 4571, "uaf_client_css", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80509, 4571, "uaf_mce_before_init", "/includes/uaf_editor_setup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80510, 4571, "wp_editor_fontsize_filter", "/includes/uaf_editor_setup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80511, 4571, "uaf_write_css", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80512, 4571, "uaf_activate", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80513, 4571, "uaf_settings_page", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80514, 4571, "uaf_create_menu", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80515, 4571, "adminjslibs", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (80516, 4571, "uaf_update_check", "/plugin_interface.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49207, 4571, "admin_menu", "'uaf_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49208, 4571, "admin_print_styles", "'adminCsslibs'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49209, 4571, "plugins_loaded", "'uaf_update_check'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49210, 4571, "wp_enqueue_scripts", "'uaf_client_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49211, 4571, "admin_print_scripts", "'adminjslibs'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16567, 4571, "mce_buttons_2", "'wp_editor_fontsize_filter'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16568, 4571, "tiny_mce_before_init", "'uaf_mce_before_init'", 10, now(), now());

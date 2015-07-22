@@ -1,0 +1,37 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2752, "Mobile Detect For CSS", "4.1.1", NULL, "2.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378722, 2752, "Mobile_Detect", "getHttpHeaders", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378723, 2752, "Mobile_Detect", "getUaHttpHeaders", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378724, 2752, "Mobile_Detect", "setUserAgent", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378725, 2752, "Mobile_Detect", "getMobileDetectionRules", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378726, 2752, "Mobile_Detect", "getHttpHeader", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378727, 2752, "Mobile_Detect", "getUserAgents", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378728, 2752, "Mobile_Detect", "getMatchingRegex", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378729, 2752, "Mobile_Detect", "match", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378730, 2752, "Mobile_Detect", "is", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378731, 2752, "Mobile_Detect", "getProperties", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378732, 2752, "Mobile_Detect", "setHttpHeaders", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378733, 2752, "Mobile_Detect", "getRules", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378734, 2752, "Mobile_Detect", "getMobileDetectionRulesExtended", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378735, 2752, "Mobile_Detect", "getTabletDevices", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378736, 2752, "Mobile_Detect", "getMatchesArray", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378737, 2752, "Mobile_Detect", "getScriptVersion", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378738, 2752, "Mobile_Detect", "checkHttpHeadersForMobile", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378739, 2752, "Mobile_Detect", "setDetectionType", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378740, 2752, "Mobile_Detect", "isTablet", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378741, 2752, "Mobile_Detect", "getPhoneDevices", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378742, 2752, "Mobile_Detect", "isMobile", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378743, 2752, "Mobile_Detect", "version", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378744, 2752, "Mobile_Detect", "getOperatingSystems", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378745, 2752, "Mobile_Detect", "mobileGrade", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378746, 2752, "Mobile_Detect", "getUserAgent", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378747, 2752, "Mobile_Detect_For_Css", "body_class", "/mobile-detect-for-css.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378748, 2752, "Mobile_Detect", "getBrowsers", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378749, 2752, "Mobile_Detect", "__call", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378750, 2752, "Mobile_Detect_For_Css", "__construct", "/mobile-detect-for-css.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378751, 2752, "Mobile_Detect", "__construct", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378752, 2752, "Mobile_Detect", "getUtilities", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378753, 2752, "Mobile_Detect", "getMobileHeaders", "/Mobile_Detect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378754, 2752, "Mobile_Detect", "prepareVersionNo", "/Mobile_Detect.php", now(), now());
+
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9893, 2752, "body_class", "array($this,'body_class')", 10, now(), now());

@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5225, "WP iSell Photo", "4.1", "1.0.6", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90771, 5225, "wp_iSell_photo_gallery_shortcode", "/wp-iSell-photo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (90772, 5225, "wp_iSell_photo_get_button_code_for_paypal", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676381, 5225, "WP_iSELL_PHOTO", "wp_iSell_photo_add_settings", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676382, 5225, "WP_iSELL_PHOTO", "__construct", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676383, 5225, "WP_iSELL_PHOTO", "wp_iSell_photo_options_page", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676384, 5225, "WP_iSELL_PHOTO", "plugin_url", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676385, 5225, "WP_iSELL_PHOTO", "wp_iSell_photo_add_options_menu", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676386, 5225, "WP_iSELL_PHOTO", "wp_iSell_photo_plugin_action_links", "/wp-iSell-photo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (676387, 5225, "WP_iSELL_PHOTO", "plugin_includes", "/wp-iSell-photo.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56612, 5225, "admin_menu", "array(&$this,'wp_iSell_photo_add_options_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56613, 5225, "admin_init", "array(&$this,'wp_iSell_photo_add_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19422, 5225, "plugin_action_links", "array(&$this,'wp_iSell_photo_plugin_action_links')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19423, 5225, "post_gallery", "'wp_iSell_photo_gallery_shortcode'", 10, now(), now());

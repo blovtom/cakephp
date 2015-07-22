@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4379, "Plugin Name", "4.1", "1.4.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (76616, 4379, "ThinglinkShortCode", "/thinglink_shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549278, 4379, "RJW_Thinglink", "admin_init", "/rjw-thinglink.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549279, 4379, "RJW_Thinglink", "plugin_action_links", "/rjw-thinglink.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549280, 4379, "RJW_Thinglink", "admin_menu", "/rjw-thinglink.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549281, 4379, "RJW_Thinglink", "admin_menu_options", "/rjw-thinglink.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549282, 4379, "RJW_Thinglink", "add_thinklink_to_footer", "/rjw-thinglink.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46907, 4379, "admin_init", "array($rjw_thinglink,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46908, 4379, "wp_footer", "array($rjw_thinglink,'add_thinklink_to_footer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46909, 4379, "admin_menu", "array($rjw_thinglink,'admin_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15800, 4379, "plugin_action_links", "array($rjw_thinglink,'plugin_action_links')", 10, now(), now());

@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2336, "Plugin Name", "4.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43055, 2336, "mc_jesuischarlie_menu", "/mc-je-suis-charlie.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43056, 2336, "my_plugin_load_plugin_textdomain", "/mc-je-suis-charlie.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43057, 2336, "mc_jesuischarlie_action_links", "/mc-je-suis-charlie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335254, 2336, "mc_jesuischarlie", "show_ribbon", "/mc-je-suis-charlie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335255, 2336, "mc_jesuischarlie", "getAdminOptions", "/mc-je-suis-charlie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335256, 2336, "mc_jesuischarlie", "init", "/mc-je-suis-charlie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335257, 2336, "mc_jesuischarlie", "printAdminPage", "/mc-je-suis-charlie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335258, 2336, "mc_jesuischarlie", "mc_jesuischarlie", "/mc-je-suis-charlie.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24492, 2336, "plugins_loaded", "'my_plugin_load_plugin_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24493, 2336, "wp_footer", "array(&$inst_mc_jesuischarlie,'show_ribbon')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24494, 2336, "admin_menu", "'mc_jesuischarlie_menu'", 10, now(), now());

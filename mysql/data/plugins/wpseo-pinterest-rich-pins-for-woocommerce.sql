@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5566, "WPSEO Pinterest Rich Pins for WooCommerce", "4.1", "0.1", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729176, 5566, "WPSEO_Pinterest_Rich_Pins", "__construct", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729177, 5566, "WPSEO_Pinterest_Rich_Pins", "is_applicable", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729178, 5566, "WPSEO_Pinterest_Rich_Pins", "opengraph_type", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729179, 5566, "WPSEO_Pinterest_Rich_Pins", "output_rich_pin_meta_markup", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729180, 5566, "WPSEO_Pinterest_Rich_Pins", "output_woocommerce_product_rich_pin_meta", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729181, 5566, "WPSEO_Pinterest_Rich_Pins", "pinterest_output", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729182, 5566, "WPSEO_Pinterest_Rich_Pins", "save_metadata", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729183, 5566, "WPSEO_Pinterest_Rich_Pins", "format_stock_level", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729184, 5566, "WPSEO_Pinterest_Rich_Pins", "tab_header", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729185, 5566, "WPSEO_Pinterest_Rich_Pins", "get_wpseo_metadata", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729186, 5566, "WPSEO_Pinterest_Rich_Pins", "set_meta_box", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729187, 5566, "WPSEO_Pinterest_Rich_Pins", "output_product_rich_pin_meta", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729188, 5566, "WPSEO_Pinterest_Rich_Pins", "tab_content", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (729189, 5566, "WPSEO_Pinterest_Rich_Pins", "opengraph_title", "/wpseo-pinterest-rich-pins-woocommerce.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60612, 5566, "wp_head", "array($this,'output_rich_pin_meta_markup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60613, 5566, "wpseo_tab_header", "array($this,'tab_header')", 990, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60614, 5566, "wpseo_tab_content", "array($this,'tab_content')", 990, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60615, 5566, "plugins_loaded", "array($this,'set_meta_box')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20835, 5566, "wpseo_save_metaboxes", "array($this,'save_metadata')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20836, 5566, "wpseo_opengraph_title", "array($this,'opengraph_title')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20837, 5566, "wpseo_opengraph_type", "array($this,'opengraph_type')", 10, now(), now());

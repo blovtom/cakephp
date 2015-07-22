@@ -1,0 +1,46 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4415, "Tiqbiz API", "4.1", "trunk", "3.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554099, 4415, "Settings", "settingsLink", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554100, 4415, "Settings", "timeoutField", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554101, 4415, "Assets", "addStylesheets", "/src/Assets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554102, 4415, "Settings", "boxesField", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554103, 4415, "Settings", "settingsInit", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554104, 4415, "Settings", "settingsPage", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554105, 4415, "Settings", "sanitize", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554106, 4415, "Events", "syncEvent", "/src/Events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554107, 4415, "Events", "renderSendNotificationMetaBox", "/src/Events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554108, 4415, "Settings", "cidField", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554109, 4415, "Sync", "sessionStart", "/src/Sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554110, 4415, "Posts", "__construct", "/src/Posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554111, 4415, "Posts", "addBoxesMetaBox", "/src/Posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554112, 4415, "Settings", "settingsPreamble", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554113, 4415, "Sync", "updatePostTiqbizId", "/src/Sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554114, 4415, "Posts", "syncPost", "/src/Posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554115, 4415, "Sync", "runActions", "/src/Sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554116, 4415, "Settings", "apiKeyField", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554117, 4415, "Assets", "addScripts", "/src/Assets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554118, 4415, "Api", "__construct", "/src/Api.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554119, 4415, "Settings", "renderSettingsPage", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554120, 4415, "Events", "__construct", "/src/Events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554121, 4415, "Settings", "__construct", "/src/Settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554122, 4415, "Sync", "sessionDestroy", "/src/Sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554123, 4415, "Events", "addNotificationMetaBox", "/src/Events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554124, 4415, "Events", "addBoxesMetaBox", "/src/Events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554125, 4415, "Sync", "renderBoxesMetaBox", "/src/Sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554126, 4415, "Assets", "__construct", "/src/Assets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (554127, 4415, "Sync", "__construct", "/src/Sync.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47256, 4415, "wp_login", "array($this,'sessionDestroy')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47257, 4415, "admin_menu", "array($this,'settingsPage')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47258, 4415, "add_meta_boxes", "array($this,'addBoxesMetaBox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47259, 4415, "add_meta_boxes", "array($this,'addNotificationMetaBox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47260, 4415, "wp_logout", "array($this,'sessionDestroy')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47261, 4415, "save_post", "array($this,'syncPost')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47262, 4415, "admin_enqueue_scripts", "function () use ('that')
+{
+	$that->addStylesheets();$that->addScripts();
+}", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47263, 4415, "wp_ajax_tiqbiz_api_id_callback", "array($this,'updatePostTiqbizId')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47264, 4415, "admin_init", "array($this,'settingsInit')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47265, 4415, "save_post", "array($this,'syncEvent')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47266, 4415, "admin_notices", "array($this,'runActions')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47267, 4415, "init", "array($this,'sessionStart')", 10, now(), now());

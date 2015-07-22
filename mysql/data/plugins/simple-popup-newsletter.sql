@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3933, "Simple Popup Newsletter", "4.1", "trunk", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69339, 3933, "subscribtion_shortcode", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69340, 3933, "simple_popup_newsletter_options", "/simple-popup-newsletter-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69341, 3933, "enque_scripts", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69342, 3933, "strrep", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69343, 3933, "reg_scripts", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69344, 3933, "rowNumber", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69345, 3933, "delete_newsletter_plugin", "/uninstall.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69346, 3933, "unsubscribtion_shortcode", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69347, 3933, "get_langwords", "/simple-popup-newsletter-langs.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69348, 3933, "newsletter_install", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69349, 3933, "newsletter_menu_setup", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69350, 3933, "writeFile1", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69351, 3933, "links", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69352, 3933, "simple_popup_newsletter_langs", "/simple-popup-newsletter-langs.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69353, 3933, "newsletter_page", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69354, 3933, "getPaging", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69355, 3933, "init_session", "/simple-popup-newsletter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69356, 3933, "newsletter_footer", "/simple-popup-newsletter.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42448, 3933, "init", "'init_session'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42449, 3933, "admin_init", "'reg_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42450, 3933, "wp_enqueue_scripts", "'enque_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42451, 3933, "init", "'reg_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42452, 3933, "wp_footer", "'newsletter_footer'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42453, 3933, "admin_menu", "'newsletter_menu_setup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42454, 3933, "admin_enqueue_scripts", "'enque_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14401, 3933, "widget_text", "'do_shortcode'", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1591, "Facebook Like Box", "4.0", NULL, "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32626, 1591, "fblike_settings_page_action_hook", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32627, 1591, "fblike_show_popup", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32628, 1591, "fblike_install", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32629, 1591, "fblike_setting_menu", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32630, 1591, "fblike_save_settings_action_handler", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32631, 1591, "fblike_custom_popup", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32632, 1591, "fblike_deactivate", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32633, 1591, "fblike_print_settings_page_content", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32634, 1591, "fblike_delete", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32635, 1591, "fblike_plugin_backend_scripts", "/facebook-like.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32636, 1591, "fblike_plugin_scripts", "/facebook-like.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17843, 1591, "wp_footer", "'fblike_custom_popup'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17844, 1591, "fblike_save_settings", "'fblike_save_settings_action_handler'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17845, 1591, "wp_enqueue_scripts", "'fblike_plugin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17846, 1591, "admin_init", "'fblike_settings_page_action_hook'", 5, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17847, 1591, "admin_enqueue_scripts", "'fblike_plugin_backend_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17848, 1591, "init", "'fblike_show_popup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17849, 1591, "admin_menu", "'fblike_setting_menu'", 10, now(), now());

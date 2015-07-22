@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4403, "Tiny Bootstrap Elements Light", "4.1", "trunk", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77091, 4403, "tbel_register_tiny_bootstrap_elements_button", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77092, 4403, "siteURL", "/assets/bootstrap-badge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77093, 4403, "tbel_settings_page", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77094, 4403, "tbel_admin_menu", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77095, 4403, "add_tiny_bootstrap_elements_light_buttons", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77096, 4403, "tbel_get_frontend_css_files", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77097, 4403, "tbel_get_element_value", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77098, 4403, "tbel_include_bootstrap_css_in_frontend", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77099, 4403, "add_tiny_bootstrap_elements_light_plugin", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77100, 4403, "set_tiny_bootstrap_light_config", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77101, 4403, "siteURL", "/assets/bootstrap-label.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77102, 4403, "siteURL", "/assets/bootstrap-alert.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77103, 4403, "tbel_get_selected", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77104, 4403, "tbel_admin_scripts", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77105, 4403, "tbel_get_custom_path", "/tiny-bootstrap-elements-light.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77106, 4403, "tbel_admin_init", "/tiny-bootstrap-elements-light.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47166, 4403, "wp_head", "'tbel_include_bootstrap_css_in_frontend'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47167, 4403, "init", "'add_tiny_bootstrap_elements_light_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47168, 4403, "admin_init", "'tbel_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47169, 4403, "admin_menu", "'tbel_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47170, 4403, "admin_enqueue_scripts", "'tbel_admin_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15947, 4403, "mce_external_plugins", "'add_tiny_bootstrap_elements_light_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15948, 4403, "mce_buttons", "'tbel_register_tiny_bootstrap_elements_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15949, 4403, "tiny_mce_before_init", "'set_tiny_bootstrap_light_config'", 10, now(), now());

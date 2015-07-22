@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3002, "Open Graph Protocol Framework", "4.1", "1.0.8", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393698, 3002, "Open_Graph_Protocol_Options", "get_user_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393699, 3002, "Open_Graph_Protocol", "cleanup", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393700, 3002, "Open_Graph_Protocol_Options", "get_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393701, 3002, "Open_Graph_Protocol_Meta", "init", "/lib/core/class-open-graph-protocol-meta.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393702, 3002, "Open_Graph_Protocol_Options", "delete_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393703, 3002, "Open_Graph_Protocol_Options", "flush_options", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393704, 3002, "Open_Graph_Protocol", "init", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393705, 3002, "Open_Graph_Protocol", "activate", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393706, 3002, "Open_Graph_Protocol", "get_blogs", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393707, 3002, "Open_Graph_Protocol_Options", "delete_user_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393708, 3002, "Open_Graph_Protocol_Meta", "wp_head", "/lib/core/class-open-graph-protocol-meta.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393709, 3002, "Open_Graph_Protocol_Meta", "render_meta", "/lib/core/class-open-graph-protocol-meta.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393710, 3002, "Open_Graph_Protocol_Options", "init", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393711, 3002, "Open_Graph_Protocol", "is_sitewide_plugin", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393712, 3002, "Open_Graph_Protocol", "deactivate", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393713, 3002, "Open_Graph_Protocol", "delete_blog", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393714, 3002, "Open_Graph_Protocol_Helper", "get_title", "/lib/uty/class-open-graph-protocol-helper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393715, 3002, "Open_Graph_Protocol_Options", "update_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393716, 3002, "Open_Graph_Protocol", "setup", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393717, 3002, "Open_Graph_Protocol", "wpmu_new_blog", "/lib/core/class-open-graph-protocol.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (393718, 3002, "Open_Graph_Protocol_Options", "update_user_option", "/lib/core/class-open-graph-protocol-options.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32736, 3002, "wp_head", "array(__CLASS__,'wp_head')", 10, now(), now());

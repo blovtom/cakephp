@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3804, "Server IP & Memory Usage Display", "4.0.1", "1.0.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (67712, 3804, "ipmem_load_language", "/server-ip-memory-usage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (493382, 3804, "ip_address_memory_usage", "add_footer", "/server-ip-memory-usage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (493383, 3804, "ip_address_memory_usage", "ip_address_memory_usage", "/server-ip-memory-usage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (493384, 3804, "ip_address_memory_usage", "check_limit", "/server-ip-memory-usage.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (493385, 3804, "ip_address_memory_usage", "check_memory_usage", "/server-ip-memory-usage.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41260, 3804, "plugins_loaded", "create_function('','$memory = new ip_address_memory_usage();')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41261, 3804, "admin_init", "'ipmem_load_language'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41262, 3804, "init", "array(&$this,'check_limit')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14084, 3804, "admin_footer_text", "array(&$this,'add_footer')", 10, now(), now());

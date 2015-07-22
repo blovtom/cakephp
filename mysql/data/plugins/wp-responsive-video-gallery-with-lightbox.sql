@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5374, "Responsive Video Gallery With Lightbox", NULL, NULL, NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93694, 5374, "responsive_video_gallery_with_lightbox_video_preview_func", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93695, 5374, "responsive_video_gallery_plus_lightbox_admin_scripts_init", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93696, 5374, "responsive_video_gallery_plus_lightbox_add_admin_menu", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93697, 5374, "print_responsive_video_gallery_plus_lightbox_func", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93698, 5374, "check_file_exist_callback", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93699, 5374, "responsive_video_gallery_plus_lightbox_load_styles_and_js", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93700, 5374, "install_responsive_video_gallery_plus_lightbox", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93701, 5374, "responsive_video_gallery_with_lightbox_video_management_func", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93702, 5374, "responsive_video_gallery_plus_responsive_lightbox_get_wp_version", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93703, 5374, "responsive_video_gallery_plus_lightbox_add_admin_init", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93704, 5374, "responsive_video_gallery_plus_lightbox_admin_notices", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93705, 5374, "responsive_video_gallery_plus_lightbox_is_plugin_page", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93706, 5374, "responsive_video_gallery_with_lightbox_admin_options_func", "/wp-responsive-video-gallery-with-lightbox.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58134, 5374, "admin_menu", "'responsive_video_gallery_plus_lightbox_add_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58135, 5374, "wp_ajax_check_file_exist", "'check_file_exist_callback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58136, 5374, "admin_notices", "'responsive_video_gallery_plus_lightbox_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58137, 5374, "wp_print_styles", "'my_deregister_styles'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58138, 5374, "wp_enqueue_scripts", "'responsive_video_gallery_plus_lightbox_load_styles_and_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19992, 5374, "widget_text", "'do_shortcode'", 10, now(), now());

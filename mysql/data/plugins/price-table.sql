@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3351, "Price Table", "4.1", "1.1", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60784, 3351, "price_table_paratheme_menu_help", "/price-table.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60785, 3351, "meta_boxes_price_table", "/includes/price-table-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60786, 3351, "price_table_share_plugin", "/includes/price-table-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60787, 3351, "price_table_paratheme_menu_init", "/price-table.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60788, 3351, "price_table_get_domain", "/includes/price-table-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60789, 3351, "price_table_get_img_video", "/includes/price-table-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60790, 3351, "price_table_themes_flat", "/themes/flat/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60791, 3351, "price_table_paratheme_init_scripts", "/price-table.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60792, 3351, "price_table_get_youtube_id", "/includes/price-table-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60793, 3351, "price_table_posttype_register", "/includes/price-table-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60794, 3351, "meta_boxes_price_table_save", "/includes/price-table-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60795, 3351, "price_table_get_vimeo_id", "/includes/price-table-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60796, 3351, "price_table_paratheme_display", "/price-table.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60797, 3351, "meta_boxes_price_table_input", "/includes/price-table-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60798, 3351, "price_table_paratheme_activation", "/price-table.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36911, 3351, "add_meta_boxes", "'meta_boxes_price_table'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36912, 3351, "admin_menu", "'price_table_paratheme_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36913, 3351, "init", "'price_table_paratheme_init_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36914, 3351, "init", "'price_table_posttype_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36915, 3351, "save_post", "'meta_boxes_price_table_save'", 10, now(), now());

@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4810, "Woocommerce Add Countries", "4.1.1", "1.0", "3.9.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84258, 4810, "wac_settings_link", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615834, 4810, "Wac", "wac_settings_page", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615835, 4810, "Wac", "init", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615836, 4810, "Wac", "apply_wac_filter", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615837, 4810, "Wac", "__construct", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615838, 4810, "Wac", "add_menu", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615839, 4810, "Wac", "woocommerce_add_countries", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615840, 4810, "Wac", "uninstall", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615841, 4810, "Wac", "admin_init", "/woocommerce-add-countries.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (615842, 4810, "Wac", "init_settings", "/woocommerce-add-countries.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51595, 4810, "admin_menu", "array($this,'add_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51596, 4810, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51597, 4810, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51598, 4810, "plugins_loaded", "array($this,'apply_wac_filter')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17398, 4810, "woocommerce_countries", "array($this,'woocommerce_add_countries')", 10, now(), now());

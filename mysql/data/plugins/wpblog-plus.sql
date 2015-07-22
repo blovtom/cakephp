@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5518, "WordPress Plus +", "4.1", "1.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96479, 5518, "no_self_ping", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96480, 5518, "register_wordpressplus_settings_link", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96481, 5518, "admin_fonts", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96482, 5518, "custom_login_head", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96483, 5518, "ssl_gravatar", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96484, 5518, "cn_nf_url_parse", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96485, 5518, "pluginoptions_update", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96486, 5518, "wordpressplus_activate", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96487, 5518, "wordpressplus_redirect", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96488, 5518, "wordpress_plus_menu", "/wordress-plus.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96489, 5518, "pluginoptions_page", "/wordress-plus.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60016, 5518, "admin_menu", "'wordpress_plus_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60017, 5518, "admin_init", "'wordpressplus_redirect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60018, 5518, "admin_head", "'admin_fonts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60019, 5518, "login_head", "'custom_login_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60020, 5518, "pre_ping", "'no_self_ping'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20596, 5518, "get_avatar", "'ssl_gravatar'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20597, 5518, "the_content", "'cn_nf_url_parse'", 10, now(), now());

@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4749, "Plugin Name", "4.1", "1.8", "4.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82887, 4749, "ws_ls_display_chart", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82888, 4749, "ws_ls_get_weights", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82889, 4749, "ws_ls_weight_start", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82890, 4749, "ws_ls_title", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82891, 4749, "ws_ls_to_stones", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82892, 4749, "ws_ls_get_start_weight_in_kg", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82893, 4749, "ws_date_exists", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82894, 4749, "we_ls_format_weight_into_correct_string_format", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82895, 4749, "ws_ls_register_shortcodes", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82896, 4749, "ws_ls_get_recent_weight_in_kg", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82897, 4749, "ws_ls_display_table", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82898, 4749, "ws_ls_get_weight_extreme", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82899, 4749, "ws_ls_get_recent_weight_in_pounds", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82900, 4749, "ws_ls_weight_difference", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82901, 4749, "ws_ls_to_stone_pounds", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82902, 4749, "ws_ls_to_lb", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82903, 4749, "ws_ls_get_start_weight_in_pounds", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82904, 4749, "ws_ls_to_kg", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82905, 4749, "ws_ls_shortcode", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82906, 4749, "ws_ls_activate", "/installer/activate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82907, 4749, "ws_ls_display_form", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82908, 4749, "ws_ls_pounds_to_stone_pounds", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82909, 4749, "ws_ls_weight_recent", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82910, 4749, "ws_ls_pounds_to_kg", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82911, 4749, "ws_ls_save_data", "/includes/shortcodes.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50897, 4749, "init", "'ws_ls_register_shortcodes'", 10, now(), now());

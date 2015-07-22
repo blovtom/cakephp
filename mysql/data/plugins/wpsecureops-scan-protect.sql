@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5565, "WPSecureOps Scan Protect", "4.1", "1.3", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97002, 5565, "wpsecureops_scan_protect_get_lock_duration", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97003, 5565, "wpsecureops_scan_protect_wpsecureops_fnmatch", "/utils.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97004, 5565, "wpsecureops_scan_protect_is_save_triggered", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97005, 5565, "wpsecureops_scan_protect_register_settings", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97006, 5565, "wpsecureops_scan_protect_get_notify_email", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97007, 5565, "wpsecureops_scan_protect_pcrefnmatch", "/utils.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97008, 5565, "wpsecureops_scan_protect_create_menu", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97009, 5565, "wpsecureops_scan_protect_normalize_line_endings", "/utils.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97010, 5565, "wpsecureops_scan_protect_get_interval", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97011, 5565, "wpsecureops_scan_protect_get_allowed_bots", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97012, 5565, "wpsecureops_scan_protect_log_request", "/wpsecureops-scan-protect.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97013, 5565, "wpsecureops_scan_protect_settings_page", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97014, 5565, "wpsecureops_scan_protect_get_max_attempts", "/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97015, 5565, "wpsecureops_scan_protect_get_ip_address", "/utils.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60608, 5565, "admin_init", "'wpsecureops_scan_protect_is_save_triggered'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60609, 5565, "plugins_loaded", "'wpsecureops_scan_protect_log_request'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60610, 5565, "admin_init", "'wpsecureops_scan_protect_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60611, 5565, "admin_menu", "'wpsecureops_scan_protect_create_menu'", 10, now(), now());

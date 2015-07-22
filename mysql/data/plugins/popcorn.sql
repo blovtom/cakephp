@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3232, "Popcorn", "4.1", "1.0.1", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421553, 3232, "popcorn", "pop_up_plugin_install", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421554, 3232, "popcorn", "init", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421555, 3232, "popcorn", "pop_up_admin_scripts_backend", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421556, 3232, "popcorn", "is_home_only_show", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421557, 3232, "popcorn", "popcorn_language", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421558, 3232, "popcorn", "pop_up_plugin_page", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421559, 3232, "popcorn", "pop_up_scripts_frontend", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421560, 3232, "popcorn", "pop_up_plugin_admin", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421561, 3232, "popcorn", "pop_up_plugin_home_page", "/class/class.popcorn.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (421562, 3232, "popcorn", "so_wp_ajax_function", "/class/class.popcorn.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35681, 3232, "init", "array('popcorn','init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35682, 3232, "wp_enqueue_scripts", "array('popcorn','pop_up_scripts_frontend')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35683, 3232, "admin_menu", "array('popcorn','pop_up_plugin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35684, 3232, "wp_ajax_send_email_action", "array('popcorn','so_wp_ajax_function')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35685, 3232, "wp_footer", "array('popcorn','is_home_only_show')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35686, 3232, "admin_enqueue_scripts", "array('popcorn','pop_up_admin_scripts_backend')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35687, 3232, "wp_ajax_nopriv_send_email_action", "array('popcorn','so_wp_ajax_function')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35688, 3232, "plugins_loaded", "array('popcorn','popcorn_language')", 10, now(), now());

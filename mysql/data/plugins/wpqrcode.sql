@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5555, "WpQrCode", "4.1", "1.0.3", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96868, 5555, "wpqrcode_scripts", "/wpqrcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96869, 5555, "register_WpQrCode", "/wpqrcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96870, 5555, "wpqrcode_add_color_picker", "/wpqrcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (728843, 5555, "WpQrCode", "form", "/wpqrcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (728844, 5555, "WpQrCode", "__construct", "/wpqrcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (728845, 5555, "WpQrCode", "widget", "/wpqrcode.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60556, 5555, "wp_enqueue_scripts", "'wpqrcode_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60557, 5555, "admin_enqueue_scripts", "'wpqrcode_add_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60558, 5555, "widgets_init", "'register_WpQrCode'", 10, now(), now());

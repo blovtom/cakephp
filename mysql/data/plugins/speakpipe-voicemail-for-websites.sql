@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4120, "Plugin Name", "4.1.1", "trunk", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517804, 4120, "SpeakPipe", "add_footer_script", "/speakpipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517805, 4120, "SpeakPipe", "speakpipe_notice", "/speakpipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517806, 4120, "zelenin_fields", "do_settings_fields", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517807, 4120, "SpeakPipe", "__construct", "/speakpipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517808, 4120, "zelenin_fields", "fields_section_callback", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517809, 4120, "zelenin_fields", "fields_update", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517810, 4120, "zelenin_fields", "fields_init", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517811, 4120, "zelenin_fields", "generate_page", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517812, 4120, "SpeakPipe", "options_links", "/speakpipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517813, 4120, "zelenin_fields", "fields_sanitize_callback", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517814, 4120, "zelenin_fields", "init_admin_menu", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517815, 4120, "SpeakPipe", "init_settings", "/speakpipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517816, 4120, "zelenin_fields", "generate_fields_callback", "/fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (517817, 4120, "zelenin_fields", "__construct", "/fields.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44423, 4120, "admin_notices", "array($this,'speakpipe_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44424, 4120, "wp_footer", "array($this,'add_footer_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44425, 4120, "admin_menu", "array($this,'init_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44426, 4120, "admin_init", "array($this,'fields_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44427, 4120, "init", "array($this,'init_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14916, 4120, "plugin_action_links", "array($this,'options_links')", 10, now(), now());

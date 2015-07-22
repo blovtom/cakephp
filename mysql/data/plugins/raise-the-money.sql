@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3465, "Raise The Money", "4.1", "5.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63137, 3465, "myplugin_register_widgets", "/raise-the-money-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456926, 3465, "RaiseTheMoney", "init_raisethemoney", "/raise-the-money.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456927, 3465, "RaiseTheMoneyWidget", "widget", "/raise-the-money-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456928, 3465, "RaiseTheMoneyWidget", "form", "/raise-the-money-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456929, 3465, "RaiseTheMoneyWidget", "update", "/raise-the-money-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456930, 3465, "RaiseTheMoney", "__construct", "/raise-the-money.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456931, 3465, "RaiseTheMoney", "render_shortcode", "/raise-the-money.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456932, 3465, "RaiseTheMoneyWidget", "RaiseTheMoneyWidget", "/raise-the-money-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37986, 3465, "widgets_init", "'myplugin_register_widgets'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37987, 3465, "init", "array(&$this,'init_raisethemoney')", 10, now(), now());

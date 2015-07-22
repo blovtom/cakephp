@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (649, "BuddyPress Captcha", "4.1", "1.1", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14719, 649, "bp_validate", "/bp-recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14720, 649, "tpbpcapt_register_settings", "/bpcapt-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14721, 649, "_recaptcha_aes_pad", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14722, 649, "recaptcha_mailhide_url", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14723, 649, "recaptcha_get_html", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14724, 649, "tpbpcapt_register_options_page", "/bpcapt-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14725, 649, "recaptcha_get_signup_url", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14726, 649, "_recaptcha_qsencode", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14727, 649, "_recaptcha_mailhide_email_parts", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14728, 649, "recaptcha_mailhide_html", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14729, 649, "_recaptcha_http_post", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14730, 649, "recaptcha_check_answer", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14731, 649, "bp_add_code", "/bp-recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14732, 649, "_recaptcha_mailhide_urlbase64", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14733, 649, "tpbpcapt_options_page", "/bpcapt-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14734, 649, "_recaptcha_aes_encrypt", "/recaptcha-php-1.11/recaptchalib.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7140, 649, "admin_init", "'tpbpcapt_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7141, 649, "admin_menu", "'tpbpcapt_register_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7142, 649, "bp_signup_validate", "'bp_validate'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7143, 649, "bp_before_registration_submit_buttons", "'bp_add_code'", 10, now(), now());

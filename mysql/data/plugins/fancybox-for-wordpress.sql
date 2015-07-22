@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1619, "FancyBox for WordPress", "4.1", "3.0.6", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32855, 1619, "mfbfw_admin_scripts", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32856, 1619, "mfbfw_options_page", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32857, 1619, "mfbfw_install", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32858, 1619, "mfbfw_init", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32859, 1619, "mfbfw_admin_options", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32860, 1619, "mfbfw_register_scripts", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32861, 1619, "mfbfw_plugin_action_links", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32862, 1619, "mfbfw_scripts", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32863, 1619, "mfbfw_uninstall", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32864, 1619, "mfbfw_styles", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32865, 1619, "mfbfw_admin_menu", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32866, 1619, "mfbfw_admin_styles", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32867, 1619, "mfbfw_defaults", "/fancybox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32868, 1619, "mfbfw_textdomain", "/fancybox.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17998, 1619, "init", "'mfbfw_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17999, 1619, "admin_init", "'mfbfw_admin_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18000, 1619, "admin_menu", "'mfbfw_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18001, 1619, "wp_enqueue_scripts", "'mfbfw_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18002, 1619, "wp_head", "'mfbfw_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18003, 1619, "wp_enqueue_scripts", "'mfbfw_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18004, 1619, "init", "'mfbfw_register_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5974, 1619, "plugin_action_links", "'mfbfw_plugin_action_links'", 10, now(), now());

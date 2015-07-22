@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2706, "Plugin Name", "4.1", "1.1", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49203, 2706, "radlabs_load_widget", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367589, 2706, "RadLabs_Metro_Author_Card", "__construct", "/metro-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367590, 2706, "RL_Metro_Author_Widget", "form", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367591, 2706, "RL_Metro_Author_Widget", "__construct", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367592, 2706, "RL_Metro_Author_Widget", "metro_card_register_scripts", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367593, 2706, "RL_Metro_Author_Widget", "widget", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367594, 2706, "RL_Metro_Author_Widget", "mac_admin_scripts", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367595, 2706, "RL_Metro_Author_Widget", "update", "/inc/widget-authorcard.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367596, 2706, "RadLabs_Metro_Author_Card", "init", "/metro-author-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29404, 2706, "admin_enqueue_scripts", "array(&$this,'mac_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29405, 2706, "widgets_init", "'radlabs_load_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29406, 2706, "wp_loaded", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29407, 2706, "wp_enqueue_scripts", "array($this,'metro_card_register_scripts')", 10, now(), now());

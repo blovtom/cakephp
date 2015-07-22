@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2673, "Meks Smart Author Widget", "4.1.1", "1.0.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48691, 2673, "mks_author_widget_init", "/meks-smart-author-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48692, 2673, "mks_load_author_widget_text_domain", "/meks-smart-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366307, 2673, "MKS_Author_Widget", "form", "/inc/class-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366308, 2673, "MKS_Author_Widget", "count_users", "/inc/class-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366309, 2673, "MKS_Author_Widget", "update", "/inc/class-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366310, 2673, "MKS_Author_Widget", "enqueue_styles", "/inc/class-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366311, 2673, "MKS_Author_Widget", "widget", "/inc/class-author-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366312, 2673, "MKS_Author_Widget", "MKS_Author_Widget", "/inc/class-author-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29076, 2673, "widgets_init", "'mks_author_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29077, 2673, "wp_enqueue_scripts", "array($this,'enqueue_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29078, 2673, "plugins_loaded", "'mks_load_author_widget_text_domain'", 10, now(), now());

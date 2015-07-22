@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4894, "WooCommerce iTransact Payment Gateway", "4.1", "1.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84920, 4894, "woocommerce_iTransact_add_gateway", "/gateway-itransact.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84921, 4894, "iTransact_init", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621923, 4894, "WC_iTransact", "successful_request", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621924, 4894, "WC_iTransact", "process_payment", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621925, 4894, "WC_iTransact", "generate_iTransact_form", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621926, 4894, "WC_iTransact", "check_response", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621927, 4894, "WC_iTransact", "admin_options", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621928, 4894, "WC_iTransact", "__construct", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621929, 4894, "WC_iTransact", "init_form_fields", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621930, 4894, "WC_iTransact", "receipt_page", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621931, 4894, "WC_iTransact", "is_valid_for_use", "/gateway-itransact.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621932, 4894, "WC_iTransact", "get_iTransact_args", "/gateway-itransact.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52561, 4894, "woocommerce_api_wc_itransact", "array($this,'check_response')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52562, 4894, "plugins_loaded", "'iTransact_init'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52563, 4894, "woocommerce_api_wc_techprocess", "array($this,'check_response')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52564, 4894, "woocommerce_receipt_techprocess", "array(&$this,'receipt_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17728, 4894, "woocommerce_payment_gateways", "'woocommerce_iTransact_add_gateway'", 10, now(), now());

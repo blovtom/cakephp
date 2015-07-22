@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5000, "Wordpress Hebrew Date", "4.1", "1.2.1", "2.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86204, 5000, "hebdate_format", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86205, 5000, "hebDate", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86206, 5000, "format", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86207, 5000, "register_settings", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86208, 5000, "hasLeapYear", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86209, 5000, "init_hebdate", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86210, 5000, "today_hebDate", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86211, 5000, "sunset", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86212, 5000, "hebdate_admin", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86213, 5000, "comment_hebDate", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86214, 5000, "hebdate_options", "/heb_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86215, 5000, "the_hebDate", "/heb_date.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54074, 5000, "admin_init", "'register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54075, 5000, "admin_menu", "'hebdate_admin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18447, 5000, "the_date", "'the_hebdate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18448, 5000, "comment_time", "'comment_hebdate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18449, 5000, "get_comment_date", "'comment_hebDate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18450, 5000, "get_the_date", "'the_hebdate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18451, 5000, "get_the_time", "'the_hebdate'", 10, now(), now());

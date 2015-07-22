@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4552, "Unlimited", "4.1.1", "0.4", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565177, 4552, "WPB_Unlimited", "cleanse", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565178, 4552, "WPB_Unlimited", "delete", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565179, 4552, "WPB_Unlimited", "getAll", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565180, 4552, "WPB_Unlimited", "validate", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565181, 4552, "WPB_Unlimited", "__construct", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565182, 4552, "WPB_Unlimited", "loadJs", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565183, 4552, "WPB_Unlimited", "loadDashJs", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565184, 4552, "WPB_Unlimited", "save", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565185, 4552, "WPB_Unlimited", "createMenu", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565186, 4552, "WPB_Unlimited", "templates", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565187, 4552, "WPB_Unlimited", "pageTemplate", "/unlimited.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (565188, 4552, "WPB_Unlimited", "upload", "/unlimited.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48895, 4552, "wp_ajax_pb_un_delete", "array($this,'delete')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48896, 4552, "admin_menu", "array($this,'createMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48897, 4552, "wp_enqueue_scripts", "array($this,'loadJs')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48898, 4552, "admin_enqueue_scripts", "array($this,'loadDashJs')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48899, 4552, "wp_ajax_pb_un_get", "array($this,'getAll')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48900, 4552, "wp_ajax_pb_un_save", "array($this,'save')", 10, now(), now());

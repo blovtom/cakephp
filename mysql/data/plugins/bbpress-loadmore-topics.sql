@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (462, "bbpress-loadmore-topics", "4.1", "1.1", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8674, 462, "emusic_set_bbp_query", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8675, 462, "emusic_reset_bbp_query", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8676, 462, "bbpresslmt_init_plugin", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8677, 462, "bbpresslmt_loadmore_button", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48859, 462, "BBPressMoreTopics", "add_topic_class", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48860, 462, "BBPressMoreTopics", "load_more_button", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48861, 462, "BBPressMoreTopics", "ajax_load_more", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48862, 462, "BBPressMoreTopics", "get_instance", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48863, 462, "BBPressMoreTopics", "addjs", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48864, 462, "BBPressMoreTopics", "add_actions", "/index.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4652, 462, "wp_ajax_bbpress_loadmore_topics", "array($this,'ajax_load_more')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4653, 462, "bbp_template_after_topics_loop", "'bbpresslmt_loadmore_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4654, 462, "wp_ajax_nopriv_bbpress_loadmore_topics", "array($this,'ajax_load_more')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4655, 462, "init", "'bbpresslmt_init_plugin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4656, 462, "wp_enqueue_scripts", "array($this,'addjs')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1572, 462, "bbp_get_topic_class", "array($this,'add_topic_class')", 10, now(), now());

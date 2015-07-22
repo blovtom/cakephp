@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4181, "Sticky Notes Widget", "4.1.1", "1.0.1", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73566, 4181, "StickyNotesWidget_styles", "/sticky-notes-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73567, 4181, "register_StickyNotesWidget", "/sticky-notes-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73568, 4181, "snw_add_color_picker", "/sticky-notes-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521911, 4181, "StickyNotesWidget", "__construct", "/sticky-notes-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521912, 4181, "StickyNotesWidget", "widget", "/sticky-notes-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521913, 4181, "StickyNotesWidget", "form", "/sticky-notes-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44983, 4181, "widgets_init", "'register_StickyNotesWidget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44984, 4181, "wp_enqueue_scripts", "'StickyNotesWidget_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44985, 4181, "admin_enqueue_scripts", "'snw_add_color_picker'", 10, now(), now());

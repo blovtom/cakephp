@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1169, "DailyMotion Search and Publish Videos", "4.1", "2.5.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23832, 1169, "dsp_user_settings", "/classes/dsp_user_settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23833, 1169, "implement_ajax_2", "/classes/dsp_ajax.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23834, 1169, "dsp_pagination", "/classes/dsp_pagination.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23835, 1169, "dsp_info_html", "/classes/dsp_videos.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23836, 1169, "implement_ajax", "/classes/dsp_ajax.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23837, 1169, "dsp_dashboard_page", "/classes/dsp_videos.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (103703, 1169, "DSP_Plugin_Class", "dsp_create_menu", "/dsp_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (103704, 1169, "DSP_Plugin_Class", "dsp_plugin_js", "/dsp_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (103705, 1169, "DSP_Plugin_Class", "register_dsp_settings", "/dsp_plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (103706, 1169, "DSP_Plugin_Class", "__construct", "/dsp_plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12962, 1169, "admin_enqueue_scripts", "array($this,'dsp_plugin_js')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12963, 1169, "admin_menu", "array($this,'dsp_create_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12964, 1169, "wp_ajax_nopriv_category_select_action", "'implement_ajax'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12965, 1169, "wp_ajax_nopriv_category_select_action2", "'implement_ajax_2'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12966, 1169, "wp_ajax_category_select_action2", "'implement_ajax_2'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12967, 1169, "admin_init", "array($this,'register_dsp_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12968, 1169, "wp_ajax_category_select_action", "'implement_ajax'", 10, now(), now());

@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1098, "Curtain", "4.1.1", "1.0.2", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22934, 1098, "contrast", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98616, 1098, "settings", "__construct", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98617, 1098, "load", "options", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98618, 1098, "load", "activate", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98619, 1098, "load", "option_screen", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98620, 1098, "settings", "roles", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98621, 1098, "load", "admin_menu", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98622, 1098, "load", "init", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98623, 1098, "settings", "sanitize", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98624, 1098, "settings", "description", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98625, 1098, "load", "admin_init", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98626, 1098, "load", "links", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98627, 1098, "load", "__construct", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98628, 1098, "load", "plugins_loaded", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98629, 1098, "load", "admin_bar_menu", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98630, 1098, "settings", "background", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98631, 1098, "load", "load_options", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98632, 1098, "settings", "heading", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98633, 1098, "load", "caps", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98634, 1098, "load", "deactivate", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98635, 1098, "settings", "ips", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98636, 1098, "load", "ct_enqueue_scripts", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98637, 1098, "load", "admin_notices", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (98638, 1098, "load", "wp_loaded", "/main.php", now(), now());
+

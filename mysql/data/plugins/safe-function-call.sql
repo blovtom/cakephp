@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3692, "Safe Function Call", "4.1", "1.2.2", "1.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66097, 3692, "__sfc_is_valid_callback", "/safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66098, 3692, "sfc_test_fallback", "/tests/test-safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66099, 3692, "_sfcf", "/safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66100, 3692, "_sfce", "/safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66101, 3692, "_sfc", "/safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66102, 3692, "_sfcm", "/safe-function-call.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66103, 3692, "_manually_load_plugin", "/tests/bootstrap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66104, 3692, "sfc_test_real_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484359, 3692, "Safe_Function_Call_Test", "test__sfce_on_nonexistent_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484360, 3692, "Safe_Function_Call_Test", "test__sfcm_on_existing_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484361, 3692, "Safe_Function_Call_Test", "fallback", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484362, 3692, "Safe_Function_Call_Test", "test__sfcm_on_nonexistent_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484363, 3692, "Safe_Function_Call_Test", "test__sfcf_on_nonexistent_function_with_fallback", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484364, 3692, "Safe_Function_Call_Test", "test__sfcf_on_existing_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484365, 3692, "Safe_Function_Call_Test", "test__sfc_on_existing_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484366, 3692, "Safe_Function_Call_Test", "test__sfc_on_nonexistent_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484367, 3692, "Safe_Function_Call_Test", "test__sfcf_on_nonexistent_function_with_no_fallback", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484368, 3692, "Safe_Function_Call_Test", "test__sfcm_on_nonexistent_function_with_message", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484369, 3692, "Safe_Function_Call_Test", "real_object_function", "/tests/test-safe-function-call.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484370, 3692, "Safe_Function_Call_Test", "test__sfce_on_existing_function", "/tests/test-safe-function-call.php", now(), now());
+

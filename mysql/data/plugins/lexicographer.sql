@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2481, "Lexicographer", "4.0", "trunk", "2.8.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46382, 2481, "lexicographer_showify", "/translitlib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46383, 2481, "lexicographer_multireplace", "/translitlib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46384, 2481, "lexicographer_transition_post_status", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46385, 2481, "lexicographer_span_pattern", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46386, 2481, "lexicographer_the_content", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46387, 2481, "lexicographer_presentation_table", "/translitlib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46388, 2481, "lexicographer_sortify", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46389, 2481, "lexicographer_publish", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46390, 2481, "lexicographer_widget_text", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46391, 2481, "lexicographer_install", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46392, 2481, "lexicographer_sort_table", "/translitlib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46393, 2481, "lexicographer_uninstall", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46394, 2481, "lexicographer_unpublish", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46395, 2481, "lexicographer_anchornamify", "/translitlib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46396, 2481, "lexicographer_insert_index", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46397, 2481, "lexicographer_extract_term", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46398, 2481, "lexicographer_insert_anchor", "/lib.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46399, 2481, "lexicographer_dic_strip", "/translitlib.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26935, 2481, "transition_post_status", "'lexicographer_transition_post_status'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9002, 2481, "widget_text", "'lexicographer_widget_text'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9003, 2481, "the_content", "'lexicographer_the_content'", 10, now(), now());

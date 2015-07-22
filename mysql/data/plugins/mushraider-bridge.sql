@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2809, "MushRaider Bridge", "4.1", "1.0.6", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50929, 2809, "mushraider_sc_roster", "/src/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50930, 2809, "mushraider_css", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50931, 2809, "mushraider_render_bridge", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50932, 2809, "mushraider_render_roles", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50933, 2809, "mushraider_activate", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50934, 2809, "mushraider_menu", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50935, 2809, "mushraider_plugin_action_links", "/mushraider-bridge.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50936, 2809, "mushraider_loaded", "/mushraider-bridge.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (380927, 2809, "MushraiderBridgeEvents_Widget", "update", "/src/widget_events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (380928, 2809, "MushraiderBridgeEvents_Widget", "__construct", "/src/widget_events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (380929, 2809, "MushraiderBridgeEvents_Widget", "widget", "/src/widget_events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (380930, 2809, "MushraiderBridgeEvents_Widget", "niceDate", "/src/widget_events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (380931, 2809, "MushraiderBridgeEvents_Widget", "form", "/src/widget_events.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30273, 2809, "widgets_init", "create_function('','register_widget("MushraiderBridgeEvents_Widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30274, 2809, "wp_head", "'mushraider_css'", 999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30275, 2809, "plugins_loaded", "'mushraider_loaded'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30276, 2809, "admin_menu", "'mushraider_menu'", 10, now(), now());

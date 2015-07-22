@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1295, "Dribbble Portfolio Shots Widget", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25627, 1295, "register_DribbblePortfolioShotsWidget", "/dribbble-portfolio-shots-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (112355, 1295, "DribbblePortfolioShotsWidget", "__construct", "/dribbble-portfolio-shots-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (112356, 1295, "DribbblePortfolioShotsWidget", "register_plugin_styles_dribbble_portfolio_shots_widget", "/dribbble-portfolio-shots-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (112357, 1295, "DribbblePortfolioShotsWidget", "widget", "/dribbble-portfolio-shots-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (112358, 1295, "DribbblePortfolioShotsWidget", "form", "/dribbble-portfolio-shots-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14240, 1295, "wp_enqueue_scripts", "array($this,'register_plugin_styles_dribbble_portfolio_shots_widget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (14241, 1295, "widgets_init", "'register_DribbblePortfolioShotsWidget'", 10, now(), now());

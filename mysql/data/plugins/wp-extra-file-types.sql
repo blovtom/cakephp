@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5159, "WP Extra File Types", "4.1.1", "0.3.1", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89361, 5159, "doSort", "/get-mime.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669504, 5159, "WPEFT", "__construct", "/wp-extra-file-types.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669505, 5159, "WPEFT", "mime", "/wp-extra-file-types.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669506, 5159, "WPEFT", "settings", "/wp-extra-file-types.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669507, 5159, "WPEFT", "admin_page", "/wp-extra-file-types.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669508, 5159, "WPEFT", "admin", "/wp-extra-file-types.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55926, 5159, "admin_init", "array($this,'settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55927, 5159, "admin_menu", "array($wpeft_obj,'admin')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19046, 5159, "upload_mimes", "array($wpeft_obj,'mime')", 10, now(), now());

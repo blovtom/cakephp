@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3096, "Outerbridge Password Generator", "4.1", "trunk", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55997, 3096, "obr_password_generator_init", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404409, 3096, "obr_password_generator", "obr_install", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404410, 3096, "obr_password_generator", "obr_password_generator", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404411, 3096, "obr_password_generator", "form", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404412, 3096, "obr_password_generator", "obr_header", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404413, 3096, "obr_password_generator", "update", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404414, 3096, "obr_password_generator", "obr_generate_password", "/outerbridge-password-generator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404415, 3096, "obr_password_generator", "widget", "/outerbridge-password-generator.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33955, 3096, "wp_head", "array(&$this,'obr_header')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33956, 3096, "widgets_init", "'obr_password_generator_init'", 10, now(), now());

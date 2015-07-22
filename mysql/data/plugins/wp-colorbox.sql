@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5092, "WordPress Colorbox Lightbox", "4.1", "1.0.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88161, 5092, "wp_colorbox_media_handler", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662777, 5092, "WP_COLORBOX", "add_options_menu", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662778, 5092, "WP_COLORBOX", "plugin_path", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662779, 5092, "WP_COLORBOX", "add_plugin_action_links", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662780, 5092, "WP_COLORBOX", "plugin_includes", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662781, 5092, "WP_COLORBOX", "plugin_scripts", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662782, 5092, "WP_COLORBOX", "plugin_url", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (662783, 5092, "WP_COLORBOX", "__construct", "/main.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55263, 5092, "wp_enqueue_scripts", "array(&$this,'plugin_scripts')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18825, 5092, "the_excerpt", "'do_shortcode'", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18826, 5092, "widget_text", "'do_shortcode'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18827, 5092, "the_content", "'do_shortcode'", 11, now(), now());

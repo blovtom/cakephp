@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3959, "Plugin Name", "4.1", "1.0", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69661, 3959, "swr_ajax_simple_website_review_contact_form", "/simple-website-review.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69662, 3959, "simple_website_review_ap", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506374, 3959, "simple_website_review", "printAdminPage", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506375, 3959, "simple_website_review", "getAdminOptions", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506376, 3959, "simple_website_review", "form", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506377, 3959, "simple_website_review", "widget", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506378, 3959, "simple_website_review", "addHeaderCode", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506379, 3959, "simple_website_review", "review_page", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506380, 3959, "simple_website_review", "update", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506381, 3959, "simple_website_review", "__construct", "/simple-website-review.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506382, 3959, "simple_website_review", "init", "/simple-website-review.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42754, 3959, "wp_ajax_simple_website_review_contact_form", "'swr_ajax_simple_website_review_contact_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42755, 3959, "admin_menu", "'simple_website_review_ap'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42756, 3959, "wp_ajax_nopriv_simple_website_review_contact_form", "'swr_ajax_simple_website_review_contact_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42757, 3959, "wp_head", "array(&$swr,'addHeaderCode')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42758, 3959, "widgets_init", "create_function('','return register_widget("simple_website_review");')", 10, now(), now());

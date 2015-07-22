@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1361, "Easy Media Download", "4.1", "1.0.7", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27274, 1361, "easy_media_download_handler", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27275, 1361, "easy_media_download_donation_handler", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134823, 1361, "EASY_MEDIA_DOWNLOAD", "plugin_path", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134824, 1361, "EASY_MEDIA_DOWNLOAD", "add_plugin_action_links", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134825, 1361, "EASY_MEDIA_DOWNLOAD", "plugin_url", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134826, 1361, "EASY_MEDIA_DOWNLOAD", "plugin_includes", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134827, 1361, "EASY_MEDIA_DOWNLOAD", "add_options_menu", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134828, 1361, "EASY_MEDIA_DOWNLOAD", "__construct", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (134829, 1361, "EASY_MEDIA_DOWNLOAD", "plugins_loaded_handler", "/main.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15159, 1361, "plugins_loaded", "array(&$this,'plugins_loaded_handler')", 10, now(), now());

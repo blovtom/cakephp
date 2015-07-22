@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (571, "BMI / IMC Calculator", "4.1", "1.1", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9796, 571, "mostrar_bmi_calculator", "/esw_imc_calculator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9797, 571, "esw_imccalculator_frontend_scripts_and_styles", "/esw_imc_calculator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9798, 571, "bmi_calculator", "/esw_imc_calculator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9799, 571, "esw_action_init", "/esw_imc_calculator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9800, 571, "register_foo_widget", "/esw_imc_calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53988, 571, "IMC_Calculator_wydget", "__construct", "/esw_imc_calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53989, 571, "IMC_Calculator_wydget", "form", "/esw_imc_calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53990, 571, "IMC_Calculator_wydget", "update", "/esw_imc_calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53991, 571, "IMC_Calculator_wydget", "widget", "/esw_imc_calculator.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5660, 571, "wp_enqueue_scripts", "'esw_imccalculator_frontend_scripts_and_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5661, 571, "widgets_init", "'register_foo_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5662, 571, "init", "'esw_action_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5663, 571, "mostrar_bmi_calculator", "'mostrar_bmi_calculator'", 10, now(), now());

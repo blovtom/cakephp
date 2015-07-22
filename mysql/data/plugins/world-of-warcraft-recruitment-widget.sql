@@ -1,0 +1,9 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5017, "World of Warcraft Recruitment Widget", "4.1", "1.1.4", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86569, 5017, "add_style_files", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (86570, 5017, "register_world_of_warcraft_recruitment_widget", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638049, 5017, "World_of_Warcraft_recruitment_widget", "__construct", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638050, 5017, "World_of_Warcraft_recruitment_widget", "widget", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638051, 5017, "World_of_Warcraft_recruitment_widget", "update", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (638052, 5017, "World_of_Warcraft_recruitment_widget", "form", "/world-of-warcraft-recruitment-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54404, 5017, "widgets_init", "'register_world_of_warcraft_recruitment_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54405, 5017, "wp_enqueue_scripts", "'add_style_files'", 10, now(), now());

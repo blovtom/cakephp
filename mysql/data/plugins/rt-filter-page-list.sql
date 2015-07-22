@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3669, "RT Filter Page List", "4.1", "0.9.2", "3.5.2", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472934, 3669, "RTFilterPageListSettingsPage", "page_init", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472935, 3669, "RTFilterPageListSettingsPage", "sanitize", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472936, 3669, "RT_Filter_Page_List", "filter_pages_html", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472937, 3669, "RT_Filter_Page_List", "register_widget", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472938, 3669, "RT_Filter_Page_List", "filter_html", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472939, 3669, "RTFilterPageListSettingsPage", "add_plugin_page", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472940, 3669, "RTFilterPageListSettingsPage", "show_messages", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472941, 3669, "RTFilterPageListSettingsPage", "filtertype_callback", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472942, 3669, "RT_Filter_Page_List", "recursive_delete", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472943, 3669, "RTFilterPageListSettingsPage", "create_admin_page", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472944, 3669, "RT_Filter_Page_List", "load_textdomain", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472945, 3669, "RTFilterPageListSettingsPage", "__construct", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472946, 3669, "RTFilterPageListSettingsPage", "print_section_info", "/inc/rt-filter-page-list-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472947, 3669, "RT_Widget_Pages_Filtered", "widget", "/inc/rt-filter-page-list-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472948, 3669, "RT_Filter_Page_List", "__construct", "/rt-filter-page-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (472949, 3669, "RT_Filter_Page_List", "find_parent_node", "/rt-filter-page-list.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39801, 3669, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39802, 3669, "admin_notices", "array($this,'show_messages')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39803, 3669, "plugins_loaded", "array(&$this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39804, 3669, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39805, 3669, "widgets_init", "array(&$this,'register_widget')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13633, 3669, "wp_list_pages", "array(&$this,'filter_pages_html')", 10, now(), now());

@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5361, "WP Recent Posts From Category", "4.1.1", "1.1.0", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93519, 5361, "rpfc_settings_link", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702536, 5361, "Rpfc", "add_menu", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702537, 5361, "Rpfc", "init", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702538, 5361, "Rpfc", "__construct", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702539, 5361, "Rpfc", "add_admin_scripts", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702540, 5361, "Rpfc", "rpfc_recent_posts_from_category_display", "/wp-recent-posts-from-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (702541, 5361, "Rpfc", "settings_page", "/wp-recent-posts-from-category.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58026, 5361, "init", "array(&$this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58027, 5361, "admin_enqueue_scripts", "array(&$this,'add_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58028, 5361, "admin_menu", "array(&$this,'add_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19898, 5361, "widget_text", "'do_shortcode'", 10, now(), now());

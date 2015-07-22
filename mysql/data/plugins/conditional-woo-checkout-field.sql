@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (958, "Conditional Woo Checkout Field", "4.1", "1.0.10", "3.1.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19833, 958, "name_display_admin_order_meta", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19834, 958, "conditional_checkout_field", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19835, 958, "conditional_product_in_cart", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19836, 958, "conditional_fields_page", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19837, 958, "register_oizuled_conditional_fields_settings", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19838, 958, "activate_conditional_fields", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19839, 958, "oizuled_conditional_woo_checkout_fields", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19840, 958, "conditional_order_meta_keys", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19841, 958, "wc_fields_action_links", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19842, 958, "deactive_conditional_fields", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19843, 958, "conditional_checkout_field_process", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19844, 958, "conditional_order_details_invoice", "/conditional-woo-checkout-field.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19845, 958, "conditional_checkout_field_update_order_meta", "/conditional-woo-checkout-field.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10448, 958, "woocommerce_order_details_after_order_table", "'conditional_order_details_invoice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10449, 958, "woocommerce_checkout_process", "'conditional_checkout_field_process'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10450, 958, "admin_init", "'register_oizuled_conditional_fields_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10451, 958, "woocommerce_email_after_order_table", "'conditional_order_meta_keys'", 15, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10452, 958, "woocommerce_checkout_update_order_meta", "'conditional_checkout_field_update_order_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10453, 958, "woocommerce_admin_order_data_after_billing_address", "'name_display_admin_order_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10454, 958, "woocommerce_after_order_notes", "'conditional_checkout_field'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10455, 958, "admin_menu", "'oizuled_conditional_woo_checkout_fields'", 10, now(), now());

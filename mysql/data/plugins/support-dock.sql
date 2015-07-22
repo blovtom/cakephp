@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4257, "Support Dock", "4.0", "1.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74597, 4257, "sdock_suppport_ticket_form", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526468, 4257, "SUPPORT_DOCK", "sent_page", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526469, 4257, "SUPPORT_DOCK", "sdock_enqueue_admin", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526470, 4257, "SUPPORT_DOCK", "install", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526471, 4257, "SUPPORT_DOCK", "menu_page", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526472, 4257, "SUPPORT_DOCK", "sdock_page", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526473, 4257, "SUPPORT_DOCK", "sd_enqueue_admin", "/sdock.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (526474, 4257, "SUPPORT_DOCK", "init", "/sdock.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45818, 4257, "admin_menu", "array(__CLASS__,'menu_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45819, 4257, "admin_enqueue_scripts", "array(__CLASS__,'sd_enqueue_admin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45820, 4257, "wp_enqueue_scripts", "array(__CLASS__,'sdock_enqueue_admin')", 10, now(), now());

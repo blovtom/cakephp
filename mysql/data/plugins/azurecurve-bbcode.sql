@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (418, "azurecurve BBCode", "4.0.1", "1.0.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6649, 418, "azc_bbcode_strike", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6650, 418, "azc_bbcode_underline", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6651, 418, "azc_bbcode_li", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6652, 418, "azc_bbcode_ol", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6653, 418, "azc_bbcode_quote", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6654, 418, "azc_bbcode_th", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6655, 418, "azc_bbcode_tr", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6656, 418, "azc_bbcode_bold", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6657, 418, "azc_bbcode_italic", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6658, 418, "azc_bbcode_url", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6659, 418, "azc_bbcode_code", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6660, 418, "azc_bbcode_td", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6661, 418, "azc_bbcode_color", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6662, 418, "azc_bbc_load_css", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6663, 418, "azc_bbcode_table", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6664, 418, "azc_bbcode_img", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6665, 418, "azc_bbcode_centre", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6666, 418, "azc_bbcode_ul", "/azurecurve-bbcode.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6667, 418, "azc_bbcode_size", "/azurecurve-bbcode.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3967, 418, "wp_enqueue_scripts", "'azc_bbc_load_css'", 10, now(), now());

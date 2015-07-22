@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3264, "Post Series Manager", "4.1.1", "trunk", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423680, 3264, "Post_Series_Manager", "post_series_block_function", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423681, 3264, "Post_Series_Manager", "post_series_manager_deactivate", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423682, 3264, "Post_Series_Manager", "post_series_shortcodes", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423683, 3264, "Post_Series_Manager", "post_series_taxonomy", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423684, 3264, "Post_Series_Manager", "get_series_list_HTML", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423685, 3264, "Post_Series_Manager", "__construct", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423686, 3264, "Post_Series_Manager", "post_series_after", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423687, 3264, "Post_Series_Manager", "post_series_sort_order", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423688, 3264, "Post_Series_Manager", "post_series_manager_activate", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423689, 3264, "Post_Series_Manager", "post_series_nav_function", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423690, 3264, "Post_Series_Manager", "post_series_before", "/post-series-manager.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423691, 3264, "Post_Series_Manager", "post_series_i18n", "/post-series-manager.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36073, 3264, "init", "array(&$this,'post_series_shortcodes')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36074, 3264, "init", "array(&$this,'post_series_taxonomy')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36075, 3264, "pre_get_posts", "array(&$this,'post_series_sort_order')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36076, 3264, "plugins_loaded", "array(&$this,'post_series_i18n')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12212, 3264, "the_content", "array(&$this,'post_series_before')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12213, 3264, "the_content", "array(&$this,'post_series_after')", 10, now(), now());

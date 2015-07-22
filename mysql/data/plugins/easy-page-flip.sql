@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1364, "Easy Page Flip", "4.1", "1.1.0", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27460, 1364, "pageflip_save_post", "/includes/pageflip_meta_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27461, 1364, "epf_chr_buttons", "/easy-pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27462, 1364, "epf_chr_register_buttons", "/easy-pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27463, 1364, "epf_chr_add_buttons", "/easy-pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27464, 1364, "chr_pageflip_single", "/includes/content-pageflip-single.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27465, 1364, "custom_post_easy_pageflip", "/includes/custom_post_easy_pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27466, 1364, "create_pageflip_meta_box", "/includes/pageflip_meta_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27467, 1364, "chr_script_booklet", "/easy-pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27468, 1364, "pageflip_meta_box", "/includes/pageflip_meta_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27469, 1364, "create_epf_shortcode", "/includes/content-pageflip-list.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27470, 1364, "chr_admin_style_epc", "/easy-pageflip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27471, 1364, "epf_admin_css", "/easy-pageflip.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15256, 1364, "admin_enqueue_scripts", "'chr_admin_style_epc'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15257, 1364, "save_post", "'pageflip_save_post'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15258, 1364, "init", "'epf_chr_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15259, 1364, "wp_enqueue_scripts", "'chr_script_booklet'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15260, 1364, "admin_head", "'epf_admin_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15261, 1364, "init", "'custom_post_easy_pageflip'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5058, 1364, "mce_buttons", "'epf_chr_register_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5059, 1364, "mce_external_plugins", "'epf_chr_add_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5060, 1364, "the_content", "'chr_pageflip_single'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5061, 1364, "use_default_gallery_style", "'__return_false'", 10, now(), now());

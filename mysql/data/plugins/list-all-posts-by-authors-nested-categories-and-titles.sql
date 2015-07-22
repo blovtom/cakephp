@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2519, "List all posts by Authors, nested Categories and Titles", "4.1", "2.0", "4.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46826, 2519, "ACT_byauthor", "/include/ACT-displayer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46827, 2519, "ACT_tools_menu", "/list-all-posts-by-ACT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46828, 2519, "ACT_shortcode_helper", "/include/ACT-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46829, 2519, "ACT_bytitle", "/include/ACT-displayer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46830, 2519, "ACT_processform", "/include/ACT-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46831, 2519, "ACT_load_admin_css", "/list-all-posts-by-ACT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46832, 2519, "ACT_hierarchy_indexes", "/include/ACT-displayer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46833, 2519, "ACT_traverse_cat_tree", "/include/ACT-displayer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46834, 2519, "ACT_fullindex", "/list-all-posts-by-ACT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46835, 2519, "ACT_load_i18n", "/list-all-posts-by-ACT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46836, 2519, "ACT_get_child_cats", "/include/ACT-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46837, 2519, "ACT_css", "/list-all-posts-by-ACT.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46838, 2519, "ACT_list_categories", "/include/ACT-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46839, 2519, "ACT_bycategory", "/include/ACT-displayer.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27269, 2519, "admin_enqueue_scripts", "'ACT_load_admin_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27270, 2519, "admin_menu", "'ACT_tools_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27271, 2519, "plugins_loaded", "'ACT_load_i18n'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27272, 2519, "wp_ajax_ACT_processform", "'ACT_processform'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27273, 2519, "wp_enqueue_scripts", "'ACT_css'", 10, now(), now());

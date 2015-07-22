@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5174, "Wp Fixed Social Profile Icons", "4.2", "trunk", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671190, 5174, "FixedSocialIcons", "add_links", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671191, 5174, "FixedSocialIcons", "add_icons_to_page", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671192, 5174, "FixedSocialIcons", "__construct", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671193, 5174, "FixedSocialIcons", "regsiter_fsi_setting_fields", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671194, 5174, "FixedSocialIcons", "add_style_sheet", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671195, 5174, "FixedSocialIcons", "add_plugin_settings_link", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671196, 5174, "FixedSocialIcons", "wp_enqueue_color_picker", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671197, 5174, "FixedSocialIcons", "fsi_general_setting_callback", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671198, 5174, "FixedSocialIcons", "add_fsi_menu", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671199, 5174, "FixedSocialIcons", "new_tab", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671200, 5174, "FixedSocialIcons", "add_icons", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671201, 5174, "FixedSocialIcons", "add_fsi_setting_fields", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671202, 5174, "FixedSocialIcons", "add_icon_links", "/fixed-social-profile-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (671203, 5174, "FixedSocialIcons", "icons_position", "/fixed-social-profile-icons.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56154, 5174, "wp_footer", "array($this,'add_icons_to_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56155, 5174, "admin_menu", "array($this,'add_fsi_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56156, 5174, "admin_enqueue_scripts", "array($this,'wp_enqueue_color_picker')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56157, 5174, "admin_init", "array($this,'regsiter_fsi_setting_fields')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56158, 5174, "wp_enqueue_scripts", "array($this,'add_style_sheet')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56159, 5174, "wp_head", "array($this,'add_icon_links')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19189, 5174, "plugin_action_links", "array($this,'add_plugin_settings_link')", 10, now(), now());

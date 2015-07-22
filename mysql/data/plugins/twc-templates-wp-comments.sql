@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4489, "TWC-Templates-WP-Comments", "4.1", "4.1", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77872, 4489, "twc_mytheme_comment", "/templates/comments1.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77873, 4489, "twc_onSendDataComm", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77874, 4489, "twc_custom_die_handler", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77875, 4489, "twc_plugin_admin_scripts", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77876, 4489, "twc_destroySession", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77877, 4489, "twc_get_die_handler", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77878, 4489, "twc_PageOptionFucntion", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77879, 4489, "twc_stylesheet_adm", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77880, 4489, "twc_send_option_action_callback", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77881, 4489, "twc_CreatePageMenu", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77882, 4489, "twc_my_plugin_comment_template", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77883, 4489, "twc_enqueue_comment_reply", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77884, 4489, "twc_plugin_activate", "/TWC-Templates-WP-Comments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77885, 4489, "twc_antispam_echo", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77886, 4489, "twc_stylesheet", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77887, 4489, "twc_start_work", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77888, 4489, "twc_startSession", "/function.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47879, 4489, "admin_enqueue_scripts", "'twc_plugin_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47880, 4489, "admin_menu", "'twc_CreatePageMenu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47881, 4489, "admin_head", "'twc_stylesheet_adm'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47882, 4489, "plugins_loaded", "'twc_start_work'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47883, 4489, "wp_enqueue_scripts", "'twc_stylesheet'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47884, 4489, "wp_ajax_twc_send_option_action", "'twc_send_option_action_callback'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16129, 4489, "pre_comment_on_post", "'twc_onSendDataComm'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16130, 4489, "wp_die_handler", "'twc_get_die_handler'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16131, 4489, "comments_template", "'twc_my_plugin_comment_template'", 10, now(), now());

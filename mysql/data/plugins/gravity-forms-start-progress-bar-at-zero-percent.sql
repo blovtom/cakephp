@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2004, "Gravity Forms - Start progress bar at zero percent", "4.1", "1.0", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38873, 2004, "itsp_gf_progressbar_zero_percent_css_styles", "/gravity-forms-progressbar-zero-percent-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38874, 2004, "itsp_gf_progressbar_zero_percent_queue_scripts", "/gravity-forms-progressbar-zero-percent-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38875, 2004, "itsp_gf_progressbar_zero_percent", "/gravity-forms-progressbar-zero-percent-plugin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21957, 2004, "wp_footer", "'itsp_gf_progressbar_zero_percent_css_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21958, 2004, "gform_enqueue_scripts", "'itsp_gf_progressbar_zero_percent_queue_scripts'", 90, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7286, 2004, "gform_progressbar_start_at_zero", "'itsp_gf_progressbar_zero_percent'", 10, now(), now());

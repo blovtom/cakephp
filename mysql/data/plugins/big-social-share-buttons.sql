@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (521, "Big Social Share Buttons", "4.1", "1.02", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9101, 521, "big_social_share_buttons_page", "/big-social-share-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9102, 521, "big_social_share_buttons_remove", "/big-social-share-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9103, 521, "big_social_share_buttons_install", "/big-social-share-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9104, 521, "big_social_share_buttons_settings_link", "/big-social-share-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9105, 521, "big_social_share_buttons_admin_menu", "/big-social-share-buttons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51098, 521, "BigSocialShareButtons", "BigSocialShareButtons", "/big-social-share-buttons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51099, 521, "BigSocialShareButtons", "authorUpperCase", "/big-social-share-buttons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51100, 521, "BigSocialShareButtons", "addHeaderCode", "/big-social-share-buttons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (51101, 521, "BigSocialShareButtons", "addContent", "/big-social-share-buttons.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5222, 521, "admin_menu", "'big_social_share_buttons_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1782, 521, "the_content", "array(&$dl_pluginSeriesBigSocialShareButtons,'addContent')", 10, now(), now());

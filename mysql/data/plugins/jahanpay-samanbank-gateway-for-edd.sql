@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2321, "JahanPay SamanBank Gateway For EDD", "4.1", "2.0.0", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42819, 2321, "edd_rial", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334917, 2321, "EDD_samanbank", "fault", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334918, 2321, "EDD_samanbank", "__construct", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334919, 2321, "EDD_samanbank", "samanbank_request", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334920, 2321, "EDD_samanbank", "cc_form", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334921, 2321, "EDD_samanbank", "options", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334922, 2321, "EDD_samanbank", "samanbank_verify", "/edd-saman-jahanpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (334923, 2321, "EDD_samanbank", "add_gateway", "/edd-saman-jahanpay.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24413, 2321, "init", "array($this,'samanbank_verify')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24414, 2321, "edd_samanbank_cc_form", "array($this,'cc_form')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24415, 2321, "edd_gateway_samanbank", "array($this,'samanbank_request')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8182, 2321, "edd_rial_currency_filter_after", "'edd_rial'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8183, 2321, "edd_settings_gateways", "array($this,'options')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8184, 2321, "edd_payment_gateways", "array($this,'add_gateway')", 10, now(), now());

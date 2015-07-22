@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4880, "WooCommerce Stacked Add-to-Cart Product Forms", "4.1.0", "1.1.1", "3.7.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621129, 4880, "WC_Full_Page_Add_To_Cart", "wc_fw_get_types_to_move", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621130, 4880, "WC_Full_Page_Add_To_Cart", "wc_fw_template_single_add_to_cart", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621131, 4880, "WC_Full_Page_Add_To_Cart", "wc_fw_all_settings", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621132, 4880, "WC_Full_Page_Add_To_Cart", "wc_fw_single_add_to_cart_after_summary", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621133, 4880, "WC_Full_Page_Add_To_Cart", "init", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621134, 4880, "WC_Full_Page_Add_To_Cart", "wc_fw_single_add_to_cart", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (621135, 4880, "WC_Full_Page_Add_To_Cart", "get_product_types", "/woocommerce-full-width-add-to-cart.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52364, 4880, "init", "(__CLASS__ . '::wc_fw_single_add_to_cart')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52365, 4880, "woocommerce_after_single_product_summary", "(__CLASS__ . '::wc_fw_single_add_to_cart_after_summary')", 5, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52366, 4880, "woocommerce_single_product_summary", "(__CLASS__ . '::wc_fw_template_single_add_to_cart')", 30, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17663, 4880, "woocommerce_product_settings", "(__CLASS__ . '::wc_fw_all_settings')", 10, now(), now());

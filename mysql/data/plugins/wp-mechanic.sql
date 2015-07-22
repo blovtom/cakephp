@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5275, "WP Mechanic", "3.5", "1.3.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91798, 5275, "wm_dashboard_widget_function", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91799, 5275, "pre", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91800, 5275, "wm_end", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91801, 5275, "register_wm_scripts", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91802, 5275, "wm_start", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91803, 5275, "wmpost_question", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91804, 5275, "wm_searchable", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91805, 5275, "wm_menu", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91806, 5275, "wp_mechanic", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91807, 5275, "wm_sync", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91808, 5275, "wm_feeds", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91809, 5275, "wm_add_dashboard_widgets", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91810, 5275, "wm_timezone", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91811, 5275, "clean_data", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91812, 5275, "set_html_content_type", "/functions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57187, 5275, "admin_menu", "'wm_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57188, 5275, "wp_ajax_wmpost_question", "'wmpost_question'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57189, 5275, "init", "'wm_sync'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57190, 5275, "admin_enqueue_scripts", "'register_wm_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57191, 5275, "wp_dashboard_setup", "'wm_add_dashboard_widgets'", 10, now(), now());

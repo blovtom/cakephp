@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3219, "Pojo News Ticker", "4.1", "1.0.2", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420614, 3219, "Pojo_News_Ticker", "bootstrap", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420615, 3219, "Pojo_News_Ticker", "register_widget", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420616, 3219, "Pojo_News_Ticker", "enqueue_scripts", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420617, 3219, "Pojo_Widget_News_Ticker", "__construct", "/widgets/class-pojo-widget-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420618, 3219, "Pojo_News_Ticker", "print_update_error", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420619, 3219, "Pojo_News_Ticker", "__wakeup", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420620, 3219, "Pojo_News_Ticker", "__clone", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420621, 3219, "Pojo_News_Ticker", "instance", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420622, 3219, "Pojo_Widget_News_Ticker", "widget", "/widgets/class-pojo-widget-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420623, 3219, "Pojo_News_Ticker", "admin_notices", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420624, 3219, "Pojo_News_Ticker", "register_widget_builder", "/pojo-news-ticker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (420625, 3219, "Pojo_News_Ticker", "load_textdomain", "/pojo-news-ticker.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35511, 3219, "pojo_builder_widgets", "array(&$this,'register_widget_builder')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35512, 3219, "init", "array(&$this,'bootstrap')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35513, 3219, "plugins_loaded", "array(&$this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35514, 3219, "admin_notices", "array(&$this,'admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35515, 3219, "wp_enqueue_scripts", "array(&$this,'enqueue_scripts')", 200, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35516, 3219, "admin_notices", "array(&$this,'print_update_error')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35517, 3219, "pojo_widgets_registered", "array(&$this,'register_widget')", 10, now(), now());

@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5293, "Moderator Plugin", "4.0", "1.0.0.0", NULL, now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699694, 5293, "ModeratorPluginClass", "aheadzen_is_user_can_add_post", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699695, 5293, "ModeratorPluginClass", "aheadzen_check_post_kw_moderator", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699696, 5293, "ModeratorAdminClass", "aheadzen_admin_menu", "/admin_settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699697, 5293, "ModeratorPluginClass", "aheadzen_check_post_moderator_href", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699698, 5293, "ModeratorPluginClass", "aheadzen_get_error_msg", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699699, 5293, "ModeratorAdminClass", "aheadzen_settings_page", "/admin_settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699700, 5293, "ModeratorPluginClass", "aheadzen_init", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699701, 5293, "ModeratorPluginClass", "aheadzen_check_post_blacklist", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699702, 5293, "ModeratorPluginClass", "aheadzen_is_kw_moderator_blacklist", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699703, 5293, "ModeratorPluginClass", "aheadzen_moderator_notification_send_email", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699704, 5293, "ModeratorPluginClass", "__construct", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699705, 5293, "ModeratorPluginClass", "aheadzen_check_bp_post_kw_moderator", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699706, 5293, "ModeratorPluginClass", "aheadzen_all_data_moderator", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699707, 5293, "ModeratorPluginClass", "aheadzen_is_new_user", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699708, 5293, "ModeratorPluginClass", "aheadzen_check_bp_topic_kw_moderator", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699709, 5293, "ModeratorPluginClass", "aheadzen_get_user_posts", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699710, 5293, "ModeratorPluginClass", "aheadzen_check_post_moderator", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699711, 5293, "ModeratorPluginClass", "aheadzen_get_length", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699712, 5293, "ModeratorPluginClass", "aheadzen_check_post_moderator_check", "/moderator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (699713, 5293, "ModeratorPluginClass", "aheadzen_check_title_content_length", "/moderator.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57397, 5293, "init", "array('ModeratorPluginClass','aheadzen_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57398, 5293, "bb_insert_topic", "array('ModeratorPluginClass','aheadzen_check_bp_topic_kw_moderator')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57399, 5293, "bb_insert_post", "array('ModeratorPluginClass','aheadzen_check_bp_post_kw_moderator')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57400, 5293, "admin_menu", "array('ModeratorAdminClass','aheadzen_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57401, 5293, "aheadzen_moderator_notification_email", "array('ModeratorPluginClass','aheadzen_moderator_notification_send_email')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57402, 5293, "save_post", "array('ModeratorPluginClass','aheadzen_check_post_kw_moderator')", 9, now(), now());

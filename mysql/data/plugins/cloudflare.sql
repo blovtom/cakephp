@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (858, "CloudFlare", "4.1", "1.3.16", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18513, 858, "cloudflare_plugin_action_links", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18514, 858, "match_domain_to_zone", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18515, 858, "cloudflare_init", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18516, 858, "cloudflare_admin_init", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18517, 858, "cloudflare_buffer_init", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18518, 858, "cloudflare_config_page", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18519, 858, "cloudflare_set_comment_status", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18520, 858, "ipv6_in_range", "/ip_in_range.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18521, 858, "ip2long6", "/ip_in_range.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18522, 858, "set_dev_mode", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18523, 858, "load_protocol_rewrite", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18524, 858, "load_cloudflare_keys", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18525, 858, "cloudflare_conf", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18526, 858, "get_dev_mode_status", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18527, 858, "cloudflare_buffer_wrapup", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18528, 858, "get_ipv6_full", "/ip_in_range.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18529, 858, "ipv4_in_range", "/ip_in_range.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18530, 858, "decbin32", "/ip_in_range.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18531, 858, "cloudflare_curl", "/cloudflare.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18532, 858, "get_domain", "/cloudflare.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9508, 858, "plugins_loaded", "'cloudflare_buffer_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9509, 858, "wp_set_comment_status", "'cloudflare_set_comment_status'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9510, 858, "admin_menu", "'cloudflare_config_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9511, 858, "init", "'cloudflare_init'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9512, 858, "admin_init", "'cloudflare_admin_init'", 10, now(), now());

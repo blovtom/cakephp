@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1900, "Plugin Name", "4.1.1", "Version 1.1", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236421, 1900, "gmoTinymceSmiley", "mce_external_plugins", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236422, 1900, "gmoTinymceSmiley", "add_buttons", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236423, 1900, "gmoTinymceSmiley", "__construct", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236424, 1900, "gmoTinymceSmiley", "init", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236425, 1900, "gmoTinymceSmiley", "mce_before_init", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236426, 1900, "gmoTinymceSmiley", "load_textdomain", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236427, 1900, "gmoTinymceSmiley", "mce_buttons", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236428, 1900, "gmoTinymceSmiley", "plugin_menu", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236429, 1900, "gmoTinymceSmiley", "plugin_options", "/gmo-tinymce-smiley.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236430, 1900, "gmoTinymceSmiley", "mce_style", "/gmo-tinymce-smiley.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21114, 1900, "plugins_loaded", "array(&$this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21115, 1900, "admin_head-post-new.php", "array(&$this,'mce_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21116, 1900, "init", "array(&$this,'add_buttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21117, 1900, "plugins_loaded", "array(&$this,'load_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21118, 1900, "admin_menu", "array(&$this,'plugin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21119, 1900, "admin_head-post.php", "array(&$this,'mce_style')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6990, 1900, "mce_external_plugins", "array(&$this,'mce_external_plugins')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6991, 1900, "mce_buttons_2", "array(&$this,'mce_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6992, 1900, "tiny_mce_before_init", "array(&$this,'mce_before_init')", 10, now(), now());

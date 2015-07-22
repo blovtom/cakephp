@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (297, "AppBanners", "4.1", "trunk", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5166, 297, "AppBanners_Scripts", "/appBanners.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5167, 297, "AppBanners_settings_link", "/appBanners.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5168, 297, "AppBanners_Meta", "/appBanners.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5169, 297, "AppBanners_enqueue_scripts", "/appBanners.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28774, 297, "App_Banners_Admin", "options_page", "/appBanners-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28775, 297, "App_Banners_Admin", "menu", "/appBanners-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28776, 297, "App_Banners_Admin", "init", "/appBanners-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28777, 297, "App_Banners_Admin", "register", "/appBanners-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28778, 297, "AppBanners", "init", "/appBanners.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2720, 297, "wp_head", "'AppBanners_Meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2721, 297, "admin_menu", "array(__CLASS__,'menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2722, 297, "admin_init", "array(__CLASS__,'register')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2723, 297, "wp_enqueue_scripts", "'AppBanners_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2724, 297, "wp_footer", "'AppBanners_Scripts'", 10, now(), now());

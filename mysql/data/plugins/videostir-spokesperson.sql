@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4652, "VideoStir Spokesperson", "4.1", "1.7.3", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589163, 4652, "VideoStir", "cf_affiliates", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589164, 4652, "VideoStir", "cf_actions", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589165, 4652, "VideoStir", "__construct", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589166, 4652, "VideoStir", "vs_wp_footer", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589167, 4652, "VideoStir", "cf_testimonials", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589168, 4652, "VideoStir", "on_uninstall", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589169, 4652, "VideoStir", "on_deactivation", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589170, 4652, "VideoStir", "cf_coming_features", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589171, 4652, "VideoStir", "getTableName", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589172, 4652, "VideoStir", "init_resources", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589173, 4652, "VideoStir", "createPlayerJs", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589174, 4652, "VideoStir", "config_page", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589175, 4652, "VideoStir", "cf_all_video", "/videostir-spokesperson.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589176, 4652, "VideoStir", "on_activation", "/videostir-spokesperson.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49933, 4652, "admin_menu", "array($this,'config_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49934, 4652, "admin_enqueue_scripts", "array('VideoStir','init_resources')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49935, 4652, "wp_footer", "array($this,'vs_wp_footer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49936, 4652, "wp_enqueue_scripts", "array('VideoStir','init_resources')", 10, now(), now());

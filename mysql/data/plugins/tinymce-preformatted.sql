@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4411, "TinyMCE Preformatted", "4.1", "0.6.0", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553906, 4411, "mcePlugins", "external_languages", "/includes/mceplugins.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553907, 4411, "mcePreformatted", "wp_mce_translation", "/tinymce-preformatted.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553908, 4411, "mcePreformatted", "wp_fullscreen_buttons", "/tinymce-preformatted.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553909, 4411, "mcePreformatted", "add_button", "/tinymce-preformatted.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553910, 4411, "mcePreformatted", "plugins_loaded", "/tinymce-preformatted.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553911, 4411, "mcePlugins", "external_plugins", "/includes/mceplugins.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553912, 4411, "mcePlugins", "before_init", "/includes/mceplugins.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553913, 4411, "mcePreformatted", "admin_head", "/tinymce-preformatted.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553914, 4411, "mcePlugins", "__construct", "/includes/mceplugins.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (553915, 4411, "mcePreformatted", "__construct", "/tinymce-preformatted.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47207, 4411, "admin_head", "array($this,'admin_head')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47208, 4411, "plugins_loaded", "array($this,'plugins_loaded')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15959, 4411, "wp_mce_translation", "array($this,'wp_mce_translation')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15960, 4411, "mce_external_plugins", "array(&$this,'external_plugins')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15961, 4411, "wp_fullscreen_buttons", "array($this,'wp_fullscreen_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15962, 4411, "tiny_mce_before_init", "array(&$this,'before_init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15963, 4411, "mce_external_languages", "array(&$this,'external_languages')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15964, 4411, "mce_buttons", "$button_callback", 10, now(), now());

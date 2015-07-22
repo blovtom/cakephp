@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2772, "Most Liked Posts", "4.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50314, 2772, "register_most_liked_posts_widget", "/MostLikedPosts_Widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50315, 2772, "mostLikedPostsDeactivation", "/MostLikedPosts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50316, 2772, "registerPluginStyles", "/MostLikedPosts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50317, 2772, "mostLikedPostsActivation", "/MostLikedPosts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50318, 2772, "getPosts", "/MostLikedPosts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50319, 2772, "updateLikesCount", "/MostLikedPosts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50320, 2772, "updatePostsLikesCount", "/MostLikedPosts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379794, 2772, "MostLikedPosts_Widget", "widget", "/MostLikedPosts_Widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379795, 2772, "MostLikedPosts_Widget", "update", "/MostLikedPosts_Widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379796, 2772, "MostLikedPosts_Widget", "form", "/MostLikedPosts_Widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379797, 2772, "MostLikedPosts_Widget", "__construct", "/MostLikedPosts_Widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30005, 2772, "widgets_init", "'register_most_liked_posts_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30006, 2772, "wp_enqueue_scripts", "'registerPluginStyles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30007, 2772, "hourlyUpdateLikesCount", "'updatePostsLikesCount'", 10, now(), now());

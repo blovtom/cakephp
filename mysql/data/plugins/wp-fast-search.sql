@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5163, "Plugin Name", "4.1", "1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89590, 5163, "wpfs_register_fast_searcH_widget", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89591, 5163, "wpfs_getPostTitles", "/main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89592, 5163, "wpfs_outputWidget", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669521, 5163, "WPFS_Fast_Search_Widget", "__construct", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669522, 5163, "WPFS_Fast_Search_Widget", "update", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669523, 5163, "WPFS_Fast_Search_Widget", "widget", "/main.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (669524, 5163, "WPFS_Fast_Search_Widget", "form", "/main.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56004, 5163, "wp_ajax_wpfs_get_post_titles", "'wpfs_getPostTitles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56005, 5163, "wp_ajax_nopriv_wpfs_get_post_titles", "'wpfs_getPostTitles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (56006, 5163, "widgets_init", "'wpfs_register_fast_searcH_widget'", 10, now(), now());

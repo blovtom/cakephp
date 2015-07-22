@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2495, "Lightbox Slider Gallery", "4.1.1", "1.7", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46628, 2495, "WeblizarLightboxSliderShortCodeDetect", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46629, 2495, "lbs_rate_us_function", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46630, 2495, "LBS_CPT_Function", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46631, 2495, "light_box_meta_save", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46632, 2495, "LBS_DefaultSettings", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46633, 2495, "lbs_pro_features", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46634, 2495, "lightbox_slider_settings_page_function", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46635, 2495, "LBS_SettingsPage", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46636, 2495, "lbs_upgrade_to_pro_function", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46637, 2495, "lbs_hex2rgb", "/lightbox-slider-short-code.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46638, 2495, "Lightbox_Slider_init", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46639, 2495, "lightbox_slider_function", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46640, 2495, "lbs_plugin_shortcode", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46641, 2495, "LBS_GetReadyTranslation", "/lightbox-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46642, 2495, "light_box_slider_short_code", "/lightbox-slider-short-code.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46643, 2495, "get_lightbox_slider_pro_page_function", "/lightbox-slider.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27063, 2495, "plugins_loaded", "'LBS_GetReadyTranslation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27064, 2495, "wp", "'WeblizarLightboxSliderShortCodeDetect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27065, 2495, "init", "'LBS_CPT_Function'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27066, 2495, "admin_menu", "'LBS_SettingsPage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27067, 2495, "save_post", "'light_box_meta_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27068, 2495, "admin_init", "'Lightbox_Slider_init'", 10, now(), now());

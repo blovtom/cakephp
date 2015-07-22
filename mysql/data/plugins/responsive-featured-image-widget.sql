@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3591, "Responsive Featured Image Widget", "4.1.1", "1.0.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64766, 3591, "WP_Time_Page", "/responsive-featured-image-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64767, 3591, "WP_Time", "/responsive-featured-image-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64768, 3591, "QassimFeaturedImageWidget_CSS", "/responsive-featured-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467531, 3591, "QassimFeaturedImageWidget", "update", "/responsive-featured-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467532, 3591, "QassimFeaturedImageWidget", "QassimFeaturedImageWidget", "/responsive-featured-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467533, 3591, "QassimFeaturedImageWidget", "widget", "/responsive-featured-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (467534, 3591, "QassimFeaturedImageWidget", "form", "/responsive-featured-image-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39222, 3591, "wp_head", "'QassimFeaturedImageWidget_CSS'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39223, 3591, "widgets_init", "create_function('','return register_widget("QassimFeaturedImageWidget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39224, 3591, "admin_menu", "'WP_Time'", 10, now(), now());

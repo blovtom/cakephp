@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2064, "Hello In All Languages", "4.1.1", "1.0.6", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39486, 2064, "helloInAllLanguagesSettingsLink", "/hello-in-all-languages.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (39487, 2064, "HelloInAllLanguages_Admin", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323452, 2064, "HelloInAllLanguages", "__construct", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323453, 2064, "HelloInAllLanguages", "displayHello", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323454, 2064, "HelloInAllLanguages", "activatePlugin", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323455, 2064, "HelloInAllLanguages", "printAdminPage", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323456, 2064, "HelloInAllLanguages", "deactivatePlugin", "/hello-in-all-languages.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323457, 2064, "HelloInAllLanguages", "uninstallPlugin", "/hello-in-all-languages.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22321, 2064, "admin_menu", "'HelloInAllLanguages_Admin'", 10, now(), now());

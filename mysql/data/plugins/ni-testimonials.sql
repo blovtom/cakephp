@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2915, "NI Testimonials", "4.1", "1.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391102, 2915, "NI_Testimonials_GlobalController", "__construct", "/app/controllers/GlobalController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391103, 2915, "NI_Testimonials", "run", "/app/library/ni-testimonials/NI_Testimonials.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391104, 2915, "NI_Testimonials_CSSController", "__construct", "/app/controllers/CSSController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391105, 2915, "NI_Testimonials_GlobalController", "Internationalise", "/app/controllers/GlobalController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391106, 2915, "NI_Testimonials_PostTypeFactory", "__construct", "/app/library/ni-testimonials/PostTypeFactory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391107, 2915, "NI_Testimonials_View", "make", "/app/library/ni-testimonials/View.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391108, 2915, "NI_Testimonials_UpgradeController", "needsUpgrade", "/app/controllers/UpgradeController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391109, 2915, "NI_Testimonials_PostType", "create", "/app/library/ni-testimonials/PostType.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391110, 2915, "NI_Testimonials_PostTypeFactory", "createAll", "/app/library/ni-testimonials/PostTypeFactory.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391111, 2915, "NI_Testimonials_Shortcodes", "testimonials", "/app/library/ni-testimonials/Shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391112, 2915, "NI_Testimonials_Registry", "set", "/app/library/ni-testimonials/Registry.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391113, 2915, "NI_Testimonials_GlobalController", "jQuery", "/app/controllers/GlobalController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391114, 2915, "NI_Testimonials", "__construct", "/app/library/ni-testimonials/NI_Testimonials.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391115, 2915, "NI_Testimonials_InstallController", "install", "/app/controllers/InstallController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391116, 2915, "NI_Testimonials_Shortcodes", "__construct", "/app/library/ni-testimonials/Shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391117, 2915, "NI_Testimonials_Registry", "get", "/app/library/ni-testimonials/Registry.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391118, 2915, "NI_Testimonials_CSSController", "addCSS", "/app/controllers/CSSController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391119, 2915, "NI_Testimonials_InstallController", "__construct", "/app/controllers/InstallController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391120, 2915, "NI_Testimonials_UpgradeController", "upgrade", "/app/controllers/UpgradeController.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (391121, 2915, "NI_Testimonials_UpgradeController", "__construct", "/app/controllers/UpgradeController.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31866, 2915, "wp_head", "array(&$this,'addCSS')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31867, 2915, "plugins_loaded", "array(&$this,'Internationalise')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31868, 2915, "init", "array(&$this,'createAll')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31869, 2915, "wp_enqueue_scripts", "array(&$this,'jQuery')", 10, now(), now());

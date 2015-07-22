@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4596, "UserAgent Themes Switcher", "4.1", "1.2", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572044, 4596, "UserAgentThemesSwitcherAdmin", "settings_link", "/req/UserAgentThemesSwitcherAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572045, 4596, "UserAgentThemesSwitcherRegist", "register_settings", "/req/UserAgentThemesSwitcherRegist.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572046, 4596, "UserAgentThemesSwitcher", "agent_check", "/inc/UserAgentThemesSwitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572047, 4596, "UserAgentThemesSwitcherAdmin", "options_updated", "/req/UserAgentThemesSwitcherAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572048, 4596, "UserAgentThemesSwitcher", "LoadStyleTheme", "/inc/UserAgentThemesSwitcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572049, 4596, "UserAgentThemesSwitcherAdmin", "plugin_menu", "/req/UserAgentThemesSwitcherAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572050, 4596, "UserAgentThemesSwitcherAdmin", "plugin_options", "/req/UserAgentThemesSwitcherAdmin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (572051, 4596, "UserAgentThemesSwitcher", "LoadTemplateTheme", "/inc/UserAgentThemesSwitcher.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49453, 4596, "admin_init", "array($useragentthemesswitcherregist,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49454, 4596, "admin_menu", "array($useragentthemesswitcheradmin,'plugin_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16643, 4596, "template", "array($useragentthemesswitcher,'LoadTemplateTheme')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16644, 4596, "plugin_action_links", "array($useragentthemesswitcheradmin,'settings_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16645, 4596, "stylesheet", "array($useragentthemesswitcher,'LoadStyleTheme')", 10, now(), now());

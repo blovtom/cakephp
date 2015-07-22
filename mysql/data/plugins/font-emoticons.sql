@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1718, "Font Emoticons", "4.1.0", "1.3.1", "3.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34221, 1718, "fe_plugin_deactivated", "/font-emoticons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207606, 1718, "FontEmoticonInfo", "replaceTextEmots", "/FontEmoticonInfo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207607, 1718, "FontEmoticonsPlugin", "mask_content_replace_callback", "/FontEmoticonsPlugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207608, 1718, "FontEmoticonsPlugin", "init", "/FontEmoticonsPlugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207609, 1718, "FontEmoticonsPlugin", "enqueue_stylesheets_callback", "/FontEmoticonsPlugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207610, 1718, "FontEmoticonsPlugin", "replace_emots", "/FontEmoticonsPlugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207611, 1718, "FontEmoticonInfo", "__construct", "/FontEmoticonInfo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207612, 1718, "FontEmoticonsPlugin", "unmask_content_replace_callback", "/FontEmoticonsPlugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18871, 1718, "wp_print_styles", "array($this,'enqueue_stylesheets_callback')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6227, 1718, "the_content", "array($this,'replace_emots')", 500, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6228, 1718, "get_comment_excerpt", "array($this,'replace_emots')", 500, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6229, 1718, "get_comment_text", "array($this,'replace_emots')", 500, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6230, 1718, "the_excerpt", "array($this,'replace_emots')", 500, now(), now());

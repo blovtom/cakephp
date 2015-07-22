@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1602, "Facebook Recent Comments", "4.1", "1.1", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32715, 1602, "truncate_text", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32716, 1602, "frc_no_curl_notice", "/facebook-recent-comments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32717, 1602, "frc_get_all_posts_ids", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32718, 1602, "frc_load_widgets", "/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32719, 1602, "frc_get_fb_comments", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32720, 1602, "frc_curl_something", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196622, 1602, "fb_recent_comments_widget", "update", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196623, 1602, "fb_recent_comments_widget", "enqueue_fb_comments_styles", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196624, 1602, "fb_recent_comments_widget", "widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196625, 1602, "fb_recent_comments_widget", "__construct", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196626, 1602, "fb_recent_comments_widget", "form", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17907, 1602, "admin_notices", "'frc_no_curl_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17908, 1602, "wp_footer", "array($this,'enqueue_fb_comments_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17909, 1602, "widgets_init", "'frc_load_widgets'", 10, now(), now());

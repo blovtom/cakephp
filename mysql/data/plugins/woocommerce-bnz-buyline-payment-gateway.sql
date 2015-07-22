@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4827, "BNZ Buyline Gateway", "4.1", "4.8", "3.8.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84453, 4827, "bnz_buyline_init", "/bnz-buyline.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84454, 4827, "bnz_buyline_response", "/bnz-buyline.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84455, 4827, "add_buyline_gateway", "/bnz-buyline.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84456, 4827, "bnz_options", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616612, 4827, "BNZ_Buyline", "__construct", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616613, 4827, "BNZ_Buyline", "admin_options", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616614, 4827, "BNZ_Buyline", "generate_bnz_buyline_form", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616615, 4827, "BNZ_Buyline", "receipt_page", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616616, 4827, "BNZ_Buyline", "init_form_fields", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616617, 4827, "BNZ_Buyline", "process_payment", "/bnz-buyline.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (616618, 4827, "BNZ_Buyline", "payment_fields", "/bnz-buyline.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51777, 4827, "init", "'bnz_buyline_response'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51778, 4827, "woocommerce_receipt_bnzbuyline", "array($this,'receipt_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51779, 4827, "plugins_loaded", "'bnz_buyline_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17427, 4827, "woocommerce_payment_gateways", "'add_buyline_gateway'", 10, now(), now());

@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2674, "Meks Smart Social Widget", "4.1.1", "1.2.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48693, 2674, "mks_social_widget_init", "/meks-smart-social-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48694, 2674, "mks_load_social_widget_text_domain", "/meks-smart-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366313, 2674, "MKS_Social_Widget", "widget", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366314, 2674, "MKS_Social_Widget", "form", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366315, 2674, "MKS_Social_Widget", "draw_social", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366316, 2674, "MKS_Social_Widget", "enqueue_admin_scripts", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366317, 2674, "MKS_Social_Widget", "get_social", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366318, 2674, "MKS_Social_Widget", "MKS_Social_Widget", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366319, 2674, "MKS_Social_Widget", "enqueue_scripts", "/inc/class-social-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (366320, 2674, "MKS_Social_Widget", "update", "/inc/class-social-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29079, 2674, "plugins_loaded", "'mks_load_social_widget_text_domain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29080, 2674, "admin_enqueue_scripts", "array($this,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29081, 2674, "widgets_init", "'mks_social_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29082, 2674, "wp_enqueue_scripts", "array($this,'enqueue_scripts')", 10, now(), now());

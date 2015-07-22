@@ -1,0 +1,5 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5664, "You Have a New (BuddyPress) Message", "4.1.1", "1.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99512, 5664, "yhanm_get_notice", "/you-have-a-new-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (789157, 5664, "YouHaveANewBuddyPressMessageWidget", "__construct", "/you-have-a-new-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (789158, 5664, "YouHaveANewBuddyPressMessageWidget", "widget", "/you-have-a-new-message.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62781, 5664, "widgets_init", "create_function('','register_widget("YouHaveANewBuddyPressMessageWidget");')", 10, now(), now());

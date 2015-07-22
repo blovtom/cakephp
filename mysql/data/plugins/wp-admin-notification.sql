@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5035, "WP Admin Notification", "4.1", "1.0", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640779, 5035, "WP_Admin_Notification", "manage_users_custom_column", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640780, 5035, "WP_Admin_Notification", "admin_notices", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640781, 5035, "WP_Admin_Notification", "meta_box", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640782, 5035, "WP_Admin_Notification", "admin_enqueue_scripts", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640783, 5035, "WP_Admin_Notification", "init", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640784, 5035, "WP_Admin_Notification", "checked", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640785, 5035, "WP_Admin_Notification", "add_meta_box", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640786, 5035, "WP_Admin_Notification", "manage_users_columns", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640787, 5035, "WP_Admin_Notification", "get_instance", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640788, 5035, "WP_Admin_Notification", "register_post_type", "/wp-admin-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640789, 5035, "WP_Admin_Notification", "save_meta_box", "/wp-admin-notification.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54623, 5035, "admin_notices", "array($this,'admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54624, 5035, "wp_ajax_wpan_checked", "array($this,'checked')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54625, 5035, "plugins_loaded", "array($this,'register_post_type')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54626, 5035, "admin_enqueue_scripts", "array($this,'admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54627, 5035, "save_post", "array($this,'save_meta_box')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18655, 5035, "manage_users_columns", "array($this,'manage_users_columns')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18656, 5035, "manage_users_custom_column", "array($this,'manage_users_custom_column')", 10, now(), now());

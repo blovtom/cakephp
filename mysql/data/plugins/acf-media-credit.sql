@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (48, "ACF Media Credit", "4.1.1", "1.0.2", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (530, 48, "add_acf_fields", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (531, 48, "get_media_credit", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (532, 48, "filter_images", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (533, 48, "the_plain_media_credit", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (534, 48, "the_post_thumbnail_media_credit", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (535, 48, "acf_pro_or_die", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (536, 48, "media_load_custom_wp_admin_style", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (537, 48, "filter_img_caption_shortcode", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (538, 48, "the_media_credit", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (539, 48, "the_media_credit_html", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (540, 48, "media_credit_stylesheet", "/media-credit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (541, 48, "acf_dependent_plugin_notice", "/media-credit.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (429, 48, "admin_init", "'acf_pro_or_die'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (430, 48, "admin_enqueue_scripts", "'media_load_custom_wp_admin_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (431, 48, "init", "'add_acf_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (432, 48, "admin_notices", "'acf_dependent_plugin_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (433, 48, "wp_print_styles", "'media_credit_stylesheet'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (101, 48, "the_content", "'filter_images'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (102, 48, "img_caption_shortcode", "'filter_img_caption_shortcode'", 10, now(), now());

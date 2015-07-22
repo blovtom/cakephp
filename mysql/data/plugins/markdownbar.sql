@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2637, "MarkdownBar", "4.1.1", "1.0", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48205, 2637, "MarkdownBar", "/markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364260, 2637, "MarkdownBar", "instance", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364261, 2637, "MarkdownBar", "markdownbar_buttons", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364262, 2637, "MarkdownBar", "__clone", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364263, 2637, "MarkdownBar", "help_popup", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364264, 2637, "MarkdownBar", "__wakeup", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364265, 2637, "MarkdownBar", "admin_enqueue_styles", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364266, 2637, "MarkdownBar", "link_prompt", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364267, 2637, "MarkdownBar", "remove_quicktag_buttons", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364268, 2637, "MarkdownBar", "install", "/includes/class-markdownbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (364269, 2637, "MarkdownBar", "__construct", "/includes/class-markdownbar.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28671, 2637, "admin_enqueue_scripts", "array($this,'admin_enqueue_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28672, 2637, "admin_print_footer_scripts", "array($this,'markdownbar_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9536, 2637, "quicktags_settings", "array($this,'remove_quicktag_buttons')", 10, now(), now());

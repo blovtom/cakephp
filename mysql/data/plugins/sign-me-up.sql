@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3870, "Sign Me Up", "4.1.0", "1.2", "4.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68759, 3870, "smu_widget", "/sign-me-up.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68760, 3870, "smu_add_css_js_files", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501249, 3870, "smu_widget", "form", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501250, 3870, "smu_widget", "smu_widget", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501251, 3870, "smu_widget", "smu_register_script", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501252, 3870, "smu_widget", "widget", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501253, 3870, "smu_widget", "smu_print_script", "/sign-me-up.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (501254, 3870, "smu_widget", "update", "/sign-me-up.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41801, 3870, "wp_ajax_smu", "array($this,'smu_ajax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41802, 3870, "wp_ajax_nopriv_smu", "array($this,'smu_ajax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41803, 3870, "wp_footer", "array($this,'smu_print_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41804, 3870, "init", "array($this,'smu_register_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41805, 3870, "widgets_init", "'smu_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41806, 3870, "wp_enqueue_scripts", "'smu_add_css_js_files'", 10, now(), now());

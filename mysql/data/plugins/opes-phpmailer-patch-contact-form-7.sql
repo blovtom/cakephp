@@ -1,0 +1,7 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3012, "Opes PhpMailer Patch - Contact Form 7", "4.1", "1.0.0", "3.9", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (396529, 3012, "OpesPhpMailerPatchCf7", "initOpesPhpMailerPatchCf7", "/opes-phpmailer-patch-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (396530, 3012, "OpesPhpMailerPatchCf7", "use_wpcf7_mail_components", "/opes-phpmailer-patch-cf7.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (396531, 3012, "OpesPhpMailerPatchCf7", "phpmailer_init_function", "/opes-phpmailer-patch-cf7.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32977, 3012, "phpmailer_init", "array($this,'phpmailer_init_function')", 999999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11080, 3012, "wpcf7_mail_components", "array($this,'use_wpcf7_mail_components')", 999999, now(), now());

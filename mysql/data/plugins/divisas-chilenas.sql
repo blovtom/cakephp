@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1261, "Divisas Chilenas", "4.1.1", "1.0.0", "4.1.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25074, 1261, "dar_formato", "/divisas-cl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25075, 1261, "agregar_css", "/divisas-cl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25076, 1261, "desactivacion", "/divisas-cl.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (25077, 1261, "registrar_widget", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110536, 1261, "Divisas_Chilenas_Widget", "update", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110537, 1261, "Divisas_Chilenas_Widget", "widget", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110538, 1261, "Divisas_Chilenas_Widget", "form", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110539, 1261, "Divisas_Chilenas_Widget", "consultarDivisas", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110540, 1261, "Divisas_Chilenas_Widget", "__construct", "/divisas-cl.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110541, 1261, "Divisas_Chilenas_Widget", "actualizarDivisas", "/divisas-cl.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13806, 1261, "widgets_init", "'registrar_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13807, 1261, "wp_enqueue_scripts", "'agregar_css'", 10, now(), now());

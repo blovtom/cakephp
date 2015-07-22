@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3080, "Plugin Name", "4.1", "1.1.9", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55629, 3080, "activate_cache", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55630, 3080, "pg_pagespeed_menu", "/settings_page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55631, 3080, "pg_pagespeed_register_mysettings", "/settings_page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55632, 3080, "activate_gzip_cache", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55633, 3080, "my_custom_admin_head", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55634, 3080, "ps_pagespeed_settings_style", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55635, 3080, "ps_get_script", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55636, 3080, "pg_pagespeed_dequeue_my_css", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55637, 3080, "pg_pagespeed_insert_inline_css", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55638, 3080, "pg_pagespeed_inline_js", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55639, 3080, "pg_pagespeed_dequeue_my_js", "/function.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55640, 3080, "ps_pagespeed_settings_page", "/settings_page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55641, 3080, "_pagespeedpro", "/settings_page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55642, 3080, "ps_get_css", "/function.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33764, 3080, "admin_menu", "'pg_pagespeed_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33765, 3080, "wp_print_scripts", "'pg_pagespeed_dequeue_my_js'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33766, 3080, "wp_head", "'ps_get_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33767, 3080, "admin_head", "'my_custom_admin_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33768, 3080, "wp_head", "'ps_get_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33769, 3080, "wp_footer", "'pg_pagespeed_inline_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33770, 3080, "admin_init", "'pg_pagespeed_register_mysettings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33771, 3080, "wp_head", "'pg_pagespeed_insert_inline_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33772, 3080, "wp_print_styles", "'pg_pagespeed_dequeue_my_css'", 100, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11264, 3080, "mod_rewrite_rules", "'activate_gzip_cache'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11265, 3080, "mod_rewrite_rules", "'activate_cache'", 10, now(), now());

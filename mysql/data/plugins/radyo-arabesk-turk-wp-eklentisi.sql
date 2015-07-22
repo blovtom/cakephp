@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3461, "Radyo Arabesk TÜRK WP Radyo Player", "4.1", "2.2", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63131, 3461, "radyo_arabeskturk_source", "/radyoarabeskturk-player.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456840, 3461, "radyoarabeskturkwidget", "form", "/radyoarabeskturk-player.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456841, 3461, "radyoarabeskturkwidget", "radyoarabeskturkwidget", "/radyoarabeskturk-player.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456842, 3461, "radyoarabeskturkwidget", "update", "/radyoarabeskturk-player.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456843, 3461, "radyoarabeskturkwidget", "widget", "/radyoarabeskturk-player.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37972, 3461, "widgets_init", "create_function('','return register_widget("radyoarabeskturkwidget");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13070, 3461, "widget_text", "'do_shortcode'", 10, now(), now());

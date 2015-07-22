@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2494, "Lightbox Gallery", "4.1.1", "0.8.1", "2.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46617, 2494, "lightbox_gallery_media_send_to_editor", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46618, 2494, "lightbox_gallery_wp_head", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46619, 2494, "lightbox_gallery_admin", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46620, 2494, "wp_link_pages_for_lightbox_gallery", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46621, 2494, "lightbox_gallery", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46622, 2494, "lightbox_gallery_wp_print_scripts", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46623, 2494, "lightbox_gallery_print_path_header", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46624, 2494, "lightbox_gallery_admin_menu", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46625, 2494, "lightbox_gallery_init", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46626, 2494, "lightbox_gallery_print_path_footer", "/lightbox-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46627, 2494, "lightbox_gallery_plugin_action_links", "/lightbox-gallery.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27057, 2494, "wp_footer", "'lightbox_gallery_print_path_footer'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27058, 2494, "wp_head", "'lightbox_gallery_wp_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27059, 2494, "init", "'lightbox_gallery_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27060, 2494, "wp_print_scripts", "'lightbox_gallery_print_path_header'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27061, 2494, "wp_print_scripts", "'lightbox_gallery_wp_print_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27062, 2494, "admin_menu", "'lightbox_gallery_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9057, 2494, "media_send_to_editor", "'lightbox_gallery_media_send_to_editor'", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9058, 2494, "plugin_action_links", "'lightbox_gallery_plugin_action_links'", 10, now(), now());

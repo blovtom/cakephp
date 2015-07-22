@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2283, "Interactive World Map", "4.1.1", "1.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41693, 2283, "free_world_continent_map_plugin_load_stuff", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41694, 2283, "free_world_continent_map_plugin_scripts", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41695, 2283, "free_world_continent_map_plugin_uninstall", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41696, 2283, "free_world_continent_map_plugin_scripts_reg", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41697, 2283, "free_world_continent_map_plugin_scripts_method", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41698, 2283, "free_world_continent_map_plugin_content", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41699, 2283, "free_world_continent_map_plugin_settings_link", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41700, 2283, "free_world_continent_map_plugin_menu", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41701, 2283, "free_world_continent_map_plugin_activation", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41702, 2283, "free_world_continent_map_plugin_deactivation", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41703, 2283, "free_world_continent_map_plugin_view", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41704, 2283, "free_world_continent_map_plugin_options", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41705, 2283, "free_world_continent_map_plugin_states", "/freeworldcontinentmap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41706, 2283, "free_world_continent_map_plugin_wp_request", "/freeworldcontinentmap.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23897, 2283, "parse_request", "'free_world_continent_map_plugin_wp_request'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23898, 2283, "admin_init", "'free_world_continent_map_plugin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23899, 2283, "wp_enqueue_scripts", "'free_world_continent_map_plugin_scripts_method'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23900, 2283, "admin_menu", "'free_world_continent_map_plugin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7867, 2283, "the_content", "'free_world_continent_map_plugin_content'", 10, now(), now());

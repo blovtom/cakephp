@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (227, "Album Cover Finder", "4.1", "0.4.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3177, 227, "albumcoverfinder_metabox", "/albumcoverfinder.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3178, 227, "albumcoverfinder_add_custom_box", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14597, 227, "AlbumCoverFinder", "register_admin_styles", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14598, 227, "AlbumCoverFinder", "__construct", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14599, 227, "AlbumCoverFinder", "add_search_boxes", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14600, 227, "AlbumCoverFinder", "get_attachment_id_from_src", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14601, 227, "AlbumCoverFinder", "xhr", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14602, 227, "AlbumCoverFinder", "plugin_textdomain", "/albumcoverfinder.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14603, 227, "AlbumCoverFinder", "register_admin_scripts", "/albumcoverfinder.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1866, 227, "init", "array($this,'plugin_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1867, 227, "wp_ajax_and_action", "array($this,'xhr')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1868, 227, "wp_ajax_nopriv_and_action", "array($this,'xhr')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1869, 227, "admin_enqueue_scripts", "array($this,'register_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1870, 227, "add_meta_boxes", "'albumcoverfinder_add_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1871, 227, "admin_print_styles", "array($this,'register_admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1872, 227, "init", "array($this,'add_search_boxes')", 10, now(), now());

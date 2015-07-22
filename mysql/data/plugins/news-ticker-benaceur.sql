@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2885, "news ticker benaceur", "4.1.1", "1.1.8", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52779, 2885, "ntb_links_on_admin_bar", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52780, 2885, "wp_news_ticker_benaceur_", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52781, 2885, "news_ticker_benaceur_scripts_", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52782, 2885, "news_ticker_benaceur_post", "/news-ticker-benaceur-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52783, 2885, "wp_rest_news_ticker_benaceur", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52784, 2885, "news_ticker_benaceur_page_options", "/news-ticker-benaceur-panel-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52785, 2885, "news_ticker_benaceur_register_options", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52786, 2885, "menu_news_ticker_benaceur", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52787, 2885, "get_settings_ntb", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52788, 2885, "id_user_ntb", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52789, 2885, "news_ticker_benaceur_action_links", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52790, 2885, "shortcode_ntb_func", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52791, 2885, "all_users_ntb", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52792, 2885, "visitors_ntb", "/news-ticker-benaceur.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52793, 2885, "role_cap_ntb", "/news-ticker-benaceur.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31301, 2885, "wp_enqueue_scripts", "'news_ticker_benaceur_scripts_'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31302, 2885, "admin_init", "'news_ticker_benaceur_register_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31303, 2885, "admin_bar_menu", "'ntb_links_on_admin_bar'", 10155, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31304, 2885, "wp_news_ticker_benaceur", "'news_ticker_benaceur_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31305, 2885, "wp_head", "'wp_rest_news_ticker_benaceur'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31306, 2885, "admin_menu", "'menu_news_ticker_benaceur'", 10, now(), now());

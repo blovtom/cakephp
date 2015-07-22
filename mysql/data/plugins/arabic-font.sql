@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (306, "Arabic Font", "4.0", "1.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5350, 306, "arabic_font_function", "/arabic-font.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5351, 306, "AF_button_tinymce", "/inc/button_tinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5352, 306, "AF_reminder", "/inc/init.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5353, 306, "AF_check_clean_installation", "/inc/init.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5354, 306, "AF_custom_css", "/arabic-font.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5355, 306, "AF_settings_page", "/inc/panel.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5356, 306, "add_AF_button_tinymce_plugin", "/inc/button_tinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5357, 306, "AF_settings_init", "/inc/init.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5358, 306, "AF_style", "/arabic-font.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5359, 306, "register_AF_button_tinymce", "/inc/button_tinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5360, 306, "AF_add_settings_page", "/inc/init.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2886, 306, "admin_init", "'AF_check_clean_installation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2887, 306, "admin_menu", "'AF_add_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2888, 306, "admin_notices", "'AF_reminder'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2889, 306, "wp_enqueue_scripts", "'AF_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2890, 306, "init", "'AF_button_tinymce'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2891, 306, "wp_head", "'AF_custom_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2892, 306, "admin_init", "'AF_settings_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (947, 306, "mce_external_plugins", "'add_AF_button_tinymce_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (948, 306, "mce_buttons", "'register_AF_button_tinymce'", 10, now(), now());

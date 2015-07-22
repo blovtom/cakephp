@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3611, "Ressources", "4.1", "/trunk", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468853, 3611, "Ressources", "widget_disk", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468854, 3611, "Ressources", "content_cpu", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468855, 3611, "Ressources", "content_top", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468856, 3611, "Ressources", "content_disk", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468857, 3611, "Ressources", "getMySQLVersion", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468858, 3611, "Ressources", "dashboard_setup", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468859, 3611, "Ressources", "widget_cpu", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468860, 3611, "Ressources", "adminbar", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468861, 3611, "Ressources", "widget_top", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468862, 3611, "Ressources", "widget_memory", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468863, 3611, "Ressources", "widget_machine", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468864, 3611, "Ressources", "scripts", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468865, 3611, "Ressources", "content_memory", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468866, 3611, "Ressources", "Ressources", "/ressources.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (468867, 3611, "Ressources", "ajax", "/ressources.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39334, 3611, "admin_bar_menu", "array($this,'adminbar')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39335, 3611, "wp_dashboard_setup", "array($this,'dashboard_setup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39336, 3611, "admin_enqueue_scripts", "array($this,'scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39337, 3611, "wp_network_dashboard_setup", "array($this,'dashboard_setup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39338, 3611, "wp_ajax_ressources_widget_content", "array($this,'ajax')", 10, now(), now());

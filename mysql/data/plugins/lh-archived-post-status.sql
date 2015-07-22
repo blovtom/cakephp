@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2483, "LH Archived Post Status", "4.1", "0.02", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349285, 2483, "LH_archived_post_status_plugin", "add_archived_message", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349286, 2483, "LH_archived_post_status_plugin", "append_post_status_list", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349287, 2483, "LH_archived_post_status_plugin", "current_user_can_view", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349288, 2483, "LH_archived_post_status_plugin", "handle_archiving", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349289, 2483, "LH_archived_post_status_plugin", "add_posts_rows", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349290, 2483, "LH_archived_post_status_plugin", "exclude_archive_post_status_from_main_query", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349291, 2483, "LH_archived_post_status_plugin", "plugin_options", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349292, 2483, "LH_archived_post_status_plugin", "exclude_archive_post_status_from_feed", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349293, 2483, "LH_archived_post_status_plugin", "display_archive_state", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349294, 2483, "LH_archived_post_status_plugin", "plugin_menu", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349295, 2483, "LH_archived_post_status_plugin", "__construct", "/lh-archived-post-status.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (349296, 2483, "LH_archived_post_status_plugin", "create_archived_custom_post_status", "/lh-archived-post-status.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27001, 2483, "init", "array($this,'create_archived_custom_post_status')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27002, 2483, "admin_footer-post.php", "array($this,'append_post_status_list')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27003, 2483, "admin_menu", "array($this,'plugin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27004, 2483, "pre_get_posts", "array($this,'exclude_archive_post_status_from_main_query')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27005, 2483, "pre_get_posts", "array($this,'exclude_archive_post_status_from_feed')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27006, 2483, "plugins_loaded", "array($this,'handle_archiving')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9033, 2483, "display_post_states", "array($this,'display_archive_state')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9034, 2483, "page_row_actions", "array($this,'add_posts_rows')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9035, 2483, "the_content", "array($this,'add_archived_message')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9036, 2483, "post_row_actions", "array($this,'add_posts_rows')", 10, now(), now());

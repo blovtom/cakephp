@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3686, "S3Bubble Amazon S3 HTML 5 Video With Adverts", "4.1", "0.3", "2.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484233, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_admin", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484234, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_javascript", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484235, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_admin_menu", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484236, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484237, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_css_admin", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484238, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_css", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484239, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_wysiwyg_buttons", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484240, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_javascript_admin", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484241, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_player", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484242, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_wysiwyg_register_buttons", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484243, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_wysiwyg_add_buttons", "/s3bubble-video-adverts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (484244, 3686, "s3bubble_video_adverts", "s3bubble_video_adverts_wysiwyg_ajax", "/s3bubble-video-adverts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40181, 3686, "wp_ajax_s3bubble_video_adverts_wysiwyg_ajax", "array($this,'s3bubble_video_adverts_wysiwyg_ajax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40182, 3686, "admin_footer", "array($this,'s3bubble_video_adverts_javascript_admin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40183, 3686, "init", "array($this,'s3bubble_video_adverts_wysiwyg_buttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40184, 3686, "admin_menu", "array($this,'s3bubble_video_adverts_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40185, 3686, "wp_head", "array($this,'s3bubble_video_adverts_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40186, 3686, "admin_head", "array($this,'s3bubble_video_adverts_css_admin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40187, 3686, "wp_enqueue_scripts", "array($this,'s3bubble_video_adverts_javascript')", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13753, 3686, "mce_buttons", "array($this,'s3bubble_video_adverts_wysiwyg_register_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13754, 3686, "mce_external_plugins", "array($this,'s3bubble_video_adverts_wysiwyg_add_buttons')", 10, now(), now());

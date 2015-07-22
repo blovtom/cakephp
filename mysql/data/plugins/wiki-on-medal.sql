@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4782, "Wiki on Medal", "4.1", "1.0.1", "2.8.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83433, 4782, "getTextBetweenTags", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83434, 4782, "wikiDE", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83435, 4782, "getTextBetweenTags", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83436, 4782, "wikiEN", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83437, 4782, "wikiPL", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83438, 4782, "safely_add_stylesheet", "/wiki-medal.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83439, 4782, "getTextBetweenTags", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612023, 4782, "wiki_na_5", "wiki_na_5", "/wiki-medal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612024, 4782, "wiki_na_5", "widget", "/wiki-medal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612025, 4782, "wiki_na_5", "update", "/wiki-medal.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612026, 4782, "wiki_na_5", "form", "/wiki-medal.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51117, 4782, "widgets_init", "create_function('','return register_widget("wiki_na_5");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51118, 4782, "wp_enqueue_scripts", "'safely_add_stylesheet'", 10, now(), now());

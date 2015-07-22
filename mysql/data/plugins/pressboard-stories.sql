@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3339, "Pressboard Stories", "4.1.1", "1.02", "2.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445529, 3339, "PressboardStories", "create_admin_page", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445530, 3339, "PressboardStories", "pressboard_scripts", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445531, 3339, "PressboardStories", "include_sponsorship_tag_callback", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445532, 3339, "PressboardStories", "sanitize", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445533, 3339, "PressboardStories", "pressboard_stories_admin_notices", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445534, 3339, "PressboardStories", "add_plugin_page", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445535, 3339, "PressboardStories", "media_id_callback", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445536, 3339, "PressboardStories", "page_init", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445537, 3339, "PressboardStories", "plugin_page_loaded", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445538, 3339, "PressboardStories", "insert_pressboard_sponsorship_msg", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445539, 3339, "PressboardStories", "__construct", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445540, 3339, "PressboardStories", "insert_pressboard_sponsorship_tag", "/pressboard-stories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (445541, 3339, "PressboardStories", "print_section_info", "/pressboard-stories.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36609, 3339, "wp_print_scripts", "array($this,'pressboard_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36610, 3339, "admin_notices", "array($this,'pressboard_stories_admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36611, 3339, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36612, 3339, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12486, 3339, "the_content", "array($this,'insert_pressboard_sponsorship_msg')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12487, 3339, "the_content", "array($this,'insert_pressboard_sponsorship_tag')", 100, now(), now());

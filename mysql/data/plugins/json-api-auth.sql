@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2385, "JSON API Auth", "4.1", "1.6", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44599, 2385, "pimAuthJsonApiController", "/json-api-auth.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44600, 2385, "json_api_auth_checkAuthCookie", "/json-api-auth.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44601, 2385, "pim_auth_draw_notice_json_api", "/json-api-auth.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44602, 2385, "setAuthControllerPath", "/json-api-auth.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341037, 2385, "JSON_API_Auth_Controller", "generate_auth_cookie", "/controllers/Auth.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341038, 2385, "JSON_API_Auth_Controller", "validate_auth_cookie", "/controllers/Auth.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341039, 2385, "JSON_API_Auth_Controller", "get_currentuserinfo", "/controllers/Auth.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25654, 2385, "init", "'json_api_auth_checkAuthCookie'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25655, 2385, "admin_notices", "'pim_auth_draw_notice_json_api'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8612, 2385, "json_api_controllers", "'pimAuthJsonApiController'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8613, 2385, "json_api_auth_controller_path", "'setAuthControllerPath'", 10, now(), now());

@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (335, "aspearl_rrpa", "4.1", "1.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5574, 335, "wpb_load_widget", "/aspearl-rrpa-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5575, 335, "getPopuplarPost", "/aspearl-rrpa-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5576, 335, "register_aspearl_rrpa_widget", "/aspearl-rrpa.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5577, 335, "getArchivePost", "/aspearl-rrpa-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5578, 335, "showWidgetHtml", "/aspearl-rrpa-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5579, 335, "getRecentPost", "/aspearl-rrpa-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5580, 335, "getPostCommets", "/aspearl-rrpa-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37887, 335, "Aspearl_RRPA_Widget", "__construct", "/aspearl-rrpa-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37888, 335, "Aspearl_RRPA_Widget", "update", "/aspearl-rrpa-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37889, 335, "Aspearl_RRPA_Widget", "form", "/aspearl-rrpa-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37890, 335, "Aspearl_RRPA_Widget", "widget", "/aspearl-rrpa-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3209, 335, "widgets_init", "'register_aspearl_rrpa_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3210, 335, "widgets_init", "'wpb_load_widget'", 10, now(), now());

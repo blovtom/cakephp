@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (442, "Bamboo Columns", "4.0", "1.4", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7242, 442, "bamboo_column_content_filter", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7243, 442, "bamboo_column_third_1", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7244, 442, "bamboo_columns_styles", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7245, 442, "bamboo_column_third_2", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7246, 442, "bamboo_column_quarter_4", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7247, 442, "bamboo_column_third_1_2", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7248, 442, "bamboo_column_quarter_1_2", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7249, 442, "bamboo_column_quarter_1", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7250, 442, "bamboo_column_half_2", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7251, 442, "bamboo_column_quarter_2", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7252, 442, "bamboo_column_half_1", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7253, 442, "bamboo_column_quarter_3_4", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7254, 442, "bamboo_column_third_3", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7255, 442, "bamboo_column_quarter_2_3_4", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7256, 442, "bamboo_column_quarter_1_2_3", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7257, 442, "bamboo_column_quarter_3", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7258, 442, "bamboo_column_third_2_3", "/bamboo-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7259, 442, "bamboo_column_quarter_2_3", "/bamboo-columns.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4276, 442, "init", "'bamboo_columns_styles'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1298, 442, "the_content", "'bamboo_column_content_filter'", 10, now(), now());

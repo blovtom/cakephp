@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1678, "Plugin Name", "4.1.1", "trunk", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33619, 1678, "fix_event_cal_settings_updated", "/fix-event-calendar-caching.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33620, 1678, "fix_event_cal_init", "/fix-event-calendar-caching.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205275, 1678, "FECC_Cache_File", "getFileName", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205276, 1678, "FECC_Cache_File", "enqueueCachedJavascript", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205277, 1678, "FECC_Cache_File", "getOriginalJavascriptUrl", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205278, 1678, "FECC_Cache_File", "printAdminMessages", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205279, 1678, "FECC_Cache_File", "getAllInOneEventCalVersionNumber", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205280, 1678, "FECC_Cache_File", "isCached", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205281, 1678, "FECC_Cache_File", "addAdminMessage", "/FECC_Cache_File.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205282, 1678, "FECC_Cache_File", "createCacheFile", "/FECC_Cache_File.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18565, 1678, "ai1ec_settings_updated", "'fix_event_cal_settings_updated'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18566, 1678, "admin_notices", "'FECC_Cache_File::printAdminMessages'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18567, 1678, "wp_footer", "'fix_event_cal_init'", 19, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2430, "Plugin Name", "4.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45128, 2430, "kmo_create_menu", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45129, 2430, "kmo_social_settings_link", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45130, 2430, "kmo_activate", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45131, 2430, "kmo_social_admin_scripts", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45132, 2430, "kmo_social_css", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45133, 2430, "kmo_register_settings", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45134, 2430, "kmo_social_admin_styles", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45135, 2430, "kmo_deactivate", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45136, 2430, "kmo_uninstall", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45137, 2430, "kmo_social_admin_pagehook", "/kmo-social-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45138, 2430, "kmo_social_options", "/kmo-social-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45139, 2430, "kmo_social", "/kmo-social.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45140, 2430, "kmo_social_add_styles", "/kmo-social.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25995, 2430, "admin_menu", "'kmo_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25996, 2430, "admin_head-toplevel_page_kmo_social", "'kmo_social_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25997, 2430, "admin_print_styles", "'kmo_social_admin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25998, 2430, "wp_head", "'kmo_social_css'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25999, 2430, "admin_init", "'kmo_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26000, 2430, "admin_print_scripts", "'kmo_social_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26001, 2430, "wp_print_styles", "'kmo_social_add_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26002, 2430, "admin_notices", "'kmo_social_admin_pagehook'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26003, 2430, "admin_head-toplevel_page_kmo_social", "'kmo_social'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26004, 2430, "wp_footer", "'kmo_social'", 100, now(), now());

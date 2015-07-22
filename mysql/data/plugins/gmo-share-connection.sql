@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1896, "Plugin Name", "4.1.1", "Version 1.2", "3.8.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236310, 1896, "GMO_Share_Connection", "wp_enqueue_scripts", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236311, 1896, "GMO_Share_Connection", "admin_enqueue_scripts", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236312, 1896, "GMO_Share_Connection", "tidy_after_entry_meta", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236313, 1896, "GMO_Share_Connection", "plugins_loaded", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236314, 1896, "GMO_Share_Connection", "__construct", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236315, 1896, "GMO_Share_Connection", "register", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236316, 1896, "GMO_Share_Connection", "the_content", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236317, 1896, "GMO_Share_Connection", "admin_init", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236318, 1896, "GMO_Share_Connection", "wp_footer", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236319, 1896, "GMO_Share_Connection", "options_page", "/gmo-share-connection.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236320, 1896, "GMO_Share_Connection", "admin_menu", "/gmo-share-connection.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21073, 1896, "admin_menu", "array($this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21074, 1896, "wp_footer", "array($this,'wp_footer')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21075, 1896, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21076, 1896, "admin_enqueue_scripts", "array($this,'admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21077, 1896, "tidy_after_entry_meta", "array($this,'tidy_after_entry_meta')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21078, 1896, "plugins_loaded", "array($this,'plugins_loaded')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21079, 1896, "wp_enqueue_scripts", "array($this,'wp_enqueue_scripts')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6982, 1896, "the_content", "array($this,'the_content')", 9, now(), now());

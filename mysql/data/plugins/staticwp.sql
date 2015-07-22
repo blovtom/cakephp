@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4162, "StaticWP", "4.1", "trunk", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521718, 4162, "StaticWPView", "page", "/includes/staticwp-view.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521719, 4162, "StaticWPAdmin", "addMenu", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521720, 4162, "StaticWP", "addComment", "/includes/staticwp.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521721, 4162, "StaticWP", "load", "/includes/staticwp.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521722, 4162, "StaticWPAdmin", "activate", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521723, 4162, "StaticWPAdmin", "initHooks", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521724, 4162, "StaticWP", "updateHtml", "/includes/staticwp.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521725, 4162, "StaticWPAdmin", "deactivate", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521726, 4162, "StaticWPView", "notice", "/includes/staticwp-view.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521727, 4162, "StaticWPAdmin", "handlePost", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521728, 4162, "StaticWPAdmin", "errorToException", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521729, 4162, "StaticWP", "initHooks", "/includes/staticwp.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521730, 4162, "StaticWPAdmin", "infoPage", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521731, 4162, "StaticWPAdmin", "update", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521732, 4162, "StaticWPAdmin", "preloadPage", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521733, 4162, "StaticWPAdmin", "__construct", "/includes/staticwp-admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521734, 4162, "StaticWP", "__construct", "/includes/staticwp.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (521735, 4162, "StaticWPAdmin", "displayNotices", "/includes/staticwp-admin.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44928, 4162, "admin_menu", "array($this,'addMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44929, 4162, "admin_notices", "array(__CLASS__,'displayNotices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44930, 4162, "admin_init", "array($this,'update')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44931, 4162, "muplugins_loaded", "array($this,'load')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44932, 4162, "save_post", "array($this,'updateHtml')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44933, 4162, "comment_post", "array($this,'addComment')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44934, 4162, "admin_init", "array($this,'handlePost')", 10, now(), now());

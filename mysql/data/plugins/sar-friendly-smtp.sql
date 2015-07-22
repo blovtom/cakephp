@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3705, "SAR Friendly SMTP", "4.1.1", "1.0.6", "3.9.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66193, 3705, "sarfsmtp_debug_mode_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66194, 3705, "sarfsmtp_from_name_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66195, 3705, "sarfsmtp_settings_exist", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66196, 3705, "sar_friendly_smtp_test_email", "/includes/email-test.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66197, 3705, "sarfsmtp_add_admin_menu", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66198, 3705, "sarfsmtp_username_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66199, 3705, "sarfsmtp_smtp_server_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66200, 3705, "sarfsmtp_optional_fields_section", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66201, 3705, "sar_friendly_smtp_add_tool_page", "/includes/email-test.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66202, 3705, "sar_friendly_smtp_add_cap", "/sar-friendly-smtp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66203, 3705, "sarfsmtp_encryption_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66204, 3705, "sarfsmtp_from_address_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66205, 3705, "sar_friendly_smtp", "/sar-friendly-smtp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66206, 3705, "sarfsmtp_port_setting_render", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66207, 3705, "sarfsmtp_misc_settings_section", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66208, 3705, "sarfsmtp_server_details_section_callback", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66209, 3705, "sar_friendly_smtp_options_page", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66210, 3705, "sar_friendly_smtp_remove_cap", "/sar-friendly-smtp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66211, 3705, "sarfsmtp_settings_init", "/includes/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66212, 3705, "sarfsmtp_password_setting_render", "/includes/options.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40331, 3705, "admin_menu", "'sarfsmtp_add_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40332, 3705, "admin_init", "'sarfsmtp_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40333, 3705, "phpmailer_init", "'sar_friendly_smtp'", 99999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40334, 3705, "admin_menu", "'sar_friendly_smtp_add_tool_page'", 10, now(), now());

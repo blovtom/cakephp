@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2020, "GroupDocs.Annotation for .NET | HTML5 Document Annotation", "4.1", "trunk", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38972, 2020, "groupdocs_annotation_dotnet_register_mce_button", "/grpdocs-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38973, 2020, "groupdocs_annotation_dotnet_add_tinymce_plugin", "/grpdocs-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38974, 2020, "groupdocs_annotation_dotnet_admin_footer", "/grpdocs-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38975, 2020, "groupdocs_annotation_dotnet_mce_addbuttons", "/grpdocs-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38976, 2020, "groupdocs_annotation_dotnet_admin_print_scripts", "/grpdocs-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38977, 2020, "groupdocs_annotation_dotnet_getdocument", "/grpdocsdotnetannotation.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22037, 2020, "admin_init", "'groupdocs_annotation_dotnet_mce_addbuttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22038, 2020, "admin_print_scripts", "'groupdocs_annotation_dotnet_admin_print_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7331, 2020, "mce_external_plugins", "'groupdocs_annotation_dotnet_add_tinymce_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7332, 2020, "mce_buttons", "'groupdocs_annotation_dotnet_register_mce_button'", 10, now(), now());

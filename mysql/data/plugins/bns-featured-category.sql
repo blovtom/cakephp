@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (579, "BNS Featured Category", "4.1.1", "2.7.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9938, 579, "bnsfc_in_plugin_update_message", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54168, 579, "BNS_Featured_Category_Widget", "bnsfc_shortcode", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54169, 579, "BNS_Featured_Category_Widget", "__construct", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54170, 579, "BNS_Featured_Category_Widget", "BNSFC_Scripts_and_Styles", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54171, 579, "BNS_Featured_Category_Widget", "widget", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54172, 579, "BNS_Featured_Category_Widget", "load_bnsfc_widget", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54173, 579, "BNS_Featured_Category_Widget", "bnsfc_plugin_meta", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54174, 579, "BNS_Featured_Category_Widget", "form", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54175, 579, "BNS_Featured_Category_Widget", "update", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54176, 579, "BNS_Featured_Category_Widget", "custom_excerpt", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54177, 579, "BNS_Featured_Category_Widget", "plugin_data", "/bns-featured-category.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54178, 579, "BNS_Featured_Category_Widget", "BNSFC_Options_Scripts_and_Styles", "/bns-featured-category.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5722, 579, "widgets_init", "array($this,'load_bnsfc_widget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5723, 579, "admin_enqueue_scripts", "array($this,'BNSFC_Options_Scripts_and_Styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5724, 579, "wp_enqueue_scripts", "array($this,'BNSFC_Scripts_and_Styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1911, 579, "plugin_row_meta", "array($this,'bnsfc_plugin_meta')", 10, now(), now());

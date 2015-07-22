@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4904, "WooCommerce My Account Widget", "4.2-alpha", "0.4.8", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84977, 4904, "wma_login_validate", "/woocommerce-my-account-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84978, 4904, "wma_email_login_auth", "/woocommerce-my-account-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84979, 4904, "wma_email_login", "/woocommerce-my-account-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84980, 4904, "wma_login_fail", "/woocommerce-my-account-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84981, 4904, "wma_lang_id", "/woocommerce-my-account-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623531, 4904, "WooCommerceMyAccountWidget", "WooCommerceMyAccountWidget", "/woocommerce-my-account-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623532, 4904, "WooCommerceMyAccountWidget", "update", "/woocommerce-my-account-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623533, 4904, "WooCommerceMyAccountWidget", "widget", "/woocommerce-my-account-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623534, 4904, "WooCommerceMyAccountWidget", "form", "/woocommerce-my-account-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52869, 4904, "wp_footer", "'wma_login_validate'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52870, 4904, "wp_login_failed", "'wma_login_fail'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52871, 4904, "wp_footer", "'wma_email_login'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52872, 4904, "widgets_init", "create_function('','return register_widget("WooCommerceMyAccountWidget");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18053, 4904, "authenticate", "'wma_email_login_auth'", 20, now(), now());

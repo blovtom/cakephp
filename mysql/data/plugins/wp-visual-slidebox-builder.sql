@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5498, "Wordpress Visual Slide Box Builder", "4.1", "1.2.10", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96147, 5498, "get_all_funbox", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96148, 5498, "get_a_funbox", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96149, 5498, "save_new_funbox", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96150, 5498, "funbox_admin_init", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96151, 5498, "funbox_install", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96152, 5498, "short_code_disp", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96153, 5498, "delete_a_funbox", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96154, 5498, "box_shortcode", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96155, 5498, "funbox_admin", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96156, 5498, "overwrite_a_funbox", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96157, 5498, "share_box", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96158, 5498, "funbox_load", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96159, 5498, "funbox_admin_actions", "/fun_box.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (96160, 5498, "my_admin_scripts", "/fun_box.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59651, 5498, "admin_enqueue_scripts", "'my_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59652, 5498, "wp_ajax_DELETE_BOX", "'delete_a_funbox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59653, 5498, "wp_ajax_GET_BOX", "'get_a_funbox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59654, 5498, "wp_ajax_SHARE_BOX", "'share_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59655, 5498, "wp_ajax_GET_SAVED_BOXES", "'get_all_funbox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59656, 5498, "wp_ajax_OVERWRITE_BOX", "'overwrite_a_funbox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59657, 5498, "wp_ajax_SHORT_CODE_DISP", "'short_code_disp'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59658, 5498, "wp_ajax_SAVE", "'save_new_funbox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59659, 5498, "admin_menu", "'funbox_admin_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59660, 5498, "wp_enqueue_scripts", "'funbox_load'", 10, now(), now());

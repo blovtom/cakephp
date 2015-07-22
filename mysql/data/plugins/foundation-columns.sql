@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1751, "Foundation Columns", "4.2", "0.7", "3.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34556, 1751, "foundation_columns_register_buttons", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34557, 1751, "foundation_columns_textdomain", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34558, 1751, "foundation_columns_register_tinymce_javascript", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34559, 1751, "foundation_columns_icon", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34560, 1751, "foundation_columns_item", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34561, 1751, "foundation_columns_buttonhooks", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34562, 1751, "foundation_columns_requirements_met", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34563, 1751, "foundation_columns_posts_class", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34564, 1751, "foundation_columns_content", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34565, 1751, "foundation_columns_error", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34566, 1751, "foundation_columns_grid", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34567, 1751, "foundation_columns_localization", "/foundation-columns.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34568, 1751, "foundation_columns", "/foundation-columns.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19270, 1751, "plugins_loaded", "'foundation_columns_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19271, 1751, "admin_head", "'foundation_columns_icon'", 999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19272, 1751, "init", "'foundation_columns_buttonhooks'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19273, 1751, "admin_notices", "'foundation_columns_error'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6389, 1751, "the_content", "'foundation_columns_content'", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6390, 1751, "the_content", "'shortcode_unautop'", 100, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6391, 1751, "post_class", "'foundation_columns_posts_class'", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6392, 1751, "the_content", "'wpautop'", 99, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6393, 1751, "mce_external_languages", "'foundation_columns_localization'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6394, 1751, "mce_external_plugins", "'foundation_columns_register_tinymce_javascript'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6395, 1751, "mce_buttons", "'foundation_columns_register_buttons'", 10, now(), now());

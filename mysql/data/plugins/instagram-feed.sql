@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2264, "Instagram Feed", "4.1", "1.3.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41506, 2264, "display_instagram", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41507, 2264, "sb_instagram_menu", "/instagram-feed-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41508, 2264, "sb_instagram_custom_js", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41509, 2264, "sb_instagram_uninstall", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41510, 2264, "sb_instagram_custom_css", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41511, 2264, "sbi_add_settings_link", "/instagram-feed-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41512, 2264, "sb_instagram_activate", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41513, 2264, "sb_instagram_settings_page", "/instagram-feed-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41514, 2264, "sb_instagram_styles_enqueue", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41515, 2264, "sb_instagram_scripts_enqueue", "/instagram-feed.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41516, 2264, "sb_instagram_admin_scripts", "/instagram-feed-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41517, 2264, "sb_instagram_admin_style", "/instagram-feed-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23746, 2264, "wp_head", "'sb_instagram_custom_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23747, 2264, "admin_enqueue_scripts", "'sb_instagram_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23748, 2264, "admin_menu", "'sb_instagram_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23749, 2264, "wp_enqueue_scripts", "'sb_instagram_styles_enqueue'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23750, 2264, "wp_enqueue_scripts", "'sb_instagram_scripts_enqueue'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23751, 2264, "admin_enqueue_scripts", "'sb_instagram_admin_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23752, 2264, "wp_footer", "'sb_instagram_custom_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7831, 2264, "widget_text", "'do_shortcode'", 10, now(), now());

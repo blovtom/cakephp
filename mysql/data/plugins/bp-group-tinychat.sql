@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (619, "BuddyPress Group Tinychat", "4.1", "1.4", "WordPress 3.1.0, BuddyPress 1.2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10714, 619, "bp_group_tinychat_setup_globals", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10715, 619, "bp_group_tinychat_activate", "/loader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10716, 619, "bp_group_tinychat_init", "/loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55071, 619, "BP_Group_tinychat", "bp_group_tinychat", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55072, 619, "BP_Group_tinychat", "display", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55073, 619, "BP_Group_tinychat", "edit_screen", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55074, 619, "BP_Group_tinychat", "create_screen", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55075, 619, "BP_Group_tinychat", "edit_screen_save", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55076, 619, "BP_Group_tinychat", "create_screen_save", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55077, 619, "BP_Group_tinychat", "widget_display", "/includes/bp-group-tinychat-core.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6111, 619, "bp_setup_globals", "'bp_group_tinychat_setup_globals'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6112, 619, "bp_init", "'bp_group_tinychat_init'", 10, now(), now());

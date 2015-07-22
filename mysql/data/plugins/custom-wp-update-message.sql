@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1150, "Custom WP Update Message", "4.1", "1.0.2", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100927, 1150, "ccourage_update_message", "validate_field", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100928, 1150, "ccourage_update_message", "settings_field", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100929, 1150, "ccourage_update_message", "settings_section", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100930, 1150, "ccourage_update_message", "clean_input", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100931, 1150, "ccourage_update_message", "update_nag", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100932, 1150, "ccourage_update_message", "register_settings", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100933, 1150, "ccourage_update_message", "on_uninstall", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100934, 1150, "ccourage_update_message", "remove_nag", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100935, 1150, "ccourage_update_message", "settings_page", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100936, 1150, "ccourage_update_message", "get_option", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100937, 1150, "ccourage_update_message", "current_user_can_view_message", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100938, 1150, "ccourage_update_message", "init", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100939, 1150, "ccourage_update_message", "register_menu_page", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100940, 1150, "ccourage_update_message", "get_user_roles", "/custom-wp-update-message.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (100941, 1150, "ccourage_update_message", "set_messages", "/custom-wp-update-message.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12764, 1150, "admin_menu", "array(__CLASS__,'register_menu_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12765, 1150, "admin_notices", "array(__CLASS__,'remove_nag')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12766, 1150, "admin_notices", "array(__CLASS__,'update_nag')", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12767, 1150, "admin_init", "array(__CLASS__,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12768, 1150, "admin_init", "array(__CLASS__,'set_messages')", 1, now(), now());

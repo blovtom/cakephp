@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (395, "Avatar Shaper", "4.1", "1.0", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6164, 395, "ashaper_setting_title", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6165, 395, "gloss_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6166, 395, "ashaper_class", "/includes/classreplace.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6167, 395, "shapeid_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6168, 395, "shadowcolor_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6169, 395, "shadowenable_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6170, 395, "ashaper_register_options", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6171, 395, "avataroptions_enqueue_color_picker", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6172, 395, "ashaper_admin_adder", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6173, 395, "shadowenable_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6174, 395, "shapeid_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6175, 395, "custommeathod_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6176, 395, "customslider_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6177, 395, "ashaper_uninstall", "/avatarshaper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6178, 395, "shadowcolor_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6179, 395, "customslider_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6180, 395, "gloss_callback", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6181, 395, "avatar_shaper", "/includes/classreplace.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6182, 395, "custommeathod_sanatize", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6183, 395, "avatar_shaper_interface", "/includes/avataroptions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6184, 395, "avatarshaper_styles", "/includes/styles.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3598, 395, "admin_menu", "'ashaper_admin_adder'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3599, 395, "admin_enqueue_scripts", "'avataroptions_enqueue_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3600, 395, "admin_init", "'ashaper_register_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3601, 395, "wp_head", "'avatarshaper_styles'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1084, 395, "get_avatar", "'ashaper_class'", 1, now(), now());

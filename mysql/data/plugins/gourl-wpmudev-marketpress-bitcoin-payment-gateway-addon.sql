@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1974, "GoUrl MarketPress - Bitcoin Altcoin Payment Gateway Addon", "4.2", "1.0.0", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38685, 1974, "gourlmarketpress_gourlcallback", "/gourl-marketpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38686, 1974, "gourl_mp_gateway_load", "/gourl-marketpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (38687, 1974, "gourl_mp_action_links", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314888, 1974, "MP_Gateway_GoUrl", "process_payment", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314889, 1974, "MP_Gateway_GoUrl", "order_confirmation_email", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314890, 1974, "MP_Gateway_GoUrl", "__construct", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314891, 1974, "MP_Gateway_GoUrl", "order_confirmation_msg", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314892, 1974, "MP_Gateway_GoUrl", "gourlcallback", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314893, 1974, "MP_Gateway_GoUrl", "gateway_settings_box", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314894, 1974, "MP_Gateway_GoUrl", "cryptocoin_payment", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314895, 1974, "MP_Gateway_GoUrl", "confirm_payment_form", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314896, 1974, "MP_Gateway_GoUrl", "order_confirmation", "/gourl-marketpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314897, 1974, "MP_Gateway_GoUrl", "process_payment_form", "/gourl-marketpress.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21736, 1974, "plugins_loaded", "'gourl_mp_gateway_load'", 4, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7174, 1974, "mp_order_status_section_title_payment_info", "array($this,'cryptocoin_payment')", 20, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7175, 1974, "plugin_action_links", "'gourl_mp_action_links'", 10, now(), now());

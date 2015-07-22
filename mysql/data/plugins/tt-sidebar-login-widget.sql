@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4479, "Plugin Name", "4.0", "2.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77813, 4479, "tp_register_sidebar_login", "/tt-sidebar-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77814, 4479, "handle_login_failure", "/tt-sidebar-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77815, 4479, "wp_authenticate", "/tt-sidebar-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77816, 4479, "ttslw_plugin_init", "/tt-sidebar-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556755, 4479, "TTSidebarLogin", "__construct", "/tt-sidebar-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556756, 4479, "TTSidebarLogin", "widget", "/tt-sidebar-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556757, 4479, "TTSidebarLogin", "form", "/tt-sidebar-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556758, 4479, "TTSidebarLogin", "update", "/tt-sidebar-login.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47836, 4479, "widgets_init", "'tp_register_sidebar_login'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47837, 4479, "wp_login_failed", "'handle_login_failure'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47838, 4479, "init", "'ttslw_plugin_init'", 10, now(), now());

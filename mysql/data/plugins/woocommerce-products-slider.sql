@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4948, "Woocommerce Products Slider", "4.1", "1.4", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85388, 4948, "wcps_share_plugin", "/includes/wcps-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85389, 4948, "wcps_get_taxonomy_category", "/includes/wcps-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85390, 4948, "wcps_posttype_register", "/includes/wcps-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85391, 4948, "meta_boxes_wcps_save", "/includes/wcps-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85392, 4948, "wcps_body_flat", "/themes/flat/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85393, 4948, "wcps_body_rossi", "/themes/rossi/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85394, 4948, "wcps_dark_color", "/includes/wcps-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85395, 4948, "wcps_get_all_product_ids", "/includes/wcps-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85396, 4948, "wcps_init_scripts", "/woocommerce-products-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85397, 4948, "wcps_menu_init", "/woocommerce-products-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85398, 4948, "wcps_menu_settings", "/woocommerce-products-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85399, 4948, "wcps_activation", "/woocommerce-products-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85400, 4948, "meta_boxes_wcps", "/includes/wcps-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85401, 4948, "wcps_display", "/woocommerce-products-slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85402, 4948, "meta_boxes_wcps_input", "/includes/wcps-meta.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53304, 4948, "init", "'wcps_init_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53305, 4948, "add_meta_boxes", "'meta_boxes_wcps'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53306, 4948, "wp_ajax_nopriv_wcps_get_taxonomy_category", "'wcps_get_taxonomy_category'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53307, 4948, "wp_ajax_wcps_get_taxonomy_category", "'wcps_get_taxonomy_category'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53308, 4948, "admin_enqueue_scripts", "'wp_enqueue_media'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53309, 4948, "admin_menu", "'wcps_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53310, 4948, "save_post", "'meta_boxes_wcps_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53311, 4948, "init", "'wcps_posttype_register'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18234, 4948, "widget_text", "'do_shortcode'", 10, now(), now());

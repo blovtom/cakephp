@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5477, "Google Translate WordPress &#187; WP Translate", "4.1.1", "4.8.1", "2.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95887, 5477, "admin_positioning", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95888, 5477, "register_wp_translation_widget", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95889, 5477, "create_translate_plugin_links", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95890, 5477, "add_wp_translate_menu", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95891, 5477, "translate_Init", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95892, 5477, "wpTranslate_install", "/wp-translate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (95893, 5477, "show_translate_menu", "/wp-translate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (715016, 5477, "WP_Translate_Widget", "__construct", "/wp-translate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (715017, 5477, "WP_Translate_Widget", "widget", "/wp-translate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (715018, 5477, "WP_Translate_Widget", "update", "/wp-translate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (715019, 5477, "WP_Translate_Widget", "form", "/wp-translate.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59366, 5477, "wp_head", "'admin_positioning'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59367, 5477, "widgets_init", "'register_wp_translation_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59368, 5477, "admin_menu", "'add_wp_translate_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (59369, 5477, "wp_footer", "'translate_Init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20327, 5477, "plugin_row_meta", "'create_translate_plugin_links'", 10, now(), now());

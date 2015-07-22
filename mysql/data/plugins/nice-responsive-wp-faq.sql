@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2916, "Nice Responsive WP_FAQ", "4.1", "1.0", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53210, 2916, "tmrd_add_color_picker", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53211, 2916, "sampleoptions_add_page_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53212, 2916, "tmrd_faq_load_script_style", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53213, 2916, "tmrd_faqs_query_shortcode", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53214, 2916, "add_menu_icons_styles", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53215, 2916, "plugin_options_validate", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53216, 2916, "add_defaults_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53217, 2916, "setting_pass_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53218, 2916, "wptuts_add_color_picker", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53219, 2916, "faq_desire_stylesheet", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53220, 2916, "sampleoptions_init_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53221, 2916, "setting_string_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53222, 2916, "tmrd_faq_post_type", "/tmrd_faq.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53223, 2916, "section_text_fn", "/assets/inc/ex-settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (53224, 2916, "options_page_fn", "/assets/inc/ex-settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31870, 2916, "admin_head", "'add_menu_icons_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31871, 2916, "admin_init", "'sampleoptions_init_fn'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31872, 2916, "wp_enqueue_scripts", "'tmrd_faq_load_script_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31873, 2916, "init", "'tmrd_faq_post_type'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31874, 2916, "admin_enqueue_scripts", "'tmrd_add_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31875, 2916, "admin_menu", "'sampleoptions_add_page_fn'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31876, 2916, "admin_enqueue_scripts", "'wptuts_add_color_picker'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31877, 2916, "wp_head", "'faq_desire_stylesheet'", 10, now(), now());

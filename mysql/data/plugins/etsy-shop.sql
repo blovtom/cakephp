@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1522, "Etsy Shop", "4.1.1", "0.13", "3.4.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30101, 1522, "etsy_shop_post", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30102, 1522, "etsy_shop_optionsPage", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30103, 1522, "etsy_shop_plugin_action_links", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30104, 1522, "etsy_shop_process", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30105, 1522, "etsy_shop_load_translation_file", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30106, 1522, "etsy_shop_activate", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30107, 1522, "etsy_shop_api_request", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30108, 1522, "etsy_shop_testAPIKey", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30109, 1522, "etsy_shop_getShopSection", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30110, 1522, "etsy_shop_generateListing", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30111, 1522, "etsy_shop_css", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30112, 1522, "etsy_shop_getShopSectionListings", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30113, 1522, "etsy_shop_menu", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30114, 1522, "etsy_shop_warning", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30115, 1522, "etsy_shop_shortcode", "/etsy-shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30116, 1522, "etsy_shop__api_key_warning", "/etsy-shop.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16648, 1522, "admin_menu", "'etsy_shop_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16649, 1522, "wp_print_styles", "'etsy_shop_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16650, 1522, "init", "'etsy_shop_load_translation_file'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16651, 1522, "admin_notices", "'etsy_shop__api_key_warning'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5517, 1522, "the_excerpt", "'etsy_shop_post'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5518, 1522, "the_content", "'etsy_shop_post'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5519, 1522, "plugin_action_links", "'etsy_shop_plugin_action_links'", 10, now(), now());

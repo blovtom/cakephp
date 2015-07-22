@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3017, "Optimizely", "4.0.1", "3.5.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54665, 3017, "optimizely_title_variations_add", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54666, 3017, "optimizely_meta_key", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54667, 3017, "optimizely_title_variations_save", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54668, 3017, "optimizely_add_script", "/optimizely.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54669, 3017, "optimizely_enqueue_scripts", "/optimizely.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54670, 3017, "optimizely_conf", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54671, 3017, "optimizely_admin_menu", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54672, 3017, "optimizely_update_post_title", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54673, 3017, "optimizely_title_variations_render", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54674, 3017, "optimizely_plugin_action_links", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54675, 3017, "optimizely_is_post_type_enabled", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54676, 3017, "optimizely_admin_notices", "/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54677, 3017, "optimizely_update_experiment_meta", "/edit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54678, 3017, "optimizely_can_create_experiments", "/optimizely.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54679, 3017, "optimizely_generate_script", "/optimizely.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33062, 3017, "wp_head", "'optimizely_add_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33063, 3017, "admin_enqueue_scripts", "'optimizely_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33064, 3017, "wp_ajax_update_experiment_meta", "'optimizely_update_experiment_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33065, 3017, "admin_notices", "'optimizely_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33066, 3017, "wp_ajax_update_post_title", "'optimizely_update_post_title'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33067, 3017, "save_post", "'optimizely_title_variations_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33068, 3017, "admin_menu", "'optimizely_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33069, 3017, "add_meta_boxes", "'optimizely_title_variations_add'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11090, 3017, "plugin_action_links", "'optimizely_plugin_action_links'", 10, now(), now());

@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1639, "Featured Image Caption", "4.1", "0.4.1", "2.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33139, 1639, "cc_has_featured_image_caption", "/featured-image-caption.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33140, 1639, "cc_featured_image_caption", "/featured-image-caption.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201816, 1639, "Admin", "activate", "/admin/featured-image-caption-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201817, 1639, "Admin", "save_metabox", "/admin/featured-image-caption-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201818, 1639, "Admin", "metabox_callback", "/admin/featured-image-caption-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201819, 1639, "Admin", "__construct", "/admin/featured-image-caption-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201820, 1639, "Admin", "deactivate", "/admin/featured-image-caption-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201821, 1639, "FeaturedImageCaption", "get_caption", "/class-featured-image-caption.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201822, 1639, "FeaturedImageCaption", "__construct", "/class-featured-image-caption.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201823, 1639, "Admin", "metabox", "/admin/featured-image-caption-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18150, 1639, "add_meta_boxes", "array(&$this,'metabox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18151, 1639, "save_post", "array(&$this,'save_metabox')", 10, now(), now());

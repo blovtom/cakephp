@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4773, "Widget Logic", "4.1", "0.57", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83327, 4773, "widget_logic_empty_control", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83328, 4773, "widget_logic_ajax_update_callback", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83329, 4773, "widget_logic_options_control", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83330, 4773, "widget_logic_redirected_callback", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83331, 4773, "widget_logic_expand_control", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83332, 4773, "widget_logic_extra_control", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83333, 4773, "widget_logic_extra_control_new", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83334, 4773, "widget_logic_filter_sidebars_widgets", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83335, 4773, "wl_charity", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83336, 4773, "widget_logic_sidebars_widgets_filter_add", "/widget_logic.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83337, 4773, "widget_logic_widget_display_callback", "/widget_logic.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51069, 4773, "parse_query", "'widget_logic_sidebars_widgets_filter_add'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51070, 4773, "sidebar_admin_setup", "'widget_logic_expand_control'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51071, 4773, "sidebar_admin_page", "'widget_logic_options_control'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51072, 4773, "in_widget_form", "'widget_logic_extra_control_new'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17182, 4773, "dynamic_sidebar_params", "'widget_logic_widget_display_callback'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17183, 4773, "plugin_action_links", "'wl_charity'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17184, 4773, "widget_update_callback", "'widget_logic_ajax_update_callback'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17185, 4773, "sidebars_widgets", "'widget_logic_filter_sidebars_widgets'", 10, now(), now());

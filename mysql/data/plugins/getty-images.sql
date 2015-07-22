@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1870, "Getty Images", "4.1", "2.3.0", "3.9", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221460, 1870, "Getty_Images", "ajax_error", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221461, 1870, "Getty_Images", "ajax_image_details", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221462, 1870, "Getty_Images", "action_init", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221463, 1870, "Getty_Images", "get_possible_image_sizes", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221464, 1870, "Getty_Images", "admin_notices", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221465, 1870, "Getty_Images", "ajax_download", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221466, 1870, "Getty_Images", "ajax_success", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221467, 1870, "Getty_Images", "ajax_check", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221468, 1870, "Getty_Images", "filter_contains_getty_images_comp", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221469, 1870, "Getty_Images", "isWPcom", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221470, 1870, "Getty_Images", "instance", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221471, 1870, "Getty_Images", "wp_insert_post_data", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221472, 1870, "Getty_Images", "contains_comp", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221473, 1870, "Getty_Images", "print_media_templates", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221474, 1870, "Getty_Images", "admin_enqueue", "/getty-images.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (221475, 1870, "Getty_Images", "media_buttons", "/getty-images.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20877, 1870, "print_media_templates", "array($this,'print_media_templates')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20878, 1870, "media_buttons", "array($this,'media_buttons')", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20879, 1870, "admin_enqueue_scripts", "array($this,'admin_enqueue')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20880, 1870, "wp_ajax_getty_image_details", "array($this,'ajax_image_details')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20881, 1870, "init", "array($this,'action_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20882, 1870, "wp_ajax_getty_images_download", "array($this,'ajax_download')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20883, 1870, "admin_notices", "array($this,'admin_notices')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6938, 1870, "wp_insert_post_data", "array($this,'wp_insert_post_data')", 20, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6939, 1870, "contains_getty_comp", "array($this,'filter_contains_getty_comp')", 0, now(), now());

@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4246, "Plugin Name", "4.2", "trunk", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74452, 4246, "ssc_return_value", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74453, 4246, "disable_self_ping", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74454, 4246, "posts_custom_columns", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74455, 4246, "posts_columns", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74456, 4246, "custom_in_post_images", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74457, 4246, "auto_feature_img", "/super-simple-changes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74458, 4246, "add_nofollow_to_reply_link", "/super-simple-changes.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45705, 4246, "pre_ping", "'disable_self_ping'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45706, 4246, "the_post", "'auto_feature_img'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45707, 4246, "draft_to_publish", "'auto_feature_img'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45708, 4246, "new_to_publish", "'auto_feature_img'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45709, 4246, "future_to_publish", "'auto_feature_img'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45710, 4246, "manage_posts_custom_column", "'posts_custom_columns'", 5, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45711, 4246, "pending_to_publish", "'auto_feature_img'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45712, 4246, "manage_pages_custom_column", "'posts_custom_columns'", 5, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15351, 4246, "jpeg_quality", "'ssc_return_value'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15352, 4246, "manage_posts_columns", "'posts_columns'", 5, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15353, 4246, "manage_pages_columns", "'posts_columns'", 5, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15354, 4246, "comment_reply_link", "'add_nofollow_to_reply_link'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15355, 4246, "image_size_names_choose", "'custom_in_post_images'", 10, now(), now());

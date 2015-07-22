@@ -1,0 +1,38 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4317, "tarteaucitron.js", "4", "1", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75521, 4317, "tarteaucitronWidgetAfterPostXL", "/Sidebars.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75522, 4317, "tarteaucitron_post", "/tarteaucitron.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75523, 4317, "tarteaucitronWidgetAfterPost", "/Sidebars.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75524, 4317, "tarteaucitronWidgetBeforePostXL", "/Sidebars.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75525, 4317, "tarteaucitron_register", "/Widgets.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75526, 4317, "tarteaucitronWidgetBeforePost", "/Sidebars.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75527, 4317, "tarteaucitron_user_css_js", "/tarteaucitron.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75528, 4317, "tarteaucitron_admin_css", "/Admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75529, 4317, "tarteaucitron_load_textdomain", "/tarteaucitron.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545190, 4317, "tarteaucitron_Admin", "add_action_link", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545191, 4317, "tarteaucitron_Admin", "register_settings_page", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545192, 4317, "tarteaucitron_Widget", "widget", "/Widgets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545193, 4317, "tarteaucitron_Admin", "plugin_options_url", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545194, 4317, "tarteaucitron_Admin", "tarteaucitron_Admin", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545195, 4317, "tarteaucitron_Admin", "tarteaucitron_admin_notices", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545196, 4317, "tarteaucitron_Admin", "tarteaucitron_load_function", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545197, 4317, "tarteaucitron_Admin", "tarteaucitron_register", "/Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545198, 4317, "tarteaucitron_Widget", "form", "/Widgets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545199, 4317, "tarteaucitron_Widget", "__construct", "/Widgets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545200, 4317, "tarteaucitron_Widget", "update", "/Widgets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (545201, 4317, "tarteaucitron_Admin", "tarteaucitron_config_page", "/Admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46304, 4317, "admin_notices", "array(&$this,'tarteaucitron_admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46305, 4317, "sidebar_admin_setup", "'tarteaucitron_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46306, 4317, "plugins_loaded", "'tarteaucitron_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46307, 4317, "widgets_init", "function ()
+{
+	register_widget('tarteaucitron_Widget');
+}", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46308, 4317, "admin_init", "array(&$this,'tarteaucitron_register')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46309, 4317, "admin_menu", "array(&$this,'register_settings_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46310, 4317, "admin_enqueue_scripts", "'tarteaucitron_admin_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46311, 4317, "wp_enqueue_scripts", "'tarteaucitron_user_css_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15533, 4317, "the_content", "'tarteaucitronWidgetAfterPost'", 50, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15534, 4317, "the_content", "'tarteaucitronWidgetBeforePostXL'", 50, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15535, 4317, "plugin_action_links", "array(&$this,'add_action_link')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15536, 4317, "the_content", "'tarteaucitronWidgetBeforePost'", 50, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15537, 4317, "the_content", "'tarteaucitronWidgetAfterPostXL'", 50, now(), now());

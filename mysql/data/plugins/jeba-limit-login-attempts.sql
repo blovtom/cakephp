@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2338, "Jeba Limit Login Attempts", "4.0.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43064, 2338, "jeba_wp_latest_jquery_d", "/jeba-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335259, 2338, "Jeba_Limit_Login_Attempts", "__construct", "/jeba-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335260, 2338, "Jeba_Limit_Login_Attempts", "check_attempted_login", "/jeba-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335261, 2338, "Jeba_Limit_Login_Attempts", "login_failed", "/jeba-login.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24500, 2338, "wp_login_failed", "array($this,'login_failed')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24501, 2338, "init", "'jeba_wp_latest_jquery_d'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8194, 2338, "authenticate", "array($this,'check_attempted_login')", 30, now(), now());

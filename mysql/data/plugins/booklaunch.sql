@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (598, "Booklaunch.io for Wordpress", "4.1", "1.0.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10490, 598, "booklaunch_add_post_meta_boxes", "/booklaunch.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10491, 598, "booklaunch_post_class_meta_box", "/booklaunch.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10492, 598, "my_admin_script", "/booklaunch.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10493, 598, "booklaunch_save_post_class_meta", "/booklaunch.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10494, 598, "add_booklaunch_meta", "/booklaunch.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54845, 598, "PageTemplater", "register_booklaunch_templates", "/booklaunch.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54846, 598, "PageTemplater", "view_booklaunch_template", "/booklaunch.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54847, 598, "PageTemplater", "get_instance", "/booklaunch.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5956, 598, "load-post.php", "'add_booklaunch_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5957, 598, "save_post", "'booklaunch_save_post_class_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5958, 598, "admin_enqueue_scripts", "'my_admin_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5959, 598, "plugins_loaded", "array('PageTemplater','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5960, 598, "add_meta_boxes", "'booklaunch_add_post_meta_boxes'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2008, 598, "template_include", "array($this,'view_booklaunch_template')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2009, 598, "page_attributes_dropdown_pages_args", "array($this,'register_booklaunch_templates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2010, 598, "wp_insert_post_data", "array($this,'register_booklaunch_templates')", 10, now(), now());

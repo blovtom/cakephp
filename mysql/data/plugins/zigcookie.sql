@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5693, "ZigCookie", "4.1.1", "0.2.2", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793422, 5693, "zigcookie", "admin_page_options", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793423, 5693, "zigcookie", "deactivate", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793424, 5693, "zigcookie", "filter_plugin_row_meta", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793425, 5693, "zigcookie", "action_admin_init", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793426, 5693, "zigcookie", "action_wp_enqueue_scripts", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793427, 5693, "zigcookie", "get_params", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793428, 5693, "zigcookie", "activate", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793429, 5693, "zigcookie", "action_wp_head", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793430, 5693, "zigcookie", "validate_as_integer", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793431, 5693, "zigcookie", "__construct", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793432, 5693, "zigcookie", "action_admin_enqueue_scripts", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793433, 5693, "zigcookie_admincallbacks", "__construct", "/admincallbacks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793434, 5693, "zigcookie", "get_all_post_meta", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793435, 5693, "zigcookie_admincallbacks", "update_options", "/admincallbacks.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793436, 5693, "zigcookie", "show_result", "/zigcookie.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793437, 5693, "zigcookie", "action_admin_menu", "/zigcookie.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63086, 5693, "admin_enqueue_scripts", "array($this,'action_admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63087, 5693, "wp_head", "array($this,'action_wp_head')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63088, 5693, "wp_enqueue_scripts", "array($this,'action_wp_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63089, 5693, "admin_menu", "array($this,'action_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63090, 5693, "admin_init", "array($this,'action_admin_init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21607, 5693, "plugin_row_meta", "array($this,'filter_plugin_row_meta')", 10, now(), now());

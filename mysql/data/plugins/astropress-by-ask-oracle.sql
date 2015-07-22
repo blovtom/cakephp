@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (341, "AstroPress by Ask Oracle", "4.0", "1.0.0.0", NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5655, 341, "widget_astropress_init", "/AstroPress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5656, 341, "astropress_shortcode", "/AstroPress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5657, 341, "astropress_iframe_code", "/AstroPress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5658, 341, "astropress_init", "/AstroPress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37931, 341, "astropress_widget", "astropress_widget", "/AstroPress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37932, 341, "astropress_widget", "form", "/AstroPress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37933, 341, "astropress_widget", "update", "/AstroPress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37934, 341, "astropress_widget", "widget", "/AstroPress.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3232, 341, "init", "'astropress_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3233, 341, "widgets_init", "'widget_astropress_init'", 10, now(), now());

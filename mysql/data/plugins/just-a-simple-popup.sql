@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2398, "Just A Simple Popup", "4.1", NULL, "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44684, 2398, "usort_reorder", "/listPopups.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44685, 2398, "justAsimplePopup_add_new_popup", "/just-a-simple-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44686, 2398, "justAsimplePopup_admin", "/just-a-simple-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44687, 2398, "justAsimplePopup_admin_actions", "/just-a-simple-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44688, 2398, "jasp_hex2rgba", "/just-a-simple-popup.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44689, 2398, "justAsimplePopup", "/just-a-simple-popup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341181, 2398, "POPUP_LISTS", "get_bulk_actions", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341182, 2398, "POPUP_LISTS", "column_name", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341183, 2398, "POPUP_LISTS", "column_cb", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341184, 2398, "POPUP_LISTS", "process_bulk_action", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341185, 2398, "POPUP_LISTS", "__construct", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341186, 2398, "POPUP_LISTS", "get_columns", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341187, 2398, "POPUP_LISTS", "column_default", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341188, 2398, "POPUP_LISTS", "get_sortable_columns", "/listPopups.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341189, 2398, "POPUP_LISTS", "prepare_items", "/listPopups.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25707, 2398, "admin_menu", "'justAsimplePopup_admin_actions'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25708, 2398, "wp_head", "'justAsimplePopup'", 10, now(), now());

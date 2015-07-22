@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3886, "Simple Basic Contact Form", "4.1", "trunk", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68891, 3886, "scf_display_contact_form", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68892, 3886, "simple_contact_form", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68893, 3886, "scf_render_form", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68894, 3886, "scf_delete_plugin_options", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68895, 3886, "scf_add_options_page", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68896, 3886, "scf_require_wp_version", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68897, 3886, "scf_shortcode", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68898, 3886, "scf_init", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68899, 3886, "scf_get_ip_address", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68900, 3886, "scf_add_defaults", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68901, 3886, "scf_process_contact_form", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68902, 3886, "scf_spam_question", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68903, 3886, "scf_plugin_action_links", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68904, 3886, "scf_i18n_init", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68905, 3886, "scf_input_filter", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68906, 3886, "scf_malicious_input", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68907, 3886, "scf_validate_options", "/simple-basic-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68908, 3886, "add_scf_links", "/simple-basic-contact-form.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41919, 3886, "admin_init", "'scf_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41920, 3886, "admin_init", "'scf_require_wp_version'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41921, 3886, "admin_menu", "'scf_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41922, 3886, "plugins_loaded", "'scf_i18n_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14257, 3886, "plugin_row_meta", "'add_scf_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14258, 3886, "plugin_action_links", "'scf_plugin_action_links'", 10, now(), now());

@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4789, "Wistia Responsive", "4.1", "1.1.1", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612355, 4789, "SS_Wistia_Responsive", "get_instance", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612356, 4789, "SS_Wistia_Responsive", "plugin_setup", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612357, 4789, "SS_Wistia_Responsive", "__construct", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612358, 4789, "SS_Wistia_Responsive", "make_responsive", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612359, 4789, "SS_Wistia_Responsive", "register_wistia_iframe_api", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (612360, 4789, "SS_Wistia_Responsive", "load_language", "/classes/class-ss-wistia-responsive.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51159, 4789, "wp_enqueue_scripts", "array(self::$instance,'register_wistia_iframe_api')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51160, 4789, "plugins_loaded", "array(SS_Wistia_Responsive::get_instance(),'plugin_setup')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17204, 4789, "the_excerpt", "array(self::$instance,'make_responsive')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17205, 4789, "the_content", "array(self::$instance,'make_responsive')", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3026, "Orbisius Messenger", "4.1", "1.0.2", "2.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397333, 3026, "orbisius_messenger", "__construct", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397334, 3026, "orbisius_messenger", "orbisius_messenger_get_plugin_data", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397335, 3026, "orbisius_messenger", "ajax_load_users", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397336, 3026, "orbisius_messenger", "setup_admin_menu", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397337, 3026, "orbisius_messenger_widget", "output_widget", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397338, 3026, "orbisius_messenger", "get_options", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397339, 3026, "orbisius_messenger", "render_contact_form", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397340, 3026, "orbisius_messenger", "add_quick_settings_link", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397341, 3026, "orbisius_messenger", "init", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397342, 3026, "orbisius_messenger", "output_options_page", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397343, 3026, "orbisius_messenger", "ajaxurl_fix", "/orbisius-messenger.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (397344, 3026, "orbisius_messenger", "register_admin_settings", "/orbisius-messenger.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33206, 3026, "admin_init", "array($orb_messenger,'register_admin_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33207, 3026, "wp_head", "array($orb_messenger,'ajaxurl_fix')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33208, 3026, "admin_menu", "array($orb_messenger,'setup_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33209, 3026, "init", "array($orb_messenger,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33210, 3026, "wp_ajax_orbisius_messenger_ajax_load_users", "array($orb_messenger,'ajax_load_users')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11120, 3026, "plugin_action_links", "array($this,'add_quick_settings_link')", 10, now(), now());

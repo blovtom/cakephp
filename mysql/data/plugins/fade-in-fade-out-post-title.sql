@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1613, "Fade in fade out post title", "4.1", "9.5", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32769, 1613, "fifopost_deactivation", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32770, 1613, "fifopost_control", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32771, 1613, "fifopost_install", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32772, 1613, "fifopost_add_javascript_files", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32773, 1613, "fifo", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32774, 1613, "fifopost_add_to_menu", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32775, 1613, "fifopost_widget_init", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32776, 1613, "fifo_plugin_path", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32777, 1613, "fifopost_shortcode", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32778, 1613, "fifo_plugin_url", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32779, 1613, "fifopost_textdomain", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32780, 1613, "fifopost_option", "/fade-in-fade-out-post-title.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32781, 1613, "fifopost_widget", "/fade-in-fade-out-post-title.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17948, 1613, "init", "'fifopost_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17949, 1613, "wp_enqueue_scripts", "'fifopost_add_javascript_files'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17950, 1613, "admin_menu", "'fifopost_add_to_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17951, 1613, "plugins_loaded", "'fifopost_widget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17952, 1613, "plugins_loaded", "'fifopost_textdomain'", 10, now(), now());

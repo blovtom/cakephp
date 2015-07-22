@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1839, "Genesis Widget Background", "4.1", "1.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36216, 1839, "wpstudio_deactivate_check", "/genesis-widget-background.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36217, 1839, "wpstudio_activation_check", "/genesis-widget-background.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36218, 1839, "wpstudio_register_widget", "/genesis-widget-background.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (36219, 1839, "wpstudio_name_scripts", "/inc/wpstudio-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217693, 1839, "Genesis_Widget_Background", "update", "/inc/wpstudio-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217694, 1839, "Genesis_Widget_Background", "wpstudio_admin_scripts_enqueue", "/inc/wpstudio-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217695, 1839, "Genesis_Widget_Background", "__construct", "/inc/wpstudio-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217696, 1839, "Genesis_Widget_Background", "widget", "/inc/wpstudio-widget-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (217697, 1839, "Genesis_Widget_Background", "form", "/inc/wpstudio-widget-class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20313, 1839, "admin_init", "'wpstudio_deactivate_check'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20314, 1839, "admin_enqueue_scripts", "array($this,'wpstudio_admin_scripts_enqueue')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20315, 1839, "wp_enqueue_scripts", "'wpstudio_name_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (20316, 1839, "widgets_init", "'wpstudio_register_widget'", 10, now(), now());

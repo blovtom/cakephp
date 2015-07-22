@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2727, "Mini Membership", "4.1.1", "1.0.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49387, 2727, "mm_hide_admin_bar_from_front_end", "/mini-membership.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49388, 2727, "mm_block_dashboard_access", "/mini-membership.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49389, 2727, "mini_membership_activate", "/mini-membership.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49390, 2727, "mini_membership_deactivate", "/mini-membership.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49391, 2727, "mm_widget_lang_init", "/mini-membership-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371703, 2727, "wp_mm_widget", "update", "/mini-membership-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371704, 2727, "wp_mm_widget", "form", "/mini-membership-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371705, 2727, "wp_mm_widget", "wp_mm_widget", "/mini-membership-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371706, 2727, "wp_mm_widget", "widget", "/mini-membership-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29627, 2727, "init", "'mm_block_dashboard_access'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29628, 2727, "init", "'mm_widget_lang_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29629, 2727, "widgets_init", "create_function('','return register_widget("wp_mm_widget");')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9828, 2727, "show_admin_bar", "'mm_hide_admin_bar_from_front_end'", 10, now(), now());

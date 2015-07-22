@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3979, "Sir Trevor WP", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69834, 3979, "stwp_modify_content", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69835, 3979, "stwp_check_admin_page", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69836, 3979, "enable_visual_editor", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69837, 3979, "disable_visual_editor", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69838, 3979, "stwp_activate", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69839, 3979, "wp_ajax_stwp_imgurl", "/sir-trevor-wp.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69840, 3979, "wp_ajax_stwp_nonce", "/sir-trevor-wp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506842, 3979, "_MarkdownExtra_TmpImpl", "__construct", "/lib_michelf_markdown/Markdown.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506843, 3979, "Markdown", "defaultTransform", "/lib_michelf_markdown/Markdown.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506844, 3979, "Markdown", "__construct", "/lib_michelf_markdown/Markdown.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (506845, 3979, "Markdown", "transform", "/lib_michelf_markdown/Markdown.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42910, 3979, "profile_update", "'disable_visual_editor'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42911, 3979, "wp_ajax_stwp_nonce", "'wp_ajax_stwp_nonce'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42912, 3979, "user_register", "'disable_visual_editor'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42913, 3979, "wp_ajax_stwp_imgurl", "'wp_ajax_stwp_imgurl'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42914, 3979, "admin_enqueue_scripts", "'stwp_check_admin_page'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14506, 3979, "the_content", "'stwp_modify_content'", 10, now(), now());

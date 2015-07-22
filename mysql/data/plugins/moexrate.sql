@@ -1,0 +1,35 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2765, "MoExRate", "4.1", "1.0", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50252, 2765, "moexrate_deactivation", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50253, 2765, "moexrate_custom_url_handler", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50254, 2765, "moex_load2", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50255, 2765, "moex_cache_get", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50256, 2765, "moexrate_activation", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50257, 2765, "moexrate_do_this_hourly", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50258, 2765, "moex_cache_delete", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50259, 2765, "moexrate_custom_url_handler", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50260, 2765, "moex_cache_set", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50261, 2765, "moex_update2", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50262, 2765, "moex_cache_delete", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50263, 2765, "moex_cache_set", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50264, 2765, "moexrate_deactivation", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50265, 2765, "moex_update2", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50266, 2765, "moexrate_do_this_hourly", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50267, 2765, "moex_enqueue_style", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50268, 2765, "moex_cache_get", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50269, 2765, "register_moexrate_script", "/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50270, 2765, "moex_load2", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50271, 2765, "register_moexrate_script", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50272, 2765, "moexrate_activation", "/img/moexrate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50273, 2765, "moex_enqueue_style", "/moexrate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379766, 2765, "Moex_Widget", "widget", "/img/moexrate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379767, 2765, "Moex_Widget", "widget", "/moexrate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379768, 2765, "Moex_Widget", "__construct", "/img/moexrate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (379769, 2765, "Moex_Widget", "__construct", "/moexrate.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29978, 2765, "parse_request", "'moexrate_custom_url_handler'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29979, 2765, "init", "'register_moexrate_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29980, 2765, "widgets_init", "function ()
+{
+	register_widget('MoEx_Widget');
+}", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29981, 2765, "wp_enqueue_scripts", "'moex_enqueue_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29982, 2765, "moexrate_hourly_event", "'moexrate_do_this_hourly'", 10, now(), now());

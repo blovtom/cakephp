@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2962, "Notifyit", "4.1", "1.0.0", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392131, 2962, "NotifyItAdmin", "display_notify_structure", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392132, 2962, "NotifyFront", "init", "/class.frontend.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392133, 2962, "NotifyItAdmin", "notify_section_cb", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392134, 2962, "NotifyItAdmin", "notify_bg_setting", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392135, 2962, "NotifyFront", "add_style_frontend", "/class.frontend.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392136, 2962, "NotifyItAdmin", "register_settings_and_fields", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392137, 2962, "NotifyFront", "add_style_script_frontend", "/class.frontend.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392138, 2962, "NotifyItAdmin", "notify_effect_setting", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392139, 2962, "NotifyItAdmin", "notify_delay_setting", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392140, 2962, "NotifyItAdmin", "notify_msg_setting", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392141, 2962, "NotifyItAdmin", "init", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392142, 2962, "NotifyItAdmin", "validate_settings", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392143, 2962, "NotifyItAdmin", "add_notify_in_menu", "/admin/notifyit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392144, 2962, "NotifyItAdmin", "add_css_in_admin_panel", "/admin/notifyit-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32366, 2962, "wp_head", "array('NotifyFront','add_style_frontend')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32367, 2962, "admin_menu", "array('NotifyItAdmin','add_notify_in_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32368, 2962, "init", "array('NotifyFront','init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32369, 2962, "init", "array('NotifyItAdmin','init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32370, 2962, "admin_init", "array('NotifyItAdmin','register_settings_and_fields')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32371, 2962, "admin_head", "array('NotifyItAdmin','add_css_in_admin_panel')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32372, 2962, "wp_enqueue_scripts", "array('NotifyFront','add_style_script_frontend')", 10, now(), now());

@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2551, "Plugin Name", "4.1.0", "1.0.0", "3.5.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47182, 2551, "lblqAddOptionPage", "/lock-by-ldap-query.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47183, 2551, "lblqAddMetaBox", "/lock-by-ldap-query.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47184, 2551, "lblqRenderMetaBox", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352845, 2551, "LockByLDAPQuery", "lblqGetAdminOptions", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352846, 2551, "LockByLDAPQuery", "LockByLDAPQuery", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352847, 2551, "LockByLDAPQuery", "__construct", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352848, 2551, "LockByLDAPQuery", "lblqUpdatePost", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352849, 2551, "LockByLDAPQuery", "lblqVerifyQuery", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352850, 2551, "LockByLDAPQuery", "lblqPrintAdminPage", "/lock-by-ldap-query.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (352851, 2551, "LockByLDAPQuery", "lblqSettingsLink", "/lock-by-ldap-query.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27594, 2551, "admin_menu", "'lblqAddOptionPage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27595, 2551, "add_meta_boxes", "'lblqAddMetaBox'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27596, 2551, "activate_lockByLDAPQuery/lock-by-ldap-query.php", "array(&$svvsd_lockByLDAPQuery,'__construct')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27597, 2551, "save_post", "array(&$svvsd_lockByLDAPQuery,'lblqUpdatePost')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9189, 2551, "the_content", "array(&$svvsd_lockByLDAPQuery,'lblqVerifyQuery')", 99, now(), now());

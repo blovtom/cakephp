@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3760, "SeCWurity WP Login", "4.1", "2", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488211, 3760, "SCWL", "ayarlar", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488212, 3760, "SCWL", "url_kontrol", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488213, 3760, "SCWL", "select_box_pasif", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488214, 3760, "SCWL", "biz_kimiz", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488215, 3760, "SCWL", "login_form", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488216, 3760, "SCWL", "ac", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488217, 3760, "SCWL", "sifre_kontrol", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488218, 3760, "SCWL", "admin", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488219, 3760, "SCWL", "login_script", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488220, 3760, "SCWL", "admin_style", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488221, 3760, "SCWL", "__construct", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488222, 3760, "SCWL", "ayarlar_butonu", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488223, 3760, "SCWL", "admin_script", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488224, 3760, "SCWL", "plugin_team", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488225, 3760, "SCWL", "t_karakter_temizle", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488226, 3760, "SCWL", "login_style", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488227, 3760, "SCWL", "kapat", "/secwurity-wp-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (488228, 3760, "SCWL", "select_box_aktif", "/secwurity-wp-login.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40765, 3760, "admin_init", "array('SCWL','admin_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40766, 3760, "login_head", "array('SCWL','url_kontrol')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40767, 3760, "login_head", "array('SCWL','login_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40768, 3760, "login_form", "array('SCWL','login_form')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40769, 3760, "admin_init", "array('SCWL','admin_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40770, 3760, "login_enqueue_scripts", "array('SCWL','login_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40771, 3760, "admin_menu", "array('SCWL','admin')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13906, 3760, "authenticate", "array('SCWL','sifre_kontrol')", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4646, "Viavi WP Testimonials", "4.0.1", "1.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81290, 4646, "pwd_add_WordPress_Testimonials", "/cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81291, 4646, "tm_pagination", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81292, 4646, "WordPress_Testimonials_scripts", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81293, 4646, "metabox_save", "/cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81294, 4646, "add_custom_post_menu", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81295, 4646, "testimonails_meta_box", "/cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81296, 4646, "getTestimonials", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81297, 4646, "WordPress_Testimonials_Admin_scripts", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81298, 4646, "pwd_add_custom_box", "/cpt.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81299, 4646, "viavi_testimonial_themes", "/WordPress_Testimonials.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81300, 4646, "slidingTestimonials", "/WordPress_Testimonials.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49888, 4646, "admin_enqueue_scripts", "'WordPress_Testimonials_Admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49889, 4646, "wp_enqueue_scripts", "'WordPress_Testimonials_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49890, 4646, "admin_menu", "'add_custom_post_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49891, 4646, "init", "'pwd_add_WordPress_Testimonials'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49892, 4646, "save_post", "'metabox_save'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49893, 4646, "add_meta_boxes", "'pwd_add_custom_box'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16728, 4646, "widget_text", "'do_shortcode'", 10, now(), now());

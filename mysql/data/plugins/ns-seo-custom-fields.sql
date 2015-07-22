@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2967, "NS Custom Fields for WordPress SEO", "4.0.1", "trunk", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392270, 2967, "NS_SEO_Custom_Fields", "register_settings_page", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392271, 2967, "NS_SEO_Custom_Fields", "plugin_image", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392272, 2967, "NS_SEO_Custom_Fields", "__construct", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392273, 2967, "NS_SEO_Custom_Fields", "add_fields_to_analysis", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392274, 2967, "NS_SEO_Custom_Fields", "setup_plugin", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392275, 2967, "NS_SEO_Custom_Fields", "add_javascript", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392276, 2967, "NS_SEO_Custom_Fields", "sanitize_settings_field", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392277, 2967, "NS_SEO_Custom_Fields", "admin_assets", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392278, 2967, "NS_SEO_Custom_Fields", "admin_notices", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392279, 2967, "NS_SEO_Custom_Fields", "show_settings_field", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392280, 2967, "NS_SEO_Custom_Fields", "register_settings_field", "/ns-seo-custom-fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (392281, 2967, "NS_SEO_Custom_Fields", "show_settings_page", "/ns-seo-custom-fields.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32412, 2967, "admin_enqueue_scripts", "array($this,'admin_assets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32413, 2967, "network_admin_notices", "array($this,'admin_notices')", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32414, 2967, "admin_print_footer_scripts", "array($this,'add_javascript')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32415, 2967, "admin_menu", "array($this,'register_settings_page')", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32416, 2967, "admin_notices", "array($this,'admin_notices')", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32417, 2967, "plugins_loaded", "array($this,'setup_plugin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (32418, 2967, "admin_init", "array($this,'register_settings_field')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10835, 2967, "wpseo_pre_analysis_post_content", "array($this,'add_fields_to_analysis')", 10, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5112, "wp Custom Post Field", "4.0", NULL, "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88300, 5112, "wcp_plugin_menu", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88301, 5112, "wcp_check_return", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88302, 5112, "wcp_delete_post_type", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88303, 5112, "wcp_help_style", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88304, 5112, "wcp_manage_wcp", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88305, 5112, "wcp_settings", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88306, 5112, "wcp_add_new", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88307, 5112, "get_disp_boolean", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88308, 5112, "wcp_register_settings", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88309, 5112, "wcp_footer", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88310, 5112, "disp_boolean", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88311, 5112, "wcp_deactivation", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88312, 5112, "wcp_load_textdomain", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88313, 5112, "wcp_wp_add_styles", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88314, 5112, "my_custom_post_feature1", "/custom.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88315, 5112, "wcp_create_custom_post_types", "/custom.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55400, 5112, "admin_head", "'wcp_help_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55401, 5112, "init", "'wcp_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55402, 5112, "admin_menu", "'wcp_plugin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55403, 5112, "admin_head", "'wcp_wp_add_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55404, 5112, "admin_init", "'wcp_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55405, 5112, "admin_init", "'wcp_delete_post_type'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55406, 5112, "init", "'wcp_create_custom_post_types'", 0, now(), now());

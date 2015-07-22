@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1741, "Plugin Name", "4.1", "1.0.1", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209698, 1741, "FormDesigner", "adminMenu", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209699, 1741, "FormDesigner", "renderPartial", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209700, 1741, "FormDesigner", "popup", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209701, 1741, "FormDesigner", "isEmpty", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209702, 1741, "FormDesigner", "render", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209703, 1741, "FormDesigner", "mceButtons", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209704, 1741, "FormDesigner", "replaceTags", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209705, 1741, "FormDesigner", "__construct", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209706, 1741, "FormDesigner", "signUp", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209707, 1741, "FormDesigner", "handleContentTags", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209708, 1741, "FormDesigner", "mceRegistr", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209709, 1741, "FormDesigner", "showIframe", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209710, 1741, "FormDesigner", "uninstall", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209711, 1741, "FormDesigner", "signIn", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209712, 1741, "FormDesigner", "errorSummary", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209713, 1741, "FormDesigner", "loadResources", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209714, 1741, "FormDesigner", "httpRequest", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209715, 1741, "FormDesigner", "mainContent", "/class.formdesigner.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (209716, 1741, "FormDesigner", "login", "/class.formdesigner.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19145, 1741, "admin_enqueue_scripts", "array($this,'loadResources')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19146, 1741, "admin_menu", "array($this,'adminMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19147, 1741, "wp_ajax_formdesigner_popup", "array($this,'popup')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6331, 1741, "mce_buttons", "array($this,'mceButtons')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6332, 1741, "the_content", "array($this,'handleContentTags')", 9, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6333, 1741, "mce_external_plugins", "array($this,'mceRegistr')", 10, now(), now());

@@ -1,0 +1,9 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4484, "Tumblr Blog Display Widget", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77851, 4484, "register_TumblrBlogDisplayWidget", "/tumblr-blog-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556831, 4484, "TumblrBlogDisplayWidget", "widget", "/tumblr-blog-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556832, 4484, "TumblrBlogDisplayWidget", "form", "/tumblr-blog-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556833, 4484, "TumblrBlogDisplayWidget", "register_plugin_styles_tumblr_blog_display_widget", "/tumblr-blog-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556834, 4484, "TumblrBlogDisplayWidget", "__construct", "/tumblr-blog-display-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556835, 4484, "TumblrBlogDisplayWidget", "trimWords", "/tumblr-blog-display-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47855, 4484, "widgets_init", "'register_TumblrBlogDisplayWidget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47856, 4484, "wp_enqueue_scripts", "array($this,'register_plugin_styles_tumblr_blog_display_widget')", 10, now(), now());

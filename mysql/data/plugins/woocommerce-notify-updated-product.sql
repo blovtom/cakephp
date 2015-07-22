@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4907, "Woocommerce Notify Updated Product", "4.1.1", "1.0", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623680, 4907, "WooNotifyUpdatedProduct_Plugin", "woonotifyupdatedproduct_settings", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623681, 4907, "WooNotifyUpdatedProduct_Plugin", "init", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623682, 4907, "WooNotifyUpdatedProduct_Plugin", "wp_init", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623683, 4907, "WooNotifyUpdatedProduct_Plugin", "admin_notices", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623684, 4907, "WooNotifyUpdatedProduct", "sendEmails", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623685, 4907, "WooNotifyUpdatedProduct_Plugin", "uninstall", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623686, 4907, "WooNotifyUpdatedProduct_Plugin", "admin_menu", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623687, 4907, "WooNotifyUpdatedProduct", "woocommerce_product_write_panel_tabs", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623688, 4907, "WooNotifyUpdatedProduct", "init", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623689, 4907, "WooNotifyUpdatedProduct_Plugin", "deactivate", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623690, 4907, "WooNotifyUpdatedProduct", "get_customers_bought_product", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623691, 4907, "WooNotifyUpdatedProduct", "woocommerce_process_product_meta", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623692, 4907, "WooNotifyUpdatedProduct_Plugin", "register_woonotifyupdatedproduct_settings", "/woo-notify-updated-product.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623693, 4907, "WooNotifyUpdatedProduct", "notifyUsers", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623694, 4907, "WooNotifyUpdatedProduct", "woocommerce_product_write_panels", "/core/class-woonotifyupdatedproduct.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623695, 4907, "WooNotifyUpdatedProduct_Plugin", "activate", "/woo-notify-updated-product.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52892, 4907, "woocommerce_product_write_panel_tabs", "array(__CLASS__,'woocommerce_product_write_panel_tabs')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52893, 4907, "admin_init", "array(__CLASS__,'register_woonotifyupdatedproduct_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52894, 4907, "admin_menu", "array(__CLASS__,'admin_menu')", 40, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52895, 4907, "woocommerce_process_product_meta", "array(__CLASS__,'woocommerce_process_product_meta')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52896, 4907, "woocommerce_product_write_panels", "array(__CLASS__,'woocommerce_product_write_panels')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52897, 4907, "admin_notices", "array(__CLASS__,'admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52898, 4907, "init", "array(__CLASS__,'wp_init')", 10, now(), now());

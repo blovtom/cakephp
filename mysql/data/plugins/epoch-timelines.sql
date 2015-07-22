@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1508, "Plugin Name", "4.1", "1.0.1", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147552, 1508, "Class_Timeline_Timelines", "render_timeline_meta_box_contents", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147553, 1508, "Class_Timeline_Events", "et_add_timeline_select_meta_box", "/inc/class-timeline-events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147554, 1508, "Class_Timeline_Timelines", "et_enqueue_scripts_styles", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147555, 1508, "Class_Timeline_Timelines", "instance", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147556, 1508, "Class_Timeline_Timelines", "et_save_timeline", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147557, 1508, "Class_Timeline_Timelines", "render_timeline_shortcode", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147558, 1508, "Class_Timeline_Timelines", "ajax_update_event_order", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147559, 1508, "Class_Timeline_Events", "render_mb_timeline_select_contents", "/inc/class-timeline-events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147560, 1508, "Class_Timeline_Timelines", "__construct", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147561, 1508, "Class_Timeline_Events", "__construct", "/inc/class-timeline-events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147562, 1508, "Class_Timeline_Timelines", "et_enqueue_admin_scripts_styles", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147563, 1508, "Class_Timeline_Events", "instance", "/inc/class-timeline-events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147564, 1508, "Class_Timeline_Timelines", "et_add_timeline_meta_box", "/inc/class-timeline-timelines.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147565, 1508, "Class_Timeline_Events", "create_cpt_et_events", "/inc/class-timeline-events.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (147566, 1508, "Class_Timeline_Timelines", "create_cpt_et_timelines", "/inc/class-timeline-timelines.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16574, 1508, "save_post", "array($this,'et_save_timeline')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16575, 1508, "init", "array($this,'create_cpt_et_events')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16576, 1508, "init", "array($this,'create_cpt_et_timelines')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16577, 1508, "wp_ajax_update_event_order", "array($this,'ajax_update_event_order')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16578, 1508, "wp_enqueue_scripts", "array($this,'et_enqueue_scripts_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16579, 1508, "add_meta_boxes", "array($this,'et_add_timeline_meta_box')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16580, 1508, "admin_enqueue_scripts", "array($this,'et_enqueue_admin_scripts_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16581, 1508, "add_meta_boxes", "array($this,'et_add_timeline_select_meta_box')", 10, now(), now());

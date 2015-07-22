@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1980, "Graceful Pull-Quotes", "4.1", "2.5", "2.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314942, 1980, "jspullquotes", "admin_head", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314943, 1980, "jspullquotes", "p_e", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314944, 1980, "jspullquotes", "settings_page", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314945, 1980, "jspullquotes", "add_settings_page", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314946, 1980, "jspullquotes", "p__", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314947, 1980, "jspullquotes", "set_defaults", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314948, 1980, "jspullquotes", "get_options", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314949, 1980, "jspullquotes", "add_ozh_adminmenu_icon", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314950, 1980, "jspullquotes", "get_plugin_data", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314951, 1980, "jspullquotes", "locate_template_uri", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314952, 1980, "jspullquotes", "get_pqcss", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314953, 1980, "jspullquotes", "jspullquotes", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314954, 1980, "jspullquotes", "style_basename", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314955, 1980, "jspullquotes", "checkflag", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314956, 1980, "jspullquotes", "checktext", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314957, 1980, "jspullquotes", "filter_plugin_actions", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314958, 1980, "jspullquotes", "wp_head", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314959, 1980, "jspullquotes", "admin_footer", "/graceful-pull-quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (314960, 1980, "jspullquotes", "checkcombo", "/graceful-pull-quotes.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21748, 1980, "in_admin_footer", "array(&$this,'admin_footer')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21749, 1980, "admin_menu", "array(&$this,'add_settings_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21750, 1980, "wp_head", "array(&$this,'wp_head')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7180, 1980, "plugin_action_links", "array(&$this,'filter_plugin_actions')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7181, 1980, "ozh_adminmenu_icon", "array(&$this,'add_ozh_adminmenu_icon')", 10, now(), now());

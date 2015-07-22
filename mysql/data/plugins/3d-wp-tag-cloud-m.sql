@@ -1,0 +1,8 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (12, "3D WP Tag Cloud-M", "4.1.1", "trunk", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (157, 12, "wpTagCanvasMLoad", "/3D.WP.Tag.Cloud.M.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (931, 12, "wpTagCanvasWidgetM", "form", "/3D.WP.Tag.Cloud.M.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (932, 12, "wpTagCanvasWidgetM", "wpTagCanvasWidgetM", "/3D.WP.Tag.Cloud.M.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (933, 12, "wpTagCanvasWidgetM", "widget", "/3D.WP.Tag.Cloud.M.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (934, 12, "wpTagCanvasWidgetM", "update", "/3D.WP.Tag.Cloud.M.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (124, 12, "widgets_init", "'wpTagCanvasMLoad'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (24, 12, "pre_option_link_manager_enabled", "'__return_true'", 10, now(), now());

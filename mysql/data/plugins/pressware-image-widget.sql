@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3343, "Pressware Image Widget", "4.1", "1.2.0", "3.9.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (60724, 3343, "pressware_run_image_widget", "/pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446544, 3343, "Pressware_Image_Widget", "form", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446545, 3343, "Pressware_Image_Widget", "__construct", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446546, 3343, "Pressware_Image_Widget", "enqueue_widget_styles", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446547, 3343, "Pressware_Image_Widget", "enqueue_admin_scripts", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446548, 3343, "Pressware_Image_Widget", "update", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446549, 3343, "Pressware_Image_Widget", "text_domain", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446550, 3343, "Pressware_Image_Widget", "widget", "/includes/class-pressware-image-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (446551, 3343, "Pressware_Image_Widget", "enqueue_admin_styles", "/includes/class-pressware-image-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36868, 3343, "admin_enqueue_scripts", "array($this,'enqueue_admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36869, 3343, "init", "array($this,'text_domain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36870, 3343, "admin_enqueue_scripts", "array($this,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36871, 3343, "wp_enqueue_scripts", "array($this,'enqueue_widget_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36872, 3343, "widgets_init", "create_function('','register_widget( "Pressware_Image_Widget" );')", 10, now(), now());

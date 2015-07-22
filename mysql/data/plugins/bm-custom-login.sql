@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (570, "Plugin Name", "4.1", NULL, "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53970, 570, "BMCustomLogin", "custom_login_admin_footer_text", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53971, 570, "BMCustomLogin", "admin_foot_script", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53972, 570, "BMCustomLogin", "custom_login_url", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53973, 570, "BMCustomLogin", "form_color", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53974, 570, "BMCustomLogin", "custom_login_title", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53975, 570, "BMCustomLogin", "form_text", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53976, 570, "BMCustomLogin", "form_image", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53977, 570, "BMCustomLogin", "enqueue_color_picker", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53978, 570, "BMCustomLogin", "custom_login_options", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53979, 570, "BMCustomLogin", "custom_login_init", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53980, 570, "BMCustomLogin", "form_select", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53981, 570, "BMCustomLogin", "__construct", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53982, 570, "BMCustomLogin", "custom_login_admin_add_page", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53983, 570, "BMCustomLogin", "custom_login_validate", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53984, 570, "BMCustomLogin", "custom_login", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53985, 570, "BMCustomLogin", "custom_login_get_options", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53986, 570, "BMCustomLogin", "sanitize_hex_color", "/bm-custom-login.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (53987, 570, "BMCustomLogin", "custom_login_section_validate", "/bm-custom-login.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5655, 570, "admin_footer", "array($this,'admin_foot_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5656, 570, "login_head", "array($this,'custom_login')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5657, 570, "admin_init", "array($this,'custom_login_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5658, 570, "admin_enqueue_scripts", "array($this,'enqueue_color_picker')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5659, 570, "admin_menu", "array($this,'custom_login_admin_add_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1891, 570, "login_headertitle", "array($this,'custom_login_title')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1892, 570, "admin_footer_text", "array($this,'custom_login_admin_footer_text')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1893, 570, "login_headerurl", "array($this,'custom_login_url')", 10, now(), now());

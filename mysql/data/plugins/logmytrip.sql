@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2565, "LogMyTrip", "4.1", "1.9", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47341, 2565, "add_lmt_div", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47342, 2565, "cleancoordinate", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47343, 2565, "logmytrips", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47344, 2565, "location_inner_custom_box", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47345, 2565, "location_add_custom_box", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47346, 2565, "get_lmtmeta", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47347, 2565, "get_images", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47348, 2565, "location_save_postdata", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47349, 2565, "reverseGeocode", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47350, 2565, "location_old_custom_box", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47351, 2565, "logtrips", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47352, 2565, "displaylocation", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47353, 2565, "adminhead", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47354, 2565, "get_latlngs", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47355, 2565, "logtripmap", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47356, 2565, "add_lmt_support", "/logmytrip.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (47357, 2565, "google_maps", "/logmytrip.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27784, 2565, "admin_head-post-new.php", "'adminhead'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27785, 2565, "admin_menu", "'location_add_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27786, 2565, "wp_head", "'add_lmt_support'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27787, 2565, "save_post", "'location_save_postdata'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27788, 2565, "wp_footer", "'add_lmt_div'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27789, 2565, "dbx_post_advanced", "'location_old_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27790, 2565, "admin_head-post.php", "'adminhead'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9232, 2565, "the_content", "'displaylocation'", 5, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3976, "SINM Nice Tab", "4.1.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69810, 3976, "sinm_awesome_tab_main_files", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69811, 3976, "main_sinm_awesome_jquery_from_wordpress", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69812, 3976, "sinm_tab_title_shortcode", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69813, 3976, "sinm_awesome_custom_post", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69814, 3976, "sinm_awesome_tab_main_files", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69815, 3976, "sinm_wordpress_tab_content_shortcode", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69816, 3976, "sinm_awesome_post_taxonomy", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69817, 3976, "sinm_wordpress_combind_tab", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69818, 3976, "main_sinm_awesome_jquery_from_wordpress", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69819, 3976, "sinm_awesome_custom_post", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69820, 3976, "sinm_tab_title_shortcode", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69821, 3976, "sinm_awesome_post_taxonomy", "/sinm-nice-tab/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69822, 3976, "sinm_wordpress_tab_content_shortcode", "/awesome-tab.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (69823, 3976, "sinm_wordpress_combind_tab", "/awesome-tab.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42898, 3976, "init", "'sinm_awesome_custom_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42899, 3976, "init", "'sinm_awesome_post_taxonomy'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42900, 3976, "init", "'main_sinm_awesome_jquery_from_wordpress'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42901, 3976, "init", "'sinm_awesome_tab_main_files'", 10, now(), now());

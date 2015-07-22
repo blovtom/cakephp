@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2725, "Minecraft Online Players Widget", "4.1", "trunk", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49383, 2725, "widget_mou_action_links", "/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49384, 2725, "widget_mou_link", "/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49385, 2725, "widget_mou", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371659, 2725, "MinecraftQuery", "GetInfo", "/lib/MinecraftQuery.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371660, 2725, "MinecraftQuery", "Connect", "/lib/MinecraftQuery.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371661, 2725, "widget_mou", "widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371662, 2725, "widget_mou", "update", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371663, 2725, "widget_mou", "widget_mou", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371664, 2725, "MinecraftQuery", "GetPlayers", "/lib/MinecraftQuery.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (371665, 2725, "widget_mou", "form", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29625, 2725, "widgets_init", "'widget_mou'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9826, 2725, "plugin_row_meta", "'widget_mou_link'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9827, 2725, "plugin_action_links", "'widget_mou_action_links'", 10, now(), now());

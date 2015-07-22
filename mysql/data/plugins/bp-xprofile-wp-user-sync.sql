@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (624, "BP XProfile WordPress User Sync", "4.0", "0.5.2", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55193, 624, "BpXProfileWordPressUserSync", "intercept_wp_profile_sync", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55194, 624, "BpXProfileWordPressUserSync", "intercept_wp_fb_profile_sync", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55195, 624, "BpXProfileWordPressUserSync", "register_hooks", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55196, 624, "BpXProfileWordPressUserSync", "activate", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55197, 624, "BpXProfileWordPressUserSync", "intercept_profile_query_args", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55198, 624, "BpXProfileWordPressUserSync", "translation", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55199, 624, "BpXProfileWordPressUserSync", "__construct", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55200, 624, "BpXProfileWordPressUserSync", "deactivate", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55201, 624, "BpXProfileWordPressUserSync", "intercept_profile_query", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55202, 624, "BpXProfileWordPressUserSync", "intercept_wp_user_update", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55203, 624, "BpXProfileWordPressUserSync", "intercept_profile_fields_query", "/bp-xprofile-wp-user-sync.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6164, 624, "bp_core_activated_user", "array($this,'intercept_wp_profile_sync')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6165, 624, "profile_update", "array($this,'intercept_wp_user_update')", 30, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6166, 624, "plugins_loaded", "array($this,'translation')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6167, 624, "xprofile_updated_profile", "array($this,'intercept_wp_profile_sync')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6168, 624, "bp_init", "array($this,'register_hooks')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6169, 624, "bp_core_signup_user", "array($this,'intercept_wp_profile_sync')", 9, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6170, 624, "user_register", "array($this,'intercept_wp_user_update')", 30, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2077, 624, "bp_has_profile", "array($this,'intercept_profile_query')", 30, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2078, 624, "wpfb_xprofile_fields_received", "array($this,'intercept_wp_fb_profile_sync')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2079, 624, "bp_xprofile_get_groups", "array($this,'intercept_profile_fields_query')", 30, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2080, 624, "bp_after_has_profile_parse_args", "array($this,'intercept_profile_query_args')", 30, now(), now());

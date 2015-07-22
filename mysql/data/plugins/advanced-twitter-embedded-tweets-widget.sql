@@ -1,0 +1,6 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (182, "Advanced Twitter Embedded Tweets Widget", "4.0", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (2610, 182, "register_sparx_advancedTwitterEmbeddedTweetsWidget", "/advancedTwitterEmbeddedTweets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9957, 182, "advancedTwitterEmbeddedTweetsWidget", "widget", "/advancedTwitterEmbeddedTweets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9958, 182, "advancedTwitterEmbeddedTweetsWidget", "form", "/advancedTwitterEmbeddedTweets.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (9959, 182, "advancedTwitterEmbeddedTweetsWidget", "__construct", "/advancedTwitterEmbeddedTweets.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1529, 182, "widgets_init", "'register_sparx_advancedTwitterEmbeddedTweetsWidget'", 10, now(), now());

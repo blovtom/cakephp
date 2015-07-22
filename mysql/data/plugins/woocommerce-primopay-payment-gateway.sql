@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4931, "Plugin Name", "4.1.0", "4.3", "3.8.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85168, 4931, "woocommerce_add_primopay_gateway", "/woocommerce-primopay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85169, 4931, "woocommerce_primopay_init", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625793, 4931, "WC_Primopay", "admin_options", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625794, 4931, "WC_Primopay", "process_payment", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625795, 4931, "WC_Primopay", "payment_fields", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625796, 4931, "WC_Primopay", "init_form_fields", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625797, 4931, "WC_Primopay", "__construct", "/woocommerce-primopay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (625798, 4931, "WC_Primopay", "validate_fields", "/woocommerce-primopay.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53148, 4931, "plugins_loaded", "'woocommerce_primopay_init'", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18189, 4931, "woocommerce_payment_gateways", "'woocommerce_add_primopay_gateway'", 10, now(), now());

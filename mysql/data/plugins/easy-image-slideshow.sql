@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1359, "Easy image slideshow", "4.1", "5.4", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27256, 1359, "easyimage_plugin_url", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27257, 1359, "easyimage_add_javascript_files", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27258, 1359, "easyimage_install", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27259, 1359, "easyimage", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27260, 1359, "easyimage_widget", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27261, 1359, "easyimage_shortcode", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27262, 1359, "easyimages", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27263, 1359, "easyimage_textdomain", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27264, 1359, "easyimage_control", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27265, 1359, "easyimage_add_to_menu", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27266, 1359, "easyimage_init", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27267, 1359, "easyimage_deactivation", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27268, 1359, "easyimage_admin_options", "/easy-image-slideshow.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27269, 1359, "easyimage_plugin_path", "/easy-image-slideshow.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15153, 1359, "plugins_loaded", "'easyimage_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15154, 1359, "wp_enqueue_scripts", "'easyimage_add_javascript_files'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15155, 1359, "admin_menu", "'easyimage_add_to_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (15156, 1359, "plugins_loaded", "'easyimage_init'", 10, now(), now());

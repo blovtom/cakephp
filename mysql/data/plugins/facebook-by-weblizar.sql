@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1585, "Facebook", "4.1", "1.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32559, 1585, "FacebookTranslation", "/facebook-by-weblizar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32560, 1585, "WeblizarFacebookMenu", "/facebook-by-weblizar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32561, 1585, "WeblizarFacebookWidget", "/facebook-by-weblizar.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32562, 1585, "FacebookLikeBox", "/facebook-by-weblizar-short-code.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32563, 1585, "facebooky_by_weblizar_page_function", "/facebook-by-weblizar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195704, 1585, "WeblizarFacebook", "widget", "/facebook-by-weblizar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195705, 1585, "WeblizarFacebook", "__construct", "/facebook-by-weblizar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195706, 1585, "WeblizarFacebook", "form", "/facebook-by-weblizar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195707, 1585, "WeblizarFacebook", "update", "/facebook-by-weblizar.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17791, 1585, "widgets_init", "'WeblizarFacebookWidget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17792, 1585, "plugins_loaded", "'FacebookTranslation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17793, 1585, "plugins_loaded", "'GetReadyFacebookTranslation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17794, 1585, "admin_menu", "'WeblizarFacebookMenu'", 10, now(), now());

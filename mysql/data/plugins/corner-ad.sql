@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1036, "Corner Ad", "4.1", "1.0.1", "3.0.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21476, 1036, "corner_ad_settings_page_list", "/includes/admin_functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21477, 1036, "corner_ad_new_blog", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21478, 1036, "corner_ad_get_images", "/includes/admin_functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21479, 1036, "corner_ad_install", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21480, 1036, "corner_ad_replace_shortcode", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21481, 1036, "corner_ad_media_button", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21482, 1036, "corner_ad_settings_page", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21483, 1036, "corner_ad_admin_init", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21484, 1036, "corner_ad_settings_page_form", "/includes/admin_functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21485, 1036, "corner_ad_init", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21486, 1036, "corner_ad_settings_menu", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21487, 1036, "_corner_ad_install", "/corner-ad.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21488, 1036, "corner_ad_links", "/corner-ad.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11425, 1036, "wpmu_new_blog", "'corner_ad_new_blog'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11426, 1036, "media_buttons", "'corner_ad_media_button'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11427, 1036, "admin_init", "'corner_ad_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11428, 1036, "admin_menu", "'corner_ad_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11429, 1036, "init", "'corner_ad_init'", 10, now(), now());

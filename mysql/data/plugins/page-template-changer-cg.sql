@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3081, "Plugin Name", "4.3", "0.1.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55643, 3081, "template_page_time_check", "/page-template-changer-cg.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55644, 3081, "isTimeBetween", "/page-template-changer-cg.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55645, 3081, "customize_page_template_time_check", "/page-template-changer-cg.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (403167, 3081, "Pages_Dropdown_Custom_Control", "render_content", "/page-template-changer-cg.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (403168, 3081, "Hours_Dropdown_Custom_Control", "render_content", "/page-template-changer-cg.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (403169, 3081, "Minutes_Dropdown_Custom_Control", "render_content", "/page-template-changer-cg.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (403170, 3081, "Templates_Dropdown_Custom_Control", "render_content", "/page-template-changer-cg.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (403171, 3081, "Timezones_Dropdown_Custom_Control", "render_content", "/page-template-changer-cg.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33773, 3081, "customize_register", "'customize_page_template_time_check'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11266, 3081, "template_include", "'template_page_time_check'", 10, now(), now());

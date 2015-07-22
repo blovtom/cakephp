@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1721, "Food Business Gross Profit Calculator Plugin", "4.1", "1.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207680, 1721, "SCCPTRecipe", "register_screcipe_taxonomies", "/includes/CPT_Recipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207681, 1721, "SCRecipeHelper", "getDbSCRecipeArray", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207682, 1721, "SCRecipeHelper", "screcipe_action", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207683, 1721, "SCRecipeHelper", "__construct", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207684, 1721, "SCRecipeHelper", "updateTotalRecipePrices", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207685, 1721, "SCRecipe", "get_plugin_uri", "/sc-recipe-calc.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207686, 1721, "SCRecipeHelper", "screcipe_update", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207687, 1721, "SCCPTRecipe", "__construct", "/includes/CPT_Recipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207688, 1721, "SCRecipeHelper", "getDbSCRecipeSettingArray", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207689, 1721, "SCRecipe", "__construct", "/sc-recipe-calc.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207690, 1721, "SCCPTRecipe", "register_cpt_screcipe", "/includes/CPT_Recipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207691, 1721, "SCRecipeHelper", "screcipe_add", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207692, 1721, "SCRecipeLoadScripts", "include_screcipe_css", "/includes/SCRecipeCssJsScripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207693, 1721, "SCRecipeLoadScripts", "__construct", "/includes/SCRecipeCssJsScripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207694, 1721, "SCRecipeHelper", "updateSCRecipeSetting", "/includes/SCRecipeHelper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207695, 1721, "SCCPTRecipe", "screcipe_content", "/includes/CPT_Recipe.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207696, 1721, "SCRecipe", "get_plugin_url", "/sc-recipe-calc.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (207697, 1721, "SCRecipeHelper", "screcipe_remove", "/includes/SCRecipeHelper.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18889, 1721, "wp_ajax_nopriv_screcipe_action", "array($this,'screcipe_action')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18890, 1721, "init", "array($this,'register_cpt_screcipe')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18891, 1721, "screcipe_action", "array($this,'screcipe_action')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18892, 1721, "wp_ajax_screcipe_action", "array($this,'screcipe_action')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18893, 1721, "wp_enqueue_scripts", "array($this,'include_screcipe_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18894, 1721, "init", "array($this,'register_screcipe_taxonomies')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6235, 1721, "the_content", "array($this,'screcipe_content')", 10, now(), now());

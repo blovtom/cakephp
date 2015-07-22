@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2313, "IT's Tracking Code", "4.1", "1.0.0", "2.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42670, 2313, "tracking_code_add_settings_link", "/it-tracking-code.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332589, 2313, "Tracking_Code_PublicPages", "add_hooks", "/includes/class-tracking-code-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332590, 2313, "Tracking_Code_AdminPages", "tracking_code_page", "/includes/admin/class-tracking-code-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332591, 2313, "Tracking_Code_AdminPages", "add_hooks", "/includes/admin/class-tracking-code-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332592, 2313, "Tracking_Code_AdminPages", "__construct", "/includes/admin/class-tracking-code-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332593, 2313, "Tracking_Code_PublicPages", "add_tracking_code_wp_footer", "/includes/class-tracking-code-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332594, 2313, "Tracking_Code_PublicPages", "add_tracking_code_wp_head", "/includes/class-tracking-code-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332595, 2313, "Tracking_Code_PublicPages", "__construct", "/includes/class-tracking-code-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (332596, 2313, "Tracking_Code_AdminPages", "tracking_code_admin_menu_pages", "/includes/admin/class-tracking-code-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24359, 2313, "wp_head", "array($this,'add_tracking_code_wp_head')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24360, 2313, "admin_menu", "array($this,'tracking_code_admin_menu_pages')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24361, 2313, "wp_footer", "array($this,'add_tracking_code_wp_footer')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8168, 2313, "plugin_action_links", "'tracking_code_add_settings_link'", 10, now(), now());

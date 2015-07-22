@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (822, "Ciusan Register Login", "4.1.1", "2.1", "3.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18107, 822, "ciusan_register_login", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18108, 822, "crl_admin__menu", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18109, 822, "ciusan_logout", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18110, 822, "ajax_login", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18111, 822, "ciusan_submit_donation", "/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18112, 822, "crl_admin_init", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18113, 822, "ciusan_login", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18114, 822, "ciusan_login_form", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18115, 822, "ciusan_register", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18116, 822, "ajax_forgotPassword", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18117, 822, "auth_user_login", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18118, 822, "ajax_register", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18119, 822, "ajax_auth_init", "/ciusan-register-login.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18120, 822, "ciusan_admin__head", "/ciusan-register-login.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9233, 822, "wp_footer", "'ciusan_login_form'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9234, 822, "admin_enqueue_scripts", "'ciusan_admin__head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9235, 822, "init", "'ajax_auth_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9236, 822, "init", "'crl_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9237, 822, "admin_menu", "'crl_admin__menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9238, 822, "wp_ajax_nopriv_ajaxlogin", "'ajax_login'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9239, 822, "wp_ajax_nopriv_ajaxregister", "'ajax_register'", 10, now(), now());

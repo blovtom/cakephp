@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4873, "WooCommerce Extra Product Sorting Options", "4.1", "2.1.1", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620789, 4873, "WC_Extra_Sorting_Options", "add_settings", "/woocommerce-extra-product-sorting-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620790, 4873, "WC_Extra_Sorting_Options", "__construct", "/woocommerce-extra-product-sorting-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620791, 4873, "WC_Extra_Sorting_Options", "load_translation", "/woocommerce-extra-product-sorting-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620792, 4873, "WC_Extra_Sorting_Options", "modify_sorting_settings", "/woocommerce-extra-product-sorting-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620793, 4873, "WC_Extra_Sorting_Options", "add_new_shop_ordering_args", "/woocommerce-extra-product-sorting-options.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52307, 4873, "init", "array($this,'load_translation')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17634, 4873, "woocommerce_product_settings", "array($this,'add_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17635, 4873, "woocommerce_catalog_orderby", "array($this,'modify_sorting_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17636, 4873, "woocommerce_default_catalog_orderby_options", "array($this,'modify_sorting_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17637, 4873, "woocommerce_get_catalog_ordering_args", "array($this,'add_new_shop_ordering_args')", 10, now(), now());

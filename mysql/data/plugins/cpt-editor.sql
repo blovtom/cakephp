@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1059, "Custom Post Type Editor", "4.1", "1.2.3", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96180, 1059, "OM4_CPT_List_Table", "column_name", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96181, 1059, "OM4_CPT_Editor", "CheckVersion", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96182, 1059, "OM4_CPT_Editor", "AdminPageEdit", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96183, 1059, "OM4_CPT_Editor", "AdminMenu", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96184, 1059, "OM4_CPT_Editor", "LoadDomain", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96185, 1059, "OM4_CPT_Editor", "Activate", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96186, 1059, "OM4_CPT_Editor", "SaveSettings", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96187, 1059, "OM4_CPT_Editor", "__construct", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96188, 1059, "OM4_CPT_Editor", "IsCustomized", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96189, 1059, "OM4_CPT_List_Table", "column_status", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96190, 1059, "OM4_CPT_Editor", "PostTypeRegistered", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96191, 1059, "OM4_CPT_List_Table", "prepare_items", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96192, 1059, "OM4_CPT_Editor", "AdminPage", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96193, 1059, "OM4_CPT_List_Table", "column_default", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96194, 1059, "OM4_CPT_List_Table", "__construct", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96195, 1059, "OM4_CPT_Editor", "NumberOfCustomizedLabels", "/cpt-editor.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96196, 1059, "OM4_CPT_List_Table", "get_columns", "/inc/OM4_CPT_List_Table.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11733, 1059, "init", "array($this,'CheckVersion')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11734, 1059, "admin_menu", "array($this,'AdminMenu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11735, 1059, "plugins_loaded", "array($this,'LoadDomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11736, 1059, "registered_post_type", "array($this,'PostTypeRegistered')", 10, now(), now());

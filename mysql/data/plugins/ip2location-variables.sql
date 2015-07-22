@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2296, "IP2Location Variables", "4.1", "2.0.0", "2.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41807, 2296, "ip2location_get_vars", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330859, 2296, "IP2LocationVariables", "get_location", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330860, 2296, "IP2Location", "__construct", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330861, 2296, "IP2LocationVariables", "get_country_name", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330862, 2296, "IP2LocationVariables", "init", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330863, 2296, "IP2LocationVariables", "uninstall", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330864, 2296, "IP2LocationVariables", "add_variables", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330865, 2296, "IP2LocationVariables", "get_variables", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330866, 2296, "IP2LocationVariables", "set_defaults", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330867, 2296, "IP2LocationVariables", "download", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330868, 2296, "IP2LocationVariables", "admin_options", "/ip2location-variables.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330869, 2296, "IP2Location", "lookup", "/ip2location.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330870, 2296, "IP2LocationVariables", "admin_page", "/ip2location-variables.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23970, 2296, "wp_ajax_update_ip2location_variables_database", "array($ip2location_variables,'download')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23971, 2296, "wp", "array($ip2location_variables,'add_variables')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23972, 2296, "admin_menu", "array(&$this,'admin_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23973, 2296, "wp_enqueue_script", "'load_jquery'", 10, now(), now());

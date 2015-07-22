@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2743, "Plugin Name", "4.1.1", "0.3.2", "2.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49719, 2743, "mmdyk_activate", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49720, 2743, "mm_dyk_css", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49721, 2743, "mmdyk_save_postdata", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49722, 2743, "mmdyk_add_custom_box", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49723, 2743, "mmdyk_page", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49724, 2743, "mmdyk_inner_custom_box", "/mm-did-you-know.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (49725, 2743, "mmdyk_add_menu", "/mm-did-you-know.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378636, 2743, "WP_Widget_mmdyk", "WP_Widget_mmdyk", "/mm-did-you-know.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378637, 2743, "WP_Widget_mmdyk", "widget", "/mm-did-you-know.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378638, 2743, "WP_Widget_mmdyk", "form", "/mm-did-you-know.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (378639, 2743, "WP_Widget_mmdyk", "update", "/mm-did-you-know.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29785, 2743, "admin_menu", "'mmdyk_add_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29786, 2743, "widgets_init", "create_function('','return register_widget("WP_Widget_mmdyk");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29787, 2743, "admin_menu", "'mmdyk_add_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29788, 2743, "wp_head", "'mm_dyk_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29789, 2743, "save_post", "'mmdyk_save_postdata'", 10, now(), now());

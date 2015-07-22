@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3173, "Pinterest RSS Widget", "4.1.1", "trunk", "2.8.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57171, 3173, "add_pinterest_rss_css", "/pinterest-rss-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57172, 3173, "prw_shortcode", "/pinterest-rss-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (57173, 3173, "get_pins_feed_list", "/pinterest-rss-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410838, 3173, "Pinterest_RSS_Widget", "form", "/pinterest-rss-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410839, 3173, "Pinterest_RSS_Widget", "widget", "/pinterest-rss-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410840, 3173, "Pinterest_RSS_Widget", "Pinterest_RSS_Widget", "/pinterest-rss-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (410841, 3173, "Pinterest_RSS_Widget", "update", "/pinterest-rss-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34642, 3173, "widgets_init", "create_function('','return register_widget("Pinterest_RSS_Widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34643, 3173, "wp_enqueue_scripts", "'add_pinterest_rss_css'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11645, 3173, "wp_feed_cache_transient_lifetime", "create_function('$a','return 600;')", 10, now(), now());

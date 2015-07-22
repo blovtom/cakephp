@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3197, "Plugin Version Switching", "4.1", "1.0.1", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413528, 3197, "Version_Control", "print_js_css", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413529, 3197, "Version_Control_Plugin", "load_text_domain", "/version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413530, 3197, "Version_Control", "get_json_data", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413531, 3197, "Version_Control_Ajax", "replace_plugin", "/classes/class.ajax.replace-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413532, 3197, "Version_Control", "generate_plugin_shortname", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413533, 3197, "Version_Control", "__construct", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413534, 3197, "Version_Control", "load_api_data", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413535, 3197, "Version_Control", "generate_version_dropdown_html", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413536, 3197, "Version_Control_Plugin", "__construct", "/version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413537, 3197, "Version_Control", "enqueue_admin_scripts", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413538, 3197, "Version_Control_Ajax", "load_hooks", "/classes/class.ajax.replace-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413539, 3197, "Version_Control", "generate_switch_button_html", "/classes/class.version-control.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413540, 3197, "Version_Control_Ajax", "delete_plugin_folder", "/classes/class.ajax.replace-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413541, 3197, "Version_Control_Ajax", "__construct", "/classes/class.ajax.replace-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413542, 3197, "Version_Control", "add_plugin_options", "/classes/class.version-control.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35120, 3197, "admin_enqueue_scripts", "array(__CLASS__,'enqueue_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35121, 3197, "admin_print_footer_scripts", "array(__CLASS__,'print_js_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35122, 3197, "init", "array(__CLASS__,'load_text_domain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35123, 3197, "wp_ajax_version_control_replace_plugin", "array(__CLASS__,'replace_plugin')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11784, 3197, "plugin_action_links", "array(__CLASS__,'add_plugin_options')", 10, now(), now());

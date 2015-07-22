@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (325, "ArsenalPay for WooCommerce", "4.0.1", "1.0.0", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5500, 325, "add_wc_arsenalpay", "/wc-arsenalpay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5501, 325, "wc_arsenalpay_init", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37367, 325, "WC_GW_Arsenalpay", "receipt_page", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37368, 325, "WC_GW_Arsenalpay", "__construct", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37369, 325, "WC_GW_Arsenalpay", "exitf", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37370, 325, "WC_GW_Arsenalpay", "process_payment", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37371, 325, "WC_GW_Arsenalpay", "init_form_fields", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37372, 325, "WC_GW_Arsenalpay", "callback_listener", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37373, 325, "WC_GW_Arsenalpay", "admin_options", "/wc-arsenalpay.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37374, 325, "WC_GW_Arsenalpay", "is_valid_for_use", "/wc-arsenalpay.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3078, 325, "plugins_loaded", "'wc_arsenalpay_init'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3079, 325, "woocommerce_api_wc_gw_arsenalpay", "array($this,'callback_listener')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3080, 325, "woocommerce_receipt_arsenalpay", "array($this,'receipt_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (984, 325, "woocommerce_payment_gateways", "'add_wc_arsenalpay'", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (478, "Beauty Contact Popup Form", "4.1", "6.0", "2.9.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8755, 478, "TagPopup_admin", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8756, 478, "TagPopup_sidewidget_init", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8757, 478, "TagPopup", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8758, 478, "TagPopup_plugin_query_vars", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8759, 478, "TagPopup_shortcode", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8760, 478, "TagPopup_add_javascript_files", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8761, 478, "TagPopup_plugin_parse_request", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8762, 478, "TagPopup_widget", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8763, 478, "TagPopup_install", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8764, 478, "TagPopup_add_to_menu", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8765, 478, "TagPopup_deactivation", "/beauty-contact-popup-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8766, 478, "TagPopup_control", "/beauty-contact-popup-form.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4729, 478, "plugins_loaded", "'TagPopup_sidewidget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4730, 478, "wp_enqueue_scripts", "'TagPopup_add_javascript_files'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4731, 478, "parse_request", "'TagPopup_plugin_parse_request'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4732, 478, "init", "'TagPopup_sidewidget_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4733, 478, "admin_menu", "'TagPopup_add_to_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1607, 478, "query_vars", "'TagPopup_plugin_query_vars'", 10, now(), now());

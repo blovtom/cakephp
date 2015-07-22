@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5154, "Plugin Name", "4.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89324, 5154, "tr_easy_tabs_pro_wrapper", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89325, 5154, "my_plugin_redirect", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89326, 5154, "tretf_add_mce_button", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89327, 5154, "tr_easy_tabs_pro_create_custom_post", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89328, 5154, "tr_easy_tabs_pro_jquery", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89329, 5154, "tretf_register_mce_button", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89330, 5154, "tretf_add_tinymce_plugin", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89331, 5154, "tr_easy_tabs_pro_items_shortcode", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89332, 5154, "my_plugin_activate", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89333, 5154, "expandt_options_framwrork", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89334, 5154, "tr_easy_tabs_pro_custom_post_taxonomy", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89335, 5154, "add_expandtfree_options_framwrork", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89336, 5154, "tr_easy_tabs_pro_items", "/plugin-main.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (89337, 5154, "tr_easy_tabs_files", "/plugin-main.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55840, 5154, "init", "'tr_easy_tabs_pro_jquery'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55841, 5154, "admin_init", "'my_plugin_redirect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55842, 5154, "init", "'tr_easy_tabs_pro_custom_post_taxonomy'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55843, 5154, "admin_menu", "'add_expandtfree_options_framwrork'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55844, 5154, "init", "'tr_easy_tabs_pro_create_custom_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55845, 5154, "admin_head", "'tretf_add_mce_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55846, 5154, "wp_enqueue_scripts", "'tr_easy_tabs_files'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19012, 5154, "mce_external_plugins", "'tretf_add_tinymce_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19013, 5154, "mce_buttons", "'tretf_register_mce_button'", 10, now(), now());

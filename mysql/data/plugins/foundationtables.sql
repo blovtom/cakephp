@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1753, "FoundationTables", "4.1.1", "trunk", "3.2.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34603, 1753, "foundtab_stylechooser", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34604, 1753, "foundtab_insert", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34605, 1753, "foundtab_save", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34606, 1753, "myprint_r", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34607, 1753, "foundtab_build", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34608, 1753, "foundtab_register_buttons", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34609, 1753, "br2nl", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34610, 1753, "foundtab_add_editor_styles", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34611, 1753, "foundtab_add_buttons", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34612, 1753, "foundtab_buttons", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34613, 1753, "getFoundationTable", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34614, 1753, "foundationtables_scripts", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34615, 1753, "foundtab_query", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34616, 1753, "foundtabs", "/foundationtables.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (34617, 1753, "foundationtables_styles", "/foundationtables.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19281, 1753, "init", "'foundtab_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19282, 1753, "admin_enqueue_scripts", "'foundationtables_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19283, 1753, "init", "'foundtab_add_editor_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19284, 1753, "admin_init", "'foundtabs'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19285, 1753, "save_post", "'foundtab_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19286, 1753, "wp_enqueue_scripts", "'foundationtables_styles'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6397, 1753, "mce_external_plugins", "'foundtab_add_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6398, 1753, "the_content", "'foundtab_insert'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6399, 1753, "mce_buttons", "'foundtab_register_buttons'", 10, now(), now());

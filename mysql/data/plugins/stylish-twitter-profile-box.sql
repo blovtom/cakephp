@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4217, "Stylish Twitter Profile Box", "4.1.1", "4.3", "3.6", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525056, 4217, "TwitterAPIExchange", "getGetfield", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525057, 4217, "TwitterAPIExchange", "performRequest", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525058, 4217, "stpb_twitterprofilebox", "stpb_call_twitter_api", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525059, 4217, "stpb_twitterprofilebox", "stpb_get_images", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525060, 4217, "stpb_twitterprofilebox", "widget_textdomain", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525061, 4217, "stpb_twitterprofilebox", "stpb_image_url", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525062, 4217, "stpb_twitterprofilebox", "widget", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525063, 4217, "TwitterAPIExchange", "getPostfields", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525064, 4217, "stpb_twitterprofilebox", "stpb_get_defaults", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525065, 4217, "stpb_twitterprofilebox", "__construct", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525066, 4217, "stpb_twitterprofilebox", "deactivate", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525067, 4217, "stpb_twitterprofilebox", "get_widget_slug", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525068, 4217, "stpb_twitterprofilebox", "update", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525069, 4217, "stpb_twitterprofilebox", "form", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525070, 4217, "TwitterAPIExchange", "__construct", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525071, 4217, "TwitterAPIExchange", "buildOauth", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525072, 4217, "TwitterAPIExchange", "setGetfield", "/inc/TwitterAPIExchange.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525073, 4217, "stpb_twitterprofilebox", "stpb_register_widget_styles", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525074, 4217, "stpb_twitterprofilebox", "stpb_add_ie9_css", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525075, 4217, "stpb_twitterprofilebox", "stpb_format_number", "/stylish-twitter-profile-box.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525076, 4217, "TwitterAPIExchange", "setPostfields", "/inc/TwitterAPIExchange.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45455, 4217, "wp_head", "array($this,'stpb_add_ie9_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45456, 4217, "wp_enqueue_scripts", "array($this,'stpb_register_widget_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45457, 4217, "widgets_init", "create_function('','register_widget("stpb_twitterprofilebox");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45458, 4217, "init", "array($this,'widget_textdomain')", 10, now(), now());

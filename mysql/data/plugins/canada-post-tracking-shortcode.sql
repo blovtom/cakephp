@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (723, "Canada Post Tracking Shortcode", "4.1", "1.1.1", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65625, 723, "usc_cp_tracking_shortcode", "parse_shortcode", "/canada-post-tracking-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65626, 723, "usc_cp_tracking_shortcode", "fix_actions", "/canada-post-tracking-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65627, 723, "usc_cp_tracking_shortcode", "__construct", "/canada-post-tracking-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65628, 723, "usc_cp_tracking_shortcode", "catch_notification", "/canada-post-tracking-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65629, 723, "usc_cp_tracking_shortcode", "parse_note", "/canada-post-tracking-shortcode.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8030, 723, "init", "array(&$this,'fix_actions')", 1000, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8031, 723, "woocommerce_new_customer_note", "array(&$this,'catch_notification')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2915, 723, "woocommerce_new_order_note_data", "array(&$this,'parse_note')", 10, now(), now());

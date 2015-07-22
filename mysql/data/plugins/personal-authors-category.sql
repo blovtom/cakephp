@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3140, "personal-authors-category", "4.1.", "0.3", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56556, 3140, "rus2translit", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56557, 3140, "authorcatreg_action", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56558, 3140, "personal_authors_category_init", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56559, 3140, "add_meta_box1", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56560, 3140, "personal_authors_category_register_new_user", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56561, 3140, "str2url", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56562, 3140, "apc_category", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56563, 3140, "my_remove_meta_boxes", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56564, 3140, "authorcatdel_action", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56565, 3140, "personal_authors_category_add_admin_pages", "/personal-authors-category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56566, 3140, "personal_authors_category_options_page", "/personal-authors-category.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34280, 3140, "init", "'personal_authors_category_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34281, 3140, "add_meta_boxes", "'add_meta_box1'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34282, 3140, "admin_menu", "'personal_authors_category_add_admin_pages'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34283, 3140, "delete_user", "'authorcatdel_action'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34284, 3140, "user_register", "'authorcatreg_action'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34285, 3140, "admin_menu", "'my_remove_meta_boxes'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34286, 3140, "register_post", "'personal_authors_category_register_new_user'", 10, now(), now());

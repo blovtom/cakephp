@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3484, "RB Gallery", "4.1", "1.1", "1.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63336, 3484, "wprb_gallery_menu", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63337, 3484, "wprb_gallery_scripts", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63338, 3484, "show_front_end_galleries", "/inc/front-end.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63339, 3484, "delete_album", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63340, 3484, "upload_file", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63341, 3484, "wprb_gallery_options_page", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63342, 3484, "rb_gallery_albums", "/inc/database_helpers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63343, 3484, "rb_gallery_albums", "/inc/wprb-gallery-helpers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63344, 3484, "get_albums", "/inc/front-end-helper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63345, 3484, "wprb_gallery_shortcode", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63346, 3484, "save_images_to_database", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63347, 3484, "get_pics", "/inc/front-end-helper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63348, 3484, "create_thumbnail", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63349, 3484, "plugin_install_script_for_wprb_gallery", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63350, 3484, "delete_pic", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63351, 3484, "rb_gallery_pics", "/inc/database_helpers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63352, 3484, "get_images_for_album", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63353, 3484, "plugin_uninstall_script_for_wprb_gallery", "/wprb-gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63354, 3484, "filename_dup_check", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63355, 3484, "create_thumbname", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63356, 3484, "delete_multiple_pics", "/inc/rboptions-page-wrapper.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63357, 3484, "rrmdir", "/wprb-gallery.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38108, 3484, "admin_menu", "'wprb_gallery_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38109, 3484, "init", "'wprb_gallery_scripts'", 10, now(), now());

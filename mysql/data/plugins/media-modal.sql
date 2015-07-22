@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2663, "Media Modal", "4.1", "1.0.2", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48573, 2663, "mm_modal", "/lib/mm-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48574, 2663, "mm_mailchimp_footer_js", "/lib/mm-ajax.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48575, 2663, "mm_options_page", "/lib/mm-admin-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48576, 2663, "mm_admin_styles", "/lib/mm-scripts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48577, 2663, "mm_register_settings", "/lib/mm-admin-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48578, 2663, "mm_custom_css", "/lib/mm-scripts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48579, 2663, "mm_add_options_link", "/lib/mm-admin-page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48580, 2663, "filterAudio", "/lib/mm-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48581, 2663, "mm_load_scripts", "/lib/mm-scripts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48582, 2663, "mm_mailchimp_submit_to_list", "/lib/mm-ajax.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48583, 2663, "filterVid", "/lib/mm-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48584, 2663, "modal_media_func", "/lib/mm-functions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28963, 2663, "admin_enqueue_scripts", "'mm_admin_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28964, 2663, "wp_footer", "'mm_custom_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28965, 2663, "admin_init", "'mm_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28966, 2663, "wp_head", "'mm_mailchimp_footer_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28967, 2663, "wp_enqueue_scripts", "'mm_load_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28968, 2663, "admin_menu", "'mm_add_options_link'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28969, 2663, "wp_ajax_mm_mailchimp_submit_to_list", "'mm_mailchimp_submit_to_list'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28970, 2663, "wp_ajax_nopriv_mm_mailchimp_submit_to_list", "'mm_mailchimp_submit_to_list'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9656, 2663, "the_content", "'mm_modal'", 10, now(), now());

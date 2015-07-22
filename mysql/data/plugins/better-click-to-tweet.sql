@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (497, "Better Click To Tweet", "4.1.1", "3.4.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8932, 497, "bctt_tinymce_register_button", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8933, 497, "bctt_validate_settings", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8934, 497, "bctt_tinymce_button", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8935, 497, "bctt_options_link", "/better-click-to-tweet.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8936, 497, "bctt_tinymce_register_plugin", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8937, 497, "bctt_register_settings", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8938, 497, "bctt_settings_page", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8939, 497, "bctt_load_textdomain", "/bctt-i18n.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8940, 497, "bctt_shorten", "/better-click-to-tweet.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8941, 497, "bctt_scripts", "/better-click-to-tweet.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8942, 497, "bctt_shortcode", "/better-click-to-tweet.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8943, 497, "bctt_on_uninstall", "/better-click-to-tweet.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8944, 497, "bctt_admin_menu", "/bctt_options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8945, 497, "bctt_validate_checkbox", "/bctt_options.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4934, 497, "plugins_loaded", "'bctt_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4935, 497, "admin_menu", "'bctt_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4936, 497, "admin_init", "'bctt_register_settings'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4937, 497, "init", "'bctt_tinymce_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4938, 497, "wp_enqueue_scripts", "'bctt_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1670, 497, "tiny_mce_version", "'refresh_mce'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1671, 497, "mce_external_plugins", "'bctt_tinymce_register_plugin'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1672, 497, "mce_buttons", "'bctt_tinymce_register_button'", 10, now(), now());

@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2438, "kPicasa Gallery", "4.1", "trunk", "2.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45264, 2438, "kpicasa_gallery_load", "/kpicasa_gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45265, 2438, "kpicasa_gallery_admin_menu", "/kpicasa_gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45266, 2438, "kpicasa_gallery_config_sanitize", "/kpicasa_gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45267, 2438, "kpicasa_gallery_init", "/kpicasa_gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45268, 2438, "kpicasa_register_settings", "/kpicasa_gallery.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (45269, 2438, "kpicasa_gallery_activate", "/kpicasa_gallery.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (343067, 2438, "KPicasaGallery", "__construct", "/kpg.class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26091, 2438, "admin_menu", "'kpicasa_gallery_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26092, 2438, "wp_head", "'kpicasa_gallery_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (26093, 2438, "admin_init", "'kpicasa_register_settings'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8695, 2438, "the_content", "'kpicasa_gallery_load'", 10, now(), now());

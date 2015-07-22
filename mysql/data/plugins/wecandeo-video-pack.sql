@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4741, "Plugin Name", "4.0.0", "0.1.7", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610776, 4741, "WecanDeo", "__construct", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610777, 4741, "WecanDeo", "wpuntexturize", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610778, 4741, "WecanDeo_Admin", "create_menu", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610779, 4741, "WecanDeo_Admin", "add_action_links", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610780, 4741, "WecanDeo_Admin", "init_admin_page", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610781, 4741, "WecanDeo_Admin", "autoset_featured_image", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610782, 4741, "WecanDeo_Admin", "__construct", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610783, 4741, "WecanDeo", "WecanDeo", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610784, 4741, "WecanDeo_Admin", "custom_post_activation_notice", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610785, 4741, "WecanDeo_Admin", "wecandeo_generate_post_thumb", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610786, 4741, "WecanDeo_Admin", "curl_get_file_contents", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610787, 4741, "WecanDeo_Admin", "upload_modal", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610788, 4741, "WecanDeo", "attributefix", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610789, 4741, "WecanDeo_Admin", "media_button", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610790, 4741, "WecanDeo", "shortcode_wecandeo", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610791, 4741, "WecanDeo", "localize", "/wecandeo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610792, 4741, "WecanDeo_Admin", "setting_menu", "/admin/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (610793, 4741, "WecanDeo_Admin", "video_notice", "/admin/admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50806, 4741, "init", "array(__CLASS__,'localize')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50807, 4741, "admin_menu", "array(&$this,'create_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50808, 4741, "save_post", "array(&$this,'autoset_featured_image')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50809, 4741, "media_buttons", "array(&$this,'media_button')", 90, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50810, 4741, "admin_notices", "array($this,'video_notice')", 10, now(), now());

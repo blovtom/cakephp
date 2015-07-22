@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1724, "FooGallery Owl Carousel Template", "4.1", "1.2.1", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208434, 1724, "OWL_Custom_Media_Fields", "__construct", "/includes/custom_media_fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208435, 1724, "OWL_Custom_Media_Fields", "saveOwlFields", "/includes/custom_media_fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208436, 1724, "Owl_Carousel_Template_FooGallery_Extension", "enqueue_dependencies", "/foogallery-owl-carousel-extension.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208437, 1724, "Owl_Carousel_Template_FooGallery_Extension_Init", "__construct", "/foogallery-owl-carousel-init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208438, 1724, "OWL_Custom_Media_Fields", "applyOwlFilter", "/includes/custom_media_fields.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208439, 1724, "Owl_Carousel_Template_FooGallery_Extension", "add_template", "/foogallery-owl-carousel-extension.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208440, 1724, "Owl_Carousel_Template_FooGallery_Extension_Init", "add_to_extensions_list", "/foogallery-owl-carousel-init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208441, 1724, "Owl_Carousel_Template_FooGallery_Extension", "register_myself", "/foogallery-owl-carousel-extension.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (208442, 1724, "Owl_Carousel_Template_FooGallery_Extension", "__construct", "/foogallery-owl-carousel-extension.php", now(), now());
+
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6275, 1724, "foogallery_available_extensions", "array($this,'add_to_extensions_list')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6276, 1724, "foogallery_gallery_templates_files", "array($this,'register_myself')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6277, 1724, "attachment_fields_to_edit", "array($this,'applyOwlFilter')", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6278, 1724, "foogallery_gallery_templates", "array($this,'add_template')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6279, 1724, "attachment_fields_to_save", "array($this,'saveOwlFields')", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6280, 1724, "foogallery_located_template-instafoo", "array($this,'enqueue_dependencies')", 10, now(), now());

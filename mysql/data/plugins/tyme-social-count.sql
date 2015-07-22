@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4512, "Tyme Social Count", "4.1.1", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78361, 4512, "tyme_calculate_all", "/tyme-social-count.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78362, 4512, "refresh_fb_scraper", "/tyme-social-count.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78363, 4512, "tsc_shortcode", "/tyme-social-count.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78364, 4512, "ajax_shares", "/tyme-social-count.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (78365, 4512, "tyme_execute", "/tyme-social-count.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559578, 4512, "tymeSocialCount", "get_tweets", "/tyme.core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559579, 4512, "tymeSocialCount", "__construct", "/tyme.core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559580, 4512, "tymeSocialCount", "get_pinterest", "/tyme.core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559581, 4512, "tymeSocialCount", "get_plusones", "/tyme.core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559582, 4512, "tymeSocialCount", "get_linkedin", "/tyme.core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (559583, 4512, "tymeSocialCount", "get_fb", "/tyme.core.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48143, 4512, "wp_ajax_get_total_shares", "'ajax_shares'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48144, 4512, "wp_ajax_nopriv_get_total_shares", "'ajax_shares'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48145, 4512, "publish_post", "'refresh_fb_scraper'", 10, now(), now());

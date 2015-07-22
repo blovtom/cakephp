@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1187, "DCO Russian Fixes", "4.1.1", "1.0.3", "4.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104334, 1187, "DCO_RF_Admin", "register_settings", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104335, 1187, "DCO_RF", "correct_dates", "/class.dco-russian-fixes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104336, 1187, "DCO_RF", "__construct", "/class.dco-russian-fixes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104337, 1187, "DCO_RF_Admin", "__construct", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104338, 1187, "DCO_RF_Admin", "init_hooks", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104339, 1187, "DCO_RF_Admin", "render", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104340, 1187, "DCO_RF", "correct_archive_titles", "/class.dco-russian-fixes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104341, 1187, "DCO_RF_Admin", "transliterate_url_render", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104342, 1187, "DCO_RF_Admin", "transliterate", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104343, 1187, "DCO_RF_Base", "load_language", "/class.dco-russian-fixes-base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104344, 1187, "DCO_RF_Admin", "create_menu", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104345, 1187, "DCO_RF", "init_hooks", "/class.dco-russian-fixes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104346, 1187, "DCO_RF_Admin", "correct_dates_render", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (104347, 1187, "DCO_RF_Admin", "transliterate_file_name_render", "/class.dco-russian-fixes-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13124, 1187, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13125, 1187, "admin_init", "array($this,'load_language')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13126, 1187, "admin_menu", "array($this,'create_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13127, 1187, "init", "array($this,'init_hooks')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4501, 1187, "get_the_date", "array($this,'correct_dates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4502, 1187, "get_the_time", "array($this,'correct_dates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4503, 1187, "date_i18n", "array($this,'correct_dates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4504, 1187, "get_the_modified_date", "array($this,'correct_dates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4505, 1187, "get_comment_date", "array($this,'correct_dates')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4506, 1187, "get_the_archive_title", "array($this,'correct_archive_titles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4507, 1187, "sanitize_title", "array($this,'transliterate')", 9, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4508, 1187, "sanitize_file_name", "array($this,'transliterate')", 10, now(), now());

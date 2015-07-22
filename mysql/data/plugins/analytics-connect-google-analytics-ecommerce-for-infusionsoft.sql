@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (262, "AnalyticsConnect.io - Google Analytics Ecommerce for Infusionsoft", "4.1", "2.1.1", "3.5.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4340, 262, "analyticsconnectio_section_authentication_settings_text", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4341, 262, "analyticsconnectio_get_user_data", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4342, 262, "analyticsconnectio_key_setting_string", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4343, 262, "analyticsconnectio_options_page", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4344, 262, "analyticsconnectio_get_user_ga_cookie_id", "/analyticsconnect-io.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4345, 262, "analyticsconnectio_gacode_setting_string", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4346, 262, "analyticsconnectio_options_validate", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4347, 262, "analyticsconnectio_get_displayable_user_data", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4348, 262, "analyticsconnectio_section_gacode_settings_text", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4349, 262, "analyticsconnectio_add_to_header", "/analyticsconnect-io.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4350, 262, "analyticsconnectio_admin_init", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4351, 262, "analyticsconnectio_add_stylesheet_to_admin", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4352, 262, "analyticsconnectio_shortcode", "/analyticsconnect-io.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4353, 262, "analyticsconnectio_gen_uuid", "/analyticsconnect-io.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4354, 262, "analyticsconnectio_action_links", "/analyticsconnect-io-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (4355, 262, "analyticsconnectio_admin_add_page", "/analyticsconnect-io-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2319, 262, "wp_head", "'analyticsconnectio_add_to_header'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2320, 262, "admin_menu", "'analyticsconnectio_admin_add_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2321, 262, "admin_enqueue_scripts", "'analyticsconnectio_add_stylesheet_to_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2322, 262, "admin_init", "'analyticsconnectio_admin_init'", 10, now(), now());

@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (225, "Aksh Mailchimp Widget", "4.1.1", "1.0", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3033, 225, "amcw_widget_init", "/include/aksh_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3034, 225, "amcw_get_options", "/include/aksh_general.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (3035, 225, "aksh_mailchimp_pluginload", "/aksh-mailchimpwidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14511, 225, "amcw_admin", "amcw_validate_settings", "/include/aksh_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14512, 225, "akshMailchimpWidget", "widget", "/include/aksh_widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14513, 225, "akshMailchimpWidget", "update", "/include/aksh_widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14514, 225, "amcw_admin", "amcw_api_settings", "/include/aksh_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14515, 225, "amcw_admin", "initialize", "/include/aksh_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14516, 225, "amcw_admin", "initialize_menu", "/include/aksh_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14517, 225, "amcw_admin", "__construct", "/include/aksh_admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14518, 225, "akshMailchimpWidget", "form", "/include/aksh_widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14519, 225, "akshMailchimpWidget", "__construct", "/include/aksh_widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1852, 225, "admin_menu", "array($this,'initialize_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1853, 225, "plugins_loaded", "'aksh_mailchimp_pluginload'", 22, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1854, 225, "admin_init", "array($this,'initialize')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1855, 225, "widgets_init", "'amcw_widget_init'", 10, now(), now());

@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3141, "Personal Contact Info Widget", "4.1", "1.2", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407267, 3141, "jsjr_personal_contact_info", "update", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407268, 3141, "jsjr_personal_contact_info", "get_field_select", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407269, 3141, "jsjr_personal_contact_info", "form", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407270, 3141, "jsjr_personal_contact_info", "get_contact_section", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407271, 3141, "jsjr_personal_contact_info", "jsjr_pci_wp_styles_and_scripts", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407272, 3141, "jsjr_personal_contact_info", "widget", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407273, 3141, "jsjr_personal_contact_info", "get_field_image", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407274, 3141, "jsjr_personal_contact_info", "__construct", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407275, 3141, "jsjr_personal_contact_info", "is_social_links", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407276, 3141, "jsjr_personal_contact_info", "get_field_text", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407277, 3141, "jsjr_personal_contact_info", "get_field_checkbox", "/personal-contact-info-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (407278, 3141, "jsjr_personal_contact_info", "jsjr_pci_admin_styles_and_scripts", "/personal-contact-info-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34287, 3141, "wp_enqueue_scripts", "array($this,'jsjr_pci_wp_styles_and_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34288, 3141, "widgets_init", "create_function('','return register_widget("jsjr_personal_contact_info");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (34289, 3141, "admin_enqueue_scripts", "array($this,'jsjr_pci_admin_styles_and_scripts')", 10, now(), now());

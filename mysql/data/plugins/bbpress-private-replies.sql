@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (467, "bbPress - Private Replies", "4.2", "1.3.2", "3.2", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48929, 467, "BBP_Private_Replies", "is_private", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48930, 467, "BBP_Private_Replies", "register_plugin_styles", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48931, 467, "BBP_Private_Replies", "subscription_email", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48932, 467, "BBP_Private_Replies", "prevent_subscription_email", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48933, 467, "BBP_Private_Replies", "__construct", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48934, 467, "BBP_Private_Replies", "textdomain", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48935, 467, "BBP_Private_Replies", "hide_reply", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48936, 467, "BBP_Private_Replies", "checkbox", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48937, 467, "BBP_Private_Replies", "reply_post_class", "/bbp-private-replies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48938, 467, "BBP_Private_Replies", "update_reply", "/bbp-private-replies.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4687, 467, "init", "array($this,'textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4688, 467, "bbp_edit_reply", "array($this,'update_reply')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4689, 467, "wp_enqueue_scripts", "array($this,'register_plugin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4690, 467, "bbp_theme_before_reply_form_submit_wrapper", "array($this,'checkbox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4691, 467, "bbp_new_reply", "array($this,'update_reply')", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1589, 467, "the_content", "array($this,'hide_reply')", 999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1590, 467, "bbp_get_reply_excerpt", "array($this,'hide_reply')", 999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1591, 467, "bbp_subscription_mail_message", "array($this,'prevent_subscription_email')", 999999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1592, 467, "the_excerpt", "array($this,'hide_reply')", 999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1593, 467, "bbp_get_reply_content", "array($this,'hide_reply')", 999, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1594, 467, "post_class", "array($this,'reply_post_class')", 10, now(), now());

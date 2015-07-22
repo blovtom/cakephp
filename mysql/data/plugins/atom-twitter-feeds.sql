@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (346, "Atom Twitter Feeds", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5763, 346, "atom_twitter_feeds_sample_load_color_picker_script", "/atom-twitter-feeds.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5764, 346, "atom_twitter_feeds_shortcode", "/atom-twitter-feeds.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5765, 346, "register_atom_twitter_feeds", "/atom-twitter-feeds.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5766, 346, "atom_twitter_feeds_sample_load_color_picker_style", "/atom-twitter-feeds.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37944, 346, "atom_twitter_feeds", "display_tweet", "/atom-twitter-feeds.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37945, 346, "atom_twitter_feeds", "widget", "/atom-twitter-feeds.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37946, 346, "atom_twitter_feeds", "form", "/atom-twitter-feeds.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (37947, 346, "atom_twitter_feeds", "__construct", "/atom-twitter-feeds.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3275, 346, "admin_print_scripts-widgets.php", "'atom_twitter_feeds_sample_load_color_picker_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3276, 346, "widgets_init", "'register_atom_twitter_feeds'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3277, 346, "admin_print_styles-widgets.php", "'atom_twitter_feeds_sample_load_color_picker_style'", 10, now(), now());

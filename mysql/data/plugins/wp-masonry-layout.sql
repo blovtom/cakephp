@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5271, "Masonry Layout (Pinterest Like Grid)", "4.1.1", "1.4.1", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91764, 5271, "wml_wpml_icl_object_id", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91765, 5271, "wml_ajax_load_posts", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91766, 5271, "wml_client_js_css", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91767, 5271, "wml_post_orderby", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91768, 5271, "wml_adminjslibs", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91769, 5271, "wml_fill_up_form", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91770, 5271, "wml_create_menu", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91771, 5271, "wml_documentation", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91772, 5271, "wml_get_pro_version", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91773, 5271, "wml_shortcode", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91774, 5271, "wml_adminCsslibs", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91775, 5271, "wml_shortcodes", "/plugin_interface.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (91776, 5271, "wml_activate", "/plugin_interface.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57150, 5271, "admin_print_scripts", "'wml_adminjslibs'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57151, 5271, "wp_ajax_nopriv_wml_load_posts", "'wml_ajax_load_posts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57152, 5271, "admin_print_styles", "'wml_adminCsslibs'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57153, 5271, "admin_menu", "'wml_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57154, 5271, "wp_ajax_wml_load_posts", "'wml_ajax_load_posts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57155, 5271, "wp_enqueue_scripts", "'wml_client_js_css'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19573, 5271, "posts_orderby", "'wml_post_orderby'", 10, now(), now());

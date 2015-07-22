@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4385, "This page needs files", "4.2", "1.0.4", "4.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (76703, 4385, "tpnf_binder_main2urls", "/binder/main2urls.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (76704, 4385, "tpnf_err_php", "/requirements.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (76705, 4385, "tpnf_plugin_data", "/this-page-needs-files.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549367, 4385, "TPNF_Model_Urls", "Cast", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549368, 4385, "TPNF_SplEnum", "InitList", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549369, 4385, "TPNF_Model_Urls", "__construct", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549370, 4385, "TPNF_SplEnum", "GetList", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549371, 4385, "TPNF_Model_Url", "__construct", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549372, 4385, "TPNF_SplEnum", "GetName", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549373, 4385, "TPNF_Model_Relative", "__construct", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549374, 4385, "TPNF_Model_Main", "__construct", "/model/urls.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (549375, 4385, "TPNF_Model_Url", "Cast", "/model/urls.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46960, 4385, "admin_notices", "'tpnf_err_php'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46961, 4385, "admin_notices", "array($msg,'display')", 10, now(), now());

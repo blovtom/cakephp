@@ -1,0 +1,6 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4533, "Ultimate Pinterest Display Widget", "4.1", NULL, "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (79484, 4533, "register_connex_ultimatePinterestDisplayWidget", "/ultimatePinterestDisplayWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (562474, 4533, "ultimatePinterestDisplayWidget", "form", "/ultimatePinterestDisplayWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (562475, 4533, "ultimatePinterestDisplayWidget", "widget", "/ultimatePinterestDisplayWidget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (562476, 4533, "ultimatePinterestDisplayWidget", "__construct", "/ultimatePinterestDisplayWidget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (48736, 4533, "widgets_init", "'register_connex_ultimatePinterestDisplayWidget'", 10, now(), now());

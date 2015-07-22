@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3251, "Link Contact Form 7 to opentaps CRM2", "4.1", "1.0.0", "3.9.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58845, 3251, "plugin_settings_link", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423129, 3251, "Post_To_CRM", "init_settings", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423130, 3251, "Post_To_CRM", "add_menu", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423131, 3251, "Post_To_CRM", "admin_init", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423132, 3251, "Post_To_CRM", "plugin_settings_page", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423133, 3251, "Post_To_CRM", "deactivate", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423134, 3251, "Post_To_CRM", "activate", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423135, 3251, "Post_To_CRM", "__construct", "/post-cf7-to-crm2.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423136, 3251, "Post_To_CRM", "post_to_opentaps", "/post-cf7-to-crm2.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35949, 3251, "admin_menu", "array(&$this,'add_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35950, 3251, "admin_init", "array(&$this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35951, 3251, "wpcf7_before_send_mail", "array(&$this,'post_to_opentaps')", 10, now(), now());

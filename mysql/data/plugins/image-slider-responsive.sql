@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2198, "Image Slider Responsive", "4.1", "1.2", "2.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40791, 2198, "sis_slider", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40792, 2198, "sis_slider_wrapper_shortcode", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40793, 2198, "sissliderb", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40794, 2198, "sis_flexslider_plugin_scripts", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40795, 2198, "sisslider_button", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40796, 2198, "sis_insert_slider", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40797, 2198, "sis_slide_shortcode", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40798, 2198, "flexslider_custom_post_type", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40799, 2198, "sis_flexslider_activation", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40800, 2198, "sis_get_slider", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40801, 2198, "change_image_box", "/slider.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (40802, 2198, "sisslider_button_js", "/slider.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23236, 2198, "init", "'sisslider_button'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23237, 2198, "do_meta_boxes", "'change_image_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23238, 2198, "init", "'flexslider_custom_post_type'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23239, 2198, "wp_footer", "'sis_flexslider_activation'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23240, 2198, "init", "'sis_flexslider_plugin_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7641, 2198, "mce_external_plugins", "'sisslider_button_js'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7642, 2198, "mce_buttons", "'sissliderb'", 10, now(), now());

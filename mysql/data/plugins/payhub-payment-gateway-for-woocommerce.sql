@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3104, "PayHub Plugin For WooCommerce", "4.1.1", "1.0.11", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56045, 3104, "woocommerce_add_payhub_gateway", "/woocommerce-payhub.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (56046, 3104, "woocommerce_payhub_init", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404622, 3104, "WC_PayHub_Gateway", "supports", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404623, 3104, "WC_PayHub_Gateway", "process_payment", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404624, 3104, "WC_PayHub_Gateway", "isWcVersionTwoPointOneOrGreater", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404625, 3104, "WC_PayHub_Gateway", "ssl_check", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404626, 3104, "WC_PayHub_Gateway", "admin_options", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404627, 3104, "WC_PayHub_Gateway", "validate_fields", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404628, 3104, "WC_PayHub_Gateway", "init_form_fields", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404629, 3104, "WC_PayHub_Gateway", "payment_fields", "/woocommerce-payhub.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (404630, 3104, "WC_PayHub_Gateway", "__construct", "/woocommerce-payhub.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33977, 3104, "plugins_loaded", "'woocommerce_payhub_init'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33978, 3104, "woocommerce_thankyou_cheque", "array(&$this,'thankyou_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33979, 3104, "admin_notices", "array(&$this,'ssl_check')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11425, 3104, "woocommerce_payment_gateways", "'woocommerce_add_payhub_gateway'", 10, now(), now());

@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2620, "Mailrelay", "4.1.1", "1.5", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48019, 2620, "mailrelay_publish_feed", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48020, 2620, "mailrelay_do_feed", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48021, 2620, "mailrelay_connection_settings", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48022, 2620, "mailrelay_create_post_meta_box", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48023, 2620, "mailrelay_feeds_settings", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48024, 2620, "mailrelay_post_meta_box", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48025, 2620, "mailrelay_posts_settings", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48026, 2620, "substrhtml", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48027, 2620, "mailrelay_init", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48028, 2620, "mailrelay_save_post_meta_box", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48029, 2620, "mailrelay_menu", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48030, 2620, "mailrelay_publish_post", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48031, 2620, "mailrelay_get_groups", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48032, 2620, "mailrelay_sync_users", "/mailrelay.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (48033, 2620, "mailrelay_build_template", "/mailrelay.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28410, 2620, "init", "'mailrelay_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28411, 2620, "publish_post", "'mailrelay_publish_post'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28412, 2620, "save_post", "'mailrelay_save_post_meta_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28413, 2620, "admin_menu", "'mailrelay_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28414, 2620, "admin_menu", "'mailrelay_create_post_meta_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28415, 2620, "publish_post", "'mailrelay_do_feed'", 10, now(), now());

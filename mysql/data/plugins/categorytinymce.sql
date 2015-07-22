@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (767, "CategoryTinymce", "4.1", "3.6.1", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17019, 767, "catMCE_register", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17020, 767, "categorytinymce_admin_head", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17021, 767, "extra_category_fields", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17022, 767, "CatMCE_menu", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17023, 767, "save_extra_category_fileds", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17024, 767, "add_tagseo_meta", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17025, 767, "extra_tag_fields", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17026, 767, "description1", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17027, 767, "remove_Category_Extras", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17028, 767, "save_extra_tag_fileds", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17029, 767, "catMCE_options", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17030, 767, "add_tag_title", "/categorytinymce.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17031, 767, "description2", "/categorytinymce.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8554, 767, "edit_category_form_fields", "'extra_category_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8555, 767, "admin_menu", "'catMCE_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8556, 767, "admin_print_styles", "'categorytinymce_admin_head'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8557, 767, "wp_head", "'add_tagseo_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8558, 767, "admin_init", "'catMCE_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8559, 767, "edited_terms", "'save_extra_tag_fileds'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8560, 767, "edit_tag_form_fields", "'extra_tag_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8561, 767, "edited_category", "'save_extra_category_fileds'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3037, 767, "deleted_term_taxonomy", "'remove_Category_Extras'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3038, 767, "edit_tag_form_fields", "'description2'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3039, 767, "term_description", "'do_shortcode'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3040, 767, "wp_title", "'add_tag_title'", 1000, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3041, 767, "edit_category_form_fields", "'description1'", 10, now(), now());

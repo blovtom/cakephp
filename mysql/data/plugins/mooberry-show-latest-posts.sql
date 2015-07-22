@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2769, "Mooberry Show Latest Posts", "4.1.1", "1.0", "3.3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50299, 2769, "mbdslp_options_set_defaults", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50300, 2769, "mbdslp_init", "/mooberry-show-latest-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50301, 2769, "mbdslp_options_page", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50302, 2769, "mbdslp_add_options_page", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50303, 2769, "mbdslp_options_title", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50304, 2769, "mbdslp_main_settings_display", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50305, 2769, "mbdslp_options_validate", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50306, 2769, "mbdslp_options_number", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50307, 2769, "mbdslp_add_latest_posts", "/mooberry-show-latest-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50308, 2769, "mbdslp_load_textdomain", "/mooberry-show-latest-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50309, 2769, "mbdslp_options_readmore", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50310, 2769, "mbdslp_options_display", "/admin-options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50311, 2769, "mbdslp_options_init", "/admin-options.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29995, 2769, "init", "'mbdslp_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29996, 2769, "plugins_loaded", "'mbdslp_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29997, 2769, "admin_menu", "'mbdslp_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29998, 2769, "admin_init", "'mbdslp_options_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9914, 2769, "the_content", "'mbdslp_add_latest_posts'", 10, now(), now());

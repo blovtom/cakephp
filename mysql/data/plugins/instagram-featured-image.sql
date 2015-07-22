@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2263, "Instagram Featured Image", "4.1.1", "1.0.1", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41503, 2263, "WP_Time_Page", "/instagram-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41504, 2263, "QassimInstagramFeaturedImageWidget_CSS", "/instagram-featured-image.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41505, 2263, "WP_Time", "/instagram-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329930, 2263, "QassimInstagramFeaturedImageWidget", "widget", "/instagram-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329931, 2263, "QassimInstagramFeaturedImageWidget", "update", "/instagram-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329932, 2263, "QassimInstagramFeaturedImageWidget", "QassimInstagramFeaturedImageWidget", "/instagram-featured-image.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329933, 2263, "QassimInstagramFeaturedImageWidget", "form", "/instagram-featured-image.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23743, 2263, "widgets_init", "create_function('','return register_widget("QassimInstagramFeaturedImageWidget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23744, 2263, "admin_menu", "'WP_Time'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23745, 2263, "wp_head", "'QassimInstagramFeaturedImageWidget_CSS'", 10, now(), now());

@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5122, "WP Dialog", "4.1.1", "1.2.4.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88389, 5122, "WP_Dialog_plugin_action_links", "/wp-dialog.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88390, 5122, "display_wp_dialog_page", "/wp-dialog.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88391, 5122, "display_wp_dialog_menu", "/wp-dialog.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88392, 5122, "wp_dialog_install", "/wp-dialog.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (88393, 5122, "wp_dialog_bar", "/wp-dialog.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (663361, 5122, "WP_Dialog", "__construct", "/wp-dialog.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55456, 5122, "admin_menu", "'display_wp_dialog_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55457, 5122, "wp_footer", "'wp_dialog_bar'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18857, 5122, "plugin_action_links", "'WP_Dialog_plugin_action_links'", 10, now(), now());

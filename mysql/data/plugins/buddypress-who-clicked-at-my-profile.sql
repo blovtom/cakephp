@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (667, "Buddypress Who clicked at my Profile?", "4.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14967, 667, "buddypresswcamp_load_textdomain", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14968, 667, "buddypresswcamp_widget_showMyVisitors", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14969, 667, "buddypresswcamp_action", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58449, 667, "BuddypressWCAMP_Widget_showMyVisitors", "update", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58450, 667, "BuddypressWCAMP_Widget_showMyVisitors", "BuddypressWCAMP_Widget_showMyVisitors", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58451, 667, "BuddypressWCAMP_Widget_showMyVisitors", "form", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58452, 667, "BuddypressWCAMP_Widget_showMyVisitors", "widget", "/buddypress-who-clicked-at-my-profile.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7304, 667, "widgets_init", "'buddypresswcamp_widget_showMyVisitors'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7305, 667, "init", "'buddypresswcamp_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7306, 667, "bp_before_member_header", "'buddypresswcamp_action'", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (143, "Adsense only to Search Engine and Socia Network", "4.1.1", "0.21", "3.9", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8740, 143, "SearchEngineVisitors", "searchenginevisitors_meta_b_callback", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8741, 143, "SearchEngineVisitors", "__construct", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8742, 143, "SearchEngineVisitors", "searchenginevisitors_plugin_menu", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8743, 143, "SearchEngineVisitors", "searchenginevisitors", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8744, 143, "SearchEngineVisitors", "sev_meta_post_save", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8745, 143, "SearchEngineVisitors", "sev_setting", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8746, 143, "SearchEngineVisitors", "visitor_sev_filter", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8747, 143, "SearchEngineVisitors", "plugin_path", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8748, 143, "SearchEngineVisitors", "sev_main", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8749, 143, "SearchEngineVisitors", "template_url", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8750, 143, "SearchEngineVisitors", "sev_install", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (8751, 143, "SearchEngineVisitors", "searchenginevisitors_meta_box", "/index.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1170, 143, "init", "array($this,'searchenginevisitors')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1171, 143, "save_post", "array($this,'sev_meta_post_save')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1172, 143, "add_meta_boxes", "array($this,'searchenginevisitors_meta_box')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1173, 143, "admin_menu", "array($this,'searchenginevisitors_plugin_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (358, 143, "the_content", "array($this,'visitor_sev_filter')", 25, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (359, 143, "the_excerpt", "array($this,'visitor_sev_filter')", 25, now(), now());

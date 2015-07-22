@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (944, "Commenter Data", "4.1", "2.1", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88202, 944, "commenter_core", "cd_setting", "/lib/core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88203, 944, "commenter", "cd_metaboxes", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88204, 944, "commenter", "__construct", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88205, 944, "commenter", "cd_download", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88206, 944, "commenter_core", "__construct", "/lib/core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88207, 944, "commenter_core", "cd_create_csv", "/lib/core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88208, 944, "commenter_core", "commenter_loadpost", "/lib/core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88209, 944, "commenter", "cd_setting_page", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88210, 944, "commenter", "cd_renderer", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88211, 944, "commenter", "cd_form_metabox", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88212, 944, "commenter", "cd_scripts", "/lib/commenter.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (88213, 944, "commenter_core", "commenter_strip_tags", "/lib/core.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10314, 944, "add_meta_boxes", "array($this,'cd_metaboxes')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10315, 944, "admin_init", "array($this,'cd_download')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10316, 944, "admin_menu", "array($this,'cd_setting_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10317, 944, "wp_ajax_commenter_setting", "array($this,'cd_setting')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10318, 944, "wp_ajax_commenter_loadpost", "array($this,'commenter_loadpost')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10319, 944, "wp_ajax_commenter", "array($this,'cd_create_csv')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10320, 944, "admin_enqueue_scripts", "array($this,'cd_scripts')", 10, now(), now());

@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (848, "Client Dash Custom Footer Addon", "4.1", "0.1.1", "3.8.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18422, 848, "_cd_custom_footer_notice", "/custom_footer.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (18423, 848, "cd_custom_footer", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70915, 848, "MlwCustomFooter", "__construct", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70916, 848, "MlwCustomFooter", "add_styles", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70917, 848, "MlwCustomFooter", "right_admin_footer_text_output", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70918, 848, "MlwCustomFooter_Settings", "settings_output", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70919, 848, "MlwCustomFooter_Settings", "register_settings", "/includes/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70920, 848, "MlwCustomFooter", "register_styles", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70921, 848, "MlwCustomFooter", "left_admin_footer_text_output", "/custom_footer.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (70922, 848, "MlwCustomFooter_Settings", "__construct", "/includes/settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9468, 848, "plugins_loaded", "'cd_custom_footer'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9469, 848, "admin_enqueue_scripts", "array($this,'add_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9470, 848, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9471, 848, "admin_init", "array($this,'register_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (9472, 848, "admin_notices", "'_cd_custom_footer_notice'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3271, 848, "update_footer", "array($this,'right_admin_footer_text_output')", 11, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3272, 848, "admin_footer_text", "array($this,'left_admin_footer_text_output')", 10, now(), now());

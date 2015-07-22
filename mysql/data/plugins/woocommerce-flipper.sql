@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4874, "WooCommerce Flipper", "4.1", "0.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84780, 4874, "plugin_init", "/wc-flipper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620794, 4874, "WC_flip", "product_has_gallery", "/wc-flipper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620795, 4874, "WC_flip", "__construct", "/wc-flipper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620796, 4874, "WC_flip", "image_flip", "/wc-flipper.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (620797, 4874, "WC_flip", "woocommerce_template_loop_second_product_thumbnail", "/wc-flipper.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52308, 4874, "woocommerce_before_shop_loop_item_title", "array($this,'woocommerce_template_loop_second_product_thumbnail')", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52309, 4874, "init", "'plugin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52310, 4874, "wp_enqueue_scripts", "array($this,'image_flip')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17638, 4874, "post_class", "array($this,'product_has_gallery')", 10, now(), now());

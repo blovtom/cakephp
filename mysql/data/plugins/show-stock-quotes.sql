@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3860, "Show Stock Quotes", "4.1", "2.2.3", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68646, 3860, "wps_show_stock_quotes_register", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500990, 3860, "kjb_Show_Stocks", "update", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500991, 3860, "kjb_Show_Stocks", "register_activation", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500992, 3860, "kjb_Show_Stocks", "kjb_Show_Stocks", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500993, 3860, "kjb_Show_Stocks", "show_stock_quotes_widget_link", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500994, 3860, "kjb_Show_Stocks", "frontend_include_scripts", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500995, 3860, "kjb_Show_Stocks", "widget", "/show_stock_quotes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500996, 3860, "kjb_Show_Stocks", "form", "/show_stock_quotes.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41725, 3860, "wp_enqueue_scripts", "array('kjb_Show_Stocks','frontend_include_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41726, 3860, "widgets_init", "'wps_show_stock_quotes_register'", 10, now(), now());

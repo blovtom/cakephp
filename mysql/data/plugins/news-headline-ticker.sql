@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2882, "News Headline Ticker", "4.1", "1.1.7", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52756, 2882, "nhtAdminStyle", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52757, 2882, "nht_dynamicCSS", "/lib/tkr-style.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52758, 2882, "typingStyleFunction", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52759, 2882, "nht_plugin_redirect", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52760, 2882, "tickerPostRegister", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52761, 2882, "nht_plugin_activate", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52762, 2882, "slideHookFunction", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52763, 2882, "headLinePost", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52764, 2882, "newsHeadLineFunction", "/lib/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52765, 2882, "customScript", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52766, 2882, "newsHeadLineTkr", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52767, 2882, "textSlideOption", "/news-headline-ticker.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52768, 2882, "registernhtPage", "/lib/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (52769, 2882, "registerTkrScript", "/news-headline-ticker.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31275, 2882, "wp_enqueue_scripts", "'registerTkrScript'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31276, 2882, "wp_footer", "'customScript'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31277, 2882, "admin_init", "'nht_plugin_redirect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31278, 2882, "wp_footer", "'nht_dynamicCSS'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31279, 2882, "admin_menu", "'registernhtPage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31280, 2882, "wp_footer", "'textSlideOption'", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31281, 2882, "init", "'tickerPostRegister'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (31282, 2882, "admin_enqueue_scripts", "'nhtAdminStyle'", 10, now(), now());

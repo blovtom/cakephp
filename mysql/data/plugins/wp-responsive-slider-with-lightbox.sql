@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5373, "WP Responsive Slider With Lightbox", NULL, NULL, NULL, now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93685, 5373, "responsive_thumbnail_slider_with_lightbox_admin_options_func", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93686, 5373, "print_responsive_slider_plus_lightbox_func", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93687, 5373, "install_responsive_slider_plus_lightbox", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93688, 5373, "responsive_slider_plus_lightbox_admin_notices", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93689, 5373, "responsive_thumbnail_slider_with_lightbox_admin_preview_func", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93690, 5373, "responsive_slider_plus_lightbox_load_styles_and_js", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93691, 5373, "responsive_slider_plus_lightbox_add_admin_menu", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93692, 5373, "responsive_thumbnail_slider_with_lightbox_image_management_func", "/wp-responsive-slider-with-lightbox.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (93693, 5373, "responsive_slider_plus_lightbox_plugin_admin_init", "/wp-responsive-slider-with-lightbox.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58131, 5373, "admin_notices", "'responsive_slider_plus_lightbox_admin_notices'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58132, 5373, "wp_enqueue_scripts", "'responsive_slider_plus_lightbox_load_styles_and_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58133, 5373, "admin_menu", "'responsive_slider_plus_lightbox_add_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (19991, 5373, "widget_text", "'do_shortcode'", 10, now(), now());

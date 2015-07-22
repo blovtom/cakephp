@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2330, "JC Recaptcha", "4.0.1", "4.0.7", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42864, 2330, "jc_baw_create_menu", "/jc_recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42865, 2330, "jc_login_status", "/jc_recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42866, 2330, "jc_scripts_method", "/jc_recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42867, 2330, "jc_recatcha_settings_page", "/inc/options.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42868, 2330, "jcrecaptchacont", "/inc/recaptcha-ninja-cf7.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42869, 2330, "jc_register_mysettings_re", "/jc_recaptcha.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42870, 2330, "mifuncion_wpcf7_form_elements", "/inc/recaptcha-ninja-cf7.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42871, 2330, "jc_ninja_form_fields", "/inc/recaptcha-ninja-cf7.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (42872, 2330, "reCAPTCHA_add", "/jc_recaptcha.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24453, 2330, "admin_init", "'jc_register_mysettings_re'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24454, 2330, "wp_enqueue_scripts", "'jc_scripts_method'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24455, 2330, "admin_menu", "'jc_baw_create_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24456, 2330, "register_form", "'reCAPTCHA_add'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24457, 2330, "loop_start", "'jc_login_status'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24458, 2330, "login_form", "'reCAPTCHA_add'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24459, 2330, "login_enqueue_scripts", "'jc_scripts_method'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24460, 2330, "init", "'jc_ninja_form_fields'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24461, 2330, "admin_enqueue_scripts", "'jc_scripts_method'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24462, 2330, "comment_form", "'reCAPTCHA_add'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8191, 2330, "wpcf7_form_elements", "'mifuncion_wpcf7_form_elements'", 10, now(), now());

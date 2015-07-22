@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5386, "WP-SAMW", "4.1.1", "0.1", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (94520, 5386, "wpsamw_head", "/wp-samw.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (94521, 5386, "wpsamw_deinstall", "/wp-samw.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (94522, 5386, "wp_samw_init", "/wp-samw.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (703796, 5386, "WP_samw_Widget", "__construct", "/wp-samw.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (703797, 5386, "WP_samw_Widget", "update", "/wp-samw.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (703798, 5386, "WP_samw_Widget", "form", "/wp-samw.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (703799, 5386, "WP_samw_Widget", "widget", "/wp-samw.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58416, 5386, "widgets_init", "'wp_samw_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58417, 5386, "wp_head", "'wpsamw_head'", 10, now(), now());

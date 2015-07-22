@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1595, "Facebook Like Box Responsive Slider", "4.1", "trunk", "3.9.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196135, 1595, "facebook_likebox_slider", "plugin_settings_link", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196136, 1595, "facebook_likebox_slider_settings", "settings_field_input_text", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196137, 1595, "facebook_likebox_slider_settings", "add_menu", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196138, 1595, "facebook_likebox_slider_settings", "enqueue_admin_custom_scripts_and_styles", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196139, 1595, "facebook_likebox_slider_settings", "__construct", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196140, 1595, "facebook_likebox_slider", "deactivate", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196141, 1595, "facebook_likebox_slider_settings", "settings_field_input_radio", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196142, 1595, "facebook_likebox_slider_settings", "plugin_settings_page", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196143, 1595, "facebook_likebox_slider", "enqueue_custom_scripts_and_styles", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196144, 1595, "facebook_likebox_slider_settings", "settings_field_input_textarea", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196145, 1595, "facebook_likebox_slider", "getInstance", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196146, 1595, "facebook_likebox_slider_settings", "settings_field_input_special", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196147, 1595, "facebook_likebox_slider", "check_404", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196148, 1595, "facebook_likebox_slider", "__construct", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196149, 1595, "facebook_likebox_slider", "uninstall", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196150, 1595, "facebook_likebox_slider_settings", "settings_section_facebook_likebox_slider", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196151, 1595, "facebook_likebox_slider", "activate", "/facebook_likebox_slider.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196152, 1595, "facebook_likebox_slider_settings", "admin_init", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196153, 1595, "facebook_likebox_slider_settings", "settings_field_input_select", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196154, 1595, "facebook_likebox_slider", "add_meta_appid", "/facebook_likebox_slider.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17871, 1595, "wp_head", "array(&$this,'add_meta_appid')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17872, 1595, "admin_init", "array(&$this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17873, 1595, "init", "array(&$this,'enqueue_custom_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17874, 1595, "admin_head", "array(&$this,'enqueue_admin_custom_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17875, 1595, "admin_menu", "array(&$this,'add_menu')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5950, 1595, "wp_footer", "array(&$this,'check_404')", 10, now(), now());

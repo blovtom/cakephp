@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2576, "LowerMedia Sticky.js Menus", "4.1", "3.1.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353794, 2576, "LowerMedia_Sticky_Admin_Page", "add_plugin_page", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353795, 2576, "LowerMedia_Sticky_Admin_Page", "lmstickyjs_class_selector_two_callback", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353796, 2576, "LowerMedia_Sticky_JS_Menus", "return_localization_information", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353797, 2576, "LowerMedia_Sticky_Admin_Page", "create_admin_page", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353798, 2576, "LowerMedia_Sticky_Admin_Page", "lmstickyjs_class_selector_callback", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353799, 2576, "LowerMedia_Sticky_Admin_Page", "__construct", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353800, 2576, "LowerMedia_Sticky_Admin_Page", "sanitize", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353801, 2576, "LowerMedia_Sticky_Admin_Page", "page_init", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353802, 2576, "LowerMedia_Sticky_JS_Menus", "nav_append_container_and_class", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353803, 2576, "LowerMedia_Sticky_JS_Menus", "remove_more_jump_link", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353804, 2576, "LowerMedia_Sticky_JS_Menus", "add_scripts", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353805, 2576, "LowerMedia_Sticky_JS_Menus", "__construct", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353806, 2576, "LowerMedia_Sticky_JS_Menus", "get_url", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353807, 2576, "LowerMedia_Sticky_Admin_Page", "plugin_action_links", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353808, 2576, "LowerMedia_Sticky_Admin_Page", "lmstickyjs_default_options", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353809, 2576, "LowerMedia_Sticky_Admin_Page", "print_section_info", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (353810, 2576, "LowerMedia_Sticky_Admin_Page", "myfixed_disable_small_screen_callback", "/lowermedia-sticky-js-menus.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27838, 2576, "wp_enqueue_scripts", "array(__CLASS__,'add_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27839, 2576, "admin_init", "array($this,'page_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27840, 2576, "admin_init", "array($this,'lmstickyjs_default_options')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27841, 2576, "admin_menu", "array($this,'add_plugin_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9246, 2576, "the_content_more_link", "array(__CLASS__,'remove_more_jump_link')", 10, now(), now());

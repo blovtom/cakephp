@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1223, "Dialog Contact Form", "4.1", "1.0.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24789, 1223, "dialog_contact_form_shortcode", "/dialog-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24790, 1223, "dialog_contact_form_setup", "/dialog-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24791, 1223, "dialog_contact_form_output", "/dialog-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24792, 1223, "dialog_contact_form_settings_init", "/dialog-contact-form.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24793, 1223, "dialog_contact_form_scripts", "/dialog-contact-form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (109991, 1223, "dialogcf_options_page", "settings_page", "/dialog-contact-form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (109992, 1223, "CaptchaSecurityImages", "generateCode", "/captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (109993, 1223, "CaptchaSecurityImages", "CaptchaSecurityImages", "/captcha.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (109994, 1223, "dialogcf_options_page", "__construct", "/dialog-contact-form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (109995, 1223, "dialogcf_options_page", "admin_menu", "/dialog-contact-form.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13631, 1223, "admin_menu", "array($this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13632, 1223, "admin_init", "'dialog_contact_form_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13633, 1223, "wp_footer", "'dialog_contact_form_output'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13634, 1223, "init", "'dialog_contact_form_scripts'", 10, now(), now());

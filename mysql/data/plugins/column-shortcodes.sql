@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (926, "Column Shortcodes", "4.1", "0.6.6", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87095, 926, "Codepress_Column_Shortcodes", "init", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87096, 926, "Codepress_Column_Shortcodes", "__construct", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87097, 926, "Codepress_Column_Shortcodes", "get_shortcodes", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87098, 926, "Codepress_Column_Shortcodes", "admin_styles", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87099, 926, "Codepress_Column_Shortcodes", "popup", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87100, 926, "Codepress_Column_Shortcodes", "add_shortcode_button", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87101, 926, "Codepress_Column_Shortcodes", "add_editor_buttons", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87102, 926, "Codepress_Column_Shortcodes", "admin_scripts", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87103, 926, "Codepress_Column_Shortcodes", "columns", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87104, 926, "Codepress_Column_Shortcodes", "add_html_buttons", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87105, 926, "Codepress_Column_Shortcodes", "frontend_styles", "/column-shortcodes.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87106, 926, "Codepress_Column_Shortcodes", "content_helper", "/column-shortcodes.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10151, 926, "admin_footer", "array($this,'popup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10152, 926, "admin_init", "array($this,'add_editor_buttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10153, 926, "wp_loaded", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10154, 926, "admin_print_styles", "array($this,'admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10155, 926, "media_buttons", "array($this,'add_shortcode_button')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10156, 926, "admin_head", "array($this,'add_html_buttons')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10157, 926, "wp_enqueue_scripts", "array($this,'frontend_styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3519, 926, "tiny_mce_plugins", "array($this,'admin_scripts')", 10, now(), now());

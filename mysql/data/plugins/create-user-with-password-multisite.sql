@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1069, "Create User With Password Multisite", "4.1.0", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22296, 1069, "cuwp_activate", "/create-user-with-password-multisite.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22297, 1069, "cuwp_deactivate", "/create-user-with-password-multisite.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96794, 1069, "CUWP_Create_User_With_Password", "cuwp_listen", "/php/cuwp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96795, 1069, "CUWP_Create_User_With_Password", "__construct", "/php/cuwp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96796, 1069, "CUWP_Create_User_With_Password", "cuwp_script", "/php/cuwp.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96797, 1069, "CUWP_Create_User_With_Password", "cuwp_plug_pass", "/php/cuwp.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11851, 1069, "user_new_form", "array($this,'cuwp_plug_pass')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11852, 1069, "admin_action_createuser", "array($this,'cuwp_listen')", 3, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11853, 1069, "admin_print_scripts-user-new.php", "array($this,'cuwp_script')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4041, 1069, "wpmu_signup_user_notification", "'__return_false'", 10, now(), now());

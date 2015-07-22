@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4033, "SmartAss Highlighter", "4.1", "1.0", "2.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70609, 4033, "smartass_buttons", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70610, 4033, "smartass_tag_stripper", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70611, 4033, "smartass_highlighter", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70612, 4033, "smartass_tags", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70613, 4033, "highlight_filter", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70614, 4033, "smartass_panel", "/SmartAss-Highlighter-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70615, 4033, "powerup_smartass", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70616, 4033, "add_smartass_button", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70617, 4033, "register_smartass_button", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70618, 4033, "highlighter", "/SmartAss-Highlighter.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70619, 4033, "smartass_info", "/SmartAss-Highlighter-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43323, 4033, "admin_head", "'smartass_tags'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43324, 4033, "init", "'smartass_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43325, 4033, "admin_menu", "'smartass_panel'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43326, 4033, "wp_footer", "'smartass_highlighter'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14622, 4033, "mce_buttons_3", "'register_smartass_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14623, 4033, "the_content", "'highlight_filter'", 2, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14624, 4033, "mce_external_plugins", "'add_smartass_button'", 10, now(), now());

@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1471, "Email Verification", "4.2-alpha", "1.0", "3.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29613, 1471, "ev_resend_email_function", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29614, 1471, "ev_deactivate", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29615, 1471, "ev_send_email_function", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29616, 1471, "verification_form", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29617, 1471, "ev_styles", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29618, 1471, "ev_sendPostData_api", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29619, 1471, "ev_scripts", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29620, 1471, "ev_activate", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29621, 1471, "ev_configuration_form", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29622, 1471, "ev_configurations", "/index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16319, 1471, "admin_menu", "'ev_configurations'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16320, 1471, "wp_ajax_resend_email", "'ev_resend_email_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16321, 1471, "wp_ajax_nopriv_verify_email", "'ev_send_email_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16322, 1471, "wp_ajax_verify_email", "'ev_send_email_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16323, 1471, "wp_enqueue_scripts", "'ev_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16324, 1471, "wp_enqueue_scripts", "'ev_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16325, 1471, "wp_ajax_nopriv_resend_email", "'ev_resend_email_function'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16326, 1471, "admin_enqueue_scripts", "'ev_styles'", 10, now(), now());

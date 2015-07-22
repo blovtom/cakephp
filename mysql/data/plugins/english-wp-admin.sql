@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1491, "English WordPress Admin", "4.0", "1.4.1", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146898, 1491, "Admin_Custom_Language", "cookie_setting_value", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146899, 1491, "Admin_Custom_Language", "__construct", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146900, 1491, "Admin_Custom_Language", "is_version", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146901, 1491, "Admin_Custom_Language", "wpml_installed", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146902, 1491, "Admin_Custom_Language", "register_endpoints", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146903, 1491, "Admin_Custom_Language", "set_cookie", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146904, 1491, "Admin_Custom_Language", "admin_bar", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146905, 1491, "Admin_Custom_Language", "set_locale", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146906, 1491, "Admin_Custom_Language", "request_is_frontend_ajax", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146907, 1491, "Admin_Custom_Language", "init", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146908, 1491, "Admin_Custom_Language", "english_install_only", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146909, 1491, "Admin_Custom_Language", "admin_notices", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146910, 1491, "Admin_Custom_Language", "woocommerce_action", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146911, 1491, "Admin_Custom_Language", "wp_version_at_least", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146912, 1491, "Admin_Custom_Language", "admin_bar_title", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146913, 1491, "Admin_Custom_Language", "english_admin_enabled", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146914, 1491, "Admin_Custom_Language", "admin_css", "/english-wp-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (146915, 1491, "Admin_Custom_Language", "in_url_whitelist", "/english-wp-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16432, 1491, "admin_notices", "array($this,'admin_notices')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16433, 1491, "admin_bar_menu", "array(&$this,'admin_bar')", 31, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16434, 1491, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (16435, 1491, "admin_head", "array($this,'admin_css')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5467, 1491, "locale", "array(&$this,'set_locale')", 10, now(), now());

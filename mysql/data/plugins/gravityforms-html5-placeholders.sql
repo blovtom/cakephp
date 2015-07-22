@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2011, "Plugin Name", "4.1", "2.7.4", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320926, 2011, "GFHtml5Placeholders", "noconflict_styles", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320927, 2011, "GFHtml5Placeholders", "field_standard_settings", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320928, 2011, "GFHtml5Placeholders", "get_field_css_class", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320929, 2011, "GFHtml5Placeholders", "is_wordpress_supported", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320930, 2011, "GFHtml5Placeholders", "is_gravityforms_installed", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320931, 2011, "GFHtml5Placeholders", "enqueue_scripts_frontend", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320932, 2011, "GFHtml5Placeholders", "render_warnings", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320933, 2011, "GFHtml5Placeholders", "__construct", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320934, 2011, "GFHtml5Placeholders", "noconflict_scripts", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320935, 2011, "GFHtml5Placeholders", "init", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320936, 2011, "GFHtml5Placeholders", "multilingual_field_keys", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320937, 2011, "GFHtml5Placeholders", "is_gravityforms_supported", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320938, 2011, "GFHtml5Placeholders", "enqueue_scripts_admin", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320939, 2011, "GFHtml5Placeholders", "get_field_content", "/gravityforms-html5-placeholders.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (320940, 2011, "GFHtml5Placeholders", "is_gravityforms_html5_enabled", "/gravityforms-html5-placeholders.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21981, 2011, "admin_notices", "array($this,'render_warnings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21982, 2011, "gform_field_standard_settings", "array($this,'field_standard_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21983, 2011, "admin_enqueue_scripts", "array($this,'enqueue_scripts_admin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21984, 2011, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21985, 2011, "gform_enqueue_scripts", "array($this,'enqueue_scripts_frontend')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7308, 2011, "gform_field_css_class", "array($this,'get_field_css_class')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7309, 2011, "gform_field_content", "array($this,'get_field_content')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7310, 2011, "gform_multilingual_field_keys", "array($this,'multilingual_field_keys')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7311, 2011, "gform_noconflict_styles", "array($this,'noconflict_styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7312, 2011, "gform_noconflict_scripts", "array($this,'noconflict_scripts')", 10, now(), now());

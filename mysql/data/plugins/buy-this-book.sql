@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (682, "Buy This Book", "4.1", "1.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15391, 682, "register_buy_book", "/buy-this-book.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15392, 682, "btb_enqueuewidgetcss", "/buy-this-book.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (15393, 682, "btb_enqueuestylesandjs", "/buy-this-book.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (59926, 682, "Buy_Book", "form", "/buy-this-book.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (59927, 682, "Buy_Book", "update", "/buy-this-book.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (59928, 682, "Buy_Book", "widget", "/buy-this-book.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (59929, 682, "Buy_Book", "__construct", "/buy-this-book.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7584, 682, "wp_enqueue_scripts", "'btb_enqueuestylesandjs'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7585, 682, "widgets_init", "'register_buy_book'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2782, 682, "admin_enqueue_scripts", "'btb_enqueuewidgetcss'", 10, now(), now());

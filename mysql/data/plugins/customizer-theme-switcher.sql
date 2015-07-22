@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1160, "Customizer Theme Switcher", "4.2", "trunk", "4.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23731, 1160, "customizer_theme_switcher_register", "/customizer-theme-switcher.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (23732, 1160, "customize_themes_templates", "/customizer-theme-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (101776, 1160, "WP_Customize_Theme_Control", "content_template", "/customizer-theme-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (101777, 1160, "WP_Customize_Theme_Control", "enqueue", "/customizer-theme-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (101778, 1160, "WP_Customize_New_Theme_Control", "render", "/customizer-theme-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (101779, 1160, "WP_Customize_Theme_Control", "to_json", "/customizer-theme-switcher.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (101780, 1160, "WP_Customize_Theme_Control", "render_content", "/customizer-theme-switcher.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12892, 1160, "customize_controls_print_footer_scripts", "'customize_themes_templates'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (12893, 1160, "customize_register", "'customizer_theme_switcher_register'", 10, now(), now());

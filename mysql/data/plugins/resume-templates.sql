@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3622, "Resume Templates", "4.1", "1.0", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65074, 3622, "resume_templates_percentage_grid", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65075, 3622, "meta_boxes_resume", "/includes/meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65076, 3622, "resume_templates_paratheme_init_scripts", "/resume-templates.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65077, 3622, "resume_templates_share_plugin", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65078, 3622, "resume_templates_themes_flat", "/themes/flat/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65079, 3622, "resume_templates_section_content", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65080, 3622, "meta_boxes_resume_save", "/includes/meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65081, 3622, "resume_templates_paratheme_activation", "/resume-templates.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65082, 3622, "meta_boxes_resume_input", "/includes/meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65083, 3622, "resume_posttype_register", "/includes/meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65084, 3622, "resume_templates_paratheme_menu_init", "/resume-templates.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65085, 3622, "resume_templates_paratheme_display", "/resume-templates.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65086, 3622, "resume_templates_admin_scripts", "/resume-templates.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (65087, 3622, "resume_templates_paratheme_menu_help", "/resume-templates.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39478, 3622, "wp_ajax_resume_templates_section_content", "'resume_templates_section_content'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39479, 3622, "admin_enqueue_scripts", "'resume_templates_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39480, 3622, "add_meta_boxes", "'meta_boxes_resume'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39481, 3622, "admin_menu", "'resume_templates_paratheme_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39482, 3622, "admin_enqueue_scripts", "'wp_enqueue_media'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39483, 3622, "init", "'resume_posttype_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39484, 3622, "save_post", "'meta_boxes_resume_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39485, 3622, "init", "'resume_templates_paratheme_init_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39486, 3622, "wp_ajax_nopriv_resume_templates_section_content", "'resume_templates_section_content'", 10, now(), now());

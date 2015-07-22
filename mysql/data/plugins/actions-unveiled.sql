@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (56, "Actions unveiled", "4.2", "1.0.0", "4.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (580, 56, "actunv_load_scripts", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3106, 56, "BE_MCH_ACTUNV_class", "add_message", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3107, 56, "BE_MCH_ACTUNV_class", "on_shutdown", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3108, 56, "BE_MCH_ACTUNV_class", "addMessage", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3109, 56, "BE_MCH_ACTUNV_class", "print_actions", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3110, 56, "BE_MCH_ACTUNV_messenger", "__construct", "/actions-unveiled.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (3111, 56, "BE_MCH_ACTUNV_class", "on_action", "/actions-unveiled.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (468, 56, "admin_enqueue_scripts", "'actunv_load_scripts'", 21, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (469, 56, "shutdown", "array('BE_MCH_ACTUNV_class','on_shutdown')", 9999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (470, 56, "wp_enqueue_scripts", "'actunv_load_scripts'", 21, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (471, 56, "all", "array('BE_MCH_ACTUNV_class','on_action')", 0, now(), now());

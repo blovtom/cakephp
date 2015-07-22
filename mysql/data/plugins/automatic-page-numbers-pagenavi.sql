@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (388, "Automatic Page Numbers - PageNavi", "4.1", "1.05", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6097, 388, "styling_the_pagenumbers", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6098, 388, "pagenavi_auto_activate", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6099, 388, "addContentPageNumbers", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6100, 388, "pagenavi_auto_install", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6101, 388, "autoStartsWith", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6102, 388, "pagenavi_auto_page_translation", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6103, 388, "loopend_pagenavifunction", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6104, 388, "go_page_navi_automatic", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6105, 388, "autostrposnth", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6106, 388, "pagenavi_auto_admin_menu", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40601, 388, "automatic_page_numbers_pagenavi", "go_page_navi_automatic", "/automatic-page-numbers-pagenavi.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3539, 388, "loop_end", "'loopend_pagenavifunction'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3540, 388, "wp_enqueue_scripts", "'styling_the_pagenumbers'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3541, 388, "admin_menu", "'pagenavi_auto_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3542, 388, "init", "'pagenavi_auto_activate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1076, 388, "the_content", "'addContentPageNumbers'", 10, now(), now());

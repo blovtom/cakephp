@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4974, "WooCommerce Tracking Facebook Conversion", "4.0.1", "1.0.0", "4.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630567, 4974, "AG_Magma_Tracking_Facebook_Conversion", "__construct", "/woocommerce-tracking-facebook-conversion.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630568, 4974, "WC_Integration_Track_Facebook_Conversion", "init_form_fields", "/includes/class-track-facebook-conversion-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630569, 4974, "WC_Integration_Track_Facebook_Conversion", "__construct", "/includes/class-track-facebook-conversion-integration.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630570, 4974, "AG_Magma_Tracking_Facebook_Conversion", "get_instance", "/woocommerce-tracking-facebook-conversion.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630571, 4974, "AG_Magma_Tracking_Facebook_Conversion", "fb_integration", "/woocommerce-tracking-facebook-conversion.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (630572, 4974, "AG_Magma_Tracking_Facebook_Conversion", "add_integration", "/woocommerce-tracking-facebook-conversion.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53481, 4974, "woocommerce_thankyou", "array($this,'fb_integration')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53482, 4974, "plugins_loaded", "array('AG_Magma_Tracking_Facebook_Conversion','get_instance')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18317, 4974, "woocommerce_integrations", "array($this,'add_integration')", 10, now(), now());

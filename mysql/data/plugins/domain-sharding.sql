@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1276, "Domain Sharding", "4.1.1", "1.1.9", "2.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111141, 1276, "domain_sharding", "__construct", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111142, 1276, "domain_sharding", "set_ds", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111143, 1276, "domain_sharding", "options_page", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111144, 1276, "domain_sharding", "ds_calc_number", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111145, 1276, "domain_sharding", "set_home", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111146, 1276, "domain_sharding", "get_options_url", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111147, 1276, "domain_sharding", "ds_parse", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111148, 1276, "domain_sharding", "process", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111149, 1276, "domain_sharding", "plugin_action_links", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111150, 1276, "domain_sharding", "redirect_subdomain", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111151, 1276, "domain_sharding", "domain_sharding", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111152, 1276, "domain_sharding", "admin_menu", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111153, 1276, "domain_sharding", "domain_aliases_writable", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111154, 1276, "domain_sharding", "ds_build_domain", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111155, 1276, "domain_sharding", "write_domain_aliases", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111156, 1276, "domain_sharding", "show_messages", "/domain-sharding.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (111157, 1276, "domain_sharding", "check_domain_sharding", "/domain-sharding.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13976, 1276, "admin_menu", "array(&$this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13977, 1276, "init", "array(&$this,'process')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13978, 1276, "admin_notices", "array($this,'show_messages')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13979, 1276, "init", "array(&$this,'redirect_subdomain')", 5, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4707, 1276, "plugin_action_links", "array($this,'plugin_action_links')", 10, now(), now());

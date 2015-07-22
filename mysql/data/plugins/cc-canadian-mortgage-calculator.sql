@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (772, "CC Canadian Mortgage Calculator", "4.1", "1.1.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17052, 772, "cc_mortgage_canada_admin", "/cc-mortgage-canada.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17053, 772, "load_cc_mortgage_canada_calc", "/cc-mortgage-canada-layout.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17054, 772, "load_ccmc_custom_colors", "/cc-mortgage-canada-layout.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17055, 772, "cc_mortgage_canada_scripts", "/cc-mortgage-canada.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (17056, 772, "cc_mortgage_canada_shortcode", "/cc-mortgage-canada.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67629, 772, "cc_mortgage_canada", "update", "/cc-mortgage-canada.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67630, 772, "cc_mortgage_canada", "widget", "/cc-mortgage-canada.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67631, 772, "cc_mortgage_canada", "form", "/cc-mortgage-canada.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67632, 772, "cc_mortgage_canada", "__construct", "/cc-mortgage-canada.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8594, 772, "admin_enqueue_scripts", "'cc_mortgage_canada_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8595, 772, "wp_enqueue_scripts", "'cc_mortgage_canada_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8596, 772, "widgets_init", "create_function('','return register_widget("cc_mortgage_canada");')", 10, now(), now());

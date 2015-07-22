@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4681, "Volunteer Form", "4.0.1", "0.1", "3.5.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81528, 4681, "vf_pack_set", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81529, 4681, "vf_init_db", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81530, 4681, "vf_form_confirm", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81531, 4681, "vf_form_submit", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81532, 4681, "vf_db_fetch", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81533, 4681, "vf_init_settings", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81534, 4681, "vf_insert_record", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81535, 4681, "vf_plugin_settings_page", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81536, 4681, "vf_init_admin", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81537, 4681, "vf_debug", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81538, 4681, "vf_init", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81539, 4681, "vf_menu_settings", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81540, 4681, "vf_update_db_check", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81541, 4681, "vf_html_form", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81542, 4681, "vf_add_menu", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81543, 4681, "vf_menu_page", "/volunteerform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81544, 4681, "cleanData", "/excel.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81545, 4681, "vf_shortcode", "/volunteerform.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50146, 4681, "admin_menu", "'vf_add_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50147, 4681, "admin_init", "'vf_init_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50148, 4681, "plugins_loaded", "'vf_update_db_check'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50149, 4681, "init", "'vf_init'", 10, now(), now());

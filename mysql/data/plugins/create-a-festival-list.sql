@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1068, "Custom Post type and short code", "4.1", "trunk", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22294, 1068, "sp_cpt_shortcode", "/cutomposttype.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22295, 1068, "sp_cpt_setup_post_types", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96784, 1068, "SP_cpt_setting", "page_init_cpt", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96785, 1068, "SP_cpt_setting", "print_section_info", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96786, 1068, "SP_cpt_setting", "post_singular_name_callback", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96787, 1068, "SP_cpt_setting", "menu_name_callback", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96788, 1068, "SP_cpt_setting", "__construct", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96789, 1068, "SP_cpt_setting", "post_shortcode_callback", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96790, 1068, "SP_cpt_setting", "create_cptsadmin_page", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96791, 1068, "SP_cpt_setting", "sanitize", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96792, 1068, "SP_cpt_setting", "post_name_callback", "/cutomposttype.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96793, 1068, "SP_cpt_setting", "add_cpt_page", "/cutomposttype.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11848, 1068, "admin_menu", "array($this,'add_cpt_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11849, 1068, "admin_init", "array($this,'page_init_cpt')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11850, 1068, "init", "'sp_cpt_setup_post_types'", 10, now(), now());

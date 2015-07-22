@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3517, "Recent Posts Widget With Thumbnails", "4.1", "2.3", "2.9", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63796, 3517, "register_recent_posts_widget_with_thumbnails", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463237, 3517, "Recent_Posts_Widget_With_Thumbnails", "form", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463238, 3517, "Recent_Posts_Widget_With_Thumbnails", "__construct", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463239, 3517, "Recent_Posts_Widget_With_Thumbnails", "update", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463240, 3517, "Recent_Posts_Widget_With_Thumbnails", "load_plugin_textdomain", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463241, 3517, "Recent_Posts_Widget_With_Thumbnails", "enqueue_public_style", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463242, 3517, "Recent_Posts_Widget_With_Thumbnails", "flush_widget_cache", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463243, 3517, "Recent_Posts_Widget_With_Thumbnails", "widget", "/recent-posts-widget-with-thumbnails.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38482, 3517, "wp_enqueue_scripts", "array($this,'enqueue_public_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38483, 3517, "admin_init", "array($this,'load_plugin_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38484, 3517, "deleted_post", "array($this,'flush_widget_cache')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38485, 3517, "save_post", "array($this,'flush_widget_cache')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38486, 3517, "init", "'register_recent_posts_widget_with_thumbnails'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38487, 3517, "switch_theme", "array($this,'flush_widget_cache')", 10, now(), now());

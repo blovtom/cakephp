@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5083, "WP Change Default From Email", "4.1.1", "trunk", "2.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661981, 5083, "WCDFE_Admin", "__construct", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661982, 5083, "WCDFE_Admin", "admin_scripts", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661983, 5083, "WCDFE", "donate_link", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661984, 5083, "WCDFE", "change_mail_from", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661985, 5083, "WCDFE", "constants", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661986, 5083, "WCDFE", "add_action_links", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661987, 5083, "WCDFE_Admin", "get_instance", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661988, 5083, "WCDFE", "change_mail_from_name", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661989, 5083, "WCDFE_Admin", "register_admin_menu", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661990, 5083, "WCDFE_Admin", "save_settings", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661991, 5083, "WCDFE_Admin", "settings", "/admin/WCDFE_Admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661992, 5083, "WCDFE", "__construct", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661993, 5083, "WCDFE", "get_instance", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661994, 5083, "WCDFE", "text_domain", "/WCDFE.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (661995, 5083, "WCDFE", "init", "/WCDFE.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55095, 5083, "admin_enqueue_scripts", "array(&$this,'admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55096, 5083, "plugins_loaded", "array('WCDFE','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55097, 5083, "admin_menu", "array(&$this,'register_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55098, 5083, "init", "array(&$this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55099, 5083, "plugins_loaded", "array('WCDFE_Admin','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (55100, 5083, "wp_ajax_wcdfe_save_settings", "array(&$this,'save_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18779, 5083, "wp_mail_from", "array(&$this,'change_mail_from')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18780, 5083, "wp_mail_from_name", "array(&$this,'change_mail_from_name')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18781, 5083, "plugin_row_meta", "array(&$this,'donate_link')", 10, now(), now());

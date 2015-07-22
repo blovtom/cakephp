@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3196, "Plugin Toggle", "4.1", "trunk", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413514, 3196, "PluginToggle_Plugin", "get_file", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413515, 3196, "PluginToggle_Plugin", "__construct", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413516, 3196, "PluginToggle_Plugin", "is_active", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413517, 3196, "PluginToggle", "plugins_changed", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413518, 3196, "PluginToggle_Plugin", "get_name", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413519, 3196, "PluginToggle", "flush_plugins_cache", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413520, 3196, "PluginToggle", "enqueue_assets", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413521, 3196, "PluginToggle_Toolbar", "__construct", "/includes/class-plugintoggle-toolbar.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413522, 3196, "PluginToggle", "setup_toolbar", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413523, 3196, "PluginToggle_Plugin", "get_toggle_url", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413524, 3196, "PluginToggle", "redirect", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413525, 3196, "PluginToggle", "active_plugins_changed", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413526, 3196, "PluginToggle", "load_plugin", "/includes/class-plugintoggle.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (413527, 3196, "PluginToggle_Plugin", "is_network_related", "/includes/class-plugintoggle-plugin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35115, 3196, "admin_enqueue_scripts", "array($this,'enqueue_assets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35116, 3196, "admin_bar_menu", "array($this,'setup_toolbar')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35117, 3196, "wp_enqueue_scripts", "array($this,'enqueue_assets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35118, 3196, "plugins_loaded", "array($plugintoggle,'load_plugin')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35119, 3196, "load-plugins.php", "array($this,'flush_plugins_cache')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11781, 3196, "plugintoggle_force_plugins_refresh", "array($this,'plugins_changed')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11782, 3196, "plugintoggle_force_plugins_refresh", "array($this,'active_plugins_changed')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11783, 3196, "wp_redirect", "array($this,'redirect')", 1, now(), now());

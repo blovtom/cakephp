@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2546, "Load low source image first", "4.1", "1.1.0", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351826, 2546, "llsif_load_low_source_image_first", "load_translation", "/llsif-load-low-source-image-first.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351827, 2546, "llsif_load_low_source_image_first", "enqueue_assets", "/llsif-load-low-source-image-first.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351828, 2546, "llsif_load_low_source_image_first", "end_buffer_capture", "/llsif-load-low-source-image-first.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351829, 2546, "llsif_load_low_source_image_first", "replace_images_with_lowsource", "/llsif-load-low-source-image-first.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351830, 2546, "llsif_load_low_source_image_first", "__construct", "/llsif-load-low-source-image-first.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27564, 2546, "wp_enqueue_scripts", "array($this,'enqueue_assets')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27565, 2546, "init", "array($this,'load_translation')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9186, 2546, "template_include", "array($this,'replace_images_with_lowsource')", 1, now(), now());

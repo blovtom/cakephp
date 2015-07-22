@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5572, "WPsite Post Status Notifications", "4.1", "2.0.3", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730807, 5572, "WPSitePostStatusNotifications", "inline_scripts_admin", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730808, 5572, "WPSitePostStatusNotifications", "wpsite_admin_menu_info_callback", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730809, 5572, "WPSitePostStatusNotifications", "register_activation", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730810, 5572, "WPSitePostStatusNotifications", "load_textdoamin", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730811, 5572, "WPSitePostStatusNotifications", "wpsite_admin_menu", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730812, 5572, "WPSitePostStatusNotifications", "wpsite_send_email", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730813, 5572, "WPSitePostStatusNotifications", "wpsite_post_status_notification_settings_link", "/wpsite_post_status_notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (730814, 5572, "WPSitePostStatusNotifications", "get_post_types", "/wpsite_post_status_notification.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60912, 5572, "admin_menu", "array('WPSitePostStatusNotifications','wpsite_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60913, 5572, "transition_post_status", "array('WPSitePostStatusNotifications','wpsite_send_email')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (60914, 5572, "init", "array('WPSitePostStatusNotifications','load_textdoamin')", 10, now(), now());

@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1632, "FB Photo Sync", "4.2-alpha", "trunk", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201625, 1632, "FB_Photo_Sync", "save_image", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201626, 1632, "FB_Photo_Sync", "admin_tabs", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201627, 1632, "FB_Photo_Sync", "albums_page", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201628, 1632, "FB_Photo_Sync", "ajax_delete_photos", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201629, 1632, "FB_Photo_Sync", "ajax_save_photos", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201630, 1632, "FB_Photo_Sync", "__construct", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201631, 1632, "FB_Photo_Sync", "admin_content", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201632, 1632, "FB_Photo_Sync", "closest_image_size", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201633, 1632, "FB_Photo_Sync", "admin_scripts", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201634, 1632, "FB_Photo_Sync", "fb_album_shortcode", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201635, 1632, "FB_Photo_Sync", "import_page", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201636, 1632, "FB_Photo_Sync", "display_options_page", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201637, 1632, "FB_Photo_Sync", "add_menu_page", "/fb-photo-sync.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201638, 1632, "FB_Photo_Sync", "fbps_scripts", "/fb-photo-sync.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18099, 1632, "admin_menu", "array($this,'add_menu_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18100, 1632, "wp_enqueue_scripts", "array($this,'fbps_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18101, 1632, "admin_enqueue_scripts", "array($this,'admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18102, 1632, "wp_ajax_fbps_delete_album", "array($this,'ajax_delete_photos')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18103, 1632, "wp_ajax_fbps_save_album", "array($this,'ajax_save_photos')", 10, now(), now());

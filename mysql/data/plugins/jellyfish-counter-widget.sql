@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2341, "Jellyfish Counter Widget", "4.1", "1.4.2", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43069, 2341, "jellyfish_cw_shortcode_handler", "/jellyfish-counter-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43070, 2341, "jellyfish_cw_create_widgets", "/jellyfish-counter-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (43071, 2341, "jellyfish_cw_action_init", "/jellyfish-counter-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335356, 2341, "Jellyfish_Counter_Widget", "__construct", "/jellyfish-counter-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335357, 2341, "Jellyfish_Counter_Widget", "widget", "/jellyfish-counter-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335358, 2341, "Jellyfish_Counter_Widget", "form", "/jellyfish-counter-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (335359, 2341, "Jellyfish_Counter_Widget", "update", "/jellyfish-counter-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24513, 2341, "init", "'jellyfish_cw_action_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (24514, 2341, "widgets_init", "'jellyfish_cw_create_widgets'", 10, now(), now());

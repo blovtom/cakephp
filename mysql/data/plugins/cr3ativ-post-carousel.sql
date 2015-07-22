@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1063, "Cr3ativ RecentPosts Carousel", "4.0", "1.0.8", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22252, 1063, "get_excerpt_by_id", "/cr3ativ-recentposts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22253, 1063, "recentposts_cat_func", "/cr3ativ-recentposts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22254, 1063, "custom_excerpt_length", "/cr3ativ-recentposts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (22255, 1063, "creativ_recentposts_add_scripts", "/cr3ativ-recentposts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96321, 1063, "cr3ativ_recentposts_carousel", "update", "/cr3ativ-recentposts-carousel-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96322, 1063, "cr3ativ_recentposts_carousel", "cr3ativ_recentposts_carousel", "/cr3ativ-recentposts-carousel-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96323, 1063, "cr3ativ_recentposts_carousel", "widget", "/cr3ativ-recentposts-carousel-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (96324, 1063, "cr3ativ_recentposts_carousel", "form", "/cr3ativ-recentposts-carousel-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11795, 1063, "widgets_init", "create_function('','return register_widget("cr3ativ_recentposts_carousel");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (11796, 1063, "wp_enqueue_scripts", "'creativ_recentposts_add_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (4017, 1063, "excerpt_length", "'custom_excerpt_length'", 999, now(), now());

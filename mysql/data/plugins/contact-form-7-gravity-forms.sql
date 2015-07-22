@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (973, "Contact Form 7 Gravity Forms Importer", "4.1", "trunk", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89892, 973, "GFCF7_Import", "get_forms", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89893, 973, "GFCF7_Import", "update_field_types_and_ids", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89894, 973, "GFCF7_Import", "greet", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89895, 973, "GFCF7_Import", "import_forms", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89896, 973, "GFCF7_Import", "dispatch", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89897, 973, "GFCF7_Import", "unhtmlentities", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89898, 973, "GFCF7_Import", "footer", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89899, 973, "GFCF7_Import", "header", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89900, 973, "GFCF7_Import", "get_settings", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89901, 973, "GFCF7_Import", "get_field_type", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89902, 973, "GFCF7_Import", "setForm", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89903, 973, "GFCF7_Import", "getInstance", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89904, 973, "GFCF7_Import", "init", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89905, 973, "GFCF7_Import", "__construct", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89906, 973, "GFCF7_Import", "import", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89907, 973, "GFCF7_Import", "import_upload_form", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89908, 973, "GFCF7_Import", "getLabel", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89909, 973, "GFCF7_Import", "create_gf_menu", "/contact-form-7-gravity-forms.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (89910, 973, "GFCF7_Import", "setXML", "/contact-form-7-gravity-forms.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10686, 973, "init", "array('GFCF7_Import','init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3733, 973, "gform_addon_navigation", "array('GFCF7_Import','create_gf_menu')", 10, now(), now());

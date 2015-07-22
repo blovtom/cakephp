@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3945, "Simple Signup Form", "4.1", "trunk", "3.9.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504309, 3945, "simple_signup_form", "__construct", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504310, 3945, "simple_signup_form_settings", "ajax_ssp", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504311, 3945, "simple_signup_form", "activate", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504312, 3945, "simple_signup_form_settings", "__construct", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504313, 3945, "simple_signup_form_settings", "add_menu", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504314, 3945, "simple_signup_form", "uninstall", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504315, 3945, "simple_signup_form", "ssf_shortcodes", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504316, 3945, "simple_signup_form_settings", "settings_section_simple_signup_form", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504317, 3945, "simple_signup_form", "deactivate", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504318, 3945, "simple_signup_form_settings", "admin_init", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504319, 3945, "simple_signup_form", "plugin_settings_link", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504320, 3945, "simple_signup_form", "getInstance", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504321, 3945, "simple_signup_form_settings", "plugin_settings_page", "/settings.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504322, 3945, "simple_signup_form", "enqueue_custom_scripts_and_styles", "/simple_signup_form.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (504323, 3945, "simple_signup_form_settings", "enqueue_admin_custom_scripts_and_styles", "/settings.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42560, 3945, "admin_init", "array(&$this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42561, 3945, "wp_ajax_nopriv_ajax_ssp", "array(&$this,'ajax_ssp')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42562, 3945, "init", "array(&$this,'enqueue_custom_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42563, 3945, "wp_ajax_ajax_ssp", "array(&$this,'ajax_ssp')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42564, 3945, "admin_head", "array(&$this,'enqueue_admin_custom_scripts_and_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (42565, 3945, "admin_menu", "array(&$this,'add_menu')", 10, now(), now());

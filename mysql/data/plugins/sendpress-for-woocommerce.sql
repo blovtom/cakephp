@@ -1,0 +1,22 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3783, "SendPress For WooCommerce", "4.1.1", "1.0", "3.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490310, 3783, "SendPress_Woo_Signup", "init", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490311, 3783, "SendPress_Woo_Signup", "notice_sedpress_missing", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490312, 3783, "SendPress_Woo_Signup", "plugin_activation", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490313, 3783, "SendPress_Woo_Signup", "__construct", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490314, 3783, "SendPress_Woo_Signup", "check_required_classes", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490315, 3783, "SendPress_Woo_Signup", "sendpress_woo_check_for_email_signup", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490316, 3783, "SendPress_Woo_Signup", "load", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490317, 3783, "SendPress_Woo_Signup", "add_form_fields", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490318, 3783, "SendPress_Woo_Signup", "get_sendpress_lists", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490319, 3783, "SendPress_Woo_Signup", "get_instance", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490320, 3783, "SendPress_Woo_Signup", "plugin_deactivation", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490321, 3783, "SendPress_Woo_Signup", "add_settings", "/classes/woo-sendpress-signup.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (490322, 3783, "SendPress_Woo_Signup", "notice_woo_missing", "/classes/woo-sendpress-signup.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41002, 3783, "admin_notices", "array($this,'notice_sedpress_missing')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41003, 3783, "woocommerce_after_order_notes", "array($this,'add_form_fields')", 100, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41004, 3783, "woocommerce_checkout_process", "array($this,'sendpress_woo_check_for_email_signup')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41005, 3783, "admin_notices", "array($this,'notice_woo_missing')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41006, 3783, "plugins_loaded", "array($this,'load')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41007, 3783, "init", "array($this,'init')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13984, 3783, "woocommerce_get_settings_checkout", "array($this,'add_settings')", 10, now(), now());

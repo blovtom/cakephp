@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2704, "Meteora Pixels", "4.1", "trunk", "3.5.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367532, 2704, "Meteora", "aidCB", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367533, 2704, "Meteora", "__construct", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367534, 2704, "meteoraWoo", "getProductJS", "/woo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367535, 2704, "meteoraWoo", "getConvJS", "/woo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367536, 2704, "Meteora", "pageInit", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367537, 2704, "Meteora", "sanitize", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367538, 2704, "Meteora", "wooTrackConv", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367539, 2704, "Meteora", "wooConvCB", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367540, 2704, "Meteora", "wooProdCB", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367541, 2704, "Meteora", "createAdminPage", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367542, 2704, "Meteora", "addPixel", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367543, 2704, "Meteora", "initPlugins", "/meteora.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (367544, 2704, "Meteora", "addPluginPage", "/meteora.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29387, 2704, "plugins_loaded", "array($this,'initPlugins')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29388, 2704, "woocommerce_thankyou", "array('meteoraWoo','getConvJS')", 99, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29389, 2704, "woocommerce_single_product_summary", "array('meteoraWoo','getProductJS')", 99, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29390, 2704, "wp_head", "array($this,'addPixel')", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29391, 2704, "admin_init", "array($this,'pageInit')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (29392, 2704, "admin_menu", "array($this,'addPluginPage')", 10, now(), now());

@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3229, "Poll one wp plugin", "4.1", "7.2", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58211, 3229, "pool1_plugin_parse_request", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58212, 3229, "pool1_page_setting", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58213, 3229, "LoadAnswer", "/pages/content-management-show.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58214, 3229, "pool1_plugin_query_vars", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58215, 3229, "pool1_shortcode", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58216, 3229, "pool1_plugin_url", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58217, 3229, "pool1_init", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58218, 3229, "poolone", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58219, 3229, "pool1_admin_options", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58220, 3229, "pool1_install", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58221, 3229, "pool1_control", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58222, 3229, "pool1_add_to_menu", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58223, 3229, "pool1_deactivation", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58224, 3229, "pool1_widget", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58225, 3229, "LoadAnswer", "/pages/content-management-add.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58226, 3229, "pool1_add_javascript_files", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58227, 3229, "pool1_plugin_path", "/pool-one-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58228, 3229, "pool1_textdomain", "/pool-one-wp-plugin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35633, 3229, "parse_request", "'pool1_plugin_parse_request'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35634, 3229, "plugins_loaded", "'pool1_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35635, 3229, "wp_enqueue_scripts", "'pool1_add_javascript_files'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35636, 3229, "admin_menu", "'pool1_add_to_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35637, 3229, "plugins_loaded", "'pool1_textdomain'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12041, 3229, "query_vars", "'pool1_plugin_query_vars'", 10, now(), now());

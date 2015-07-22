@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1587, "Facebook Comments", "4.1", "2.2.3", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32579, 1587, "show_fbcomments_options", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32580, 1587, "fbc_save_postdata", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32581, 1587, "fbcomments_init", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32582, 1587, "fbcomments_schema", "/class-frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32583, 1587, "fbc_add_custom_box", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32584, 1587, "fb_link", "/facebook-comments.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32585, 1587, "fbcomments_fetch_rss_feed", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32586, 1587, "fbcomments_options", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32587, 1587, "fbgraphinfo", "/class-frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32588, 1587, "fbmlsetup", "/class-frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32589, 1587, "fbcommentbox", "/class-frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32590, 1587, "fbc_metabox", "/class-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32591, 1587, "fbcommentshortcode", "/class-frontend.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32592, 1587, "fbcomments_admin_notice", "/class-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17805, 1587, "admin_notices", "'fbcomments_admin_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17806, 1587, "save_post", "'fbc_save_postdata'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17807, 1587, "admin_init", "'fbcomments_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17808, 1587, "add_meta_boxes", "'fbc_add_custom_box'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17809, 1587, "wp_head", "'fbgraphinfo'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17810, 1587, "admin_menu", "'show_fbcomments_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17811, 1587, "wp_footer", "'fbmlsetup'", 100, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5938, 1587, "widget_text", "'do_shortcode'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5939, 1587, "the_content", "'fbcommentbox'", 100, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5940, 1587, "language_attributes", "'fbcomments_schema'", 10, now(), now());

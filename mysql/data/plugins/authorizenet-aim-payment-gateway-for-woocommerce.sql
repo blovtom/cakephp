@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (365, "Plugin Name", "4.1", "1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5988, 365, "woocommerce_add_tech_authoaim_gateway", "/authorize-aim.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (5989, 365, "woocommerce_tech_authoaim_init", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40281, 365, "WC_Tech_Authoaim", "process_payment", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40282, 365, "WC_Tech_Authoaim", "init_form_fields", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40283, 365, "WC_Tech_Authoaim", "admin_options", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40284, 365, "WC_Tech_Authoaim", "payment_fields", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40285, 365, "WC_Tech_Authoaim", "__construct", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40286, 365, "WC_Tech_Authoaim", "generate_authorizeaim_params", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40287, 365, "WC_Tech_Authoaim", "receipt_page", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40288, 365, "WC_Tech_Authoaim", "thankyou_page", "/authorize-aim.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (40289, 365, "WC_Tech_Authoaim", "validate_fields", "/authorize-aim.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3455, 365, "woocommerce_update_options_payment_gateways", "array(&$this,'process_admin_options')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3456, 365, "woocommerce_thankyou_authorizeaim", "array(&$this,'thankyou_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3457, 365, "plugins_loaded", "'woocommerce_tech_authoaim_init'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3458, 365, "woocommerce_receipt_authorizeaim", "array(&$this,'receipt_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1052, 365, "woocommerce_payment_gateways", "'woocommerce_add_tech_authoaim_gateway'", 10, now(), now());

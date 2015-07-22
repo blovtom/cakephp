@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5606, "Xapo", "4.1", "0.4.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97946, 5606, "add_options_menu", "/xapo-wordpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97947, 5606, "render_tip_btn", "/xapo-wordpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97948, 5606, "register_settings", "/xapo-wordpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97949, 5606, "print_tip_btn", "/xapo-wordpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97950, 5606, "xapo_active_event", "/xapo-wordpress.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (97951, 5606, "xapo_options_page_callback", "/xapo-wordpress.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (757027, 5606, "XapoMicroPaymentSDK", "setApplication", "/xapoMicroPaymentSDK.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (757028, 5606, "XapoMicroPaymentSDK", "buildIframeWidget", "/xapoMicroPaymentSDK.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (757029, 5606, "XapoMicroPaymentSDK", "setEnvironmentUrl", "/xapoMicroPaymentSDK.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (757030, 5606, "XapoMicroPaymentSDK", "iframeWidget", "/xapoMicroPaymentSDK.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61458, 5606, "admin_init", "'register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61459, 5606, "admin_menu", "'add_options_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (61460, 5606, "admin_notices", "'xapo_active_event'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21204, 5606, "the_content", "'print_tip_btn'", 10, now(), now());

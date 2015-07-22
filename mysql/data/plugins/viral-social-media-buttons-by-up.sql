@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4660, "Viral Social Media Buttons by UP", "4.1", "1.0.4", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589375, 4660, "UP_ViralSharingSocial", "myplugin_deactivation", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589376, 4660, "UP_ViralSharingSocial", "upshare_settings", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589377, 4660, "UP_ViralSharingSocial", "addFilters", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589378, 4660, "UP_ViralSharingSocial", "filter_the_content", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589379, 4660, "UP_ViralSharingSocial", "__construct", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589380, 4660, "UP_ViralSharingSocial", "addStyleScripts", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589381, 4660, "UP_ViralSharingSocial", "setup_theme_admin_menus", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589382, 4660, "UP_ViralSharingSocial", "myplugin_activation", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589383, 4660, "UP_ViralSharingSocial", "my_action_javascript", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589384, 4660, "UP_ViralSharingSocial", "route", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589385, 4660, "UP_ViralSharingSocial", "my_action_callback", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589386, 4660, "UP_ViralSharingSocial", "upshare_sub_settings", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589387, 4660, "UP_ViralSharingSocial", "addScriptCodeToHead", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589388, 4660, "UP_ViralSharingSocial", "addActions", "/upshare.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589389, 4660, "UP_ViralSharingSocial", "admin_notice_message", "/upshare.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49982, 4660, "init", "array($this,'route')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49983, 4660, "wp_ajax_my_action", "array($this,'my_action_callback')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49984, 4660, "admin_menu", "array($this,'setup_theme_admin_menus')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49985, 4660, "admin_enqueue_scripts", "array($this,'addStyleScripts')", 15, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49986, 4660, "admin_head", "array($this,'my_action_javascript')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49987, 4660, "admin_notices", "array($this,'admin_notice_message')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49988, 4660, "wp_head", "array($this,'addScriptCodeToHead')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16770, 4660, "the_content", "array($this,'filter_the_content')", 10, now(), now());

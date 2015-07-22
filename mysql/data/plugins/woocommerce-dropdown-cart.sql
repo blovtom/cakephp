@@ -1,0 +1,9 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4859, "WooCommerce Dropdown Cart", "4.1.1", "1.3.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84633, 4859, "register_WooCommerce_Widget_DropdownCart", "/woocommerce-dropdown-cart.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (84634, 4859, "register_script_WooCommerce_Widget_DropdownCart", "/woocommerce-dropdown-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618732, 4859, "WooCommerce_Widget_DropdownCart", "WooCommerce_Widget_DropdownCart", "/woocommerce-dropdown-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618733, 4859, "WooCommerce_Widget_DropdownCart", "widget", "/woocommerce-dropdown-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618734, 4859, "WooCommerce_Widget_DropdownCart", "update", "/woocommerce-dropdown-cart.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618735, 4859, "WooCommerce_Widget_DropdownCart", "form", "/woocommerce-dropdown-cart.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52155, 4859, "widgets_init", "'register_WooCommerce_Widget_DropdownCart'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52156, 4859, "wp_enqueue_scripts", "'register_script_WooCommerce_Widget_DropdownCart'", 10, now(), now());

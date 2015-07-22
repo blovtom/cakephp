@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5410, "WP Simple Mail Sender", "4.1", "1.0.2", "3.5.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705193, 5410, "WpSimpleMailSenderAdmin", "general_options_field", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705194, 5410, "WpSimpleMailSenderAdmin", "get_instance", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705195, 5410, "WpSimpleMailSenderAdmin", "general_settings_option", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705196, 5410, "WpSimpleMailSender", "change_mail_name", "/public/class-wp-simple-mail-sender.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705197, 5410, "WpSimpleMailSender", "get_instance", "/public/class-wp-simple-mail-sender.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705198, 5410, "WpSimpleMailSenderAdmin", "add_action_links", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705199, 5410, "WpSimpleMailSenderAdmin", "address_option_field", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705200, 5410, "WpSimpleMailSenderAdmin", "from_option_field", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705201, 5410, "WpSimpleMailSenderAdmin", "add_plugin_admin_menu", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705202, 5410, "WpSimpleMailSenderAdmin", "add_wp_simple_email_settings", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705203, 5410, "WpSimpleMailSenderAdmin", "change_mail_name", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705204, 5410, "WpSimpleMailSenderAdmin", "enqueue_admin_styles", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705205, 5410, "WpSimpleMailSenderAdmin", "change_mail_from", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705206, 5410, "WpSimpleMailSender", "load_plugin_textdomain", "/public/class-wp-simple-mail-sender.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705207, 5410, "WpSimpleMailSender", "change_mail_from", "/public/class-wp-simple-mail-sender.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705208, 5410, "WpSimpleMailSenderAdmin", "display_plugin_admin_page", "/admin/class-wp-simple-mail-sender-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (705209, 5410, "WpSimpleMailSender", "get_plugin_slug", "/public/class-wp-simple-mail-sender.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58668, 5410, "admin_enqueue_scripts", "array($this,'enqueue_admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58669, 5410, "plugins_loaded", "array('WpSimpleMailSender','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58670, 5410, "init", "array($this,'load_plugin_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58671, 5410, "admin_menu", "array($this,'add_plugin_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58672, 5410, "plugins_loaded", "array('WpSimpleMailSenderAdmin','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (58673, 5410, "admin_init", "array($this,'add_wp_simple_email_settings')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20178, 5410, "wp_mail_from", "array($this,'change_mail_from')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (20179, 5410, "wp_mail_from_name", "array($this,'change_mail_name')", 10, now(), now());

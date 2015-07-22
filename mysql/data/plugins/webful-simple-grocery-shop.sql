@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4725, "Plugin Name", "4.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82490, 4725, "my_shop", "/includes/my_shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82491, 4725, "add_product_page", "/includes/add_product.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82492, 4725, "checkout", "/includes/process_shopping.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82493, 4725, "my_checkout", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82494, 4725, "myEndSession", "/wc_simple_shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82495, 4725, "my_bag", "/includes/shortcodes.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82496, 4725, "update_order", "/includes/process_shopping.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82497, 4725, "wc_shop_install", "/activate.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82498, 4725, "myStartSession", "/wc_simple_shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82499, 4725, "restaurant_admin_scripts", "/wc_simple_shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82500, 4725, "add_category", "/includes/add_category.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82501, 4725, "wc_enqeue_scripts", "/wc_simple_shop.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82502, 4725, "add_to_cart", "/includes/process_shopping.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82503, 4725, "product_page", "/includes/products_page.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82504, 4725, "list_orders_page", "/includes/orders.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82505, 4725, "wc_ad_pages", "/admin_menu.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82506, 4725, "product_categories", "/includes/product_categories.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (82507, 4725, "wc_my_shop", "/includes/main_page.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50652, 4725, "init", "'myStartSession'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50653, 4725, "wp_enqueue_scripts", "'wc_enqeue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50654, 4725, "admin_menu", "'wc_ad_pages'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50655, 4725, "admin_enqueue_scripts", "'restaurant_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50656, 4725, "wp_login", "'myEndSession'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50657, 4725, "wp_logout", "'myEndSession'", 10, now(), now());

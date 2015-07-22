@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5687, "Zen Menu Logic", "4.1", "trunk", "3.3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793265, 5687, "ZenOfWPMenuLogic", "ZenOfWPMenuLogic", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793266, 5687, "ZenOfWPMenuLogic", "register_menulogic_metabox", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793267, 5687, "ZenOfWPMenuLogic", "menulogic", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793268, 5687, "ZenOfWPMenuLogic", "getMenuList", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793269, 5687, "ZenOfWPMenuLogic", "init_settings", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793270, 5687, "ZenOfWPMenuLogic", "register_settings_menu", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793271, 5687, "ZenOfWPMenuLogic", "draw_expl", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793272, 5687, "ZenOfWPMenuLogic", "is_menulogic_supported", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793273, 5687, "ZenOfWPMenuLogic", "menulogic_meta_box", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793274, 5687, "ZenOfWPMenuLogic", "initMe", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793275, 5687, "ZenOfWPMenuLogic", "save_menulogic", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793276, 5687, "ZenOfWPMenuLogic", "draw_options_page", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793277, 5687, "ZenOfWPMenuLogic", "draw_option", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793278, 5687, "ZenOfWPMenuLogic", "is_primary_set", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793279, 5687, "ZenOfWPMenuLogic", "validate_menu_logic_options", "/zen-menu-logic.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (793280, 5687, "ZenOfWPMenuLogic", "getPageMenu", "/zen-menu-logic.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63016, 5687, "save_post", "array(&$this,'save_menulogic')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63017, 5687, "admin_init", "array(&$this,'init_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63018, 5687, "add_meta_boxes", "array(&$this,'register_menulogic_metabox')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63019, 5687, "admin_menu", "array(&$this,'register_settings_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (63020, 5687, "init", "array($this,'initMe')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (21602, 5687, "wp_nav_menu_args", "array(&$this,'menulogic')", 10, now(), now());

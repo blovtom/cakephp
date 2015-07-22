@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4666, "Visual Editor Custom Buttons", "4.1.1", "1.5", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81456, 4666, "vecb_add_plugin", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81457, 4666, "vecb_frontendstyle", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81458, 4666, "vecb_save_options", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81459, 4666, "vecb_tag_options", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81460, 4666, "vecb_editor_buttons", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81461, 4666, "vecb_customAdmin", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81462, 4666, "_add_my_quicktags", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81463, 4666, "tdav_css", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81464, 4666, "vecb_editor_options", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81465, 4666, "vecb_admin_init", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81466, 4666, "vecb_add_buttons", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81467, 4666, "vecb_styling_options", "/visual-editor-custom-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81468, 4666, "vecb_register_button", "/visual-editor-custom-buttons.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50030, 4666, "init", "'vecb_editor_buttons'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50031, 4666, "wp_head", "'vecb_frontendstyle'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50032, 4666, "admin_head", "'vecb_customAdmin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50033, 4666, "admin_init", "'vecb_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50034, 4666, "save_post", "'vecb_save_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50035, 4666, "admin_print_footer_scripts", "'_add_my_quicktags'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (50036, 4666, "admin_init", "'vecb_add_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16787, 4666, "mce_buttons", "'vecb_register_button'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16788, 4666, "mce_css", "'tdav_css'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16789, 4666, "mce_external_plugins", "'vecb_add_plugin'", 10, now(), now());

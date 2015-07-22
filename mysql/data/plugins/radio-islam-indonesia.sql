@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3459, "Radio Islam Indonesia", "4.1", "3.15.2015", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63074, 3459, "radio_islam_indonesia_action_links", "/radio-islam-indonesia.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63075, 3459, "rido_script", "/radio-islam-indonesia.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63076, 3459, "radio_islam_indonesia_scripts", "/radio-islam-indonesia.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63077, 3459, "rido", "/radio-islam-indonesia.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63078, 3459, "radio_islam_indonesia_load_widget", "/radio-islam-indonesia.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456824, 3459, "radio_islam_indonesia_widget", "form", "/radio-islam-indonesia.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456825, 3459, "radio_islam_indonesia_widget", "__construct", "/radio-islam-indonesia.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456826, 3459, "radio_islam_indonesia_widget", "update", "/radio-islam-indonesia.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (456827, 3459, "radio_islam_indonesia_widget", "widget", "/radio-islam-indonesia.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37942, 3459, "wp_enqueue_scripts", "'rido_script'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37943, 3459, "wp_head", "'radio_islam_indonesia_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (37944, 3459, "widgets_init", "'radio_islam_indonesia_load_widget'", 10, now(), now());

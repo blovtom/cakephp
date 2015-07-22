@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5031, "WP Admin Bar Effect", "4.1", "2.5.2", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640188, 5031, "WP_Admin_Bar_Effect", "activation", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640189, 5031, "WP_Admin_Bar_Effect", "hover_intent", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640190, 5031, "WP_Admin_Bar_Effect", "register_settings", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640191, 5031, "WP_Admin_Bar_Effect", "validate_settings", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640192, 5031, "WP_Admin_Bar_Effect", "admin_enqueue_scripts", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640193, 5031, "WP_Admin_Bar_Effect", "general_options", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640194, 5031, "WP_Admin_Bar_Effect", "get_instance", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640195, 5031, "WP_Admin_Bar_Effect", "setting_active_link", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640196, 5031, "WP_Admin_Bar_Effect", "setting_timeout", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640197, 5031, "WP_Admin_Bar_Effect", "deactivation", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640198, 5031, "WP_Admin_Bar_Effect", "setting_speed", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640199, 5031, "WP_Admin_Bar_Effect", "add_help", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640200, 5031, "WP_Admin_Bar_Effect", "plugin_action_links", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640201, 5031, "WP_Admin_Bar_Effect", "setting_icon_link", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640202, 5031, "WP_Admin_Bar_Effect", "admin_menu", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640203, 5031, "WP_Admin_Bar_Effect", "setting_target_link", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640204, 5031, "WP_Admin_Bar_Effect", "page_settings", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640205, 5031, "WP_Admin_Bar_Effect", "setting_interval", "/wp-admin-bar-effect.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (640206, 5031, "WP_Admin_Bar_Effect", "setting_sensitivity", "/wp-admin-bar-effect.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54557, 5031, "admin_menu", "array($this,'admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54558, 5031, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54559, 5031, "admin_enqueue_scripts", "array($this,'admin_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (54560, 5031, "plugins_loaded", "array('WP_Admin_Bar_Effect','get_instance')", 10, now(), now());

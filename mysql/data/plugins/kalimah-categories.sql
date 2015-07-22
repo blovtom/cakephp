@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2402, "Plugin Name", "4.1", "1.0", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341210, 2402, "KalimahCategoriesPlugin", "display_page", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341211, 2402, "KalimahCategoriesPlugin", "backend_styles_scripts", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341212, 2402, "KalimahCategoriesPlugin", "get_categories", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341213, 2402, "KalimahCategoriesPlugin", "update_categories", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341214, 2402, "KalimahCategoriesPlugin", "add_edit_category", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341215, 2402, "Categories_Walker", "start_el", "/list_walker.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341216, 2402, "KalimahCategoriesPlugin", "__construct", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341217, 2402, "KalimahCategoriesPlugin", "register_my_custom_menu_page", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341218, 2402, "KalimahCategoriesPlugin", "load_textdomain", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341219, 2402, "KalimahCategoriesPlugin", "add_edit_category_form", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341220, 2402, "KalimahCategoriesPlugin", "delete_category", "/kalimah-categories.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (341221, 2402, "KalimahCategoriesPlugin", "get_categories_dropdown", "/kalimah-categories.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25726, 2402, "wp_ajax_add_edit_category", "array($this,'add_edit_category')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25727, 2402, "wp_ajax_delete_category", "array($this,'delete_category')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25728, 2402, "admin_enqueue_scripts", "array($this,'backend_styles_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25729, 2402, "wp_ajax_update_categories", "array($this,'update_categories')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25730, 2402, "admin_menu", "array($this,'register_my_custom_menu_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25731, 2402, "plugins_loaded", "array($this,'load_textdomain')", 10, now(), now());

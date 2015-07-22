@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2360, "jonradio Remember Me", "4.1", "2.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44406, 2360, "jr_rm_plugin_basename", "/jonradio-remember-me.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44407, 2360, "jr_rm_echo_disable", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44408, 2360, "jr_rm_remember_me_expl", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44409, 2360, "jr_rm_admin_init", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44410, 2360, "jr_rm_admin_hook", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44411, 2360, "jr_rm_validate_settings", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44412, 2360, "jr_rm_echo_remember_choice", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44413, 2360, "jr_rm_remember_me", "/jonradio-remember-me.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44414, 2360, "jr_rm_echo_remember_me", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44415, 2360, "jr_rm_remember_me", "/jonradio-remember-me.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44416, 2360, "jr_rm_remember_choice", "/jonradio-remember-me.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44417, 2360, "jr_rm_echo_remember_choice_days", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44418, 2360, "jr_rm_settings_page", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44419, 2360, "jr_rm_disable_expl", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (44420, 2360, "jr_rm_plugin_action_links", "/includes/admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25491, 2360, "admin_menu", "'jr_rm_admin_hook'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25492, 2360, "admin_init", "'jr_rm_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (25493, 2360, "wp_login", "'jr_rm_remember_choice'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (8587, 2360, "wp_login_errors", "'jr_rm_remember_me'", 10, now(), now());

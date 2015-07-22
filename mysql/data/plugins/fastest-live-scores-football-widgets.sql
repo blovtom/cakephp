@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1623, "Fastest Live Scores - Football Widgets", "4.0", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32884, 1623, "register_cc_setting", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32885, 1623, "cc_widget", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32886, 1623, "cc_settings_page", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32887, 1623, "cc_table_func", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32888, 1623, "cc_display", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32889, 1623, "cc_scripts", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32890, 1623, "admin_settings", "/commercial-crowdscores.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32891, 1623, "scores_admin_script", "/commercial-crowdscores.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201190, 1623, "cc_table_widget", "cc_table_widget", "/commercial-crowdscores.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201191, 1623, "cc_table_widget", "widget", "/commercial-crowdscores.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201192, 1623, "cc_table_widget", "update", "/commercial-crowdscores.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (201193, 1623, "cc_table_widget", "form", "/commercial-crowdscores.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18036, 1623, "admin_enqueue_scripts", "'scores_admin_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18037, 1623, "widgets_init", "'cc_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18038, 1623, "wp_enqueue_scripts", "'cc_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18039, 1623, "admin_init", "'register_cc_setting'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18040, 1623, "admin_menu", "'admin_settings'", 10, now(), now());

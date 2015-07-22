@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1535, "Event Organiser Posterboard", "4.1.0", "1.1.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31072, 1535, "eventorganiser_posterboard_shortcode_handler", "/event-organiser-posterboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31073, 1535, "eventorganiser_posterboard_register_styles", "/event-organiser-posterboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31074, 1535, "eventorganiser_posterboard_ajax_response", "/event-organiser-posterboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31075, 1535, "_eventorganiser_posterboard_set_constants", "/event-organiser-posterboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31076, 1535, "eventorganiser_posterboard_register_stack", "/event-organiser-posterboard.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31077, 1535, "eventorganiser_posterboard_register_scripts", "/event-organiser-posterboard.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17153, 1535, "init", "'eventorganiser_posterboard_register_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17154, 1535, "init", "'eventorganiser_posterboard_register_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17155, 1535, "wp_ajax_eventorganiser-posterboard", "'eventorganiser_posterboard_ajax_response'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17156, 1535, "after_setup_theme", "'_eventorganiser_posterboard_set_constants'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17157, 1535, "wp_ajax_nopriv_eventorganiser-posterboard", "'eventorganiser_posterboard_ajax_response'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5771, 1535, "eventorganiser_template_stack", "'eventorganiser_posterboard_register_stack'", 10, now(), now());

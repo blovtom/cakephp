@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4936, "WooCommerce Product Filter Grid", "4.1", "1.0", "4.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85217, 4936, "wcpfg_menu", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85218, 4936, "wcpfg_menu_orderby", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85219, 4936, "wcpfg_menu_per_page", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85220, 4936, "woocommerce_order_by_rating_post_clauses", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85221, 4936, "wcpfg_menu_settings", "/woocommerce-product-filter-grid.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85222, 4936, "wcpfg_share_plugin", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85223, 4936, "wcpfg_product_list_ajax", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85224, 4936, "wcpfg_init_scripts", "/woocommerce-product-filter-grid.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85225, 4936, "wcpfg_themes_flat", "/themes/flat/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85226, 4936, "wcpfg_activation", "/woocommerce-product-filter-grid.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85227, 4936, "wcpfg_menu_date", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85228, 4936, "wcpfg_menu_sort", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85229, 4936, "wcpfg_menu_init", "/woocommerce-product-filter-grid.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85230, 4936, "wcpfg_product_list", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85231, 4936, "wcpfg_menu_price", "/includes/wcpfg-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85232, 4936, "wcpfg_display", "/woocommerce-product-filter-grid.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85233, 4936, "wcpfg_menu_order", "/includes/wcpfg-functions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53182, 4936, "admin_menu", "'wcpfg_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53183, 4936, "wp_ajax_nopriv_wcpfg_product_list_ajax", "'wcpfg_product_list_ajax'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53184, 4936, "wp_ajax_wcpfg_product_list_ajax", "'wcpfg_product_list_ajax'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (53185, 4936, "init", "'wcpfg_init_scripts'", 10, now(), now());

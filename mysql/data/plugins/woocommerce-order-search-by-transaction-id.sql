@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4909, "WooCommerce Order Search by Transaction ID", "4.1.1", "1.0.0", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85008, 4909, "woothemes_updater_install", "/woo-includes/woo-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85009, 4909, "woothemes_queue_update", "/woo-includes/woo-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85010, 4909, "woothemes_updater_notice", "/woo-includes/woo-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85011, 4909, "wc_customer_messages_wc_inactive", "/woocommerce-order-search-transaction.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (85012, 4909, "is_woocommerce_active", "/woo-includes/woo-functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623864, 4909, "WC_Dependencies", "init", "/woo-includes/class-wc-dependencies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623865, 4909, "WooThemes_Plugin_Updater", "init", "/woo-includes/woo-functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623866, 4909, "WC_Dependencies", "woocommerce_active_check", "/woo-includes/class-wc-dependencies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623867, 4909, "WC_OST", "filter_fields", "/woocommerce-order-search-transaction.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623868, 4909, "WC_OST", "__construct", "/woocommerce-order-search-transaction.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (623869, 4909, "WC_OST", "load_plugin_textdomain", "/woocommerce-order-search-transaction.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52921, 4909, "admin_notices", "'woothemes_updater_notice'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52922, 4909, "admin_notices", "'wc_customer_messages_wc_inactive'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18073, 4909, "woocommerce_shop_order_search_fields", "array($this,'filter_fields')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (18074, 4909, "plugins_api", "'woothemes_updater_install'", 10, now(), now());

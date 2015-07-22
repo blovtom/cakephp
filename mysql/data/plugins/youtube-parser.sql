@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5673, "SADESIGN YouTube parser", "4.0", "trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99622, 5673, "ytp_styles", "/previewparser.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99623, 5673, "ytp_parserCallback", "/previewparser.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99624, 5673, "ytp_javascript", "/previewparser.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99625, 5673, "ytp_parser", "/previewparser.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (99626, 5673, "ytp_init", "/previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792717, 5673, "ytp_previewParserObject", "getSmallImg", "/class.previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792718, 5673, "ytp_previewParserObject", "getIframe", "/class.previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792719, 5673, "ytp_previewParserObject", "getMediumImg", "/class.previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792720, 5673, "ytp_previewParserObject", "__construct", "/class.previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792721, 5673, "ytp_previewParserObject", "getId", "/class.previewparser.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (792722, 5673, "ytp_previewParserObject", "getFullImg", "/class.previewparser.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62890, 5673, "wp_enqueue_scripts", "'ytp_styles'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62891, 5673, "wp_ajax_nopriv_previewparser", "'ytp_parserCallback'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62892, 5673, "wp_footer", "'ytp_javascript'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62893, 5673, "plugins_loaded", "'ytp_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (62894, 5673, "wp_ajax_previewparser", "'ytp_parserCallback'", 10, now(), now());

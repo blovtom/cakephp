@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2523, "List More Custom Field Names", "4.1", "1.2.8", "2.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46850, 2523, "_manually_load_plugin", "/tests/bootstrap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46851, 2523, "c2c_list_more_custom_field_names", "/list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350658, 2523, "List_More_Custom_Field_Names_Test", "get_postmeta_form_limit", "/tests/test-list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350659, 2523, "List_More_Custom_Field_Names_Test", "test_constant_takes_precendence", "/tests/test-list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350660, 2523, "List_More_Custom_Field_Names_Test", "filter_c2c_list_more_custom_field_names", "/tests/test-list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350661, 2523, "List_More_Custom_Field_Names_Test", "tearDown", "/tests/test-list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350662, 2523, "List_More_Custom_Field_Names_Test", "test_default_filtering", "/tests/test-list-more-custom-field-names.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (350663, 2523, "List_More_Custom_Field_Names_Test", "test_c2c_list_more_custom_field_names_filter", "/tests/test-list-more-custom-field-names.php", now(), now());
+
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9115, 2523, "c2c_list_more_custom_field_names", "array($this,'filter_c2c_list_more_custom_field_names')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (9116, 2523, "postmeta_form_limit", "'c2c_list_more_custom_field_names'", 10, now(), now());

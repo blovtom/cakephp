@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1649, "Feedjit Live Traffic Feed", "4.1", "1.0.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33201, 1649, "run_feedjit", "/feedjit.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33202, 1649, "activate_feedjit", "/feedjit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202060, 1649, "feedjit_widget", "form", "/admin/class-feedjit-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202061, 1649, "FEEDJIT_Admin", "feedjit_options_register", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202062, 1649, "FEEDJIT_Loader", "add_filter", "/includes/class-feedjit-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202063, 1649, "feedjit_widget", "__construct", "/admin/class-feedjit-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202064, 1649, "feedjit_widget", "update", "/admin/class-feedjit-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202065, 1649, "FEEDJIT_Admin", "feedjit_generate_output_code", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202066, 1649, "FEEDJIT_Loader", "__construct", "/includes/class-feedjit-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202067, 1649, "FEEDJIT_Admin", "feedjit_enqueue_style", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202068, 1649, "FEEDJIT_Admin", "__construct", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202069, 1649, "FEEDJIT_Admin", "feedjit_load_widget", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202070, 1649, "FEEDJIT_Admin", "feedjit_enqueue_scripts", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202071, 1649, "FEEDJIT_Loader", "run", "/includes/class-feedjit-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202072, 1649, "FEEDJIT_Activator", "activate", "/includes/class-feedjit-activator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202073, 1649, "FEEDJIT_Admin", "feedjit_create_menu", "/admin/class-feedjit-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202074, 1649, "Feedjit", "get_version", "/includes/class-feedjit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202075, 1649, "feedjit_widget", "widget", "/admin/class-feedjit-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202076, 1649, "Feedjit", "__construct", "/includes/class-feedjit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202077, 1649, "Feedjit", "run", "/includes/class-feedjit.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202078, 1649, "FEEDJIT_Loader", "add_action", "/includes/class-feedjit-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (202079, 1649, "FEEDJIT_Admin", "feedjit_options_page", "/admin/class-feedjit-admin.php", now(), now());
+

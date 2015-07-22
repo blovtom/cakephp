@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (472, "Random Joke (Bdihot.co.il)", "4.1.1", "0.4", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8727, 472, "bdihot_translations", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8728, 472, "bdihot_uninstall", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8729, 472, "bdihot_add_sidebar_widget", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8730, 472, "bdihot_add_dashboard_widget", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8731, 472, "bdihot_options", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8732, 472, "bdihot_widget_output", "/bdihot.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (8733, 472, "bdihot_feed_cache_lifetime", "/bdihot.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48984, 472, "Bdihot_Widget", "update", "/bdihot.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48985, 472, "Bdihot_Widget", "__construct", "/bdihot.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48986, 472, "Bdihot_Widget", "widget", "/bdihot.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (48987, 472, "Bdihot_Widget", "form", "/bdihot.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4708, 472, "wp_dashboard_setup", "'bdihot_add_dashboard_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4709, 472, "widgets_init", "'bdihot_add_sidebar_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4710, 472, "init", "'bdihot_translations'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1603, 472, "wp_feed_cache_transient_lifetime", "'bdihot_feed_cache_lifetime'", 10, now(), now());

@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (287, "AntiVirus", "4.1.1", "trunk", "3.8", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28503, 287, "AntiVirus", "add_enqueue_style", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28504, 287, "AntiVirus", "show_admin_menu", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28505, 287, "AntiVirus", "instance", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28506, 287, "AntiVirus", "show_dashboard_notice", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28507, 287, "AntiVirus", "add_sidebar_menu", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28508, 287, "AntiVirus", "get_ajax_response", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28509, 287, "AntiVirus", "__construct", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28510, 287, "AntiVirus", "init_action_links", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28511, 287, "AntiVirus", "add_enqueue_script", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28512, 287, "AntiVirus", "load_plugin_lang", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28513, 287, "AntiVirus", "deactivation", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28514, 287, "AntiVirus", "uninstall", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28515, 287, "AntiVirus", "install", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28516, 287, "AntiVirus", "init_row_meta", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28517, 287, "AntiVirus", "do_daily_cronjob", "/antivirus.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (28518, 287, "AntiVirus", "clear_scheduled_hook", "/antivirus.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2629, 287, "init", "array(__CLASS__,'load_plugin_lang')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2630, 287, "wp_ajax_get_ajax_response", "array(__CLASS__,'get_ajax_response')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2631, 287, "antivirus_daily_cronjob", "array(__CLASS__,'do_daily_cronjob')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2632, 287, "admin_notices", "array(__CLASS__,'show_dashboard_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2633, 287, "admin_menu", "array(__CLASS__,'add_sidebar_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (2634, 287, "plugins_loaded", "array('AntiVirus','instance')", 99, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (898, 287, "plugin_row_meta", "array(__CLASS__,'init_row_meta')", 10, now(), now());

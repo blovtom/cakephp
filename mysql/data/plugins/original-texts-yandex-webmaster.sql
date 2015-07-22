@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3035, "Original texts Yandex WebMaster", "4.1", "4.0", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399818, 3035, "OrTextBase", "addOptions", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399819, 3035, "OrTextFunc", "getPage", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399820, 3035, "OrTextBase", "metaboxSentYandex", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399821, 3035, "OrTextFunc", "IfElseUpdate", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399822, 3035, "OrTextBase", "metabosHtml", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399823, 3035, "OrTextBase", "addActios", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399824, 3035, "OrTextBase", "__construct", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399825, 3035, "OrTextBase", "syleScriptAddpage", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399826, 3035, "OrTextFunc", "chekedOptions", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399827, 3035, "OrTextBase", "deactivationPlugin", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399828, 3035, "OrTextBase", "settingMetabos", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399829, 3035, "OrTextBase", "showSettingPage", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399830, 3035, "OrTextFunc", "getWebsiteXml", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399831, 3035, "OrTextBase", "adminOptions", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399832, 3035, "OrTextFunc", "logJornal", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399833, 3035, "OrTextFunc", "sendTextOriginal2", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399834, 3035, "OrTextBase", "metaboxSavePost", "/inc/ortext-core-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399835, 3035, "OrTextFunc", "zaprosToken", "/inc/ortext-function-class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (399836, 3035, "OrTextFunc", "getYandexToken", "/inc/ortext-function-class.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33332, 3035, "admin_menu", "array($this,'adminOptions')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33333, 3035, "save_post", "array($this,'metaboxSavePost')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33334, 3035, "save_post", "array($this,'metaboxSentYandex')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33335, 3035, "add_meta_boxes", "array($this,'settingMetabos')", 10, now(), now());

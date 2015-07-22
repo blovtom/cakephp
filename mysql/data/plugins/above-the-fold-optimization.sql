@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (27, "Above The Fold Optimization", "4.1", "4.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (407, 27, "run_Abovethefold", "/abovethefold.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2675, 27, "Abovethefold_i18n", "load_plugin_textdomain", "/includes/i18n.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2676, 27, "Abovethefold", "get_version", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2677, 27, "Abovethefold_Optimization", "init", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2678, 27, "Abovethefold_Optimization", "header", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2679, 27, "Abovethefold_Admin", "register_settings", "/admin/admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2680, 27, "Abovethefold_Admin", "settings_link", "/admin/admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2681, 27, "Abovethefold", "run", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2682, 27, "Abovethefold_Loader", "run", "/includes/loader.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2683, 27, "Abovethefold", "activate", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2684, 27, "Abovethefold", "deactivate", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2685, 27, "Abovethefold_Optimization", "rewrite_callback", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2686, 27, "Abovethefold_Optimization", "bufferend", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2687, 27, "Abovethefold", "__construct", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2688, 27, "Abovethefold", "get_loader", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2689, 27, "Abovethefold_Optimization", "footer", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2690, 27, "Abovethefold_Admin", "settings_page", "/admin/admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2691, 27, "Abovethefold", "get_plugin_name", "/includes/abovethefold.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2692, 27, "Abovethefold_Optimization", "__construct", "/includes/optimization.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2693, 27, "Abovethefold_i18n", "set_domain", "/includes/i18n.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2694, 27, "Abovethefold_Loader", "add_filter", "/includes/loader.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2695, 27, "Abovethefold_Loader", "__construct", "/includes/loader.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2696, 27, "Abovethefold_Admin", "admin_menu", "/admin/admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2697, 27, "Abovethefold_Admin", "__construct", "/admin/admin.class.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (2698, 27, "Abovethefold_Loader", "add_action", "/includes/loader.class.php", now(), now());
+
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (76, 27, "plugin_action_links_abovethefold/abovethefold.php", "array($this,'settings_link')", 10, now(), now());

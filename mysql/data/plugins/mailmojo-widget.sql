@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2616, "MailMojo Widget", "4.1", "0.5", "3.0.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360365, 2616, "MailMojoPlugin", "setUpOptions", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360366, 2616, "MailMojoPlugin", "registerSettings", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360367, 2616, "MailMojoPlugin", "getOptions", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360368, 2616, "MailMojoPlugin", "getBasename", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360369, 2616, "MailMojoPlugin", "adminPage", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360370, 2616, "MailMojoPlugin", "initWidget", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360371, 2616, "MailMojoPlugin", "loadTextDomain", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360372, 2616, "MailMojoWidget", "form", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360373, 2616, "MailMojoWidget", "getSuccessMsg", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360374, 2616, "MailMojoApi", "subscribe", "/lib/MailMojoApi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360375, 2616, "MailMojoPlugin", "removeOptions", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360376, 2616, "MailMojoPlugin", "getApi", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360377, 2616, "MailMojoWidget", "subscribe", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360378, 2616, "MailMojoApi", "__construct", "/lib/MailMojoApi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360379, 2616, "MailMojoWidget", "widget", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360380, 2616, "MailMojoWidget", "update", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360381, 2616, "MailMojoPlugin", "initSettingsPage", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360382, 2616, "MailMojoWidget", "initFiles", "/mailmojo-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360383, 2616, "MailMojoApi", "unsubscribe", "/lib/MailMojoApi.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360384, 2616, "MailMojoPlugin", "getInstance", "/mailmojo-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (360385, 2616, "MailMojoWidget", "__construct", "/mailmojo-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28241, 2616, "admin_menu", "array($this,'initSettingsPage')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28242, 2616, "init", "array($this,'initFiles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28243, 2616, "admin_init", "array($this,'registerSettings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28244, 2616, "widgets_init", "create_function('','return register_widget("MailMojoWidget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (28245, 2616, "parse_request", "array($this,'subscribe')", 10, now(), now());

@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3252, "Plugin Name", "4.1.0", "1.0.1", "3.5.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58846, 3252, "pdn_AddOptionPage", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423137, 3252, "PostDeltaNotification", "pdn_SettingsLink", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423138, 3252, "PostDeltaNotification", "__construct", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423139, 3252, "PostDeltaNotification", "PostDeltaNotification", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423140, 3252, "PostDeltaNotification", "pdn_PrintOptionPage", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423141, 3252, "PostDeltaNotification", "pdn_ParseRequest", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423142, 3252, "PostDeltaNotification", "pdn_GetAdminOptions", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423143, 3252, "PostDeltaNotification", "pdn_SendEmail", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423144, 3252, "PostDeltaNotification", "set_html_content_type", "/post-delta-notification.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423145, 3252, "PostDeltaNotification", "pdn_ContentInsertion", "/post-delta-notification.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35952, 3252, "parse_request", "array(&$svvsd_PDN,'pdn_ParseRequest')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35953, 3252, "admin_menu", "'pdn_AddOptionPage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35954, 3252, "post_updated", "array(&$svvsd_PDN,'pdn_SendEmail')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (35955, 3252, "activate_PostDeltaNotification/post-delta-notification.php", "array(&$svvsd_PDN,'__construct')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12183, 3252, "wp_mail_content_type", "array($this,'set_html_content_type')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12184, 3252, "the_content", "array(&$svvsd_PDN,'pdn_ContentInsertion')", 9, now(), now());

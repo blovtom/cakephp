@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3520, "Recently updated posts widget", "4.2", "1.2", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63810, 3520, "recently_updated_posts_transient", "/recently-updated-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63811, 3520, "recently_updated_posts_init", "/recently-updated-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63812, 3520, "requete_dernier_article", "/recently-updated-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63813, 3520, "recently_updated_posts_delete_transient", "/recently-updated-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463250, 3520, "recently_updated_posts_Widget", "widget", "/recently-updated-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463251, 3520, "recently_updated_posts_Widget", "form", "/recently-updated-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463252, 3520, "recently_updated_posts_Widget", "recently_updated_posts_Widget", "/recently-updated-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463253, 3520, "recently_updated_posts_Widget", "update", "/recently-updated-posts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38495, 3520, "widgets_init", "'recently_updated_posts_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38496, 3520, "post_updated", "'recently_updated_posts_delete_transient'", 10, now(), now());

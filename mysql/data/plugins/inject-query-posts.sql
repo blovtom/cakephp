@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2248, "Inject Query Posts", "4.1", "2.2.2", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41313, 2248, "_manually_load_plugin", "/tests/bootstrap.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41314, 2248, "inject_query_posts", "/inject-query-posts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41315, 2248, "c2c_inject_query_posts", "/inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329769, 2248, "Inject_Query_Posts_Test", "create_posts", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329770, 2248, "Inject_Query_Posts_Test", "test_configuration_of_custom_query", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329771, 2248, "Inject_Query_Posts_Test", "test_return_value", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329772, 2248, "Inject_Query_Posts_Test", "test_deprecated_function", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329773, 2248, "Inject_Query_Posts_Test", "test_filter_invocation", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329774, 2248, "Inject_Query_Posts_Test", "test_preserving_query_obj", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329775, 2248, "Inject_Query_Posts_Test", "test_configuration_of_wp_query", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329776, 2248, "Inject_Query_Posts_Test", "test_template_tags_work_after_post_injection", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329777, 2248, "Inject_Query_Posts_Test", "test_sending_post_as_first_arg", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329778, 2248, "Inject_Query_Posts_Test", "tearDown", "/tests/test-inject-query-posts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (329779, 2248, "Inject_Query_Posts_Test", "test_works_on_custom_wp_query", "/tests/test-inject-query-posts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23646, 2248, "c2c_inject_query_posts", "'c2c_inject_query_posts'", 10, now(), now());

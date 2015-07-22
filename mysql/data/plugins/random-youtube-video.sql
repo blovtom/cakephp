@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3478, "Random YouTube Video", "4.0", "trunk", "2.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63182, 3478, "ryv_adminpage", "/youtubevideo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63183, 3478, "ryv_addrowfunc", "/youtubevideo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63184, 3478, "ryv_udpate", "/youtubevideo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63185, 3478, "ryv_adminmenu", "/youtubevideo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63186, 3478, "register_ryv_widget", "/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63187, 3478, "ryv_install", "/youtubevideo.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (63188, 3478, "safely_add_stylesheet_to_admin", "/youtubevideo.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (457160, 3478, "ryv_widget", "widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (457161, 3478, "ryv_widget", "form", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (457162, 3478, "ryv_widget", "ryv_widget", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38032, 3478, "widgets_init", "'register_ryv_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38033, 3478, "admin_head", "'ryv_addrowfunc'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38034, 3478, "admin_menu", "'ryv_adminmenu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38035, 3478, "admin_enqueue_scripts", "'safely_add_stylesheet_to_admin'", 10, now(), now());

@@ -1,0 +1,19 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3030, "Order Delivery Date for Woocommerce", "4.0.1", "trunk", "1.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55078, 3030, "orddd_lite_my_enqueue", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55079, 3030, "orddd_lite_my_custom_checkout_field_update_order_meta", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55080, 3030, "orddd_lite_order_delivery_date_settings", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55081, 3030, "orddd_lite_order_delivery_date_menu", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55082, 3030, "orddd_lite_add_delivery_date_to_order_woo", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55083, 3030, "orddd_lite_woocommerce_order_delivery_date_column", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55084, 3030, "orddd_lite_my_custom_checkout_field", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55085, 3030, "orddd_lite_add_delivery_date_to_order_page_woo", "/order_delivery_date.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (55086, 3030, "orddd_lite_woocommerce_custom_column_value", "/order_delivery_date.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33252, 3030, "admin_enqueue_scripts", "'orddd_lite_my_enqueue'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33253, 3030, "manage_shop_order_posts_custom_column", "'orddd_lite_woocommerce_custom_column_value'", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33254, 3030, "woocommerce_checkout_update_order_meta", "'orddd_lite_my_custom_checkout_field_update_order_meta'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33255, 3030, "woocommerce_after_checkout_billing_form", "'orddd_lite_my_custom_checkout_field'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33256, 3030, "admin_menu", "'orddd_lite_order_delivery_date_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11125, 3030, "woocommerce_order_details_after_order_table", "'orddd_lite_add_delivery_date_to_order_page_woo'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11126, 3030, "woocommerce_email_order_meta_keys", "'orddd_lite_add_delivery_date_to_order_woo'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11127, 3030, "manage_edit-shop_order_columns", "'orddd_lite_woocommerce_order_delivery_date_column'", 20, now(), now());

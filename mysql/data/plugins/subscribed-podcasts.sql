@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4229, "Subscribed Podcsts", "4.x", "trunk", "4.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74145, 4229, "feed_md5", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74146, 4229, "read_source_xml", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74147, 4229, "empty_cache", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74148, 4229, "subpod_opml_attachment_id_callback", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74149, 4229, "subpod_admin_output", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74150, 4229, "subpod_load_textdomain", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74151, 4229, "subpod_action_links", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74152, 4229, "cache_feed", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74153, 4229, "cache_path", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74154, 4229, "subpod_activate", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74155, 4229, "subpod_opml_attachment_filename_callback", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74156, 4229, "get_podcast", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74157, 4229, "subpod_daily_cache", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74158, 4229, "subpod_register_settings", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74159, 4229, "subpod_deactivation", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74160, 4229, "subpod_upload_xml", "/subscribed-podcasts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74161, 4229, "subpod_admin_menu", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74162, 4229, "subpod_admin_scripts", "/subpod-admin.inc.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74163, 4229, "subpod_template", "/subpod-template.inc.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45578, 4229, "admin_init", "'subpod_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45579, 4229, "plugins_loaded", "'subpod_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45580, 4229, "subpod_daily_cache_hook", "'subpod_daily_cache'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45581, 4229, "admin_menu", "'subpod_admin_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45582, 4229, "admin_enqueue_scripts", "'subpod_admin_scripts'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15320, 4229, "upload_mimes", "'subpod_upload_xml'", 10, now(), now());

@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2797, "Multiple Choice Questions", "4.1", "1.0", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50868, 2797, "mcq_check_result", "/includes/mcq-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50869, 2797, "meta_boxes_mcq", "/includes/mcq-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50870, 2797, "mcq_posttype_register", "/includes/mcq-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50871, 2797, "mcq_paratheme_menu_help", "/multiple-choice-questions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50872, 2797, "mcq_paratheme_display", "/multiple-choice-questions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50873, 2797, "meta_boxes_mcq_save", "/includes/mcq-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50874, 2797, "mcq_themes_flat", "/themes/flat/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50875, 2797, "mcq_paratheme_init_scripts", "/multiple-choice-questions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50876, 2797, "mcq_share_plugin", "/includes/mcq-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50877, 2797, "mcq_paratheme_menu_init", "/multiple-choice-questions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50878, 2797, "meta_boxes_mcq_input", "/includes/mcq-meta.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (50879, 2797, "mcq_paratheme_activation", "/multiple-choice-questions.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30194, 2797, "wp_ajax_nopriv_mcq_check_result", "'mcq_check_result'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30195, 2797, "init", "'mcq_posttype_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30196, 2797, "add_meta_boxes", "'meta_boxes_mcq'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30197, 2797, "init", "'mcq_paratheme_init_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30198, 2797, "admin_menu", "'mcq_paratheme_menu_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30199, 2797, "save_post", "'meta_boxes_mcq_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (30200, 2797, "wp_ajax_mcq_check_result", "'mcq_check_result'", 10, now(), now());

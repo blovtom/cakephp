@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3732, "What Scripts Styles Debug Bar", "4.1", "0.2", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (66579, 3732, "ravs_debug_bar_post_meta", "/functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486733, 3732, "Ravs_Show_All_Scripts", "enqueue", "/inc/class-show-all-scripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486734, 3732, "Ravs_Show_All_Scripts", "init", "/inc/class-show-all-scripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486735, 3732, "Ravs_Show_All_Styles", "enqueue", "/inc/class-show-all-styles.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486736, 3732, "Ravs_Show_All_Styles", "init", "/inc/class-show-all-styles.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486737, 3732, "Ravs_Show_All_Styles", "get_valid_url", "/inc/class-show-all-styles.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486738, 3732, "Ravs_Show_All_Scripts", "get_valid_url", "/inc/class-show-all-scripts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486739, 3732, "Ravs_Show_All_Styles", "render", "/inc/class-show-all-styles.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (486740, 3732, "Ravs_Show_All_Scripts", "render", "/inc/class-show-all-scripts.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (40544, 3732, "debug_bar_panels", "'ravs_debug_bar_post_meta'", 10, now(), now());

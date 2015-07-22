@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3618, "Plugin Name", "4.1", "1.0.3", "3.5", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469406, 3618, "Restrict_User_Content", "rw_plugin_install", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469407, 3618, "Restrict_User_Content", "ruc_parse_query_useronly", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469408, 3618, "RW_Plugin_Base", "__construct", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469409, 3618, "Restrict_User_Content", "rw_plugin_save_settings", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469410, 3618, "Restrict_User_Content", "__construct", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469411, 3618, "Restrict_User_Content", "get_settings", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469412, 3618, "RW_Plugin_Base", "rw_plugin_filter_action_links", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469413, 3618, "RW_Plugin_Base", "rw_plugin_print_script_in_footer", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469414, 3618, "Restrict_User_Content", "rw_settings_page_title_filter", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469415, 3618, "Restrict_User_Content", "render_additional_users_meta_box", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469416, 3618, "RW_Plugin_Base", "rw_plugin_add_screen_meta_boxes", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469417, 3618, "RW_Plugin_Base", "rw_plugin_settings_page", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469418, 3618, "RW_Plugin_Base", "rw_add_default_meta_boxes", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469419, 3618, "Restrict_User_Content", "rw_render_debug_setting_box", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469420, 3618, "RW_Plugin_Base", "rw_render_save_setting_box", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469421, 3618, "Restrict_User_Content", "rw_plugin_create_meta_boxes", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469422, 3618, "RW_Plugin_Base", "rw_plugin_render_settings_page", "/_inc/RW_Plugin_Base.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469423, 3618, "Restrict_User_Content", "ruc_ajax_attachments_useronly", "/restrict-user-content.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (469424, 3618, "Restrict_User_Content", "ruc_pre_get_posts_media_user_only", "/restrict-user-content.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39429, 3618, "pre_get_posts", "array($this,'ruc_pre_get_posts_media_user_only')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39430, 3618, "admin_menu", "array(&$this,'rw_plugin_settings_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13506, 3618, "ajax_query_attachments_args", "array($this,'ruc_ajax_attachments_useronly')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (13507, 3618, "parse_query", "array($this,'ruc_parse_query_useronly')", 10, now(), now());

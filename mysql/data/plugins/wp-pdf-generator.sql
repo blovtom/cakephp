@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (5322, "WP PDF Generator", "4.1", "Trunk", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92438, 5322, "wppg_objects_pdf", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92439, 5322, "wppg_objects_pdf_menu_page", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92440, 5322, "wppg_objects_pdf_link", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92441, 5322, "wppg_safely_add_stylesheet_to_admin", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92442, 5322, "wppg_object_pdf_download", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92443, 5322, "wppg_my_custom_menu_page", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92444, 5322, "wppg_safely_add_javascript_to_admin", "/wp_objects_pdf.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (92445, 5322, "wppg_theme_name_scripts", "/wp_objects_pdf.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (700755, 5322, "wppg_objects_pdf_class", "wppg_objects_get_pdf", "/wp_objects_pdf_functions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (700756, 5322, "wppg_objects_pdf_class", "wppg_objects_save_format", "/wp_objects_pdf_functions.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57667, 5322, "admin_menu", "'wppg_objects_pdf_menu_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57668, 5322, "wp_enqueue_scripts", "'wppg_theme_name_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57669, 5322, "admin_enqueue_scripts", "'wppg_safely_add_stylesheet_to_admin'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (57670, 5322, "admin_enqueue_scripts", "'wppg_safely_add_javascript_to_admin'", 10, now(), now());

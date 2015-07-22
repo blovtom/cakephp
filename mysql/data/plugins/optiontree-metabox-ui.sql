@@ -1,0 +1,26 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3022, "MetaboxUI for OptionTree", "4.1", "1.7", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54875, 3022, "ot_meta", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54876, 3022, "ot_sections_view", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54877, 3022, "register_my_custom_menu_page", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54878, 3022, "rj_add_custom_option_types", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54879, 3022, "rj_ot_admin_styles", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54880, 3022, "ot_type_rj_upload_attach_id", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54881, 3022, "ot_array", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54882, 3022, "ot_type_rj_upload_media", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54883, 3022, "temp_url", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54884, 3022, "base_url", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54885, 3022, "rj_ot_type_theme_options_ui", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54886, 3022, "rj_ot_save_settings", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54887, 3022, "ot", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54888, 3022, "rj_ot_admin_scripts", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (54889, 3022, "rj_ot_show_settings", "/index.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33139, 3022, "admin_print_scripts-post-new.php", "'rj_ot_admin_scripts'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33140, 3022, "admin_print_styles-post-new.php", "'rj_ot_admin_styles'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33141, 3022, "admin_print_scripts-post.php", "'rj_ot_admin_scripts'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33142, 3022, "admin_init", "'rj_ot_show_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33143, 3022, "admin_init", "'rj_ot_save_settings'", 6, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33144, 3022, "admin_print_styles-post.php", "'rj_ot_admin_styles'", 11, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (33145, 3022, "admin_menu", "'register_my_custom_menu_page'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11114, 3022, "ot_option_types_array", "'rj_add_custom_option_types'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11115, 3022, "ot_override_forced_textarea_simple", "'__return_true'", 10, now(), now());

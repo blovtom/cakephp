@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (657, "Buddypress Group Chat", "4.1", "1.4.1", "3.6.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14773, 657, "bp_tinychat_group_chat_init", "/buddypress-group-chat.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14774, 657, "bp_tinychat_group_chat_activate", "/buddypress-group-chat.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (14775, 657, "bp_tinychat_group_chat_setup_globals", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58228, 657, "BP_tinychat_group_chat", "edit_screen_save", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58229, 657, "BP_tinychat_group_chat", "display", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58230, 657, "BP_tinychat_group_chat", "bp_tinychat_group_chat", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58231, 657, "BP_tinychat_group_chat", "create_screen_save", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58232, 657, "BP_tinychat_group_chat", "create_screen", "/chat-core.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (58233, 657, "BP_tinychat_group_chat", "edit_screen", "/chat-core.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7185, 657, "bp_setup_globals", "'bp_tinychat_group_chat_setup_globals'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (7186, 657, "bp_init", "'bp_tinychat_group_chat_init'", 10, now(), now());

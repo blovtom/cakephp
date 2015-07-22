@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (453, "Private forums visibility", "4.0", "2.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7327, 453, "freshness_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7328, 453, "pfv_remove_protected_title", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7329, 453, "bbp_list_private_subforums", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7330, 453, "pfv_settings_menu", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7331, 453, "activate_hide_counts_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7332, 453, "pfv_register_settings", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7333, 453, "pfv_remove_private_title", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7334, 453, "custom_freshness_link", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7335, 453, "activate_private_prefix_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7336, 453, "custom_list_forums", "/includes/functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7337, 453, "pfv_settings_page", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7338, 453, "activate_descriptions_checkbox", "/includes/settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4330, 453, "admin_init", "'pfv_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4331, 453, "admin_menu", "'pfv_settings_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1327, 453, "bbp_list_forums", "'custom_list_forums'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1328, 453, "protected_title_format", "'pfv_remove_protected_title'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1329, 453, "bbp_before_forum_get_subforums_parse_args", "'bbp_list_private_subforums'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1330, 453, "private_title_format", "'pfv_remove_private_title'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1331, 453, "bbp_get_forum_freshness_link", "'custom_freshness_link'", 10, now(), now());

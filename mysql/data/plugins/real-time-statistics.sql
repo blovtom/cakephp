@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3503, "Real Time Statistics", "4.1", "trunk", "3.4", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463005, 3503, "TidioLive", "getPrivateKey", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463006, 3503, "TidioLive", "enqueueScripts", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463007, 3503, "TidioPluginUpgrade", "getUserAccessKey", "/classes/TidioPluginUpgrade.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463008, 3503, "TidioLive", "addAdminPage", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463009, 3503, "TidioLive", "ajaxTidioLiveRedirect", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463010, 3503, "TidioPluginsScheme", "getPlugins", "/classes/TidioPluginsScheme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463011, 3503, "TidioLiveOptions", "getPublicKey", "/classes/TidioChatOptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463012, 3503, "TidioPluginsScheme", "registerPlugin", "/classes/TidioPluginsScheme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463013, 3503, "TidioLiveOptions", "getLiveSettings", "/classes/TidioChatOptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463014, 3503, "TidioPluginsScheme", "compatibilityPlugin", "/classes/TidioPluginsScheme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463015, 3503, "TidioPluginUpgrade", "init", "/classes/TidioPluginUpgrade.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463016, 3503, "TidioLive", "uninstall", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463017, 3503, "TidioLiveOptions", "getPrivateKey", "/classes/TidioChatOptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463018, 3503, "TidioLive", "addAdminMenuLink", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463019, 3503, "TidioPluginsScheme", "usePlugin", "/classes/TidioPluginsScheme.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463020, 3503, "TidioLive", "adminJS", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463021, 3503, "TidioLive", "getRedirectUrl", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463022, 3503, "TidioLive", "getPublicKey", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463023, 3503, "TidioLive", "getAccessUrl", "/init.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463024, 3503, "TidioLiveOptions", "__construct", "/classes/TidioChatOptions.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (463025, 3503, "TidioLive", "__construct", "/init.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38362, 3503, "admin_menu", "array($this,'addAdminMenuLink')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38363, 3503, "wp_enqueue_scripts", "array($this,'enqueueScripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38364, 3503, "wp_ajax_tidio_live_redirect", "array($this,'ajaxTidioLiveRedirect')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (38365, 3503, "admin_footer", "array($this,'adminJS')", 10, now(), now());

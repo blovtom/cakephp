@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (749, "WooCommerce Payment Gateway - CashBill", "4.1", "1.3.3", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16745, 749, "cashbill_payment_links", "/woocommerce-cashbill.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16746, 749, "cashbill_payment_load_class", "/woocommerce-cashbill.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16747, 749, "add_admin_menu", "/woocommerce-cashbill.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16748, 749, "cashbill_payment_init", "/woocommerce-cashbill.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67144, 749, "CashBill_Payment", "init_form_fields", "/woocommerce-cashbill-payment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67145, 749, "CashBill_Payment", "admin_options", "/woocommerce-cashbill-payment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67146, 749, "CashBill_Payment", "process_payment", "/woocommerce-cashbill-payment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67147, 749, "CashBill_Payment", "cashbill_callback", "/woocommerce-cashbill-payment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67148, 749, "CashBill_Payment", "__construct", "/woocommerce-cashbill-payment.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (67149, 749, "CashBill_Payment", "setPaymentUrl", "/woocommerce-cashbill-payment.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8440, 749, "plugins_loaded", "'cashbill_payment_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8441, 749, "admin_menu", "'add_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2995, 749, "woocommerce_payment_gateways", "'cashbill_payment_load_class'", 10, now(), now());

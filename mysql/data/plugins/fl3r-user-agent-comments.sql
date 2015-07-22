@@ -1,0 +1,15 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1682, "FL3R User Agent Comments", "4.1", "trunk", "2.7.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33647, 1682, "get_fuac_options", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33648, 1682, "display_user_agent_date", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33649, 1682, "display_user_agent", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33650, 1682, "fuac_options", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33651, 1682, "fuac_links", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33652, 1682, "fuac_menu", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33653, 1682, "display_user_agent_excerpt", "/start.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (33654, 1682, "display_user_agent_author", "/start.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (205287, 1682, "Browser", "Browser", "/include/browser.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (18579, 1682, "admin_menu", "'fuac_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6155, 1682, "get_comment_excerpt", "'display_user_agent_excerpt'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6156, 1682, "get_comment_text", "'display_user_agent'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6157, 1682, "get_comment_date", "'display_user_agent_date'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (6158, 1682, "get_comment_author", "'display_user_agent_author'", 10, now(), now());

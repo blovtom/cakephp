@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1580, "F2 Tumblr Widget", "4.1", "0.2.4", "3.3", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195627, 1580, "F2_Tumblr_Widget", "form", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195628, 1580, "F2_Tumblr_Widget", "widget", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195629, 1580, "F2_Tumblr_Widget", "flush_widget_cache", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195630, 1580, "F2_Tumblr_Widget", "register_admin_styles", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195631, 1580, "F2_Tumblr_Widget", "ajax_dynamic_css", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195632, 1580, "F2_Tumblr_Widget", "get_widget_slug", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195633, 1580, "F2_Tumblr_Widget", "register_widget_scripts", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195634, 1580, "F2_Tumblr_Widget", "register_admin_scripts", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195635, 1580, "F2_Tumblr_Widget", "update", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195636, 1580, "F2_Tumblr_Widget", "__construct", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195637, 1580, "F2_Tumblr_Widget", "ajax_enqueue_style", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195638, 1580, "F2_Tumblr_Widget", "trim_words", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195639, 1580, "F2_Tumblr_Widget", "register_widget_styles", "/f2-tumblr.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (195640, 1580, "F2_Tumblr_Widget", "widget_textdomain", "/f2-tumblr.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17753, 1580, "switch_theme", "array($this,'flush_widget_cache')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17754, 1580, "wp_ajax_nopriv_f2_tumblr_dynamic_css", "array($this,'ajax_dynamic_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17755, 1580, "wp_ajax_f2_tumblr_dynamic_css", "array($this,'ajax_dynamic_css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17756, 1580, "widgets_init", "create_function('','register_widget("F2_Tumblr_Widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17757, 1580, "wp_enqueue_scripts", "array($this,'register_widget_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17758, 1580, "admin_enqueue_scripts", "array($this,'register_admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17759, 1580, "deleted_post", "array($this,'flush_widget_cache')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17760, 1580, "admin_print_styles", "array($this,'register_admin_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17761, 1580, "wp_enqueue_scripts", "array($this,'ajax_enqueue_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17762, 1580, "wp_enqueue_scripts", "array($this,'register_widget_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17763, 1580, "init", "array($this,'widget_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17764, 1580, "save_post", "array($this,'flush_widget_cache')", 10, now(), now());

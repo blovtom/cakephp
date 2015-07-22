@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4480, "Plugin Name", "4.1", "0.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77817, 4480, "tt_social_icon_register", "/lib/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77818, 4480, "tt_wp_enqueue_scripts", "/social-button.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77819, 4480, "tt_wp_admin_scripts", "/social-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556759, 4480, "TrendyTheme_social_Widget", "form", "/lib/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556760, 4480, "TrendyTheme_social_Widget", "__construct", "/lib/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556761, 4480, "TrendyTheme_social_Widget", "widget", "/lib/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (556762, 4480, "TrendyTheme_social_Widget", "update", "/lib/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47839, 4480, "wp_enqueue_scripts", "'tt_wp_enqueue_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47840, 4480, "admin_enqueue_scripts", "'tt_wp_admin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47841, 4480, "widgets_init", "'tt_social_icon_register'", 10, now(), now());

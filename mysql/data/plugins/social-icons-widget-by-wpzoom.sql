@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4064, "Social Icons Widget by WPZOOM", "4.1.1", "trunk", "3.4", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (70967, 4064, "zoom_social_icons_widget_register", "/social-icons-widget-by-wpzoom.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511730, 4064, "Zoom_Social_Icons_Widget", "__construct", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511731, 4064, "Zoom_Social_Icons_Widget", "widget", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511732, 4064, "Zoom_Social_Icons_Widget", "update", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511733, 4064, "Zoom_Social_Icons_Widget", "admin_scripts", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511734, 4064, "Zoom_Social_Icons_Widget", "form", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511735, 4064, "Zoom_Social_Icons_Widget", "admin_js_templates", "/class.zoom-social-icons-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (511736, 4064, "Zoom_Social_Icons_Widget", "scripts", "/class.zoom-social-icons-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43591, 4064, "widgets_init", "'zoom_social_icons_widget_register'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43592, 4064, "admin_print_footer_scripts", "array($this,'admin_js_templates')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43593, 4064, "admin_enqueue_scripts", "array($this,'admin_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (43594, 4064, "wp_enqueue_scripts", "array($this,'scripts')", 10, now(), now());

@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4329, "Techlineinfo Social Count and Share", "4.1", "1.0.2", "3.0.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75716, 4329, "msssh_plugin_install", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75717, 4329, "msssh_backend_script", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75718, 4329, "msssh_frontend_script", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75719, 4329, "catch_that_image", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75720, 4329, "msssh_defaults", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75721, 4329, "msssh_check_conditions", "/msssh-calling.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75722, 4329, "msssh_plugin_admin_menu", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75723, 4329, "analytics_track", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75724, 4329, "minimum_total_count", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75725, 4329, "msssh_plugin_version", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75726, 4329, "msssh_backend_menu", "/msssh-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75727, 4329, "msssh_social_share", "/msssh-calling.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75728, 4329, "parse", "/sharrre.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75729, 4329, "mashable_style_social_share", "/msssh-calling.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75730, 4329, "msssh_custom_js", "/msssh.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (75731, 4329, "myplugin_plugin_action_links", "/msssh.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46417, 4329, "wp_head", "'msssh_custom_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46418, 4329, "wp_enqueue_scripts", "'msssh_frontend_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46419, 4329, "admin_init", "'msssh_backend_script'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (46420, 4329, "admin_menu", "'msssh_plugin_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15561, 4329, "plugin_action_links", "'myplugin_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15562, 4329, "the_content", "'msssh_check_conditions'", 10, now(), now());

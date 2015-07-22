@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3262, "Plugin Name", "4.0", "1.2", "2.0.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58931, 3262, "post_readtime_settings", "/post-readtime.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58932, 3262, "post_read_time", "/post-readtime.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58933, 3262, "post_readtime_uninstall", "/post-readtime.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58934, 3262, "post_readtime_install", "/post-readtime.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (58935, 3262, "post_readtime_admin_menu_create", "/post-readtime.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423477, 3262, "post_readtime_widget", "post_readtime_widget", "/post-readtime.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423478, 3262, "post_readtime_widget", "update", "/post-readtime.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423479, 3262, "post_readtime_widget", "form", "/post-readtime.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (423480, 3262, "post_readtime_widget", "widget", "/post-readtime.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36070, 3262, "widgets_init", "create_function('','return register_widget("post_readtime_widget");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (36071, 3262, "admin_menu", "'post_readtime_admin_menu_create'", 10, now(), now());

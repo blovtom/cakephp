@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (6, "123Formulier for WordPress", "4.0.1", "2.0.3", "2.0.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (27, 6, "json_decode", "/jsonwrapper_inner.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (28, 6, "json_encode", "/jsonwrapper_inner.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (29, 6, "request", "/dialog.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (30, 6, "w123cf_widget_text_filter", "/123formulier-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (31, 6, "contact_123_register", "/123formulier-wp-plugin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (32, 6, "contact_123_add_button", "/123formulier-wp-plugin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (167, 6, "Services_JSON", "encode", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (168, 6, "Services_JSON_Error", "Services_JSON_Error", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (169, 6, "Services_JSON", "reduce_string", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (170, 6, "Services_JSON", "utf82utf16", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (171, 6, "Services_JSON", "name_value", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (172, 6, "Services_JSON", "utf162utf8", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (173, 6, "Services_JSON", "decode", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (174, 6, "Services_JSON_Error", "Services_JSON_Error", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (175, 6, "Services_JSON", "isError", "/JSON/JSON.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (176, 6, "Services_JSON", "Services_JSON", "/JSON/JSON.php", now(), now());
+
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (10, 6, "the_content", "'w123cf_widget_text_filter'", 9, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (11, 6, "mce_buttons", "'contact_123_add_button'", 0, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (12, 6, "mce_external_plugins", "'contact_123_register'", 10, now(), now());

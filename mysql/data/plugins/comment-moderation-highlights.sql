@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (938, "Comment Moderation Highlights", "4.1", "1.0", "3.9.2", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19578, 938, "cmh_showadd_highlights_section", "/comment_moderation_highlights.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19579, 938, "flgs_show_comm_hls", "/comment_moderation_highlights.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19580, 938, "section_header", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87434, 938, "flgs_comment_moderation_highlight", "get_instance", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87435, 938, "flgs_comment_moderation_highlight", "print_scripts_styles", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87436, 938, "flgs_comment_moderation_highlight", "deactivation", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87437, 938, "flgs_comment_moderation_highlight", "activation", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87438, 938, "flgs_comment_moderation_highlight", "register_scripts_styles", "/comment_moderation_highlights.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (87439, 938, "flgs_comment_moderation_highlight", "register_settings", "/comment_moderation_highlights.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10261, 938, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10262, 938, "comment_text", "'flgs_show_comm_hls'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10263, 938, "admin_footer", "array($this,'print_scripts_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10264, 938, "admin_enqueue_scripts", "array($this,'register_scripts_styles')", 10, now(), now());

@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4275, "SurveyLab.me Shortcode", "4.1.1", "1.1", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527170, 4275, "SurveyLab_Shortcode_Plugin", "conditionally_enqueue_script", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527171, 4275, "SurveyLab_Shortcode_Plugin", "sl_tinymce_register_buttons_2", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527172, 4275, "SurveyLab_Shortcode_Plugin", "construct_embed", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527173, 4275, "SurveyLab_Shortcode_Plugin", "sl_tinymce_register_buttons", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527174, 4275, "SurveyLab_Shortcode_Plugin", "sl_register_tinymce_javascript", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527175, 4275, "SurveyLab_Shortcode_Plugin", "wp_sl_embed_handler", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527176, 4275, "SurveyLab_Shortcode_Plugin", "instance", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527177, 4275, "SurveyLab_Shortcode_Plugin", "enqueue_script", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527178, 4275, "SurveyLab_Shortcode_Plugin", "wp_sl_shortcode_handler", "/surveylab-shortcode.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (527179, 4275, "SurveyLab_Shortcode_Plugin", "sl_setup_tinymce_button", "/surveylab-shortcode.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45900, 4275, "wp_enqueue_scripts", "array($this,'enqueue_script')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45901, 4275, "admin_init", "array($this,'sl_setup_tinymce_button')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45902, 4275, "the_posts", "array($this,'conditionally_enqueue_script')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15397, 4275, "mce_buttons", "array($this,'sl_tinymce_register_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15398, 4275, "mce_external_plugins", "array($this,'sl_register_tinymce_javascript')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15399, 4275, "widget_text", "'do_shortcode'", 10, now(), now());

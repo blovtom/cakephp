@@ -1,0 +1,10 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (580, "BNS Helpers", "4.1", "0.1", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (9939, 580, "BNS_Helpers_in_plugin_update_message", "/bns-helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54179, 580, "BNS_Helpers", "child_pages_shortcode", "/bns-helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54180, 580, "BNS_Helpers", "plugin_data", "/bns-helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54181, 580, "BNS_Helpers", "__construct", "/bns-helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54182, 580, "BNS_Helpers", "dropdown_child_pages_shortcode", "/bns-helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (54183, 580, "BNS_Helpers", "scripts_and_styles", "/bns-helpers.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (5725, 580, "wp_enqueue_scripts", "array($this,'scripts_and_styles')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1912, 580, "widget_text", "'do_shortcode'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1913, 580, "bns_login_dashed_set", "'__return_true'", 10, now(), now());

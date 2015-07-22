@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4769, "Who Stick It", "4.1.1", "1.1.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83197, 4769, "hook_css", "/who-stick-it.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83198, 4769, "add_action_links", "/who-stick-it.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83199, 4769, "hook_js", "/who-stick-it.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83200, 4769, "myplugin_load_textdomain", "/who-stick-it.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611596, 4769, "who_stick_it", "tblbords", "/who-stick-it.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611597, 4769, "who_stick_it", "hooks", "/who-stick-it.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611598, 4769, "who_stick_it", "add_settings_panels", "/who-stick-it.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611599, 4769, "who_stick_it", "save_post", "/who-stick-it.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51025, 4769, "admin_menu", "array(__CLASS__,'add_settings_panels')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51026, 4769, "save_post", "array(__CLASS__,'save_post')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51027, 4769, "plugins_loaded", "'myplugin_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51028, 4769, "wp_head", "'hook_js'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (51029, 4769, "wp_footer", "'hook_css'", 10, now(), now());

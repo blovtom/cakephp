@@ -1,0 +1,14 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1251, "Display Site Numbers", "4.1", "0.8", "4.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24970, 1251, "DSN_dressit", "/display-site-numbers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24971, 1251, "DSN_load_widget", "/display-site-numbers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24972, 1251, "DSN_load_i18n", "/display-site-numbers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24973, 1251, "DSN_list", "/display-site-numbers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24974, 1251, "DSN_css", "/display-site-numbers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (24975, 1251, "DSN_counters", "/display-site-numbers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110473, 1251, "display_site_numbers", "update", "/display-site-numbers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110474, 1251, "display_site_numbers", "widget", "/display-site-numbers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110475, 1251, "display_site_numbers", "form", "/display-site-numbers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (110476, 1251, "display_site_numbers", "display_site_numbers", "/display-site-numbers.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13773, 1251, "plugins_loaded", "'DSN_load_i18n'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13774, 1251, "wp_enqueue_scripts", "'DSN_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (13775, 1251, "widgets_init", "'DSN_load_widget'", 10, now(), now());

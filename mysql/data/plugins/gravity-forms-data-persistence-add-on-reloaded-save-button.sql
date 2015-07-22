@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1992, "Gravity Forms - Data Persistence Add-On Reloaded - Save Button", "4.1", "1.1", "4.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317583, 1992, "ITSP_GF_DPR_Save_Button", "__construct", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317584, 1992, "ITSP_GF_DPR_Save_Button", "itsg_gf_save_button_button_ajax", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317585, 1992, "ITSP_GF_DPR_Save_Button", "itsg_gf_next_button_markup", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317586, 1992, "ITSP_GF_DPR_Save_Button", "itsg_gf_save_button_ajax", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317587, 1992, "ITSP_GF_DPR_Save_Button", "itsg_gf_submit_button_markup", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (317588, 1992, "ITSP_GF_DPR_Save_Button", "admin_warnings", "/gravity-forms-data-persistence-add-on-reloaded-save-button.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21881, 1992, "wp_footer", "array(&$this,'itsg_gf_save_button_ajax')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21882, 1992, "admin_notices", "array('ITSP_GF_DPR_Save_Button','admin_warnings')", 20, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21883, 1992, "gform_enqueue_scripts", "array(&$this,'itsg_gf_save_button_button_ajax')", 90, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7231, 1992, "gform_submit_button", "array(&$this,'itsg_gf_submit_button_markup')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7232, 1992, "gform_next_button", "array(&$this,'itsg_gf_next_button_markup')", 10, now(), now());

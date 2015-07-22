@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1796, "G Social Icons", "4.1", "1.2.0", "3.5.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214058, 1796, "G_Social_Icons", "enqueue_styles", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214059, 1796, "G_Social_Icons", "get_option_alignment", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214060, 1796, "G_Social_Icons", "get_option_colour", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214061, 1796, "G_Social_Icons", "check_http", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214062, 1796, "G_Social_Icons_Admin", "display_plugin_admin_page", "/admin/class-g-social-icons-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214063, 1796, "G_Social_Icons", "get_instance", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214064, 1796, "G_Social_Icons", "enqueue_scripts", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214065, 1796, "G_Social_Icons_Admin", "add_plugin_admin_menu", "/admin/class-g-social-icons-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214066, 1796, "G_Social_Icons", "get_plugin_slug", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214067, 1796, "G_Social_Icons_Admin", "register_settings", "/admin/class-g-social-icons-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214068, 1796, "G_Social_Icons", "display_shortcode", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214069, 1796, "G_Social_Icons", "load_plugin_textdomain", "/public/class-g-social-icons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214070, 1796, "G_Social_Icons_Admin", "get_instance", "/admin/class-g-social-icons-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (214071, 1796, "G_Social_Icons_Admin", "add_action_links", "/admin/class-g-social-icons-admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19809, 1796, "init", "array($this,'load_plugin_textdomain')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19810, 1796, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19811, 1796, "admin_menu", "array($this,'add_plugin_admin_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19812, 1796, "plugins_loaded", "array('G_Social_Icons','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19813, 1796, "plugins_loaded", "array('G_Social_Icons_Admin','get_instance')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19814, 1796, "wp_enqueue_scripts", "array($this,'enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19815, 1796, "wp_enqueue_scripts", "array($this,'enqueue_styles')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (19816, 1796, "wpmu_new_blog", "array($this,'activate_new_site')", 10, now(), now());

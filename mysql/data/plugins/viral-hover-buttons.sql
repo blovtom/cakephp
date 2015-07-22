@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4657, "Viral Hover Buttons", "4.1", "1.0", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81336, 4657, "viral_hover_buttons_uninstall", "/viral-hover-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81337, 4657, "image_hover_buttons", "/viral-hover-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81338, 4657, "viral_hover_buttons_activate", "/viral-hover-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81339, 4657, "video_hover_buttons", "/viral-hover-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81340, 4657, "viral_hover_buttons_init", "/viral-hover-buttons.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (81341, 4657, "viral_hover_get_buttons", "/viral-hover-buttons.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589274, 4657, "VIRAL_HOVER_BUTTONS_OPTIONS_PAGE_class", "admin_init", "/viral-hover-buttons-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589275, 4657, "VIRAL_HOVER_BUTTONS_OPTIONS_PAGE_class", "viral_hover_buttons_options_page", "/viral-hover-buttons-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589276, 4657, "VIRAL_HOVER_BUTTONS_OPTIONS_PAGE_class", "validate", "/viral-hover-buttons-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589277, 4657, "VIRAL_HOVER_BUTTONS_OPTIONS_PAGE_class", "viral_hover_buttons_register_options_page", "/viral-hover-buttons-options.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (589278, 4657, "VIRAL_HOVER_BUTTONS_OPTIONS_PAGE_class", "__construct", "/viral-hover-buttons-options.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49960, 4657, "admin_init", "array($this,'admin_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49961, 4657, "init", "'viral_hover_buttons_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (49962, 4657, "admin_menu", "array($this,'viral_hover_buttons_register_options_page')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16767, 4657, "the_content", "'video_hover_buttons'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16768, 4657, "the_content", "'image_hover_buttons'", 10, now(), now());

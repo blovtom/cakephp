@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (965, "Contact Coldform", "4.1", "trunk", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19975, 965, "contact_coldform_require_wp_version", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19976, 965, "contact_coldform_add_options_page", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19977, 965, "contact_coldform_filter_input", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19978, 965, "contact_coldform_public", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19979, 965, "contact_coldform_plugin_action_links", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19980, 965, "contact_coldform_display_form", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19981, 965, "contact_coldform_add_defaults", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19982, 965, "contact_coldform_spam_question", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19983, 965, "add_coldform_links", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19984, 965, "contact_coldform_init", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19985, 965, "contact_coldform_validate_options", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19986, 965, "contact_coldform_render_form", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19987, 965, "contact_coldform_register_style", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19988, 965, "contact_coldform_input_filter", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19989, 965, "coldform_i18n_init", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19990, 965, "contact_coldform_get_ip_address", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19991, 965, "contact_coldform", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19992, 965, "contact_coldform_shortcode", "/contact-coldform.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (19993, 965, "contact_coldform_delete_plugin_options", "/contact-coldform.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10602, 965, "admin_init", "'contact_coldform_require_wp_version'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10603, 965, "plugins_loaded", "'coldform_i18n_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10604, 965, "init", "'contact_coldform_register_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10605, 965, "admin_menu", "'contact_coldform_add_options_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (10606, 965, "admin_init", "'contact_coldform_init'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3673, 965, "plugin_action_links", "'contact_coldform_plugin_action_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (3674, 965, "plugin_row_meta", "'add_coldform_links'", 10, now(), now());

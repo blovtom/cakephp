@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2532, "Live Chats for WooCommerce - All in One", "4.1", "trunk", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (46943, 2532, "plugin_add_settings_link", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351173, 2532, "zm_chat", "print_script", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351174, 2532, "zm_chat", "page_content", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351175, 2532, "zm_chat", "register_mysettings", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351176, 2532, "zm_chat", "reg_menu", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351177, 2532, "zm_chat", "sanitize_settings", "/livechats.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (351178, 2532, "zm_chat", "__construct", "/livechats.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27412, 2532, "admin_menu", "array($this,'reg_menu')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27413, 2532, "admin_init", "array($this,'register_mysettings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (27414, 2532, "wp_footer", "array($this,'print_script')", 10, now(), now());

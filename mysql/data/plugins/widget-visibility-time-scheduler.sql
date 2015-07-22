@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4776, "Widget Visibility Time Scheduler", "4.1", "2.2", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83379, 4776, "activate_hinjiwvts", "/hinjiwvts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83380, 4776, "deactivate_hinjiwvts", "/hinjiwvts.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (83381, 4776, "run_hinjiwvts", "/hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611895, 4776, "Hinjiwvts_Loader", "add_action", "/includes/class-hinjiwvts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611896, 4776, "Hinjiwvts", "get_hinjiwvts", "/includes/class-hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611897, 4776, "Hinjiwvts_Admin", "enqueue_styles", "/admin/class-hinjiwvts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611898, 4776, "Hinjiwvts_Admin", "__construct", "/admin/class-hinjiwvts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611899, 4776, "Hinjiwvts", "get_version", "/includes/class-hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611900, 4776, "Hinjiwvts_Admin", "display_time_fields", "/admin/class-hinjiwvts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611901, 4776, "Hinjiwvts", "run", "/includes/class-hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611902, 4776, "Hinjiwvts_Deactivator", "deactivate", "/includes/class-hinjiwvts-deactivator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611903, 4776, "Hinjiwvts", "__construct", "/includes/class-hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611904, 4776, "Hinjiwvts_Activator", "activate", "/includes/class-hinjiwvts-activator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611905, 4776, "Hinjiwvts_i18n", "set_domain", "/includes/class-hinjiwvts-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611906, 4776, "Hinjiwvts_Loader", "add_filter", "/includes/class-hinjiwvts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611907, 4776, "Hinjiwvts_Public", "filter_widget", "/public/class-hinjiwvts-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611908, 4776, "Hinjiwvts_i18n", "load_plugin_textdomain", "/includes/class-hinjiwvts-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611909, 4776, "Hinjiwvts_Public", "__construct", "/public/class-hinjiwvts-public.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611910, 4776, "Hinjiwvts", "get_loader", "/includes/class-hinjiwvts.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611911, 4776, "Hinjiwvts_Loader", "__construct", "/includes/class-hinjiwvts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611912, 4776, "Hinjiwvts_Admin", "widget_update", "/admin/class-hinjiwvts-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611913, 4776, "Hinjiwvts_Loader", "run", "/includes/class-hinjiwvts-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (611914, 4776, "Hinjiwvts_Admin", "display_activation_message", "/admin/class-hinjiwvts-admin.php", now(), now());
+

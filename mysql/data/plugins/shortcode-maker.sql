@@ -1,0 +1,20 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3846, "Plugin Name", "4.0.1", "4.3", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500662, 3846, "shortcode_maker", "sm_shortcode_button", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500663, 3846, "shortcode_maker", "register_shortcode", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500664, 3846, "shortcode_maker", "sm_register_buttons", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500665, 3846, "shortcode_maker", "sm_get_shortcodes", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500666, 3846, "shortcode_maker", "remove_shortcode", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500667, 3846, "shortcode_maker", "__construct", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500668, 3846, "shortcode_maker", "save_post_func", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500669, 3846, "shortcode_maker", "sm_add_buttons", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500670, 3846, "shortcode_maker", "shortcode_add", "/index.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500671, 3846, "shortcode_maker", "shortcode_content", "/index.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41616, 3846, "init", "array($this,'shortcode_add')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41617, 3846, "init", "array($this,'register_shortcode')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41618, 3846, "wp_trash_post", "array($this,'remove_shortcode')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41619, 3846, "admin_footer", "array($this,'sm_get_shortcodes')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41620, 3846, "save_post", "array($this,'save_post_func')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41621, 3846, "admin_init", "array($this,'sm_shortcode_button')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14182, 3846, "mce_external_plugins", "array($this,'sm_add_buttons')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (14183, 3846, "mce_buttons", "array($this,'sm_register_buttons')", 10, now(), now());

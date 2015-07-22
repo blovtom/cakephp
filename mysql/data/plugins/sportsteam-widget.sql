@@ -1,0 +1,13 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4138, "Sportsteam Widget", "4.1", "2.1", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73062, 4138, "sportsteam_register_post_type", "/sportsteam-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73063, 4138, "wp_sportsteam_widget", "/sportsteam-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73064, 4138, "sportsteam_enqueue_style", "/sportsteam-widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73065, 4138, "sportsteam_lang", "/sportsteam-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (518612, 4138, "WP_SportsTeam", "WP_SportsTeam", "/sportsteam-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (518613, 4138, "WP_SportsTeam", "update", "/sportsteam-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (518614, 4138, "WP_SportsTeam", "widget", "/sportsteam-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (518615, 4138, "WP_SportsTeam", "form", "/sportsteam-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44660, 4138, "wp_enqueue_scripts", "'sportsteam_enqueue_style'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44661, 4138, "widgets_init", "'wp_sportsteam_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44662, 4138, "init", "'sportsteam_register_post_type'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44663, 4138, "plugins_loaded", "'sportsteam_lang'", 10, now(), now());

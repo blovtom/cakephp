@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (618, "BP Group Hierarchy Propagate", "4.1", "0.3.2", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (10713, 618, "bp_groups_hierarchy_propagate", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55063, 618, "BP_Groups_Hierarchy_Propagate", "_get_children", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55064, 618, "BP_Groups_Hierarchy_Propagate", "propagate_content_up", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55065, 618, "BP_Groups_Hierarchy_Propagate", "propagate_content_both", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55066, 618, "BP_Groups_Hierarchy_Propagate", "propagate_content_down", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55067, 618, "BP_Groups_Hierarchy_Propagate", "admin_option", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55068, 618, "BP_Groups_Hierarchy_Propagate", "__construct", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55069, 618, "BP_Groups_Hierarchy_Propagate", "translation", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (55070, 618, "BP_Groups_Hierarchy_Propagate", "admin_save", "/bp-group-hierarchy-propagate.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6107, 618, "plugins_loaded", "array($this,'translation')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6108, 618, "bpgh_admin_after_settings", "array($this,'admin_option')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6109, 618, "bpgh_admin_after_save", "array($this,'admin_save')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (6110, 618, "bp_setup_globals", "'bp_groups_hierarchy_propagate'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2064, 618, "bp_has_activities", "array($this,'propagate_content_both')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2065, 618, "bp_has_activities", "array($this,'propagate_content_up')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (2066, 618, "bp_has_activities", "array($this,'propagate_content_down')", 10, now(), now());

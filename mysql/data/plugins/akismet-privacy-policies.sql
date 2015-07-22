@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (222, "Akismet Privacy Policies", "4.1", "1.1.2", "3.0", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14490, 222, "Akismet_Privacy_Policies", "plugin_action_links", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14491, 222, "Akismet_Privacy_Policies", "__construct", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14492, 222, "Akismet_Privacy_Policies", "register_settings", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14493, 222, "Akismet_Privacy_Policies", "unregister_settings", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14494, 222, "Akismet_Privacy_Policies", "get_settings_page", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14495, 222, "Akismet_Privacy_Policies", "add_style", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14496, 222, "Akismet_Privacy_Policies", "get_object", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14497, 222, "Akismet_Privacy_Policies", "validate_settings", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14498, 222, "Akismet_Privacy_Policies", "get_plugin_data", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14499, 222, "Akismet_Privacy_Policies", "add_comment_notice", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14500, 222, "Akismet_Privacy_Policies", "contextual_help", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14501, 222, "Akismet_Privacy_Policies", "error_message", "/akismet-privacy-policies.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (14502, 222, "Akismet_Privacy_Policies", "add_settings_page", "/akismet-privacy-policies.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1840, 222, "pre_comment_on_post", "array($this,'error_message')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1841, 222, "wp_head", "array($this,'add_style')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1842, 222, "admin_init", "array($this,'register_settings')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1843, 222, "admin_menu", "array($this,'add_settings_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1844, 222, "akismet_privacy_policies", "array($this,'add_comment_notice')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1845, 222, "contextual_help", "array($this,'contextual_help')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (1846, 222, "plugins_loaded", "array('Akismet_Privacy_Policies','get_object')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (572, 222, "plugin_action_links", "array($this,'plugin_action_links')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (573, 222, "comment_form_defaults", "array($this,'add_comment_notice')", 11, now(), now());

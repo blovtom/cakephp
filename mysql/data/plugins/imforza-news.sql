@@ -1,0 +1,32 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2219, "Plugin Name", "4.1", "1.2.5", "3.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41023, 2219, "imforzawpe_remove_editor_menu", "/admin/wpengine.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41024, 2219, "imforzawpe_update_user", "/admin/wpengine.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41025, 2219, "imforza_support_dashboard_setup", "/imforza.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41026, 2219, "imforza_rss_output", "/imforza.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41027, 2219, "imforzawpe_hide_update_notice_to_all_but_admin_users", "/admin/wpengine.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41028, 2219, "imforzawpe_kill_videopress", "/admin/jetpack.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41029, 2219, "imforzawpe_kill_verification", "/admin/jetpack.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41030, 2219, "imforzawpe_kill_vaultpress", "/admin/jetpack.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41031, 2219, "imforza_support_dashboard", "/imforza.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41032, 2219, "imforzawpe_remove_admin_bar_links", "/admin/wpengine.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41033, 2219, "add_imforza_admin_bar_link", "/imforza.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41034, 2219, "imforzawpe_kill_contact_form", "/admin/jetpack.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41035, 2219, "imforza_rss_widget", "/imforza.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41036, 2219, "imforzawpe_remove_menu_pages", "/admin/wpengine.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23450, 2219, "init", "'imforzawpe_update_user'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23451, 2219, "admin_bar_menu", "'imforzawpe_remove_admin_bar_links'", 999, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23452, 2219, "wp_dashboard_setup", "'imforza_rss_widget'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23453, 2219, "admin_head", "'imforzawpe_hide_update_notice_to_all_but_admin_users'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23454, 2219, "wp_dashboard_setup", "'imforza_support_dashboard_setup'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23455, 2219, "admin_bar_menu", "'add_imforza_admin_bar_link'", 25, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23456, 2219, "_admin_menu", "'imforzawpe_remove_editor_menu'", 1, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23457, 2219, "admin_init", "'imforzawpe_remove_menu_pages'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7757, 2219, "jetpack_get_available_modules", "'imforzawpe_kill_vaultpress'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7758, 2219, "jetpack_get_available_modules", "'imforzawpe_kill_contact_form'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7759, 2219, "wp101_get_custom_help_topics", "function ($custom_videos)
+{
+	$custom_videos['idxbroker.1'] = array('id' => 'idxbroker.1','title' => 'IDX Broker: Getting Started','content' => '<iframe width="560" height="315" src="//www.youtube.com/embed/Gm-R4l23tp8?rel=0&showinfo=0&controls=1&vq=hd1080&modestbranding=1" frameborder="0" allowfullscreen></iframe>');$custom_videos['idxbroker.2'] = array('id' => 'idxbroker.2','title' => 'IDX Broker: Creating/Managing Pages','content' => '<iframe width="560" height="315" src="//www.youtube.com/embed/cHg-Gx5P_Uo?rel=0&showinfo=0&controls=1&vq=hd1080&modestbranding=1" frameborder="0" allowfullscreen></iframe>');$custom_videos['idxbroker.3'] = array('id' => 'idxbroker.3','title' => 'IDX Broker: Social and Facebook','content' => '<iframe width="560" height="315" src="//www.youtube.com/embed/GvvsVgp_PLI?rel=0&showinfo=0&controls=1&vq=hd1080&modestbranding=1" frameborder="0" allowfullscreen></iframe>');$custom_videos['idxbroker.4'] = array('id' => 'idxbroker.4','title' => 'IDX Broker: Lead Management','content' => '<iframe width="560" height="315" src="//www.youtube.com/embed/jU5Z0z_GOHA?rel=0&showinfo=0&controls=1&vq=hd1080&modestbranding=1" frameborder="0" allowfullscreen></iframe>');return $custom_videos;
+}", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7760, 2219, "jetpack_get_available_modules", "'imforzawpe_kill_videopress'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7761, 2219, "jetpack_get_available_modules", "'imforzawpe_kill_verification'", 10, now(), now());

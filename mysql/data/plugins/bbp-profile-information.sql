@@ -1,0 +1,28 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (455, "bbp profile information", "4.0", "1.1", "3.0.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7388, 455, "rpi_register_settings", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7389, 455, "activate_item4_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7390, 455, "activate_item1_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7391, 455, "user_profile_bbp_profile_information", "/includes/display.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7392, 455, "rpi_settings_page", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7393, 455, "activate_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7394, 455, "itemshow_item1_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7395, 455, "rpi_settings_menu", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7396, 455, "bbp_edit_user_bbp_profile_information", "/includes/display.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7397, 455, "labelshow_item4_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7398, 455, "bbp_profile_information", "/includes/display.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7399, 455, "activate_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7400, 455, "itemshow_item4_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7401, 455, "edit_bbp_profile_information", "/includes/display.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7402, 455, "itemshow_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7403, 455, "itemshow_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7404, 455, "labelshow_item2_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7405, 455, "labelshow_item3_checkbox", "/includes/settings.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (7406, 455, "labelshow_item1_checkbox", "/includes/settings.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4342, 455, "bbp_template_after_user_profile", "'user_profile_bbp_profile_information'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4343, 455, "bbp_user_edit_after_name", "'edit_bbp_profile_information'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4344, 455, "admin_menu", "'rpi_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4345, 455, "admin_init", "'rpi_register_settings'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4346, 455, "edit_user_profile_update", "'bbp_edit_user_bbp_profile_information'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4347, 455, "personal_options_update", "'bbp_edit_user_bbp_profile_information'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (4348, 455, "bbp_theme_after_reply_author_details", "'bbp_profile_information'", 10, now(), now());

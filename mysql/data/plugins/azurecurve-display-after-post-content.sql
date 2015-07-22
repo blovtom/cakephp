@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (419, "azurecurve Display After Post Content", "4.1.0", "1.0.0", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6668, 419, "azc_dapc_network_settings_page", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6669, 419, "azc_dapc_admin_init", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6670, 419, "azc_dapc_add_network_settings_page", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6671, 419, "azc_dapc_process_options", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6672, 419, "azc_dapc_display_after_post_content", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6673, 419, "azc_dapc_set_default_options", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6674, 419, "azc_dapc_load_css", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6675, 419, "azc_dapc_load_plugin_textdomain", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6676, 419, "azc_dapc_plugin_action_links", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6677, 419, "azc_dapc_settings_menu", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6678, 419, "azc_dapc_config_page", "/azurecurve-display-after-post-content.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6679, 419, "process_azc_dapc_network_options", "/azurecurve-display-after-post-content.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3968, 419, "admin_post_azc_dapc_save_options", "'azc_dapc_process_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3969, 419, "admin_menu", "'azc_dapc_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3970, 419, "wp_enqueue_scripts", "'azc_dapc_load_css'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3971, 419, "network_admin_menu", "'azc_dapc_add_network_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3972, 419, "admin_init", "'azc_dapc_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3973, 419, "plugins_loaded", "'azc_dapc_load_plugin_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3974, 419, "network_admin_edit_update_azc_dapc_network_options", "'process_azc_dapc_network_options'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1214, 419, "the_content", "'azc_dapc_display_after_post_content'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1215, 419, "plugin_action_links", "'azc_dapc_plugin_action_links'", 10, now(), now());

@@ -1,0 +1,31 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1039, "Country Ban System", "4.1", "1.0.10", "3.6", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21519, 1039, "geoip_country_code_by_name", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21520, 1039, "geoip_close", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21521, 1039, "geoip_country_id_by_name_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21522, 1039, "geoip_org_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21523, 1039, "geoip_open", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21524, 1039, "geoip_country_code_by_addr_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21525, 1039, "geoip_country_code_by_name_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21526, 1039, "_geoip_seek_country_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21527, 1039, "geoip_country_id_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21528, 1039, "_geoip_seek_country", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21529, 1039, "geoip_country_name_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21530, 1039, "geoip_country_code_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21531, 1039, "_get_region", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21532, 1039, "geoip_name_by_addr_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21533, 1039, "geoip_name_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21534, 1039, "_get_org", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21535, 1039, "geoip_country_id_by_addr_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21536, 1039, "_setup_segments", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21537, 1039, "geoip_country_id_by_name", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21538, 1039, "cbs_block_country", "/index.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21539, 1039, "geoip_country_name_by_name_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21540, 1039, "geoip_country_name_by_addr_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21541, 1039, "geoip_region_by_addr", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21542, 1039, "_get_org_v6", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21543, 1039, "getdnsattributes", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21544, 1039, "_common_get_org", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21545, 1039, "geoip_country_name_by_name", "/geoip.inc", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (21546, 1039, "geoip_load_shared_mem", "/geoip.inc", now(), now());
+
+

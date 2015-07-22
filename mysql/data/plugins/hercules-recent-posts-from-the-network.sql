@@ -1,0 +1,11 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2068, "Hercules Recent Posts from Network", "4.0", "1.1", "3.0.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323482, 2068, "HerculesRecentPostsFromNetwork", "__construct", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323483, 2068, "HerculesRecentPostsFromNetworkWidget", "update", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323484, 2068, "HerculesRecentPostsFromNetwork", "AddPosttoHerculesRecentPostsFromNetwork", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323485, 2068, "HerculesRecentPostsFromNetwork", "RegisterHerculesRecentPostsFromNetworkWidget", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323486, 2068, "HerculesRecentPostsFromNetworkWidget", "HerculesRecentPostsFromNetworkWidget", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323487, 2068, "HerculesRecentPostsFromNetworkWidget", "widget", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (323488, 2068, "HerculesRecentPostsFromNetworkWidget", "form", "/HerculesRecentPostsfromNetwork.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22330, 2068, "widgets_init", "array($this,'RegisterHerculesRecentPostsFromNetworkWidget')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (22331, 2068, "publish_post", "array($this,'AddPosttoHerculesRecentPostsFromNetwork')", 10, now(), now());

@@ -1,0 +1,21 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (422, "azurecurve Multisite Favicon", "4.1.0", "1.0.3", "3.3", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6691, 422, "azc_msfi_config_page", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6692, 422, "azc_msfi_plugin_action_links", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6693, 422, "azurecurve_msfi_load_favicon", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6694, 422, "add_azc_msfi_network_settings_page", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6695, 422, "azc_msfi_network_settings_page", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6696, 422, "azc_msfi_load_plugin_textdomain", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6697, 422, "process_azc_msfi_options", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6698, 422, "azc_msfi_settings_menu", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6699, 422, "azc_msfi_set_default_options", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6700, 422, "azc_msfi_admin_init", "/azurecurve-multisite-favicon.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (6701, 422, "process_azc_msfi_network_options", "/azurecurve-multisite-favicon.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3981, 422, "network_admin_edit_update_azc_msfi_network_options", "'process_azc_msfi_network_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3982, 422, "admin_post_save_azc_msfi_options", "'process_azc_msfi_options'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3983, 422, "wp_head", "'azurecurve_msfi_load_favicon'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3984, 422, "network_admin_menu", "'add_azc_msfi_network_settings_page'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3985, 422, "admin_init", "'azc_msfi_admin_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3986, 422, "admin_menu", "'azc_msfi_settings_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (3987, 422, "plugins_loaded", "'azc_msfi_load_plugin_textdomain'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (1217, 422, "plugin_action_links", "'azc_msfi_plugin_action_links'", 10, now(), now());

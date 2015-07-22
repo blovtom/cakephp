@@ -1,0 +1,16 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4240, "Sup Post Widget", "4.1", "0.4.1", "2.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74375, 4240, "sup_random_posts", "/sup_posts_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74376, 4240, "register_sup_posts_sidebar_widget", "/widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74377, 4240, "sup_latest_posts", "/sup_posts_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74378, 4240, "spw_display", "/sup_posts_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74379, 4240, "sup_popular_posts", "/sup_posts_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74380, 4240, "spw_plugin_scripts", "/sup_posts_widget.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (74381, 4240, "sup_post_image", "/sup_posts_widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525617, 4240, "sup_posts_sidebar_widget", "update", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525618, 4240, "sup_posts_sidebar_widget", "__construct", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525619, 4240, "sup_posts_sidebar_widget", "widget", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525620, 4240, "sup_posts_sidebar_widget", "css", "/widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (525621, 4240, "sup_posts_sidebar_widget", "form", "/widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45659, 4240, "wp_head", "array($this,'css')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45660, 4240, "wp_enqueue_scripts", "'spw_plugin_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (45661, 4240, "widgets_init", "'register_sup_posts_sidebar_widget'", 10, now(), now());

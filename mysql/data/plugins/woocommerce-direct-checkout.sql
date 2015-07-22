@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4856, "Plugin Name", "4.1", "1.1.0", "2.7", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618710, 4856, "WooCommerce_Direct_Checkout", "direct_checkout_continue_button", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618711, 4856, "WooCommerce_Direct_Checkout", "init", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618712, 4856, "WooCommerce_Direct_Checkout", "__construct", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618713, 4856, "WooCommerce_Direct_Checkout", "get_options", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618714, 4856, "WooCommerce_Direct_Checkout", "add_menu_direct_checkout", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618715, 4856, "WooCommerce_Direct_Checkout", "custom_cart_button_text", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618716, 4856, "WooCommerce_Direct_Checkout", "custom_add_to_cart_redirect", "/wc-direct-checkout.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (618717, 4856, "WooCommerce_Direct_Checkout", "settings_page_direct_checkout", "/wc-direct-checkout.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52139, 4856, "admin_menu", "array(&$this,'add_menu_direct_checkout')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52140, 4856, "woocommerce_init", "array(&$this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (52141, 4856, "woocommerce_after_add_to_cart_button", "array(&$this,'direct_checkout_continue_button')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17574, 4856, "single_add_to_cart_text", "array(&$this,'custom_cart_button_text')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17575, 4856, "add_to_cart_redirect", "array(&$this,'custom_add_to_cart_redirect')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17576, 4856, "add_to_cart_text", "array(&$this,'custom_cart_button_text')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17577, 4856, "woocommerce_product_single_add_to_cart_text", "array(&$this,'custom_cart_button_text')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (17578, 4856, "woocommerce_product_add_to_cart_text", "array(&$this,'custom_cart_button_text')", 10, now(), now());

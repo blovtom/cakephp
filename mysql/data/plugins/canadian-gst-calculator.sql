@@ -1,0 +1,12 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (725, "CC Canadian GST Calculator", "4.1", "0.2.0", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16033, 725, "load_cc_gst_custom_colors", "/cc-canada-gst-calculator-layout.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16034, 725, "load_cc_canada_gst_calc", "/cc-canada-gst-calculator-layout.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16035, 725, "cc_gst_scripts", "/cc-canada-gst-calculator.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (16036, 725, "cc_gst_admin", "/cc-canada-gst-calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65647, 725, "cc_canada_gst_calculator", "widget", "/cc-canada-gst-calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65648, 725, "cc_canada_gst_calculator", "__construct", "/cc-canada-gst-calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65649, 725, "cc_canada_gst_calculator", "form", "/cc-canada-gst-calculator.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (65650, 725, "cc_canada_gst_calculator", "update", "/cc-canada-gst-calculator.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8039, 725, "wp_enqueue_scripts", "'cc_gst_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8040, 725, "widgets_init", "create_function('','return register_widget("cc_canada_gst_calculator");')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (8041, 725, "admin_enqueue_scripts", "'cc_gst_admin'", 10, now(), now());

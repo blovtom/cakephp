@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (2285, "ICIT Weather Widget", "4.1.1", "2.4.4", "3.8.1", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41707, 2285, "icit_fetch_open_weather", "/includes/helpers.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (41708, 2285, "icit_change_user_agent", "/includes/helpers.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330663, 2285, "icit_weather_widget", "css", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330664, 2285, "icit_weather_widget", "form", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330665, 2285, "icit_weather_widget", "get_direction", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330666, 2285, "icit_weather_widget", "is_night", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330667, 2285, "icit_weather_widget", "__construct", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330668, 2285, "icit_weather_widget", "_init", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330669, 2285, "icit_weather_widget", "get_weather", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330670, 2285, "icit_weather_widget", "widget", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330671, 2285, "icit_weather_widget", "add_error", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330672, 2285, "icit_weather_widget", "update", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330673, 2285, "icit_weather_widget", "icit_weather_shortcode", "/icit-weather-widget.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (330674, 2285, "icit_weather_widget", "get_icon", "/icit-weather-widget.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (23908, 2285, "widgets_init", "array('icit_weather_widget','_init')", 1, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (7868, 2285, "http_headers_useragent", "'icit_change_user_agent'", 10, now(), now());

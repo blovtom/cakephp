@@ -1,0 +1,25 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4149, "Plugin Name", "4.1", "4.3", "3.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73362, 4149, "srvd_menu", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73363, 4149, "script_on_all_page", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73364, 4149, "setEmail", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73365, 4149, "setEmail", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73366, 4149, "srvd_options", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73367, 4149, "srvd_options", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73368, 4149, "register_dropdown", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73369, 4149, "add_dropDown_plugin", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73370, 4149, "add_dropdown", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73371, 4149, "script_on_all_page", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73372, 4149, "register_dropdown", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73373, 4149, "form_scripts_method", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73374, 4149, "form_scripts_method", "/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73375, 4149, "add_dropDown_plugin", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73376, 4149, "add_dropdown", "/trunk/wp-srvd.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (73377, 4149, "srvd_menu", "/trunk/wp-srvd.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44826, 4149, "admin_enqueue_scripts", "'form_scripts_method'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44827, 4149, "admin_menu", "'srvd_menu'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44828, 4149, "admin_head", "'add_dropdown'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44829, 4149, "wp_ajax_setEmail", "'setEmail'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (44830, 4149, "wp_enqueue_scripts", "'script_on_all_page'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15113, 4149, "mce_external_plugins", "'register_dropdown'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (15114, 4149, "mce_buttons", "'add_dropDown_plugin'", 10, now(), now());

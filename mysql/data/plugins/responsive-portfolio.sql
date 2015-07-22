@@ -1,0 +1,23 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3603, "Responsive Portfolio", "4.1", "1.8", "3.5", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64882, 3603, "wrp_upgrade_to_pro_function", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64883, 3603, "GetReadyTranslationPortfolio", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64884, 3603, "reponsive_portfolio_premium_short_code", "/responsive-portfolio-short-code.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64885, 3603, "WeblizarResponsivePortfolioShortCodeDetect", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64886, 3603, "image_portfolio_settings_page_function", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64887, 3603, "responsive_portfolio_meta_save", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64888, 3603, "Rate_us_meta_box_function_portfolio", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64889, 3603, "WRP_SettingsPage", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64890, 3603, "ResponsivePortfolio_init", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64891, 3603, "responsive_portfolio_function", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64892, 3603, "DefaultSettingsPortfolio", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64893, 3603, "ResponsivePortfolio", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64894, 3603, "rp_plugin_shortcode", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64895, 3603, "wrp_pro_features", "/responsive-portfolio.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (64896, 3603, "get_portfolio_pro_page_function", "/responsive-portfolio.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39284, 3603, "admin_menu", "'WRP_SettingsPage'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39285, 3603, "init", "'ResponsivePortfolio'", 0, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39286, 3603, "wp", "'WeblizarResponsivePortfolioShortCodeDetect'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39287, 3603, "save_post", "'responsive_portfolio_meta_save'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39288, 3603, "plugins_loaded", "'GetReadyTranslationPortfolio'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (39289, 3603, "admin_init", "'ResponsivePortfolio_init'", 10, now(), now());

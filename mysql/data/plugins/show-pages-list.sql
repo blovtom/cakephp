@@ -1,0 +1,18 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (3856, "Show Pages List", "4.1", "1.1", "2.8.0", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68467, 3856, "show_pages_list_menu", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68468, 3856, "run_show_pages_list", "/show-pages-list.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (68469, 3856, "show_pages_list_include", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500937, 3856, "Show_Pages_List", "__construct", "/includes/class-show-pages-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500938, 3856, "Show_Pages_List", "get_version", "/includes/class-show-pages-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500939, 3856, "Show_Pages_List_i18n", "set_domain", "/includes/class-show-pages-list-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500940, 3856, "Show_Pages_List", "get_loader", "/includes/class-show-pages-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500941, 3856, "Show_Pages_List_Loader", "add_action", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500942, 3856, "Show_Pages_List_Loader", "__construct", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500943, 3856, "Show_Pages_List", "get_show_pages_list", "/includes/class-show-pages-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500944, 3856, "Show_Pages_List", "run", "/includes/class-show-pages-list.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500945, 3856, "Show_Pages_List_Loader", "add_filter", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500946, 3856, "Show_Pages_List_Admin", "__construct", "/admin/class-show-pages-list-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500947, 3856, "Show_Pages_List_Admin", "enqueue_styles", "/admin/class-show-pages-list-admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500948, 3856, "Show_Pages_List_i18n", "load_plugin_textdomain", "/includes/class-show-pages-list-i18n.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (500949, 3856, "Show_Pages_List_Loader", "run", "/includes/class-show-pages-list-loader.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (41692, 3856, "admin_menu", "'show_pages_list_menu'", 10, now(), now());

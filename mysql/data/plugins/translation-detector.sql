@@ -1,0 +1,27 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (4458, "Translation Detector", "4.0", "1.3", "3.7", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77584, 4458, "tdfp_select_display_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77585, 4458, "tdfp_add_admin_menu", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77586, 4458, "translation_detector_options_page", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77587, 4458, "tdfp_load_textdomain", "/translation-detector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77588, 4458, "tdfp_color_text_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77589, 4458, "tdfp_translation_display", "/translation-detector-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77590, 4458, "tdfp_color_background_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77591, 4458, "tdfp_uninstall", "/translation-detector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77592, 4458, "tdfp_settings_link", "/translation-detector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77593, 4458, "tdfp_register_scripts", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77594, 4458, "tdfp_meta_links", "/translation-detector.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77595, 4458, "tdfp_text_display_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77596, 4458, "tdfp_settings_init", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77597, 4458, "_tdfp_style_generation", "/translation-detector-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77598, 4458, "_tdfp_links_generation", "/translation-detector-functions.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77599, 4458, "tdfp_color_hover_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77600, 4458, "tdfp_checkbox_post_type_render", "/translation-detector-admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (77601, 4458, "tdfp_custom_strings", "/translation-detector-admin.php", now(), now());
+
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47643, 4458, "admin_init", "'tdfp_settings_init'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47644, 4458, "admin_enqueue_scripts", "'tdfp_register_scripts'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47645, 4458, "init", "'tdfp_load_textdomain'", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (47646, 4458, "admin_menu", "'tdfp_add_admin_menu'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16094, 4458, "plugin_row_meta", "'tdfp_meta_links'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16095, 4458, "pll_get_strings", "'tdfp_custom_strings'", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (16096, 4458, "the_content", "'tdfp_translation_display'", 99, now(), now());

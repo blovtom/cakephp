@@ -1,0 +1,24 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1593, "Plugin Name", "4.1", "trunk", "3.1", now(), now());
+
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196111, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_enqueue_scripts", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196112, 1593, "Ashfame_Facebook_Like_Thumbnail", "output_meta_og_image_tag", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196113, 1593, "Ashfame_Facebook_Like_Thumbnail", "__construct", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196114, 1593, "Ashfame_Facebook_Like_Thumbnail", "bail", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196115, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_default_setting", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196116, 1593, "Ashfame_Facebook_Like_Thumbnail", "init", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196117, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_thumbnail_validate", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196118, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_thumbnail_page", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196119, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_thumbnail_init", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196120, 1593, "Ashfame_Facebook_Like_Thumbnail", "figure_out_media_image_for_social_networks", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196121, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "__construct", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196122, 1593, "Ashfame_Facebook_Like_Thumbnail", "support_plugin_action_link", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196123, 1593, "Ashfame_Facebook_Like_Thumbnail", "is_compatible", "/facebook-like-thumbnail.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196124, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_thumbnail_options_page", "/admin.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (196125, 1593, "Ashfame_Facebook_Like_Thumbnail_Admin", "fb_like_section_text", "/admin.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17856, 1593, "plugins_loaded", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17857, 1593, "admin_menu", "array($this,'fb_like_thumbnail_page')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17858, 1593, "admin_enqueue_scripts", "array($this,'fb_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17859, 1593, "wp_head", "array($this,'output_meta_og_image_tag')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17860, 1593, "admin_init", "array($this,'fb_like_thumbnail_init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (17861, 1593, "wp", "array($this,'figure_out_media_image_for_social_networks')", 10, now(), now());
+insert into filters (id, plugin_id, tag_name, filter_callback, filter_priority, created, modified) values (5949, 1593, "plugin_action_links", "array($this,'support_plugin_action_link')", 10, now(), now());

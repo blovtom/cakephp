@@ -1,0 +1,17 @@
+insert into plugins (id, name, testedUpTo, stableTag, requiresAtLeast, created, modified) values (1894, "Plugin Name", "4.1.1", "Version 1.1", "3.8", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (37689, 1894, "get_information", "/includes/admin.php", now(), now());
+insert into functions (id, plugin_id, function_name, function_loc, created, modified) values (37690, 1894, "options_page", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236301, 1894, "Gmo_Google_Map", "oembed_handler", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236302, 1894, "Gmo_Google_Map", "shortcode", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236303, 1894, "Gmo_Google_Map", "gmo_google_map_setting", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236304, 1894, "Gmo_Google_Map", "wp_enqueue_scripts", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236305, 1894, "Gmo_Google_Map", "init", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236306, 1894, "Gmo_Google_Map", "mt_add_pages", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236307, 1894, "Gmo_Google_Map", "__construct", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236308, 1894, "Gmo_Google_Map", "wp_head", "/gmo-google-map.php", now(), now());
+insert into methods (id, plugin_id, class_name, method_name, method_loc, created, modified) values (236309, 1894, "Gmo_Google_Map", "gmo_google_map_scripts", "/gmo-google-map.php", now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21065, 1894, "wp_footer", "array(&$this,'wp_enqueue_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21066, 1894, "admin_enqueue_scripts", "array($this,'gmo_google_map_scripts')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21067, 1894, "init", "array($this,'init')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21068, 1894, "admin_menu", "array($this,'mt_add_pages')", 10, now(), now());
+insert into hooks (id, plugin_id, hook_name, hook_callback, hook_priority, created, modified) values (21069, 1894, "wp_head", "array($this,'wp_head')", 10, now(), now());
